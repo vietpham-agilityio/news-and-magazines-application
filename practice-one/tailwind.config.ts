@@ -8,6 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        md: '744px',
+      },
+      container: {
+        screens: {
+          sm: '358px',
+          md: '604px',
+          lg: '1024px',
+          xl: '1280px',
+          '2xl': '1512px',
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -63,6 +75,15 @@ const config: Config = {
         h2: "31px",
         h1: "36px",
       },
+      spacing: {
+        7.5: "30px",
+        12.5: "50px",
+        15: "60px",
+        17.5: "70px",
+        25: "100px",
+        30: "120px",
+        459: "459px",
+      }
     },
   },
   plugins: [],
