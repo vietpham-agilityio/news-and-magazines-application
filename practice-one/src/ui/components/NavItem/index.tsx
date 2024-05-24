@@ -1,7 +1,7 @@
 import { memo } from "react";
 
 // icons
-import { ArrowBottom } from "../Icons/arrowBottom";
+import { ArrowBottom } from "../Icons";
 
 interface IMenu {
   name: string;
