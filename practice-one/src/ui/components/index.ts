@@ -1,3 +1,4 @@
 export * from './Brand';
-export * from './NavItem';
 export * from './common';
+export * from './NavItem';
+export * from './SearchBar';
