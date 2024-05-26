@@ -1,4 +1,4 @@
-import { Brand, Avatar, NavItem, BoxIcon } from "@/ui/components";
+import { Brand, Avatar, NavItem, BoxIcon, SearchBar } from "@/ui/components";
 
 // icons
 import {
@@ -12,27 +12,22 @@ import {
 export const Header = () => (
   <header className="header container flex flex-col items-center justify-center bg-white-100 h-auto mx-auto mt-11 sm:mt-4 lg:mt-11 lg:flex-row">
     <div className="h-12 w-full flex items-center justify-between">
-      <div className="flex lg:justify-between items-center flex-1 sm:w-[664px]">
+      <div className="flex items-center w-full sm:w-[664px] lg:flex-0 lg:justify-between">
+        {/* Burger menu */}
         <div className="mr-[30px] lg:hidden">
           <BoxIcon icon={<BurgerMenu />} />
         </div>
-        <div className="w-full flex sm:hidden">
-          <label htmlFor="search" className="relative flex-1">
-            <div className="absolute left-6 top-4">
-              <ThreeDots />
-            </div>
-            <div className="absolute right-4 top-3">
-              <Search />
-            </div>
-            <input
-              type="text"
-              name="search"
-              id="search"
-              className="w-full h-12 bg-white-90 placeholder-dark-100 rounded-xl px-14"
-              placeholder="Search Anything"
-            />
-          </label>
+        {/* Search in small screen */}
+        <div className="flex flex-1 sm:hidden">
+          <SearchBar
+            name="search"
+            type="text"
+            leftIcon={<ThreeDots />}
+            rightIcon={<Search />}
+            placeholder="Search everything"
+          />
         </div>
+        {/* Brand */}
         <div className="hidden sm:block">
           <Brand brandName="MEGA.news" url="/" />
         </div>
@@ -50,8 +45,8 @@ export const Header = () => (
         </nav>
       </div>
 
-      {/*search and user*/}
-      <div className="w-[350px] items-center hidden sm:flex lg:w-[656px]">
+      {/*Search and user*/}
+      <div className="w-[350px] items-center justify-end hidden sm:flex lg:w-[656px]">
         <label htmlFor="search" className="relative mr-6 hidden xl:block">
           <div className="absolute left-6 top-4">
             <ThreeDots />
@@ -67,8 +62,8 @@ export const Header = () => (
             placeholder="Search Anything"
           />
         </label>
-        <div className="flex sm:flex-1 justify-between">
-          <div className="flex items-center">
+        <div className="flex xl:flex-1 justify-between">
+          <div className="flex items-center mr-8 xl:mr-0">
             <Avatar
               width={48}
               height={48}
@@ -85,21 +80,13 @@ export const Header = () => (
 
     {/*search on small screen*/}
     <div className="container h-14 hidden my-5 sm:flex lg:hidden">
-      <label htmlFor="search" className="relative flex-1">
-        <div className="absolute left-6 top-4">
-          <ThreeDots />
-        </div>
-        <div className="absolute right-4 top-3">
-          <Search />
-        </div>
-        <input
-          type="text"
-          name="search"
-          id="search"
-          className="w-full h-12 bg-white-90 placeholder-dark-100 rounded-xl px-14"
-          placeholder="Search Anything"
-        />
-      </label>
+      <SearchBar
+        name="search"
+        type="text"
+        leftIcon={<ThreeDots />}
+        rightIcon={<Search />}
+        placeholder="Search everything"
+      />
     </div>
   </header>
 );
