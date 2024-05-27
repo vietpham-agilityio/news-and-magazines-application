@@ -22,14 +22,14 @@ export const Button = ({
   <button
     className={`${bgColor} flex items-center py-2.5 rounded-xl hover:opacity-80 ${leftIcon && "pr-6 pl-4"} ${leftIcon && "pr-6 pl-4"}`}
   >
-    {leftIcon && <i className="mr-2">{leftIcon}</i>}
+    { leftIcon && <i className="mr-2">{leftIcon}</i> }
     <Typography
       tag="p"
       textSize={Size.XSM}
       additionalClasses={`${textColor} leading-5`}
     >
-      {label}
+      { label }
     </Typography>
-    {rightIcon && <i className="ml-2">{rightIcon}</i>}
+    { rightIcon && <i className="ml-2">{rightIcon}</i> }
   </button>
 );
