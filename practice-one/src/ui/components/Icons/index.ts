@@ -1,3 +1,5 @@
+export * from './User';
+export * from './Home';
 export * from './Search';
 export * from './SaveTag';
 export * from './MailBox';
@@ -6,4 +8,5 @@ export * from './ArrowTop';
 export * from './ThreeDots';
 export * from './Instagram';
 export * from './BurgerMenu';
+export * from './ChevronsUp';
 export * from './ArrowBottom';
