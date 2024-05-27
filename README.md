@@ -1,93 +1,118 @@
-# next-training
+# NEXT.JS - PRACTICE ONE
+
+## OVERVIEW
+
+* Revision of Next.js training plan focuses on the latest version of Next.js (14.0.2). The trainees can discover further details in the course Next.js. As a result, the trainees can follow this instruction to learn Next.js fundamentals step by step and hands-on practices.
+
+* Furthermore, can invest more time in the official document Next.js to have an understanding of the depth of Next.js key features.
+
+* Design - [News & Magazine-Website](https://www.figma.com/design/i51XhBagBtzwCEWzJalaGD/Free-News-%26-Magazine-Figma-Template?node-id=17-11&t=dnCTJm2Er03CN1Lm-0)
+
+## TIMELINE
+
+* May 20th, 2024 - May 30th, 2024 (8 days working)
+
+## TEAM SIZE
+
+* 1 dev - @viet.pham
+
+## TARGET
+
+* Get familiar with the outstanding features of Next.js especially routing, caching, streaming and data fetching.
+* Know how a Next.js application works and accomplish a full-stack web application.
+* Distinguish between server, client directives and use it correspondingly for each case.
+* Handle errors and be aware of which errors should be shown for each situation.
+* Bear in mind that improving accessibility and form validation will be always involved.
+* Get to know metadata which is crucial for SEO and shareability.
+
+## BROWSER SUPPORT
+
+* Chrome Version 124.0.6367.119 (Official Build) (x86_64)
+
+## DEVICE SUPPORT
+
+* Mobile (min-width: 358px - max-width: 604px)
+* Laptop (min-width: 604px - max-width: 1280px)
+* Desktop (min-width: 1280px)
+
+## TECHNICAL STACKS
+
+* **[Next.Js](https://nextjs.org/)**: enables you to create high-quality web applications with the power of React components.
+* **[TypeScript](https://www.typescriptlang.org/)**: is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
+* **[Jest](https://jestjs.io/)**: is a delightful JavaScript Testing Framework with a focus on simplicity.
+* **[Storybook](https://storybook.js.org/)**: captures the rendered state of a UI component. Developers write multiple stories per component that describe all the “interesting” states a component can support.
+* **[ESLint](https://eslint.org/)**: is a tool for identifying and reporting patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
+* **[Tailwind](https://tailwindcss.com/)**: is a utility-first CSS framework for rapidly building modern websites without ever leaving your HTML.
+* **[Strapi](https://strapi.io/)**: is the next-gen headless CMS, open-source, javascript, enabling content-rich experiences to be created, managed and exposed to any digital device.
 
 
+## DEPLOY
 
-## Getting started
+* **[Vercel](https://vercel.com/)** is a frontend cloud that gives developers the frameworks, workflows, and infrastructure to build a faster, more personalized Web.
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+## EDITOR
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+* **[Visual Studio Code](https://code.visualstudio.com/)**
 
-## Add your files
+## ANALYZE DESIGN
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+You can see details in this link:
+
+* **[Analyze design](https://docs.google.com/document/d/133SVWVYsO7s5ZkYaeg1DNMupW6qveHi0X9yJuwoLBwg)**
+
+## DIRECTORY STRUCTURE
+* Will update later
+
+## HOW TO RUN PROJECT
+
+> $ git clone --branch git@gitlab.asoft-python.com:viet.pham/next-training.git
+
+> cd practice-one/
+
+### Install Package
+
+**Run to install the package**
+
+> npm install
+
+**Create file variable environment**
 
 ```
-cd existing_repo
-git remote add origin https://gitlab.asoft-python.com/viet.pham/next-training.git
-git branch -M main
-git push -uf origin main
+├── node_modules
+├── src
+└──.env.local
 ```
 
-## Integrate with your tools
+**With template**
 
-- [ ] [Set up project integrations](https://gitlab.asoft-python.com/viet.pham/next-training/-/settings/integrations)
+```
+SERVER_BASE_URL = 'Url your server'
+```
 
-## Collaborate with your team
+**You can access my pages**
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+> [News & Magazine-Website]()
 
-## Test and Deploy
+### Run Project
 
-Use the built-in continuous integration in GitLab.
+> npm run dev
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+* Follow at: http://localhost:3000/
 
-***
+### Run Storybook
 
-# Editing this README
+> npm run storybook
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+* Follow at: http://localhost:6006/
 
-## Suggestions for a good README
+### Run Test
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+> npm test
 
-## Name
-Choose a self-explaining name for your project.
+### Run build in production environment
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+> npm run build
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+## Author
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+[vietpham-agilityio](https://gitlab.asoft-python.com/viet.pham)
