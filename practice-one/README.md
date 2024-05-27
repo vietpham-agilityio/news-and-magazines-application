@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NEXT.JS - PRACTICE ONE
 
-## Getting Started
+## OVERVIEW
 
-First, run the development server:
+* Revision of Next.js training plan focuses on the latest version of Next.js (14.0.2). The trainees can discover further details in the course Next.js. As a result, the trainees can follow this instruction to learn Next.js fundamentals step by step and hands-on practices.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+* Furthermore, can invest more time in the official document Next.js to have an understanding of the depth of Next.js key features.
+
+* Design - [News & Magazine-Website](https://www.figma.com/design/i51XhBagBtzwCEWzJalaGD/Free-News-%26-Magazine-Figma-Template?node-id=17-11&t=dnCTJm2Er03CN1Lm-0)
+
+## TIMELINE
+
+* May 20th, 2024 - May 30th, 2024 (8 days working)
+
+## TEAM SIZE
+
+* 1 dev - @viet.pham
+
+## TARGET
+
+* Get familiar with the outstanding features of Next.js especially routing, caching, streaming and data fetching.
+* Know how a Next.js application works and accomplish a full-stack web application.
+* Distinguish between server, client directives and use it correspondingly for each case.
+* Handle errors and be aware of which errors should be shown for each situation.
+* Bear in mind that improving accessibility and form validation will be always involved.
+* Get to know metadata which is crucial for SEO and shareability.
+
+
+
+## BROWSER SUPPORT
+
+* Chrome Version 124.0.6367.119 (Official Build) (x86_64)
+
+## DEVICE SUPPORT
+
+* Mobile (min-width: 358px - max-width: 604px)
+* Laptop (min-width: 604px - max-width: 1280px)
+* Desktop (min-width: 1280px)
+
+## TECHNICAL STACKS
+
+* **[Next.Js](https://nextjs.org/)**: enables you to create high-quality web applications with the power of React components.
+* **[TypeScript](https://www.typescriptlang.org/)**: is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
+* **[Jest](https://jestjs.io/)**: is a delightful JavaScript Testing Framework with a focus on simplicity.
+* **[Storybook](https://storybook.js.org/)**: captures the rendered state of a UI component. Developers write multiple stories per component that describe all the “interesting” states a component can support.
+* **[ESLint](https://eslint.org/)**: is a tool for identifying and reporting patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
+* **[Tailwind](https://tailwindcss.com/)**: is a utility-first CSS framework for rapidly building modern websites without ever leaving your HTML.
+* **[Strapi](https://strapi.io/)**: is the next-gen headless CMS, open-source, javascript, enabling content-rich experiences to be created, managed and exposed to any digital device.
+
+
+## DEPLOY
+
+* **[Vercel](https://vercel.com/)** is a frontend cloud that gives developers the frameworks, workflows, and infrastructure to build a faster, more personalized Web.
+
+## EDITOR
+
+* **[Visual Studio Code](https://code.visualstudio.com/)**
+
+## ANALYZE DESIGN
+
+You can see details in this link:
+
+* **[Analyze design](https://docs.google.com/document/d/133SVWVYsO7s5ZkYaeg1DNMupW6qveHi0X9yJuwoLBwg)**
+
+## DIRECTORY STRUCTURE
+* Will update later
+
+## HOW TO RUN PROJECT
+
+> $ git clone --branch git@gitlab.asoft-python.com:viet.pham/next-training.git
+
+> cd practice-one/
+
+### Install Package
+
+**Run to install the package**
+
+> npm install
+
+**Create file variable environment**
+
+```
+├── node_modules
+├── src
+└──.env.local
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**With template**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+SERVER_BASE_URL = 'Url your server'
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**You can access my pages**
 
-## Learn More
+> [News & Magazine-Website]()
 
-To learn more about Next.js, take a look at the following resources:
+### Run Project
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+> npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+* Follow at: http://localhost:3000/
 
-## Deploy on Vercel
+### Run Storybook
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+> npm run storybook
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* Follow at: http://localhost:6006/
+
+### Run Test
+
+> npm test
+
+### Run build in production environment
+
+> npm run build
+
+## Author
+
+[vietpham-agilityio](https://gitlab.asoft-python.com/viet.pham)
