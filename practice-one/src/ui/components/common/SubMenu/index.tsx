@@ -1,35 +1,32 @@
-import { ReactNode } from "react";
-
 // constants
 import { flexCenter } from "@/constants";
 
 // components
-import { Typography } from "@/ui/components";
+import { IMenu, Typography } from "@/ui/components";
 
 // types
 import { Size } from "@/types";
-
-interface Item {
-  key: string;
-  content: string;
-}
+import Link from "next/link";
 
 interface IProps {
-  listItem: Item[];
+  listItem: IMenu[];
+  onClick: () => void;
 }
 
-export const SubMenu = ({ listItem = [] }: IProps) => (
-  <div className={`${flexCenter} py-5 px-9 w-[360px] bg-white-90`}>
+export const SubMenu = ({ listItem = [], onClick }: IProps) => (
+  <div className={`${flexCenter} py-5 px-4 w-[360px] bg-white-100 rounded-xl shadow-xl`}>
     <ul className="list-none w-full grid grid-cols-2 grid-rows-5">
       {listItem.map((item) => (
-        <li key={item.key} className="mb-2 last:mb-0">
-          <Typography
-            tag="p"
-            textSize={Size.XS}
-            additionalClasses="text-dark-75 hover:text-secondary-100 cursor-pointer"
-          >
-            {item.content}
-          </Typography>
+        <li key={item.key} className="mb-2 last:mb-0" onClick={onClick}>
+          <Link href={item.path}>
+            <Typography
+              tag="p"
+              textSize={Size.XS}
+              additionalClasses="text-dark-75 hover:text-secondary-100 cursor-pointer"
+            >
+              { item.name }
+            </Typography>
+          </Link>
         </li>
       ))}
     </ul>
