@@ -1,6 +1,7 @@
 // constants
 import { listCategories } from "@/constants";
 
+// components
 import {
   Menu,
   Brand,

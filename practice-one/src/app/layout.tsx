@@ -3,9 +3,12 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 
 // Layout components
-import { Header } from "@/ui/layouts";
+import { Footer, Header, FooterBar } from "@/ui/layouts";
 
-const roboto = Roboto({ subsets: ["latin"], weight: ["300", "400", "500", "700"] });
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "700"],
+});
 
 export const metadata: Metadata = {
   title: "News & Magazine Application",
@@ -23,16 +26,9 @@ export default function RootLayout({
       <body className={roboto.className}>
         <Header />
         {children}
-
-      {/* footer */}
-      <footer className="footer w-full hidden items-center justify-center bg-primary-50 h-[483px] mb-12.5 sm:flex lg:mb-11">
-        <p>footer</p>
-      </footer>
-
-      {/* footer mobile */}
-      <footer className="footer w-full flex items-center justify-center bg-primary-75 h-[70px] fixed bottom-0 sm:hidden">
-        <p>footer</p>
-      </footer>
+        <Footer />
+        {/* Footer bar on mobile screen */}
+        <FooterBar />
       </body>
     </html>
   );

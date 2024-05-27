@@ -2,14 +2,14 @@
 import { Typography } from "@/ui/components/common";
 
 // constants
-import { flexCenter } from "@/constants";
+import { flexItemCenter } from "@/constants";
 
 interface IProps {
   title: string;
 }
 
 export const TitleSection = ({ title }: IProps) => (
-  <div className={`${flexCenter}`}>
+  <div className={`${flexItemCenter}`}>
     {/* Dot color */}
     <div className="w-1 h-[11px] bg-primary-100 rounded-2xl mr-1.5" />
 
