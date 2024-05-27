@@ -31,6 +31,7 @@ const config: Config = {
           25: "#FFE8EC",
           50: "#FDC4CD",
           75: "#FB899B",
+          90: "#FA506B",
           100: "#F81539",
         },
         secondary: {
