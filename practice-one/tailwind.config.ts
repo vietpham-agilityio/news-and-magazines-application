@@ -77,6 +77,7 @@ const config: Config = {
         xxl: "36px",
       },
       spacing: {
+        1.5: "6px",
         7.5: "30px",
         12.5: "50px",
         15: "60px",
