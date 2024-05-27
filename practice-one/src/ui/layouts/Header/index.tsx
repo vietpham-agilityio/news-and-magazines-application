@@ -1,4 +1,14 @@
-import { Brand, Avatar, NavItem, BoxIcon, SearchBar } from "@/ui/components";
+// constants
+import { listCategories } from "@/constants";
+
+import {
+  Menu,
+  Brand,
+  Avatar,
+  NavItem,
+  BoxIcon,
+  SearchBar,
+} from "@/ui/components";
 
 // icons
 import {
@@ -33,10 +43,10 @@ export const Header = () => (
         </div>
         <nav className="hidden w-[476px] items-center justify-center lg:flex">
           <div className="mr-8">
-            <NavItem name="Categories" listMenu={[]} />
+            <Menu name="Categories" listMenu={listCategories} />
           </div>
           <div className="mr-8">
-            <NavItem name="Pages" listMenu={[]} />
+            <NavItem name="Pages" />
           </div>
           <div className="mr-8">
             <NavItem name="Contact Us" />
