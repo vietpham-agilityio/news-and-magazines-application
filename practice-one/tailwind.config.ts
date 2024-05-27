@@ -55,6 +55,7 @@ const config: Config = {
           25: "#7F7F7F",
           50: "#999598",
           75: "#404040",
+          90: "#ECEBEB",
           100: "#000",
         },
         white: {
@@ -66,10 +67,19 @@ const config: Config = {
           90: "#F5F5F5",
           100: "#FFF",
         },
+        blueLinear: {
+          0: "#2CA5E0",
+          100: "#67C9F5"
+        },
+        sunSet: {
+          0: "#F45C9F",
+          100: "#FF7563",
+        }
       },
       fontSize: {
         p: "12px",
         xs: "13px",
+        xsm: "14px",
         sm: "16px",
         md: "20px",
         lg: "25px",
@@ -78,12 +88,14 @@ const config: Config = {
       },
       spacing: {
         1.5: "6px",
+        2.5: "10px",
         7.5: "30px",
         12.5: "50px",
         15: "60px",
         17.5: "70px",
         25: "100px",
         30: "120px",
+        90: "360px",
         100: "400px",
         459: "459px",
       }
