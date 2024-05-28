@@ -1,5 +1,5 @@
 // constants
-import { listCategories } from "@/constants";
+import { listCategories, listNavItems } from "@/constants";
 
 // components
 import {
@@ -9,16 +9,11 @@ import {
   NavItem,
   BoxIcon,
   SearchBar,
+  BurgerMenu,
 } from "@/ui/components";
 
 // icons
-import {
-  ArrowBottom,
-  SaveTag,
-  Search,
-  ThreeDots,
-  BurgerMenu,
-} from "@/ui/components/Icons";
+import { ArrowBottom, SaveTag, Search, ThreeDots } from "@/ui/components/Icons";
 
 export const Header = () => (
   <header className="header container flex flex-col items-center justify-center bg-white-100 h-auto mx-auto mt-11 sm:mt-4 lg:mt-11 lg:flex-row">
@@ -26,7 +21,7 @@ export const Header = () => (
       <div className="flex items-center w-full sm:w-[664px] lg:flex-0 lg:justify-between">
         {/* Burger menu */}
         <div className="mr-[30px] lg:hidden">
-          <BoxIcon icon={<BurgerMenu />} />
+          <BurgerMenu listNav={listNavItems} />
         </div>
         {/* Search in small screen */}
         <div className="flex flex-1 sm:hidden">
@@ -47,12 +42,12 @@ export const Header = () => (
             <Menu name="Categories" listMenu={listCategories} />
           </div>
           <div className="mr-8">
-            <NavItem name="Pages" />
+            <NavItem name="Pages" url="/pages" />
           </div>
           <div className="mr-8">
-            <NavItem name="Contact Us" />
+            <NavItem name="Contact Us" url="/contact" />
           </div>
-          <NavItem name="About Us" />
+          <NavItem name="About Us" url="/about" />
         </nav>
       </div>
 
