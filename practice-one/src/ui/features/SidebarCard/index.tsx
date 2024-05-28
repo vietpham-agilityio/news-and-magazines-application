@@ -1,3 +1,13 @@
+// assets
+import CarImage from "@/images/Car.png";
+import FrogImage from "@/images/Frog.png";
+import FoodImage from "@/images/Food.png";
+import PersonOne from "@/images/Person_Dance.png";
+import PersonTwo from "@/images/Person_Play.png";
+
+// types
+import { StaticImageData } from "next/image";
+
 // components
 import { TitleSection, CardPost } from "@/ui/components";
 
@@ -5,7 +15,7 @@ interface IPostItem {
   id: string;
   title: string;
   content: string;
-  imageUrl: string;
+  imageUrl: string | StaticImageData;
   alt: string;
 }
 
@@ -14,40 +24,35 @@ const listPostItems: IPostItem[] = [
     id: "1",
     title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
     content: "Subhead",
-    imageUrl:
-      "https://images.unsplash.com/photo-1481819613568-3701cbc70156?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww",
+    imageUrl: CarImage,
     alt: "Top post",
   },
   {
     id: "2",
     title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
     content: "Subhead",
-    imageUrl:
-      "https://images.unsplash.com/photo-1481819613568-3701cbc70156?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww",
+    imageUrl: FrogImage,
     alt: "Top post",
   },
   {
     id: "3",
     title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
     content: "Subhead",
-    imageUrl:
-      "https://images.unsplash.com/photo-1481819613568-3701cbc70156?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww",
+    imageUrl: PersonOne,
     alt: "Top post",
   },
   {
     id: "4",
     title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
     content: "Subhead",
-    imageUrl:
-      "https://images.unsplash.com/photo-1481819613568-3701cbc70156?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww",
+    imageUrl: FoodImage,
     alt: "Top post",
   },
   {
     id: "5",
     title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
     content: "Subhead",
-    imageUrl:
-      "https://images.unsplash.com/photo-1481819613568-3701cbc70156?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww",
+    imageUrl: PersonTwo,
     alt: "Top post",
   },
 ];

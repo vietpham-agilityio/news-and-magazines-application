@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { Typography } from "@/ui/components";
 
 // types
@@ -7,7 +7,7 @@ import { FontWeight, Size } from "@/types";
 interface IProps {
   title: string;
   content: string;
-  imageSrc: string;
+  imageSrc: string | StaticImageData;
   alt: string;
 }
 
