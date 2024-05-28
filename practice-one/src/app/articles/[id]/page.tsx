@@ -1,4 +1,9 @@
 import Image from "next/image";
+import { Avatar, Button, Information } from "@/ui/components";
+
+// icons
+import { ChatBox, PaperPlane, Plus, SaveTagSmall } from "@/ui/components/Icons";
+import { SidebarCard, TagGroup } from "@/ui/features";
 
 export default function DetailPage() {
   return (
@@ -69,12 +74,57 @@ export default function DetailPage() {
           {/* tag and author */}
           <div className="flex flex-col-reverse sm:flex-row lg:flex-col">
             <div className="flex flex-col w-full">
-              <div className="h-10 bg-black-25 mb-[25px]" />
-              <div className="h-[117px] bg-black-50 mb-[25px]" />
+              <div className="flex justify-between bg-white-100 mb-[25px]">
+                <Button
+                  isMarginBottom
+                  label="Share"
+                  textColor="text-dark-75"
+                  bgColor="bg-white-90"
+                  leftIcon={<PaperPlane color="#404040" />}
+                />
+
+                <Button
+                  isMarginBottom
+                  label="Marking"
+                  textColor="text-dark-75"
+                  bgColor="bg-white-90"
+                  leftIcon={<SaveTagSmall color="#404040" />}
+                />
+                <Button
+                  isMarginBottom
+                  label="Comment"
+                  textColor="text-dark-75"
+                  bgColor="bg-white-90"
+                  leftIcon={<ChatBox color="#404040" />}
+                />
+              </div>
+              <div className="bg-white-90 flex p-[15px] mb-[25px] rounded-xl">
+                <Avatar
+                  width={87}
+                  height={87}
+                  url="/public/AvatarAuthor.jpg"
+                  alt="Avatar author"
+                />
+                <div className="flex-1 mt-3.5">
+                  <Information name="Louis Hoebregts" information="27 posts" />
+                  <div className="mt-2">
+                    <Button
+                      label="Follow"
+                      leftIcon={<Plus />}
+                      bgColor="bg-primary-90"
+                      textColor="text-white-100"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="w-full h-[136px] sm:h-auto lg:h-[128px] bg-black-75 mb-[25px]" />
+            <div className="w-full bg-white-90 mb-[25px] rounded-xl">
+              <TagGroup />
+            </div>
           </div>
-          <div className="h-[598px] bg-secondary-25 mb-[25px] hidden lg:block" />
+          <div className="mb-[25px] hidden lg:block">
+            <SidebarCard />
+          </div>
           <div className="flex lg:flex-col">
             <div className="w-full h-[180px] bg-primary-75 mb-[25px]" />
             <div className="w-full h-[180px] bg-black-75 hidden sm:block" />
