@@ -8,11 +8,8 @@ import { SubMenu } from "@/ui/components/common";
 // icons
 import { ArrowBottom, ArrowTop } from "@/ui/components/Icons";
 
-export interface IMenu {
-  key: string;
-  name: string;
-  path: string;
-}
+// types
+import { IMenu } from "@/types";
 
 interface IProps {
   name: string;
@@ -30,7 +27,7 @@ export const Menu = ({ name, listMenu }: IProps) => {
         <p
           className={`text-sm font-medium text-dark-100 hover:text-primary-100 ${listMenu && "mr-2"} `}
         >
-          {name}
+          { name }
         </p>
         {listMenu && isOpenSubMenu ? <ArrowTop /> : <ArrowBottom />}
       </div>

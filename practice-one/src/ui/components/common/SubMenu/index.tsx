@@ -2,11 +2,11 @@
 import { flexCenter } from "@/constants";
 
 // components
-import { IMenu, Typography } from "@/ui/components";
+import Link from "next/link";
+import { Typography } from "@/ui/components";
 
 // types
-import { Size } from "@/types";
-import Link from "next/link";
+import { Size, IMenu } from "@/types";
 
 interface IProps {
   listItem: IMenu[];
