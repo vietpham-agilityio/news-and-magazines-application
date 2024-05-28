@@ -1,4 +1,4 @@
-import { IMenu } from "@/ui/components";
+import { IMenu } from "@/types";
 
 const listTypePosts: string[] = ["New", "Trendy", "Popular", "Top"];
 
@@ -55,4 +55,22 @@ const listCategories: IMenu[] = [
   }
 ];
 
-export { listTypePosts, listCategories };
+const listNavItems: IMenu[] = [
+  {
+    key: "pages",
+    name: "Pages",
+    path: "/pages",
+  },
+  {
+    key: "contact",
+    name: "Contact Us",
+    path: "/contact-us",
+  },
+  {
+    key: "about",
+    name: "About Us",
+    path: "/about-us",
+  },
+];
+
+export { listTypePosts, listCategories, listNavItems };
