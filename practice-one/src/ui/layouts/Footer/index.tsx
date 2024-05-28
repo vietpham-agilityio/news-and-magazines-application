@@ -79,6 +79,7 @@ export const Footer = () => (
             </div>
             <div className="h-12 flex items-center">
               <Button
+                isMarginBottom
                 label="Instagram"
                 textColor="text-white-100"
                 bgColor="bg-gradient-to-bl from-sunSet-0 to-sunSet-100"
