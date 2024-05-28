@@ -13,7 +13,7 @@ export const TitleSection = ({ title }: IProps) => (
     {/* Dot color */}
     <div className="w-1 h-[11px] bg-primary-100 rounded-2xl mr-1.5" />
 
-    <Typography tag="h2" additionalClasses="text-dark-100">
+    <Typography tag="h2" additionalClasses="text-dark-100 leading-6">
       { title }
     </Typography>
   </div>
