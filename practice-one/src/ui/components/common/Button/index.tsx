@@ -10,6 +10,7 @@ interface IProps {
   rightIcon?: JSX.Element;
   leftIcon?: JSX.Element;
   bgColor?: string;
+  isMarginBottom?: boolean;
 }
 
 export const Button = ({
@@ -18,18 +19,21 @@ export const Button = ({
   rightIcon,
   leftIcon,
   bgColor,
+  isMarginBottom = false,
 }: IProps) => (
   <button
     className={`${bgColor} flex items-center py-2.5 rounded-xl hover:opacity-80 ${leftIcon && "pr-6 pl-4"} ${leftIcon && "pr-6 pl-4"}`}
   >
-    { leftIcon && <i className="mr-2 mb-1">{leftIcon}</i> }
+    {leftIcon && (
+      <i className={`mr-2 ${isMarginBottom && "mb-1"}`}>{leftIcon}</i>
+    )}
     <Typography
       tag="p"
       textSize={Size.XSM}
       additionalClasses={`${textColor} leading-5`}
     >
-      { label }
+      {label}
     </Typography>
-    { rightIcon && <i className="ml-2">{rightIcon}</i> }
+    {rightIcon && <i className="ml-2">{rightIcon}</i>}
   </button>
 );
