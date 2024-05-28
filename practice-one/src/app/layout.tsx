@@ -27,6 +27,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+
         {/* Footer bar on mobile screen */}
         <FooterBar />
       </body>

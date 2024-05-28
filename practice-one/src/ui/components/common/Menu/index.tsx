@@ -33,7 +33,7 @@ export const Menu = ({ name, listMenu }: IProps) => {
       </div>
 
       {listMenu && isOpenSubMenu && (
-        <div className="absolute">
+        <div className="absolute z-10">
           <SubMenu listItem={listMenu} onClick={handleToggleSubMenu} />
         </div>
       )}

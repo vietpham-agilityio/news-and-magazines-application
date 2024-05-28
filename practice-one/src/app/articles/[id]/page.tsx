@@ -1,4 +1,6 @@
+// componens
 import Image from "next/image";
+import { RightSidebar } from "@/ui/features";
 
 export default function DetailPage() {
   return (
@@ -18,6 +20,10 @@ export default function DetailPage() {
             alt="fishing"
             width={1072}
             height={598}
+            style={{
+              width: "auto",
+              height: "auto",
+            }}
           />
           <div className="w-[291px] sm:w-[516px] h-5 bg-slate-600 mx-auto mb-12">
             <p>Tag</p>
@@ -65,22 +71,9 @@ export default function DetailPage() {
           </section>
         </article>
         {/* sidebar */}
-        <div className="bg-white-100 lg:ml-[23px] lg:w-[360px]">
-          {/* tag and author */}
-          <div className="flex flex-col-reverse sm:flex-row lg:flex-col">
-            <div className="flex flex-col w-full">
-              <div className="h-10 bg-black-25 mb-[25px]" />
-              <div className="h-[117px] bg-black-50 mb-[25px]" />
-            </div>
-            <div className="w-full h-[136px] sm:h-auto lg:h-[128px] bg-black-75 mb-[25px]" />
-          </div>
-          <div className="h-[598px] bg-secondary-25 mb-[25px] hidden lg:block" />
-          <div className="flex lg:flex-col">
-            <div className="w-full h-[180px] bg-primary-75 mb-[25px]" />
-            <div className="w-full h-[180px] bg-black-75 hidden sm:block" />
-          </div>
-        </div>
+        <RightSidebar />
       </section>
+
       {/* popular posts */}
       <section className="popular-posts container flex flex-col justify-between bg-white-100 h-459 mb-25">
         <div>

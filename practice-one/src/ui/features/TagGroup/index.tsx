@@ -24,7 +24,7 @@ interface IProps {
 }
 
 export const TagGroup = ({ listTags = listTagItems }: IProps) => (
-  <div className="px-[15px] py-5">
+  <div className="px-[15px] py-5 bg-white-90 rounded-xl">
     <TitleSection title="Tags" />
     <div className="flex flex-wrap gap-3.5 mt-3">
       {listTags.map((tag) => {
