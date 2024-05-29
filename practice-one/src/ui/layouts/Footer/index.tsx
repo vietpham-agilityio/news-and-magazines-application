@@ -31,7 +31,7 @@ export const Footer = () => (
             <div className="mb-5">
               <TitleSection title="Newsletters" />
             </div>
-            <label htmlFor="search" className="relative mr-6 hidden xl:block">
+            <label htmlFor="search" className="relative mr-6 block">
               <div className="absolute left-6 top-4"></div>
               <div className="absolute right-3 top-4">
                 <MailBox />
@@ -40,7 +40,7 @@ export const Footer = () => (
                 type="text"
                 name="search"
                 id="search"
-                className="h-12 text-p bg-white-100 placeholder-dark-100 rounded-xl pl-3 pr-14 lg:w-100"
+                className="h-12 text-p bg-white-100 placeholder-dark-100 rounded-xl pl-3 pr-14 w-full lg:w-100"
                 placeholder="Write your email ..."
               />
             </label>
