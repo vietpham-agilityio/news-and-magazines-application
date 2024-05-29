@@ -1,3 +1,4 @@
+import { TitleSection, CardPost } from "@/ui/components";
 import { HashtagGroup } from "@/ui/features";
 
 export default function Home() {
@@ -5,7 +6,7 @@ export default function Home() {
     <main className="flex flex-col items-center">
       {/* category */}
       <section className="category container bg-white-90 items-center justify-center rounded-xl hidden xl:flex lg:mt-11">
-       <HashtagGroup />
+        <HashtagGroup />
       </section>
       {/* fantastic posts */}
       <section className="fantastic-posts container hidden items-center gap-6 bg-white-100 h-[452px] mt-9 mb-12.5 sm:flex lg:my-15">
@@ -28,26 +29,12 @@ export default function Home() {
       </section>
       {/* popular posts */}
       <section className="popular-posts container flex flex-col justify-between bg-white-100 h-459 mt-7.5 sm:my-0">
-        <div>
-          <p>popular posts</p>
-        </div>
-        <div className="card-group flex gap-6">
-          {/* card first */}
-          <div className="w-[360px] h-[389px] bg-blue-300 flex items-center justify-center">
-            <p>Popular posts</p>
-          </div>
-          {/* card secondary */}
-          <div className="w-[360px] h-[389px] bg-blue-300 flex items-center justify-center">
-            <p>Popular posts</p>
-          </div>
-          {/* card tertinary */}
-          <div className="w-[360px] h-[389px] bg-blue-300 flex items-center justify-center">
-            <p>Popular posts</p>
-          </div>
-          {/* card quaternary */}
-          <div className="w-[360px] h-[389px] bg-blue-300 flex items-center justify-center">
-            <p>Popular posts</p>
-          </div>
+        <TitleSection title="Popular Posts" />
+        <div className="card-group flex gap-6 flex-wrap">
+          <CardPost isVerticle />
+          <CardPost isVerticle />
+          <CardPost isVerticle />
+          <CardPost isVerticle />
         </div>
       </section>
       {/* scheduler */}
@@ -56,33 +43,31 @@ export default function Home() {
       </section>
       {/* new posts */}
       <section className="new-posts container flex flex-col justify-between bg-white-100">
-        <div>
-          <p>New posts</p>
-        </div>
-        <div className="card-group grid grid-cols-12 grid-rows-3 gap-6">
+        <TitleSection title="New Posts" />
+        <div className="grid grid-cols-12 grid-rows-3 gap-6 xl:m-auto">
           {/* card first */}
-          <div className="h-[210px] col-span-12 lg:col-span-6 bg-dark-25 flex items-center justify-center">
-            <p>New posts</p>
+          <div className="col-span-12 2xl:col-span-6">
+            <CardPost />
           </div>
           {/* card secondary */}
-          <div className="h-[210px] col-span-12 lg:col-span-6 bg-dark-25 flex items-center justify-center">
-            <p>New posts</p>
+          <div className="col-span-12 2xl:col-span-6">
+            <CardPost />
           </div>
           {/* card tertinary */}
-          <div className="h-[210px] col-span-12 lg:col-span-6 bg-dark-25 flex items-center justify-center">
-            <p>New posts</p>
+          <div className="col-span-12 2xl:col-span-6">
+            <CardPost />
           </div>
           {/* card quaternary */}
-          <div className="h-[210px] col-span-12 lg:col-span-6 bg-dark-25 flex items-center justify-center">
-            <p>New posts</p>
+          <div className="col-span-12 2xl:col-span-6">
+            <CardPost />
           </div>
           {/* card quaternary */}
-          <div className="h-[210px] col-span-12 lg:col-span-6 bg-dark-25 flex items-center justify-center">
-            <p>New posts</p>
+          <div className="col-span-12 2xl:col-span-6">
+            <CardPost />
           </div>
           {/* card quaternary */}
-          <div className="h-[210px] col-span-12 lg:col-span-6 bg-dark-25 flex items-center justify-center">
-            <p>New posts</p>
+          <div className="col-span-12 2xl:col-span-6">
+            <CardPost />
           </div>
         </div>
       </section>
@@ -118,26 +103,12 @@ export default function Home() {
       </section>
       {/* trendy posts */}
       <section className="trendy-posts container flex flex-col justify-between bg-white-100 h-459">
-        <div>
-          <p>Trendy posts</p>
-        </div>
-        <div className="card-group flex gap-6">
-          {/* card first */}
-          <div className="w-[360px] h-[389px] bg-orange-300 flex items-center justify-center">
-            <p>Trendy posts</p>
-          </div>
-          {/* card secondary */}
-          <div className="w-[360px] h-[389px] bg-orange-300 flex items-center justify-center">
-            <p>Trendy posts</p>
-          </div>
-          {/* card tertinary */}
-          <div className="w-[360px] h-[389px] bg-orange-300 flex items-center justify-center">
-            <p>Trendy posts</p>
-          </div>
-          {/* card quaternary */}
-          <div className="w-[360px] h-[389px] bg-orange-300 flex items-center justify-center">
-            <p>Trendy posts</p>
-          </div>
+        <TitleSection title="Trendy Posts" />
+        <div className="card-group flex gap-6 flex-wrap">
+          <CardPost isVerticle />
+          <CardPost isVerticle />
+          <CardPost isVerticle />
+          <CardPost isVerticle />
         </div>
       </section>
       {/* weather */}
@@ -169,26 +140,12 @@ export default function Home() {
       </section>
       {/* top posts */}
       <section className="top-posts container flex flex-col justify-between bg-white-100 h-459 mb-30 sm:mb-7.5 lg:mb-25">
-        <div>
-          <p>Top posts</p>
-        </div>
-        <div className="card-group flex gap-6">
-          {/* card first */}
-          <div className="w-[360px] h-[389px] bg-green-300 flex items-center justify-center">
-            <p>Top posts</p>
-          </div>
-          {/* card secondary */}
-          <div className="w-[360px] h-[389px] bg-green-300 flex items-center justify-center">
-            <p>Top posts</p>
-          </div>
-          {/* card tertinary */}
-          <div className="w-[360px] h-[389px] bg-green-300 flex items-center justify-center">
-            <p>Top posts</p>
-          </div>
-          {/* card quaternary */}
-          <div className="w-[360px] h-[389px] bg-green-300 flex items-center justify-center">
-            <p>Top posts</p>
-          </div>
+        <TitleSection title="Top Posts" />
+        <div className="card-group flex gap-6 flex-wrap">
+          <CardPost isVerticle />
+          <CardPost isVerticle />
+          <CardPost isVerticle />
+          <CardPost isVerticle />
         </div>
       </section>
     </main>
