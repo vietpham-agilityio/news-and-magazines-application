@@ -60,7 +60,7 @@ export const RightSidebar = () => (
           </div>
         </div>
       </div>
-      <div className="w-full  mb-[25px]">
+      <div className="w-full mb-[25px]">
         <TagGroup />
       </div>
     </div>
