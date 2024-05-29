@@ -14,6 +14,9 @@ interface IProps {
     width={width}
     height={height}
     className="rounded-xl"
+    style={{
+      height: `${height}px`,
+    }}
    />
   );
   
