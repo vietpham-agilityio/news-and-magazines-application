@@ -40,7 +40,7 @@ export const Footer = () => (
                 type="text"
                 name="search"
                 id="search"
-                className="h-12 text-p bg-white-100 placeholder-dark-100 rounded-xl pl-3 pr-14 w-full lg:w-100"
+                className="h-12 text-p bg-white-100 placeholder-dark-100 rounded-xl pl-3 pr-14 outline-none w-full lg:w-100"
                 placeholder="Write your email ..."
               />
             </label>
