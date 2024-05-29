@@ -21,7 +21,7 @@ export const SearchBar = memo(
         id={name}
         type={type}
         name={name}
-        className="w-full h-12 bg-white-90 placeholder-dark-100 rounded-xl px-14"
+        className="w-full h-12 bg-white-90 placeholder-dark-100 rounded-xl outline-none px-14"
         placeholder={placeholder}
       />
     </label>

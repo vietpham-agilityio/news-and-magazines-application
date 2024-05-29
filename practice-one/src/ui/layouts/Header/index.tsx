@@ -64,7 +64,7 @@ export const Header = () => (
             type="text"
             name="search"
             id="search"
-            className="h-12 bg-white-90 placeholder-dark-100 rounded-xl px-14 lg:w-100"
+            className="h-12 bg-white-90 placeholder-dark-100 rounded-xl outline-none px-14 lg:w-100"
             placeholder="Search Anything"
           />
         </label>
