@@ -9,7 +9,7 @@ import PersonTwo from "@/images/Person_Play.png";
 import { StaticImageData } from "next/image";
 
 // components
-import { TitleSection, CardPost } from "@/ui/components";
+import { TitleSection, PaperPost } from "@/ui/components";
 
 interface IPostItem {
   id: string;
@@ -73,7 +73,7 @@ export const SidebarCard = ({ listPosts = listPostItems }: IProps) => (
             key={id}
             className={`${index !== listPosts.length - 1 && "mb-5"}`}
           >
-            <CardPost
+            <PaperPost
               title={title}
               content={content}
               imageSrc={imageUrl}

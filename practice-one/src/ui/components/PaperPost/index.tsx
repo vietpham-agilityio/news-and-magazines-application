@@ -11,7 +11,7 @@ interface IProps {
   alt: string;
 }
 
-export const CardPost = ({ title, content, imageSrc, alt }: IProps) => (
+export const PaperPost = ({ title, content, imageSrc, alt }: IProps) => (
   <div className="flex">
     <Image
       className="rounded-xl"

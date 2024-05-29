@@ -13,3 +13,9 @@
     text-wrap: balance;
   }
 }
+
+.shadow-custom {
+  --tw-shadow: 0 -13px 25px -10px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.08);
+  --tw-shadow-colored: 0 -3px 25px -5px var(--tw-shadow-color), 0 10px 10px -5px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
