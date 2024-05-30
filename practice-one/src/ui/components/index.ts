@@ -6,3 +6,4 @@ export * from './SearchBar';
 export * from './BurgerMenu';
 export * from './PaperPost';
 export * from './Card/CardPost';
+export * from './Card/CardSingle';
