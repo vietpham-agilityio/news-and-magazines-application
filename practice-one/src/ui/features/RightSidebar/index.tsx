@@ -68,7 +68,7 @@ export const RightSidebar = () => (
       <SidebarCard />
     </div>
     <div className="flex justify-between gap-5 lg:flex-col">
-      <div className="hidden sm:block">
+      <div className="">
         <Image
           width={360}
           height={180}
