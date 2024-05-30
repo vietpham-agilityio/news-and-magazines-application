@@ -1,30 +1,27 @@
 // componens
 import Image from "next/image";
 import { RightSidebar } from "@/ui/features";
+import { CardPost, TitleSection, Typography } from "@/ui/components";
 
 export default function DetailPage() {
   return (
     <main className="container mx-auto">
       <p className="text-p font-normal my-11">Home</p>
-      <section className="flex flex-col lg:flex-row">
+      <section className="flex flex-col lg:flex-row mb-12">
         {/* article */}
-        <article className="relative flex-1 mb-17.5">
-          <div className="h-[604px] bg-white-90 p-7 mb-[130px] rounded-xl">
-            <h1 className="text-xxl">
+        <article className="flex-1 mb-17.5">
+          <div className="mb-7.5 lg:bg-white-90 lg:p-7 xl:mb-[130px] xl:h-[604px] rounded-xl">
+            <Typography tag="h1" additionalClasses="text-md font-medium sm:text-xxl sm:font-normal mb-7">
               How to Spend the Perfect Day on Croatia’s Most Magical Island
-            </h1>
-          </div>
+            </Typography>
           <Image
-            className="absolute top-[107px] left-7 rounded-xl h-[589px] lg:w-[800px] xl:w-[1072px]"
+            className="mx-auto rounded-xl w-[358px] h-[198px] sm:w-full sm:h-[336px] lg:h-[460px] xl:w-full xl:h-[538px] 2xl:h-[598px] 2xl:w-[1072px]"
             src="https://images.unsplash.com/photo-1513306239747-bca82d7485f3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="fishing"
             width={1072}
             height={598}
-            style={{
-              width: "auto",
-              height: "auto",
-            }}
           />
+          </div>
           <div className="w-[291px] sm:w-[516px] h-5 bg-slate-600 mx-auto mb-12">
             <p>Tag</p>
           </div>
@@ -74,28 +71,14 @@ export default function DetailPage() {
         <RightSidebar />
       </section>
 
-      {/* popular posts */}
-      <section className="popular-posts container flex flex-col justify-between bg-white-100 h-459 mb-25">
-        <div>
-          <p>popular posts</p>
-        </div>
-        <div className="card-group flex gap-6">
-          {/* card first */}
-          <div className="w-[360px] h-[389px] bg-blue-300 flex items-center justify-center">
-            <p>Popular posts</p>
-          </div>
-          {/* card secondary */}
-          <div className="w-[360px] h-[389px] bg-blue-300 flex items-center justify-center">
-            <p>Popular posts</p>
-          </div>
-          {/* card tertinary */}
-          <div className="w-[360px] h-[389px] bg-blue-300 flex items-center justify-center">
-            <p>Popular posts</p>
-          </div>
-          {/* card quaternary */}
-          <div className="w-[360px] h-[389px] bg-blue-300 flex items-center justify-center">
-            <p>Popular posts</p>
-          </div>
+       {/* top posts */}
+       <section className="top-posts container flex flex-col justify-between bg-white-100 h-459 mb-30 sm:mb-7.5 lg:mb-25">
+        <TitleSection title="Popular Posts" />
+        <div className="card-group flex gap-6 overflow-scroll">
+          <CardPost isVerticle />
+          <CardPost isVerticle />
+          <CardPost isVerticle />
+          <CardPost isVerticle />
         </div>
       </section>
     </main>
