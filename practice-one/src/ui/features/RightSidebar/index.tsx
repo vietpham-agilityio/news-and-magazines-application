@@ -1,7 +1,7 @@
 // asset
-import AdvertisingOne from "@/images/Advertising_One.png";
-import AdvertisingTwo from "@/images/Advertising_Two.png";
-import AvatarAuthor from "@/images/Avatar.jpg";
+import AdvertisingOne from "@/images/advertising/advertising-one.png";
+import AdvertisingTwo from "@/images/advertising/advertising-two.png";
+import AvatarAuthor from "@/images/avatar/avatar-author.jpg";
 
 // componens
 import Image from "next/image";

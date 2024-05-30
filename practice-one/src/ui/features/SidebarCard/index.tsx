@@ -1,9 +1,9 @@
 // assets
-import CarImage from "@/images/Car.png";
-import FrogImage from "@/images/Frog.png";
-import FoodImage from "@/images/Food.png";
-import PersonOne from "@/images/Person_Dance.png";
-import PersonTwo from "@/images/Person_Play.png";
+import CarImage from "@/images/square/car.png";
+import FrogImage from "@/images/square/frog.png";
+import FoodImage from "@/images/square/food.png";
+import PersonOne from "@/images/square/person-dance.png";
+import PersonTwo from "@/images/square/person-play.png";
 
 // types
 import { StaticImageData } from "next/image";
