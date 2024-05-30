@@ -2,6 +2,12 @@
 import ScheduleSmallImage from "@/images/widget/sports-widget-small.png";
 import ScheduleMediumImage from "@/images/widget/sports-widget-medium.png";
 import ScheduleLargeImage from "@/images/widget/sports-widget-large.png";
+import WeatherWidget from "@/images/widget/weather-widget.png";
+import CityWeatherParis from "@/images/widget/paris-city-widget.png";
+import CityWeatherAnkara from "@/images/widget/ankara-city-widget.png";
+import CityWeatherBerlin from "@/images/widget/berlin-city-widget.png";
+import CityWeatherAlaska from "@/images/widget/alaska-city-widget.png";
+import CityWeatherAnkaraLarge from "@/images/widget/ankara-city-widget-large.png";
 
 // components
 import Image from "next/image";
@@ -86,7 +92,7 @@ export default function Home() {
       {/* new posts */}
       <section className="new-posts container flex flex-col justify-between bg-white-100">
         <TitleSection title="New Posts" />
-        <div className="grid grid-cols-12 grid-rows-3 gap-6 xl:m-auto overflow-hidden">
+        <div className="grid grid-cols-12 grid-rows-3 gap-6 m-auto overflow-hidden">
           {/* card first */}
           <div className="col-span-12 2xl:col-span-6">
             <CardPost />
@@ -154,28 +160,79 @@ export default function Home() {
         </div>
       </section>
       {/* weather */}
-      <section className="weather w-full flex items-center justify-center bg-dark-75 h-[644px] my-10 sm:mt-7.5 sm:mb-12.5 lg:my-17.5">
+      <section className="weather w-full flex items-center justify-center bg-white-90 p-16 my-10 sm:mt-7.5 sm:mb-12.5 lg:my-17.5">
         <div className="container mx-auto">
           <div className="card-group grid grid-cols-12 grid-rows-2 gap-6">
             {/* card first */}
-            <div className="row-span-2 col-span-6 bg-dark-25 flex items-center justify-center">
-              <p>Weather card</p>
+            <div className="row-span-2 col-span-6 bg-white-90 hidden lg:block rounded-xl">
+              <Image
+                src={WeatherWidget}
+                alt="weather widget"
+                layout="responsive"
+                style={{
+                  width: "auto",
+                  height: "auto",
+                }}
+              />
             </div>
             {/* card secondary */}
-            <div className="h-[210px] col-span-3 bg-dark-25 flex items-center justify-center">
-              <p>Weather card</p>
+            <div className="bg-white-90 rounded-xl col-span-12 row-span-2 block sm:hidden lg:block lg:col-span-3 lg:row-span-1">
+              <Image
+                src={CityWeatherAnkara}
+                alt="weather city widget"
+                layout="responsive"
+                style={{
+                  width: "auto",
+                  height: "auto",
+                }}
+              />
             </div>
             {/* card tertinary */}
-            <div className="h-[210px] col-span-3 bg-dark-25 flex items-center justify-center">
-              <p>Weather card</p>
+            <div className="col-span-3 bg-white-90 rounded-xl hidden lg:block">
+              <Image
+                src={CityWeatherAlaska}
+                alt="weather city widget"
+                layout="responsive"
+                style={{
+                  width: "auto",
+                  height: "auto",
+                }}
+              />
             </div>
             {/* card quaternary */}
-            <div className="h-[210px] col-span-3 bg-dark-25 flex items-center justify-center">
-              <p>Weather card</p>
+            <div className="col-span-3 bg-white-90 rounded-xl hidden lg:block">
+              <Image
+                src={CityWeatherParis}
+                alt="weather city widget"
+                layout="responsive"
+                style={{
+                  width: "auto",
+                  height: "auto",
+                }}
+              />
             </div>
             {/* card quaternary */}
-            <div className="h-[210px] col-span-3 bg-dark-25 flex items-center justify-center">
-              <p>Weather card</p>
+            <div className="col-span-3 bg-white-90 rounded-xl hidden lg:block">
+              <Image
+                src={CityWeatherBerlin}
+                alt="weather city widget"
+                layout="responsive"
+                style={{
+                  width: "auto",
+                  height: "auto",
+                }}
+              />
+            </div>
+            <div className="col-span-12 row-span-2 bg-white-90 rounded-xl hidden sm:block lg:hidden">
+              <Image
+                src={CityWeatherAnkaraLarge}
+                alt="weather city widget"
+                layout="responsive"
+                style={{
+                  width: "auto",
+                  height: "auto",
+                }}
+              />
             </div>
           </div>
         </div>
