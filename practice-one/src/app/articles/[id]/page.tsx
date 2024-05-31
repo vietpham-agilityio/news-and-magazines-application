@@ -1,7 +1,7 @@
 // componens
 import Image from "next/image";
 import { RightSidebar } from "@/ui/features";
-import { CardPost, TitleSection, Typography } from "@/ui/components";
+import { TitleSection, Typography } from "@/ui/components";
 
 export default function DetailPage() {
   return (
@@ -72,13 +72,26 @@ export default function DetailPage() {
       </section>
 
        {/* top posts */}
-       <section className="top-posts container flex flex-col justify-between bg-white-100 h-459 mb-30 sm:mb-7.5 lg:mb-25">
+       {/* popular posts */}
+       <section className="popular-posts container flex flex-col justify-between bg-white-100 h-459 mb-25">
         <TitleSection title="Popular Posts" />
-        <div className="card-group flex gap-6 overflow-scroll">
-          <CardPost isVerticle />
-          <CardPost isVerticle />
-          <CardPost isVerticle />
-          <CardPost isVerticle />
+        <div className="card-group flex gap-6">
+          {/* card first */}
+          <div className="w-[360px] h-[389px] bg-blue-300 flex items-center justify-center">
+            <p>Popular posts</p>
+          </div>
+          {/* card secondary */}
+          <div className="w-[360px] h-[389px] bg-blue-300 flex items-center justify-center">
+            <p>Popular posts</p>
+          </div>
+          {/* card tertinary */}
+          <div className="w-[360px] h-[389px] bg-blue-300 flex items-center justify-center">
+            <p>Popular posts</p>
+          </div>
+          {/* card quaternary */}
+          <div className="w-[360px] h-[389px] bg-blue-300 flex items-center justify-center">
+            <p>Popular posts</p>
+          </div>
         </div>
       </section>
     </main>
