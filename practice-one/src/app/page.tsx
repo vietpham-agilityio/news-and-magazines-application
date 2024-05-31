@@ -11,8 +11,11 @@ import CityWeatherAnkaraLarge from "@/images/widget/ankara-city-widget-large.png
 
 // components
 import Image from "next/image";
-import { TitleSection, CardPost, CardSingle } from "@/ui/components";
+import { TitleSection, CardSingle } from "@/ui/components";
+import CardPost from "@/ui/components/Card/CardPost";
 import { HashtagGroup } from "@/ui/features";
+import PostsByAttribute from "@/ui/features/PostsByAttribute";
+import { PostVariant, CardType } from "@/types";
 
 export default function Home() {
   return (
@@ -49,12 +52,7 @@ export default function Home() {
       {/* popular posts */}
       <section className="popular-posts container flex flex-col justify-between bg-white-100 h-459 mt-7.5 sm:my-0">
         <TitleSection title="Popular Posts" />
-        <div className="card-group flex gap-6 flex-wrap overflow-hidden">
-          <CardPost isVerticle />
-          <CardPost isVerticle />
-          <CardPost isVerticle />
-          <CardPost isVerticle />
-        </div>
+        <PostsByAttribute attribute={PostVariant.POPULAR} cardType={CardType.VERTICAL} />
       </section>
       {/* scheduler */}
       <section className="w-full flex items-center justify-center my-10 sm:mt-9 sm:mb-12.5 lg:my-17.5">
@@ -95,27 +93,27 @@ export default function Home() {
         <div className="grid grid-cols-12 grid-rows-3 gap-6 m-auto overflow-hidden">
           {/* card first */}
           <div className="col-span-12 2xl:col-span-6">
-            <CardPost />
+            <CardPost authorId="1" />
           </div>
           {/* card secondary */}
           <div className="col-span-12 2xl:col-span-6">
-            <CardPost />
+            <CardPost authorId="1" />
           </div>
           {/* card tertinary */}
           <div className="col-span-12 2xl:col-span-6">
-            <CardPost />
+            <CardPost authorId="1" />
           </div>
           {/* card quaternary */}
           <div className="col-span-12 2xl:col-span-6">
-            <CardPost />
+            <CardPost authorId="1" />
           </div>
           {/* card quaternary */}
           <div className="col-span-12 2xl:col-span-6">
-            <CardPost />
+            <CardPost authorId="1" />
           </div>
           {/* card quaternary */}
           <div className="col-span-12 2xl:col-span-6">
-            <CardPost />
+            <CardPost authorId="1" />
           </div>
         </div>
       </section>
@@ -152,12 +150,7 @@ export default function Home() {
       {/* trendy posts */}
       <section className="trendy-posts container flex flex-col justify-between bg-white-100 h-459 overflow-hidden">
         <TitleSection title="Trendy Posts" />
-        <div className="card-group flex gap-6 flex-wrap">
-          <CardPost isVerticle />
-          <CardPost isVerticle />
-          <CardPost isVerticle />
-          <CardPost isVerticle />
-        </div>
+        <PostsByAttribute attribute={PostVariant.TRENDY} cardType={CardType.VERTICAL} />
       </section>
       {/* weather */}
       <section className="weather w-full flex items-center justify-center bg-white-90 p-16 my-10 sm:mt-7.5 sm:mb-12.5 lg:my-17.5">
@@ -240,12 +233,7 @@ export default function Home() {
       {/* top posts */}
       <section className="top-posts container flex flex-col justify-between bg-white-100 h-459 mb-30 sm:mb-7.5 lg:mb-25">
         <TitleSection title="Top Posts" />
-        <div className="card-group flex gap-6 flex-wrap overflow-hidden">
-          <CardPost isVerticle />
-          <CardPost isVerticle />
-          <CardPost isVerticle />
-          <CardPost isVerticle />
-        </div>
+        <PostsByAttribute attribute={PostVariant.TOP} cardType={CardType.VERTICAL} />
       </section>
     </main>
   );
