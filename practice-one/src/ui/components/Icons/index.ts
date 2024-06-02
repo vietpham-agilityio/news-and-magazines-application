@@ -12,6 +12,7 @@ export * from './ThreeDots';
 export * from './Instagram';
 export * from './BurgerMenu';
 export * from './ChevronsUp';
+export * from './ArrowLeft';
 export * from './ArrowRight';
 export * from './PaperPlane';
 export * from './ArrowBottom';
