@@ -9,12 +9,17 @@ import CityWeatherBerlin from "@/images/widget/berlin-city-widget.png";
 import CityWeatherAlaska from "@/images/widget/alaska-city-widget.png";
 import CityWeatherAnkaraLarge from "@/images/widget/ankara-city-widget-large.png";
 
+// constants
+import { listSlider } from "@/constants";
+
 // components
 import Image from "next/image";
-import { TitleSection, CardSingle } from "@/ui/components";
+import { TitleSection, CardSingle, Carousel } from "@/ui/components";
 import CardPost from "@/ui/components/Card/CardPost";
 import { HashtagGroup } from "@/ui/features";
 import PostsByAttribute from "@/ui/features/PostsByAttribute";
+
+// types
 import { PostVariant, CardType } from "@/types";
 
 export default function Home() {
@@ -45,14 +50,17 @@ export default function Home() {
           />
         </div>
         {/* slide card */}
-        <div className="h-full bg-red-700 flex flex-1 items-center justify-center ">
-          <p>Fanstatic post</p>
+        <div className="h-full flex flex-1 items-center justify-center ">
+          <Carousel listSlider={listSlider} />
         </div>
       </section>
       {/* popular posts */}
       <section className="popular-posts container flex flex-col justify-between bg-white-100 h-459 mt-7.5 sm:my-0">
         <TitleSection title="Popular Posts" />
-        <PostsByAttribute attribute={PostVariant.POPULAR} cardType={CardType.VERTICAL} />
+        <PostsByAttribute
+          attribute={PostVariant.POPULAR}
+          cardType={CardType.VERTICAL}
+        />
       </section>
       {/* scheduler */}
       <section className="w-full flex items-center justify-center my-10 sm:mt-9 sm:mb-12.5 lg:my-17.5">
@@ -150,7 +158,10 @@ export default function Home() {
       {/* trendy posts */}
       <section className="trendy-posts container flex flex-col justify-between bg-white-100 h-459 overflow-hidden">
         <TitleSection title="Trendy Posts" />
-        <PostsByAttribute attribute={PostVariant.TRENDY} cardType={CardType.VERTICAL} />
+        <PostsByAttribute
+          attribute={PostVariant.TRENDY}
+          cardType={CardType.VERTICAL}
+        />
       </section>
       {/* weather */}
       <section className="weather w-full flex items-center justify-center bg-white-90 p-16 my-10 sm:mt-7.5 sm:mb-12.5 lg:my-17.5">
@@ -233,7 +244,10 @@ export default function Home() {
       {/* top posts */}
       <section className="top-posts container flex flex-col justify-between bg-white-100 h-459 mb-30 sm:mb-7.5 lg:mb-25">
         <TitleSection title="Top Posts" />
-        <PostsByAttribute attribute={PostVariant.TOP} cardType={CardType.VERTICAL} />
+        <PostsByAttribute
+          attribute={PostVariant.TOP}
+          cardType={CardType.VERTICAL}
+        />
       </section>
     </main>
   );
