@@ -8,6 +8,7 @@ export const ArrowLeft = ({ color="#3E3232"}: IProps) => (
     width={9}
     height={13}
     fill="none"
+    data-testid= "arrow-left"
   >
     <path
       fill={color}

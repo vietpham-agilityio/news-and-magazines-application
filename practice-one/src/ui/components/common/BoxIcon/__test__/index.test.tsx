@@ -8,9 +8,6 @@ import { Close } from '@/ui/components/Icons';
 let renderBoxIcon: any;
 const onClickMock = jest.fn();
 
-const srcImage =
-  'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=250&q=80';
-
 describe('BoxIcon component', () => {
   beforeEach(() => {
     renderBoxIcon = render(<BoxIcon icon={<Close />} onClick={onClickMock} />);
@@ -32,16 +29,9 @@ describe('BoxIcon component', () => {
   });
 
   it('BoxIcon should contain icon', () => {
-    const { getByTestId } = render(
-      <BoxIcon
-        icon={<Close data-testid="box-icon" />}
-        onClick={onClickMock}
-        height="10"
-        width="10"
-      />
-    );
+    const { getByTestId } = renderBoxIcon
 
-    const iconElement = getByTestId('box-icon');
+    const iconElement = getByTestId('close-icon');
 
     expect(iconElement).toBeInTheDocument();
   });

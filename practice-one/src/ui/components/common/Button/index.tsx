@@ -1,8 +1,8 @@
 // components
-import { Typography } from "@/ui/components/common";
+import { Typography } from '@/ui/components/common';
 
 // constants
-import { Size } from "@/types";
+import { Size } from '@/types';
 
 interface IProps {
   label: string;
@@ -11,6 +11,7 @@ interface IProps {
   leftIcon?: JSX.Element;
   bgColor?: string;
   isMarginBottom?: boolean;
+  onClick: () => void;
 }
 
 export const Button = ({
@@ -20,12 +21,14 @@ export const Button = ({
   leftIcon,
   bgColor,
   isMarginBottom = false,
+  onClick,
 }: IProps) => (
   <button
-    className={`${bgColor} flex items-center py-2.5 rounded-xl hover:opacity-80 ${leftIcon && "pr-6 pl-4"} ${leftIcon && "pr-6 pl-4"}`}
+    className={`${bgColor} flex items-center py-2.5 rounded-xl hover:opacity-80 ${leftIcon && 'pr-6 pl-4'} ${leftIcon && 'pr-6 pl-4'}`}
+    onClick={onClick}
   >
     {leftIcon && (
-      <i className={`mr-2 ${isMarginBottom && "mb-1"}`}>{leftIcon}</i>
+      <i className={`mr-2 ${isMarginBottom && 'mb-1'}`}>{leftIcon}</i>
     )}
     <Typography
       tag="p"

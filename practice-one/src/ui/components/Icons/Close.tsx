@@ -1,13 +1,14 @@
 interface IProps {
-    color?: string;
-  }
+  color?: string;
+}
 
-export const Close = ({ color="#3E3232"}: IProps) => (
+export const Close = ({ color = '#3E3232' }: IProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={14}
     height={14}
     fill="none"
+    data-testid="close-icon"
   >
     <path
       fill={color}
