@@ -4,6 +4,7 @@ const config: Config = {
   content: [
     "./src/ui/**/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/ui/**/**/*.stories.@(js|jsx|ts|tsx)",
   ],
   theme: {
     extend: {
