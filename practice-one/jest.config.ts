@@ -18,6 +18,7 @@ const config: Config = {
   collectCoverage: true,
   coverageDirectory: "coverage",
   testEnvironment: "jsdom",
+  setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],
   collectCoverageFrom: [
     '**/*.tsx',
     '!**/app/**',
