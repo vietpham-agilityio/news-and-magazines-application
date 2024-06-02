@@ -1,14 +1,22 @@
 interface IProps {
-    icon: React.JSX.Element;
-    onClick?: () => void;
-  }
-  
-  export const BoxIcon = ({ icon, onClick }: IProps) => (
-    <div
-      className="w-12 h-12 bg-white-90 flex items-center justify-center rounded-xl"
-      onClick={onClick}
-    >
+  icon: React.JSX.Element;
+  additionalClasses?: string;
+  width?: string;
+  height?: string;
+  onClick?: () => void;
+}
+
+export const BoxIcon = ({
+  icon,
+  width = "12",
+  height = "12",
+  additionalClasses,
+  onClick,
+}: IProps) => (
+  <button
+    className={`w-${width} h-${height} bg-white-90 flex items-center justify-center rounded-xl ${additionalClasses}`}
+    onClick={onClick}
+  >
     { icon }
-  </div>
-  );
-  
+  </button>
+);
