@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BoxIcon component should render BoxIcon macth snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="w-12 h-12 bg-white-90 flex items-center justify-center rounded-xl undefined"
+  >
+    <svg
+      fill="none"
+      height="14"
+      width="14"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12.86 11.14c.507.47.507 1.29 0 1.758a1.212 1.212 0 0 1-.86.352c-.352 0-.664-.117-.898-.352L7 8.797l-4.14 4.101a1.212 1.212 0 0 1-.86.352c-.352 0-.664-.117-.898-.352a1.205 1.205 0 0 1 0-1.757L5.203 7 1.102 2.898a1.205 1.205 0 0 1 0-1.757 1.205 1.205 0 0 1 1.757 0L7 5.242l4.102-4.101a1.205 1.205 0 0 1 1.757 0c.508.468.508 1.289 0 1.757L8.758 7.04l4.101 4.102Z"
+        fill="#3E3232"
+      />
+    </svg>
+  </button>
+</DocumentFragment>
+`;
