@@ -22,9 +22,9 @@ export const Typography = ({
 
   return (
     <SemanticTag
-      className={`text-${textSize} font-${weight} ${additionalClasses}`}
+      className={`text-${textSize} font-${weight} ${additionalClasses}`} role="heading"
     >
-      {children}
+      { children }
     </SemanticTag>
   );
 };
