@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export enum PostVariant {
   TRENDY = "likes",
   TOP = "views",
@@ -24,3 +26,12 @@ export interface PostResponse {
   id: number;
   attributes: PostDataItem;
 }
+
+export interface IPostItem {
+  id: string;
+  title: string;
+  content: string;
+  imageUrl: string | StaticImageData;
+  alt: string;
+}
+
