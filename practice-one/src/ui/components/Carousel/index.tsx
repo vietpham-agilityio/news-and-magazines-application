@@ -98,7 +98,7 @@ export const Carousel = ({
         height="10"
         additionalClasses="absolute right-4 top-1/2 hover:opacity-80"
         icon={<ArrowRight />}
-        onClick={goToPrevious}
+        onClick={goToNext}
       />
 
       <div className="flex absolute bottom-4 right-6">
