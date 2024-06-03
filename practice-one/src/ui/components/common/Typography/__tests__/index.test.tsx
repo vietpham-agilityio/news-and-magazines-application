@@ -1,5 +1,4 @@
 import { render, screen, cleanup } from '@testing-library/react';
-import '@testing-library/jest-dom';
 
 // component
 import { Typography } from '@/ui/components';
