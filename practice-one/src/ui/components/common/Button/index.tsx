@@ -11,7 +11,7 @@ interface IProps {
   leftIcon?: JSX.Element;
   bgColor?: string;
   isMarginBottom?: boolean;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 export const Button = ({
