@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SubMenu component should render SubMenu macth snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center justify-center py-5 px-4 w-[360px] bg-white-100 rounded-xl shadow-xl"
+  >
+    <ul
+      class="list-none w-full grid grid-cols-2 grid-rows-5"
+    >
+      <li
+        class="mb-2 last:mb-0"
+      >
+        <a
+          href="/category/worldnews"
+        >
+          <p
+            class="text-xs font-medium text-dark-75 hover:text-secondary-100 cursor-pointer"
+            role="heading"
+          >
+            World News
+          </p>
+        </a>
+      </li>
+      <li
+        class="mb-2 last:mb-0"
+      >
+        <a
+          href="/category/nationalnews"
+        >
+          <p
+            class="text-xs font-medium text-dark-75 hover:text-secondary-100 cursor-pointer"
+            role="heading"
+          >
+            National News
+          </p>
+        </a>
+      </li>
+      <li
+        class="mb-2 last:mb-0"
+      >
+        <a
+          href="/category/localnews"
+        >
+          <p
+            class="text-xs font-medium text-dark-75 hover:text-secondary-100 cursor-pointer"
+            role="heading"
+          >
+            Local News
+          </p>
+        </a>
+      </li>
+      <li
+        class="mb-2 last:mb-0"
+      >
+        <a
+          href="/category/business-and-finance"
+        >
+          <p
+            class="text-xs font-medium text-dark-75 hover:text-secondary-100 cursor-pointer"
+            role="heading"
+          >
+            Business and Finance
+          </p>
+        </a>
+      </li>
+      <li
+        class="mb-2 last:mb-0"
+      >
+        <a
+          href="/category/technology"
+        >
+          <p
+            class="text-xs font-medium text-dark-75 hover:text-secondary-100 cursor-pointer"
+            role="heading"
+          >
+            Technology
+          </p>
+        </a>
+      </li>
+      <li
+        class="mb-2 last:mb-0"
+      >
+        <a
+          href="/category/health-and-wellness"
+        >
+          <p
+            class="text-xs font-medium text-dark-75 hover:text-secondary-100 cursor-pointer"
+            role="heading"
+          >
+            Health and Wellness
+          </p>
+        </a>
+      </li>
+      <li
+        class="mb-2 last:mb-0"
+      >
+        <a
+          href="/category/science-and-environment"
+        >
+          <p
+            class="text-xs font-medium text-dark-75 hover:text-secondary-100 cursor-pointer"
+            role="heading"
+          >
+            Science and Environment
+          </p>
+        </a>
+      </li>
+      <li
+        class="mb-2 last:mb-0"
+      >
+        <a
+          href="/category/entertainment"
+        >
+          <p
+            class="text-xs font-medium text-dark-75 hover:text-secondary-100 cursor-pointer"
+            role="heading"
+          >
+            Entertainment
+          </p>
+        </a>
+      </li>
+      <li
+        class="mb-2 last:mb-0"
+      >
+        <a
+          href="/category/sports"
+        >
+          <p
+            class="text-xs font-medium text-dark-75 hover:text-secondary-100 cursor-pointer"
+            role="heading"
+          >
+            Sports
+          </p>
+        </a>
+      </li>
+      <li
+        class="mb-2 last:mb-0"
+      >
+        <a
+          href="/category/lifestyle"
+        >
+          <p
+            class="text-xs font-medium text-dark-75 hover:text-secondary-100 cursor-pointer"
+            role="heading"
+          >
+            Lifestyle
+          </p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;

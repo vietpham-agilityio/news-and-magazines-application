@@ -13,7 +13,7 @@ interface IProps {
   onClick: () => void;
 }
 
-export const SubMenu = ({ listItem = [], onClick }: IProps) => (
+export const SubMenu = ({ listItem, onClick }: IProps) => (
   <div className={`${flexCenter} py-5 px-4 w-[360px] bg-white-100 rounded-xl shadow-xl`}>
     <ul className="list-none w-full grid grid-cols-2 grid-rows-5">
       {listItem.map((item) => (
