@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Button } from '.';
+import { Button } from '@/ui/components';
 import { ArrowRight } from '@/ui/components/Icons';
 
 const meta = {

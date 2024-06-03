@@ -25,17 +25,17 @@ describe('Button component', () => {
     renderButton.unmount();
   });
 
-  it('should render Button macth snapshot', () => {
+  it('Button should render Button macth snapshot', () => {
     expect(renderButton.asFragment()).toMatchSnapshot();
   });
 
-  it('should render Avatar alt value to macth snapshot', () => {
+  it('Button should render label alt value to macth snapshot', () => {
     const labelValue = screen.getByText('Subcriber');
 
     expect(labelValue).toBeInTheDocument();
   });
 
-  it('button should trigger event when clicked', () => {
+  it('Button should trigger event when clicked', () => {
     const buttonElement = screen.getByRole('button');
 
     fireEvent.click(buttonElement);
