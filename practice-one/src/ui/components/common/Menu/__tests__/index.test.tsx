@@ -2,7 +2,9 @@ import { render, screen, cleanup, fireEvent } from '@testing-library/react';
 
 // component
 import { Menu } from '@/ui/components';
-import { listCategories } from '@/constants';
+
+// mocks
+import { listCategories } from '@/mocks';
 
 let renderMenu: any;
 const menuName = 'Categories';
@@ -26,17 +28,4 @@ describe('Menu component', () => {
 
     fireEvent.click(menuElement);
   });
-
-
-//   it('should render name value to macth snapshot', () => {
-//     const nameValue = screen.getByText(name);
-
-//     expect(nameValue).toBeInTheDocument();
-//   });
-
-//   it('should render information value to macth snapshot', () => {
-//     const informationValue = screen.getByText(date);
-
-//     expect(informationValue).toBeInTheDocument();
-//   });
 });

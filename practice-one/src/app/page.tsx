@@ -9,8 +9,8 @@ import CityWeatherBerlin from "@/images/widget/berlin-city-widget.png";
 import CityWeatherAlaska from "@/images/widget/alaska-city-widget.png";
 import CityWeatherAnkaraLarge from "@/images/widget/ankara-city-widget-large.png";
 
-// constants
-import { listSlider } from "@/constants";
+// mocks data
+import { listSlider } from "@/mocks";
 
 // components
 import Image from "next/image";

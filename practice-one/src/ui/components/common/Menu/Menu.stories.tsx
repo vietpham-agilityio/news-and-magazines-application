@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 import { Menu } from '@/ui/components';
 
-import { listCategories } from '@/constants';
+import { listCategories } from '@/mocks';
 
 const meta = {
   title: 'Components/Menu',

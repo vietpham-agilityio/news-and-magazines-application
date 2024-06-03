@@ -1,23 +1,11 @@
-// constants
-import { flexItemCenter } from "@/constants";
-import { FontWeight, Size } from "@/types";
+// types
+import { ITagItem, Size } from "@/types";
+
+// mocks
+import { listTagItems } from "@/mocks";
 
 // components
 import { TitleSection, Typography } from "@/ui/components";
-
-interface ITagItem {
-  id: string;
-  tagName: string;
-}
-
-const listTagItems: ITagItem[] = [
-  { id: "1", tagName: "Montenegro" },
-  { id: "2", tagName: "Visit Croatia" },
-  { id: "3", tagName: "Luxury Travel" },
-  { id: "4", tagName: "Travel Log" },
-  { id: "5", tagName: "Paradise Island" },
-  { id: "6", tagName: "Travel Info" },
-];
 
 interface IProps {
   listTags?: ITagItem[];

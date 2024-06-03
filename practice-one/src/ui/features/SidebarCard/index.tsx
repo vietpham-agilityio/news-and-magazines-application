@@ -1,61 +1,11 @@
-// assets
-import CarImage from "@/images/square/car.png";
-import FrogImage from "@/images/square/frog.png";
-import FoodImage from "@/images/square/food.png";
-import PersonOne from "@/images/square/person-dance.png";
-import PersonTwo from "@/images/square/person-play.png";
-
-// types
-import { StaticImageData } from "next/image";
+// mocks
+import { listPostItems } from "@/mocks";
 
 // components
 import { TitleSection, PaperPost } from "@/ui/components";
 
-interface IPostItem {
-  id: string;
-  title: string;
-  content: string;
-  imageUrl: string | StaticImageData;
-  alt: string;
-}
-
-const listPostItems: IPostItem[] = [
-  {
-    id: "1",
-    title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
-    content: "Subhead",
-    imageUrl: CarImage,
-    alt: "Top post",
-  },
-  {
-    id: "2",
-    title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
-    content: "Subhead",
-    imageUrl: FrogImage,
-    alt: "Top post",
-  },
-  {
-    id: "3",
-    title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
-    content: "Subhead",
-    imageUrl: PersonOne,
-    alt: "Top post",
-  },
-  {
-    id: "4",
-    title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
-    content: "Subhead",
-    imageUrl: FoodImage,
-    alt: "Top post",
-  },
-  {
-    id: "5",
-    title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
-    content: "Subhead",
-    imageUrl: PersonTwo,
-    alt: "Top post",
-  },
-];
+// types
+import { IPostItem } from "@/types";
 
 interface IProps {
   listPosts?: IPostItem[];
