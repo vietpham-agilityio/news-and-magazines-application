@@ -23,9 +23,13 @@ export const Menu = ({ name, listMenu }: IProps) => {
 
   return (
     <>
-      <div className="flex items-center relative hover:cursor-pointer" onClick={handleToggleSubMenu}>
+      <div
+       data-testid="menu-item"
+       className="flex items-center relative hover:cursor-pointer"
+       onClick={handleToggleSubMenu}
+      >
         <p
-          className={`text-sm font-medium text-dark-100 hover:text-primary-100 ${listMenu && "mr-2"} `}
+          className="text-sm font-medium text-dark-100 hover:text-primary-100 mr-2"
         >
           { name }
         </p>
