@@ -20,7 +20,7 @@ export const Button = ({
   rightIcon,
   leftIcon,
   bgColor,
-  isMarginBottom = false,
+  isMarginBottom,
   onClick,
 }: IProps) => (
   <button
