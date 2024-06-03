@@ -3,10 +3,13 @@
 import { useState, useCallback } from "react";
 
 // constants
-import { flexItemCenter, listCategories } from "@/constants";
+import { flexItemCenter } from "@/constants";
+
+// mocks
+import { listCategories } from "@/mocks";
 
 // components
-import { BoxIcon, Brand, NavItem, SubMenu, Typography } from "@/ui/components";
+import { BoxIcon, Brand, NavItem, Typography } from "@/ui/components";
 import Link from "next/link";
 
 // icons

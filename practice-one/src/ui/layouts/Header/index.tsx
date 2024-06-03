@@ -1,5 +1,5 @@
-// constants
-import { listCategories, listNavItems } from "@/constants";
+// mocks
+import { listCategories, listNavItems } from "@/mocks";
 
 // components
 import {

@@ -1,5 +1,8 @@
 // constants
-import { flexItemCenter, listTypePosts } from "@/constants";
+import { flexItemCenter } from "@/constants";
+
+// mocks
+import { listTypePosts } from "@/mocks";
 
 export default function CategoryPage() {
   const listTypeContents = listTypePosts.map((type, index) => {
