@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Brand component should render Brand macth snapshot 1`] = `
+<DocumentFragment>
+  <a
+    href="mega.news.vn"
+  >
+    <h1
+      class="text-lg font-bold text-secondary-100"
+    >
+      MEGA.news
+    </h1>
+  </a>
+</DocumentFragment>
+`;
