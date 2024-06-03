@@ -1,8 +1,12 @@
-import { PostResponse, PostVariant } from "@/types";
-import { SERVER_BASE_URL } from "@/constants";
+import { PostResponse, PostVariant } from '@/types';
+import { SERVER_BASE_URL } from '@/constants';
 
 interface PostsResponse {
   data: PostResponse[];
+}
+
+interface PostDataResponse {
+  data: PostResponse;
 }
 
 async function getPostDataByAttribute(
@@ -10,10 +14,12 @@ async function getPostDataByAttribute(
 ): Promise<PostsResponse> {
   const queryByAttribute = `sort=${attribute}:desc`;
 
-  const res = await fetch(`${SERVER_BASE_URL}/api/posts?${queryByAttribute}`);
+  const res = await fetch(`${SERVER_BASE_URL}/api/posts?${queryByAttribute}`, {
+    next: { revalidate: 3600 },
+  });
 
   if (!res.ok) {
-    throw new Error("Failed to fetch data");
+    throw new Error('Failed to fetch data');
   }
 
   const data = res.json();
@@ -21,11 +27,14 @@ async function getPostDataByAttribute(
   return data;
 }
 
-async function getAuthorById(id: string) {
-  const res = await fetch(`${SERVER_BASE_URL}/api/authors/${id}`);
+async function getPostDataById(
+  id: number
+): Promise<PostDataResponse> {
+
+  const res = await fetch(`${SERVER_BASE_URL}/api/posts/${id}`);
 
   if (!res.ok) {
-    throw new Error("Failed to fetch data");
+    throw new Error('Failed to fetch data');
   }
 
   const data = res.json();
@@ -33,4 +42,4 @@ async function getAuthorById(id: string) {
   return data;
 }
 
-export { getPostDataByAttribute, getAuthorById };
+export { getPostDataByAttribute, getPostDataById };

@@ -1,26 +1,26 @@
 // assets
-import ScheduleSmallImage from "@/images/widget/sports-widget-small.png";
-import ScheduleMediumImage from "@/images/widget/sports-widget-medium.png";
-import ScheduleLargeImage from "@/images/widget/sports-widget-large.png";
-import WeatherWidget from "@/images/widget/weather-widget.png";
-import CityWeatherParis from "@/images/widget/paris-city-widget.png";
-import CityWeatherAnkara from "@/images/widget/ankara-city-widget.png";
-import CityWeatherBerlin from "@/images/widget/berlin-city-widget.png";
-import CityWeatherAlaska from "@/images/widget/alaska-city-widget.png";
-import CityWeatherAnkaraLarge from "@/images/widget/ankara-city-widget-large.png";
+import ScheduleSmallImage from '@/images/widget/sports-widget-small.png';
+import ScheduleMediumImage from '@/images/widget/sports-widget-medium.png';
+import ScheduleLargeImage from '@/images/widget/sports-widget-large.png';
+import WeatherWidget from '@/images/widget/weather-widget.png';
+import CityWeatherParis from '@/images/widget/paris-city-widget.png';
+import CityWeatherAnkara from '@/images/widget/ankara-city-widget.png';
+import CityWeatherBerlin from '@/images/widget/berlin-city-widget.png';
+import CityWeatherAlaska from '@/images/widget/alaska-city-widget.png';
+import CityWeatherAnkaraLarge from '@/images/widget/ankara-city-widget-large.png';
 
 // mocks data
-import { listSlider } from "@/mocks";
+import { listSlider } from '@/mocks';
 
 // components
-import Image from "next/image";
-import { TitleSection, CardSingle, Carousel } from "@/ui/components";
-import CardPost from "@/ui/components/Card/CardPost";
-import { HashtagGroup } from "@/ui/features";
-import PostsByAttribute from "@/ui/features/PostsByAttribute";
+import Image from 'next/image';
+import { TitleSection, CardSingle, Carousel } from '@/ui/components';
+import CardPost from '@/ui/components/Card/CardPost';
+import { HashtagGroup } from '@/ui/features';
+import PostsByAttribute from '@/ui/features/PostsByAttribute';
 
 // types
-import { PostVariant, CardType } from "@/types";
+import { PostVariant, CardType } from '@/types';
 
 export default function Home() {
   return (
@@ -70,8 +70,8 @@ export default function Home() {
           className="hidden lg:block"
           layout="responsive"
           style={{
-            width: "full",
-            height: "auto",
+            width: 'full',
+            height: 'auto',
           }}
         />
         <Image
@@ -80,8 +80,8 @@ export default function Home() {
           className="hidden sm:block lg:hidden"
           layout="responsive"
           style={{
-            width: "full",
-            height: "auto",
+            width: 'full',
+            height: 'auto',
           }}
         />
         <Image
@@ -90,8 +90,8 @@ export default function Home() {
           className="sm:hidden"
           layout="responsive"
           style={{
-            width: "full",
-            height: "auto",
+            width: 'full',
+            height: 'auto',
           }}
         />
       </section>
@@ -174,8 +174,8 @@ export default function Home() {
                 alt="weather widget"
                 layout="responsive"
                 style={{
-                  width: "auto",
-                  height: "auto",
+                  width: 'auto',
+                  height: 'auto',
                 }}
               />
             </div>
@@ -186,8 +186,8 @@ export default function Home() {
                 alt="weather city widget"
                 layout="responsive"
                 style={{
-                  width: "auto",
-                  height: "auto",
+                  width: 'auto',
+                  height: 'auto',
                 }}
               />
             </div>
@@ -198,8 +198,8 @@ export default function Home() {
                 alt="weather city widget"
                 layout="responsive"
                 style={{
-                  width: "auto",
-                  height: "auto",
+                  width: 'auto',
+                  height: 'auto',
                 }}
               />
             </div>
@@ -210,8 +210,8 @@ export default function Home() {
                 alt="weather city widget"
                 layout="responsive"
                 style={{
-                  width: "auto",
-                  height: "auto",
+                  width: 'auto',
+                  height: 'auto',
                 }}
               />
             </div>
@@ -222,8 +222,8 @@ export default function Home() {
                 alt="weather city widget"
                 layout="responsive"
                 style={{
-                  width: "auto",
-                  height: "auto",
+                  width: 'auto',
+                  height: 'auto',
                 }}
               />
             </div>
@@ -233,8 +233,8 @@ export default function Home() {
                 alt="weather city widget"
                 layout="responsive"
                 style={{
-                  width: "auto",
-                  height: "auto",
+                  width: 'auto',
+                  height: 'auto',
                 }}
               />
             </div>
