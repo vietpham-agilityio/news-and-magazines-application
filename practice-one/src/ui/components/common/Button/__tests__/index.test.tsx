@@ -24,7 +24,7 @@ describe('Button component', () => {
     renderButton.unmount();
   });
 
-  it('Button should render Button macth snapshot', () => {
+  it('Button should render macth snapshot', () => {
     expect(renderButton.asFragment()).toMatchSnapshot();
   });
 
