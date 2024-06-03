@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography component Typography should render Typography macth snapshot 1`] = `
+<DocumentFragment>
+  <h1
+    class="text-md font-medium "
+    role="heading"
+  >
+    This typography
+  </h1>
+</DocumentFragment>
+`;
