@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Comment component should render Comment macth snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="bg-white-90 p-4 rounded-xl"
+  >
+    <p
+      class="text-sm font-medium text-dark-100"
+      role="heading"
+    >
+      Raiden
+    </p>
+    <p
+      class="text-md font-light text-p text-dark-75"
+      role="heading"
+    >
+      How the weather today?
+    </p>
+  </div>
+</DocumentFragment>
+`;
