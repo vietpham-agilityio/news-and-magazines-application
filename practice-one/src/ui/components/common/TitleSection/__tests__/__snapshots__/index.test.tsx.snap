@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TitleSection component TitleSection should render macth snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center"
+  >
+    <div
+      class="w-1 h-[11px] bg-primary-100 rounded-2xl mr-1.5"
+    />
+    <h2
+      class="text-md font-medium text-dark-100 leading-6"
+      role="heading"
+    >
+      Popular Posts
+    </h2>
+  </div>
+</DocumentFragment>
+`;
