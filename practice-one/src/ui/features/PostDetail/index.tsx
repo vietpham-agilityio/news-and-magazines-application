@@ -9,6 +9,8 @@ import { Typography, Tag } from '@/ui/components';
 
 // type
 import { FontWeight, Size } from '@/types';
+
+// icons
 import { ChatBox, File, Schedule } from '@/ui/components/Icons';
 
 export default memo(async function PostDetail({ postId }: { postId: number }) {

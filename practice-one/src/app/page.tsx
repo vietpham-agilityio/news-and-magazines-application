@@ -14,10 +14,9 @@ import { listSlider } from '@/mocks';
 
 // components
 import Image from 'next/image';
-import { TitleSection, CardSingle, Carousel } from '@/ui/components';
 import CardPost from '@/ui/components/Card/CardPost';
-import { HashtagGroup } from '@/ui/features';
-import PostsByAttribute from '@/ui/features/PostsByAttribute';
+import { TitleSection, CardSingle, Carousel } from '@/ui/components';
+import { HashtagGroup, PostsByAttribute } from '@/ui/features';
 
 // types
 import { PostVariant, CardType } from '@/types';
