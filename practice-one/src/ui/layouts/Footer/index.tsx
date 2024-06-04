@@ -1,15 +1,16 @@
 // components
-import Link from "next/link";
-import Image from "next/image";
-import { Button, TitleSection, Comment } from "@/ui/components";
+import Link from 'next/link';
+import Image from 'next/image';
+import { Button, TitleSection, Comment, Typography } from '@/ui/components';
 
 // icons
-import { Instagram, MailBox, Twitter } from "@/ui/components/Icons";
+import { Instagram, MailBox, Twitter } from '@/ui/components/Icons';
+import { FontWeight } from '@/types';
 
 export const Footer = () => (
-  <footer className="footer w-full hidden items-center justify-center bg-white-100 h-[483px] mb-12.5 sm:flex lg:mb-11">
-    <div className="flex-1 h-full bg-white-90 py-10 rounded-e-[50px]">
-      <div className="flex justify-center lg:justify-end lg:pr-10">
+  <footer className="footer w-full hidden items-center justify-center bg-white-100 mb-12.5 sm:flex lg:mb-11">
+    <div className="flex-1 bg-white-90 py-10 pr-6 rounded-e-[50px] mr-11 lg:mr-0 lg:pr-10">
+      <div className="flex justify-center lg:justify-end pr-4 lg:pr-0">
         {/* footer content */}
         <div className="pl-6 lg:pl-10">
           <section className="w-100">
@@ -92,7 +93,30 @@ export const Footer = () => (
           </section>
         </div>
       </div>
-      <div className="policy h-12 mb-10 mt-8 bg-black-90"></div>
+      <div className="flex mt-8 bg-black-90 rounded-xl justify-center lg:justify-end">
+        <div className="flex justify-between py-4 pr-4">
+          <Typography
+            tag="p"
+            weight={FontWeight.Light}
+            additionalClasses="text-dark-75 text-p leading-5 w-100 lg:mr-15 2xl:mr-30"
+          >
+            <Link href="/policy" className="hover:text-primary-100">
+              Privacy Policy
+            </Link>
+            <p className="mx-1 inline">|</p>
+            <Link href="/terms" className="hover:text-primary-100">
+              Terms & Conditions
+            </Link>
+          </Typography>
+          <Typography
+            tag="p"
+            weight={FontWeight.Light}
+            additionalClasses="text-dark-75 text-p leading-5"
+          >
+            All Copyright (C) 2022 Reserved
+          </Typography>
+        </div>
+      </div>
     </div>
     <div className="hidden flex-1 h-full py-10 lg:flex">
       {/* comment group */}
