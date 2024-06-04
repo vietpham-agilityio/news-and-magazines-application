@@ -1,5 +1,4 @@
-
-import { IMenu, ISlideItem, IPostItem, ITagItem } from '@/types';
+import { IMenu, ISlideItem, ITagItem } from '@/types';
 
 const listTypePosts: string[] = ['New', 'Trendy', 'Popular', 'Top'];
 
