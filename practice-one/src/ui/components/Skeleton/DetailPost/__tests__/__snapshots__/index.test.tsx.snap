@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailPostSkeleton component should render DetailPostSkeleton macth snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="animate-pulse mb-10 w-full 2xl:w-[1154px]"
+  >
+    <div
+      class="bg-gray-300 h-44 w-full mb-14 rounded-md lg:h-[600px]"
+    />
+    <div
+      class="h-6 bg-gray-300 rounded w-3/4 mb-2"
+    />
+    <div
+      class="h-6 bg-gray-300 rounded w-3/2 mb-2"
+    />
+    <div
+      class="h-6 bg-gray-300 rounded w-3/4 mb-2"
+    />
+    <div
+      class="h-6 bg-gray-300 rounded w-3/2 mb-2"
+    />
+    <div
+      class="h-6 bg-gray-300 rounded w-3/4 mb-2"
+    />
+    <div
+      class="h-6 bg-gray-300 rounded w-3/2 mb-2"
+    />
+  </div>
+</DocumentFragment>
+`;

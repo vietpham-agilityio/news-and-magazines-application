@@ -1,6 +1,13 @@
-// componens
 import Link from 'next/link';
-import { TitleSection, Typography } from '@/ui/components';
+import { Suspense } from 'react';
+
+// componens
+import {
+  TitleSection,
+  Typography,
+  DetailPostSkeleton,
+  CardPostSkeleton,
+} from '@/ui/components';
 import { PostDetail, PostsByAttribute, RightSidebar } from '@/ui/features';
 
 // services
@@ -62,16 +69,20 @@ export default async function Page({
       </div>
 
       <div className="flex flex-col lg:flex-row mb-12">
-        <PostDetail postId={id} />
+        <Suspense fallback={<DetailPostSkeleton />}>
+          <PostDetail postId={id} />
+        </Suspense>
         <RightSidebar />
       </div>
 
       <section className="container flex flex-col justify-between bg-white-100 h-459 mt-17.5 mb-25">
         <TitleSection title="Popular Posts" />
-        <PostsByAttribute
-          attribute={PostVariant.POPULAR}
-          cardType={CardType.VERTICAL}
-        />
+        <Suspense fallback={<CardPostSkeleton />}>
+          <PostsByAttribute
+            attribute={PostVariant.POPULAR}
+            cardType={CardType.VERTICAL}
+          />
+        </Suspense>
       </section>
     </main>
   );
