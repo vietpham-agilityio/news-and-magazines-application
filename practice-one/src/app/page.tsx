@@ -1,3 +1,5 @@
+import { Suspense } from 'react';
+
 // assets
 import ScheduleSmallImage from '@/images/widget/sports-widget-small.png';
 import ScheduleMediumImage from '@/images/widget/sports-widget-medium.png';
@@ -14,8 +16,13 @@ import { listSlider } from '@/mocks';
 
 // components
 import Image from 'next/image';
-import CardPost from '@/ui/components/Card/CardPost';
-import { TitleSection, CardSingle, Carousel } from '@/ui/components';
+import {
+  Carousel,
+  CardPost,
+  CardSingle,
+  TitleSection,
+  CardPostSkeleton,
+} from '@/ui/components';
 import { HashtagGroup, PostsByAttribute } from '@/ui/features';
 
 // types
@@ -56,10 +63,12 @@ export default function Home() {
       {/* popular posts */}
       <section className="popular-posts container flex flex-col justify-between bg-white-100 h-459 mt-7.5 sm:my-0">
         <TitleSection title="Popular Posts" />
-        <PostsByAttribute
-          attribute={PostVariant.POPULAR}
-          cardType={CardType.VERTICAL}
-        />
+        <Suspense fallback={<CardPostSkeleton />}>
+          <PostsByAttribute
+            attribute={PostVariant.POPULAR}
+            cardType={CardType.VERTICAL}
+          />
+        </Suspense>
       </section>
       {/* scheduler */}
       <section className="w-full flex items-center justify-center my-10 sm:mt-9 sm:mb-12.5 lg:my-17.5">
@@ -96,7 +105,9 @@ export default function Home() {
       </section>
       {/* new posts */}
       <section className="new-posts container flex flex-col justify-between bg-white-100">
+        <div className="mb-7">
         <TitleSection title="New Posts" />
+        </div>
         <div className="grid grid-cols-12 grid-rows-3 gap-6 m-auto overflow-hidden">
           {/* card first */}
           <div className="col-span-12 2xl:col-span-6">
@@ -127,9 +138,8 @@ export default function Home() {
       {/* latest videos */}
       <section className="latest-videos w-full flex flex-col justify-between bg-primary-75 h-[644px] my-10 py-16 sm:my-12.5 lg:my-17.5">
         <div className="container mx-auto">
-          <div>
-            <p className="leading-10">Latest videos</p>
-          </div>
+          <TitleSection title="Latest Videos" />
+
           <div className="card-group grid grid-cols-12 grid-rows-2 gap-6 mt-[30px] overflow-hidden">
             {/* card first */}
             <div className="row-span-2 col-span-6 bg-dark-25 flex items-center justify-center">
@@ -157,10 +167,12 @@ export default function Home() {
       {/* trendy posts */}
       <section className="trendy-posts container flex flex-col justify-between bg-white-100 h-459 overflow-hidden">
         <TitleSection title="Trendy Posts" />
-        <PostsByAttribute
-          attribute={PostVariant.TRENDY}
-          cardType={CardType.VERTICAL}
-        />
+        <Suspense fallback={<CardPostSkeleton />}>
+          <PostsByAttribute
+            attribute={PostVariant.TRENDY}
+            cardType={CardType.VERTICAL}
+          />
+        </Suspense>
       </section>
       {/* weather */}
       <section className="weather w-full flex items-center justify-center bg-white-90 p-16 my-10 sm:mt-7.5 sm:mb-12.5 lg:my-17.5">
@@ -243,10 +255,12 @@ export default function Home() {
       {/* top posts */}
       <section className="top-posts container flex flex-col justify-between bg-white-100 h-459 mb-30 sm:mb-7.5 lg:mb-25">
         <TitleSection title="Top Posts" />
-        <PostsByAttribute
-          attribute={PostVariant.TOP}
-          cardType={CardType.VERTICAL}
-        />
+        <Suspense fallback={<CardPostSkeleton />}>
+          <PostsByAttribute
+            attribute={PostVariant.TOP}
+            cardType={CardType.VERTICAL}
+          />
+        </Suspense>
       </section>
     </main>
   );
