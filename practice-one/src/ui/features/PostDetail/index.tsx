@@ -19,7 +19,7 @@ export default memo(async function PostDetail({ postId }: { postId: number }) {
   const { title, content, imageUrl } = postResponse.data.attributes;
 
   return (
-    <section>
+    <section className='flex flex-1'>
       <article className="flex-1 mb-17.5">
         <div className="mb-7.5 lg:bg-white-90 lg:p-7 xl:mb-[130px] xl:h-[604px] rounded-xl">
           <Typography
