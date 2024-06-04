@@ -10,7 +10,7 @@
 
 ## TIMELINE
 
-* May 20th, 2024 - May 30th, 2024 (8 days working)
+* May 20th, 2024 - June 10th, 2024 (14 days working)
 
 ## TEAM SIZE
 
@@ -24,6 +24,8 @@
 * Handle errors and be aware of which errors should be shown for each situation.
 * Bear in mind that improving accessibility and form validation will be always involved.
 * Get to know metadata which is crucial for SEO and shareability.
+
+
 
 ## BROWSER SUPPORT
 
@@ -42,6 +44,7 @@
 * **[Jest](https://jestjs.io/)**: is a delightful JavaScript Testing Framework with a focus on simplicity.
 * **[Storybook](https://storybook.js.org/)**: captures the rendered state of a UI component. Developers write multiple stories per component that describe all the “interesting” states a component can support.
 * **[ESLint](https://eslint.org/)**: is a tool for identifying and reporting patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
+* **[Prettier](https://prettier.io/)**: is an opinionated code formatter. It enforces a consistent style by parsing your code and re-printing it with its own rules that take the maximum line length into account, wrapping code when necessary.
 * **[Tailwind](https://tailwindcss.com/)**: is a utility-first CSS framework for rapidly building modern websites without ever leaving your HTML.
 * **[Strapi](https://strapi.io/)**: is the next-gen headless CMS, open-source, javascript, enabling content-rich experiences to be created, managed and exposed to any digital device.
 
@@ -61,7 +64,35 @@ You can see details in this link:
 * **[Analyze design](https://docs.google.com/document/d/133SVWVYsO7s5ZkYaeg1DNMupW6qveHi0X9yJuwoLBwg)**
 
 ## DIRECTORY STRUCTURE
-* Will update later
+
+```
+practice-one/
+├── public/
+├── src/
+│   ├── app/
+│   │   ├── articles/
+│   │   │   └── [id]/
+│   │   ├── categories/
+│   │   │   └── [topic]/
+│   │   ├── global-error.tsx
+│   │   ├── layout.tsx
+│   │   ├── not-found.tsx
+│   │   └── page.tsx
+│   ├── constants/
+│   ├── mocks/
+│   ├── services/
+│   ├── types/
+│   └── ui/
+│       ├── components/
+│       │   ├── common/
+│       │   └── [other files]
+│       ├── features/
+│       └── layouts/
+├── .gitignore
+├── package.json
+├── README.md
+└── next.config.js
+```
 
 ## HOW TO RUN PROJECT
 
@@ -73,14 +104,14 @@ You can see details in this link:
 
 **Run to install the package**
 
-> npm install
+> pnpm install
 
 **Create file variable environment**
 
 ```
 ├── node_modules
 ├── src
-└──.env.local
+└──.env
 ```
 
 **With template**
@@ -91,27 +122,27 @@ SERVER_BASE_URL = 'Url your server'
 
 **You can access my pages**
 
-> [News & Magazine-Website]()
+> [News & Magazine-Website](https://news-and-magazine-vercel.vercel.app/)
 
 ### Run Project
 
-> npm run dev
+> pnpm dev
 
 * Follow at: http://localhost:3000/
 
 ### Run Storybook
 
-> npm run storybook
+> pnpm storybook
 
 * Follow at: http://localhost:6006/
 
 ### Run Test
 
-> npm test
+> pnpm test
 
 ### Run build in production environment
 
-> npm run build
+> pnpm build
 
 ## Author
 
