@@ -28,7 +28,7 @@ describe('Button component', () => {
     expect(renderButton.asFragment()).toMatchSnapshot();
   });
 
-  it('Button should render label alt value to macth snapshot', () => {
+  it('Button should render label alt value to macth value passed', () => {
     const labelValue = screen.getByText('Subcriber');
 
     expect(labelValue).toBeInTheDocument();

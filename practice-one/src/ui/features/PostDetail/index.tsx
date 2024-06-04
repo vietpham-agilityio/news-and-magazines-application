@@ -35,9 +35,9 @@ export default memo(async function PostDetail({ postId }: { postId: number }) {
           />
         </div>
         <div className="flex w-full justify-evenly mx-auto mb-12 xl:w-2/4">
-          <Tag icon={<Schedule />} content='July 14 , 2022' />
-          <Tag icon={<ChatBox />} content='Comments: 35' />
-          <Tag icon={<File />} content='Categories: Sport' />
+          <Tag icon={<Schedule />} content="July 14 , 2022" />
+          <Tag icon={<ChatBox />} content="Comments: 35" />
+          <Tag icon={<File />} content="Categories: Sport" />
         </div>
         <section>
           {/* content */}
