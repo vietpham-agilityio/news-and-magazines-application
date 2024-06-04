@@ -15,7 +15,7 @@ export const RightSidebar = () => (
   <aside className="bg-white-100 lg:ml-[23px] lg:w-[360px]">
     {/* tag and author */}
     <div className="flex flex-col-reverse sm:gap-5 sm:flex-row lg:flex-col lg:gap-0">
-      <div className="flex flex-col w-full">
+      <div className="flex flex-col w-[360px]">
         <div className="flex justify-between bg-white-100 mb-[25px]">
           <Button
             isMarginBottom
@@ -60,7 +60,7 @@ export const RightSidebar = () => (
           </div>
         </div>
       </div>
-      <div className="w-full mb-[25px]">
+      <div className="flex-1 mb-[25px]">
         <TagGroup />
       </div>
     </div>
