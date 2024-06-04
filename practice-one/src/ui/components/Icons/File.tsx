@@ -4,6 +4,7 @@ interface IProps {
   
   export const File = ({ color="#3E3232"}: IProps) => (
   <svg
+    data-testid= "file-icon"
     xmlns="http://www.w3.org/2000/svg"
     width={15}
     height={13}
