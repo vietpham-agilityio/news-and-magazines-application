@@ -1,14 +1,16 @@
 // componens
-import { RightSidebar } from '@/ui/features';
+import Link from 'next/link';
 import { TitleSection, Typography } from '@/ui/components';
-import PostDetail from '@/ui/features/PostDetail';
+import { PostDetail, PostsByAttribute, RightSidebar } from '@/ui/features';
 
 // services
-import { CardType, FontWeight, PostVariant, Size } from '@/types';
-import PostsByAttribute from '@/ui/features/PostsByAttribute';
-import { ArrowRight } from '@/ui/components/Icons';
 import { getPostDataById } from '@/services';
-import Link from 'next/link';
+
+// types
+import { CardType, FontWeight, PostVariant, Size } from '@/types';
+
+// icons
+import { ArrowRight } from '@/ui/components/Icons';
 
 export default async function Page({
   params: { id },
@@ -55,7 +57,7 @@ export default async function Page({
           weight={FontWeight.Normal}
           additionalClasses="text-dark-50 h-5 text-ellipsis overflow-hidden"
         >
-          { title }
+          {title}
         </Typography>
       </div>
 
