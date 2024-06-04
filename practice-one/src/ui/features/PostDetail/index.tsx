@@ -19,7 +19,7 @@ export default memo(async function PostDetail({ postId }: { postId: number }) {
   const { title, content, imageUrl } = postResponse.data.attributes;
 
   return (
-    <section className='flex flex-1'>
+    <section className="flex flex-1">
       <article className="flex-1 mb-17.5">
         <div className="mb-7.5 lg:bg-white-90 lg:p-7 xl:mb-[130px] xl:h-[604px] rounded-xl">
           <Typography
@@ -38,8 +38,18 @@ export default memo(async function PostDetail({ postId }: { postId: number }) {
         </div>
         <div className="flex w-full justify-evenly mx-auto mb-12 xl:w-2/4">
           <Tag icon={<Schedule />} content="July 14 , 2022" />
-          <Tag icon={<ChatBox />} content="Comments: 35" />
-          <Tag icon={<File />} content="Categories: Sport" />
+          <Tag
+            icon={<ChatBox />}
+            content="Comments: 35"
+            additionalClass="hidden sm:flex"
+          />
+          <Tag
+            icon={<File />}
+            content="Categories: Sport"
+            additionalClass="hidden sm:flex"
+          />
+          <Tag icon={<ChatBox />} content="35" additionalClass="sm:hidden" />
+          <Tag icon={<File />} content="Sport" additionalClass="sm:hidden" />
         </div>
         <section>
           {/* content */}
