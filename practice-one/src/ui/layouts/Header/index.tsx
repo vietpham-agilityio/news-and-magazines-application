@@ -1,5 +1,5 @@
 // mocks
-import { listCategories, listNavItems } from "@/mocks";
+import { listCategories, listNavItems } from '@/mocks';
 
 // components
 import {
@@ -10,10 +10,10 @@ import {
   BoxIcon,
   SearchBar,
   BurgerMenu,
-} from "@/ui/components";
+} from '@/ui/components';
 
 // icons
-import { ArrowBottom, SaveTag, Search, ThreeDots } from "@/ui/components/Icons";
+import { ArrowBottom, SaveTag, Search, ThreeDots } from '@/ui/components/Icons';
 
 export const Header = () => (
   <header className="header container flex flex-col items-center justify-center bg-white-100 h-auto mx-auto mt-11 sm:mt-4 lg:mt-11 lg:flex-row">
@@ -79,7 +79,7 @@ export const Header = () => (
             <p className="text-sm font-medium text-dark-100 mx-2">Behzad</p>
             <ArrowBottom />
           </div>
-          <BoxIcon icon={<SaveTag />} />
+          <BoxIcon icon={<SaveTag />} additionalClasses="w-12" />
         </div>
       </div>
     </div>
