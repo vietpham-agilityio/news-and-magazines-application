@@ -106,7 +106,7 @@ export default function Home() {
       {/* new posts */}
       <section className="new-posts container flex flex-col justify-between bg-white-100">
         <div className="mb-7">
-        <TitleSection title="New Posts" />
+          <TitleSection title="New Posts" />
         </div>
         <div className="grid grid-cols-12 grid-rows-3 gap-6 m-auto overflow-hidden">
           {/* card first */}

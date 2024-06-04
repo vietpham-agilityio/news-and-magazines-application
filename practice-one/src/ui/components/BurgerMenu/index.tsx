@@ -1,16 +1,16 @@
-"use client";
+'use client';
 
-import { useState, useCallback } from "react";
+import { useState, useCallback } from 'react';
 
 // constants
-import { flexItemCenter } from "@/constants";
+import { flexItemCenter } from '@/constants';
 
 // mocks
-import { listCategories } from "@/mocks";
+import { listCategories } from '@/mocks';
 
 // components
-import { BoxIcon, Brand, NavItem, Typography } from "@/ui/components";
-import Link from "next/link";
+import { BoxIcon, Brand, NavItem, Typography } from '@/ui/components';
+import Link from 'next/link';
 
 // icons
 import {
@@ -18,11 +18,11 @@ import {
   ArrowRight,
   Close,
   BurgerMenu as BurgerMenuIcon,
-} from "@/ui/components/Icons";
+} from '@/ui/components/Icons';
 
 // types
-import { FontWeight, IMenu, Size } from "@/types";
-import { createPortal } from "react-dom";
+import { FontWeight, IMenu, Size } from '@/types';
+import { createPortal } from 'react-dom';
 
 interface IProps {
   listNav: IMenu[];
@@ -34,15 +34,12 @@ export const BurgerMenu = ({ listNav }: IProps) => {
 
   const classNavItem = `w-full h-12 pl-2 rounded-xl hover:bg-white-90 ${flexItemCenter}`;
 
-  const handleToggleMenu = useCallback(
-    () => setIsOpenMenu((prev) => !prev),
-    []
-  );
+  const handleToggleMenu = useCallback(() => setIsOpenMenu(prev => !prev), []);
   const handleCloseMenu = useCallback(() => setIsOpenMenu(false), []);
   const handleCloseSubMenu = useCallback(() => setIsOpenSubMenu(false), []);
 
   const handleToggleSubMenu = useCallback(
-    () => setIsOpenSubMenu((prev) => !prev),
+    () => setIsOpenSubMenu(prev => !prev),
     []
   );
 
@@ -53,14 +50,22 @@ export const BurgerMenu = ({ listNav }: IProps) => {
 
   return (
     <div>
-      <BoxIcon icon={<BurgerMenuIcon />} onClick={handleToggleMenu} />
+      <BoxIcon
+        icon={<BurgerMenuIcon />}
+        onClick={handleToggleMenu}
+        additionalClasses="w-12"
+      />
       {isOpenMenu &&
         createPortal(
           <div className="w-full h-full z-10 absolute px-5 pb-4 pt-6 left-0 top-0 bg-white-100 shadow-xl">
             <div className="flex relative">
               <Brand brandName="MEGA.news" url="/" />
               <div className="absolute right-[-8px] top-[-8px]">
-                <BoxIcon icon={<Close />} onClick={handleCloseMenu} />
+                <BoxIcon
+                  icon={<Close />}
+                  onClick={handleCloseMenu}
+                  additionalClasses="w-12"
+                />
               </div>
             </div>
             <div
@@ -85,7 +90,7 @@ export const BurgerMenu = ({ listNav }: IProps) => {
 
             {isOpenSubMenu && (
               <ul className="list-none mt-1.5 pl-5">
-                {listCategories.map((item) => (
+                {listCategories.map(item => (
                   <li
                     key={item.key}
                     className="mb-2 last:mb-0"
@@ -106,7 +111,7 @@ export const BurgerMenu = ({ listNav }: IProps) => {
             )}
 
             <div>
-              {listNav.map((navItem) => (
+              {listNav.map(navItem => (
                 <div key={navItem.key} className={classNavItem}>
                   <NavItem name={navItem.name} url={navItem.path} />
                 </div>
