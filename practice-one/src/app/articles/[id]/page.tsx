@@ -45,16 +45,14 @@ export default async function Page({
         <i className="mx-2">
           <ArrowRight />
         </i>
-        <Link href="/article">
-          <Typography
-            tag="p"
-            textSize={Size.XS}
-            weight={FontWeight.Normal}
-            additionalClasses="text-dark-100 hover:text-primary-100"
-          >
-            Article
-          </Typography>
-        </Link>
+        <Typography
+          tag="p"
+          textSize={Size.XS}
+          weight={FontWeight.Normal}
+          additionalClasses="text-dark-100"
+        >
+          Article
+        </Typography>
         <i className="mx-2">
           <ArrowRight />
         </i>
