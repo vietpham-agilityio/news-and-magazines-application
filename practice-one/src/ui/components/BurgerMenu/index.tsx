@@ -60,7 +60,7 @@ export const BurgerMenu = ({ listNav }: IProps) => {
           <div className="w-full h-full z-10 absolute px-5 pb-4 pt-6 left-0 top-0 bg-white-100 shadow-xl">
             <div className="flex relative">
               <Brand brandName="MEGA.news" url="/" />
-              <div className="absolute right-[-8px] top-[-8px]">
+              <div className="absolute -right-2 -top-2">
                 <BoxIcon
                   icon={<Close />}
                   onClick={handleCloseMenu}
@@ -100,9 +100,9 @@ export const BurgerMenu = ({ listNav }: IProps) => {
                       <Typography
                         tag="p"
                         textSize={Size.XS}
-                        additionalClasses="text-dark-75 hover:text-secondary-100 cursor-pointer"
+                        additionalClasses="text-dark-75 cursor-pointer hover:text-secondary-100"
                       >
-                        {item.name}
+                        { item.name }
                       </Typography>
                     </Link>
                   </li>
