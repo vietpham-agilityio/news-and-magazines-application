@@ -1,15 +1,15 @@
 import { Suspense } from 'react';
 
 // assets
-import ScheduleSmallImage from '@/images/widget/sports-widget-small.png';
-import ScheduleMediumImage from '@/images/widget/sports-widget-medium.png';
-import ScheduleLargeImage from '@/images/widget/sports-widget-large.png';
-import WeatherWidget from '@/images/widget/weather-widget.png';
-import CityWeatherParis from '@/images/widget/paris-city-widget.png';
-import CityWeatherAnkara from '@/images/widget/ankara-city-widget.png';
-import CityWeatherBerlin from '@/images/widget/berlin-city-widget.png';
-import CityWeatherAlaska from '@/images/widget/alaska-city-widget.png';
-import CityWeatherAnkaraLarge from '@/images/widget/ankara-city-widget-large.png';
+import ScheduleSmallImage from '@/images/widget/sports-widget-small.webp';
+import ScheduleMediumImage from '@/images/widget/sports-widget-medium.webp';
+import ScheduleLargeImage from '@/images/widget/sports-widget-large.webp';
+import WeatherWidget from '@/images/widget/weather-widget.webp';
+import CityWeatherParis from '@/images/widget/paris-city-widget.webp';
+import CityWeatherAnkara from '@/images/widget/ankara-city-widget.webp';
+import CityWeatherBerlin from '@/images/widget/berlin-city-widget.webp';
+import CityWeatherAlaska from '@/images/widget/alaska-city-widget.webp';
+import CityWeatherAnkaraLarge from '@/images/widget/ankara-city-widget-large.webp';
 
 // mocks data
 import { listSlider } from '@/mocks';

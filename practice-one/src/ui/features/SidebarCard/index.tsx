@@ -1,9 +1,9 @@
 // assets
-import CarImage from '@/images/square/car.png';
-import FrogImage from '@/images/square/frog.png';
-import FoodImage from '@/images/square/food.png';
-import PersonOne from '@/images/square/person-dance.png';
-import PersonTwo from '@/images/square/person-play.png';
+import CarImage from '@/images/square/car.webp';
+import FrogImage from '@/images/square/frog.webp';
+import FoodImage from '@/images/square/food.webp';
+import PersonOne from '@/images/square/person-dance.webp';
+import PersonTwo from '@/images/square/person-play.webp';
 
 // components
 import { TitleSection, PaperPost } from "@/ui/components";
