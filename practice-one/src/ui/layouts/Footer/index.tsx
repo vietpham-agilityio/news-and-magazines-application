@@ -100,13 +100,7 @@ export const Footer = () => (
             weight={FontWeight.Light}
             additionalClasses="text-dark-75 text-p leading-5 w-100 lg:mr-15 2xl:mr-30"
           >
-            <Link href="/policy" className="hover:text-primary-100">
-              Privacy Policy
-            </Link>
-            <p className="mx-1 inline">|</p>
-            <Link href="/terms" className="hover:text-primary-100">
-              Terms & Conditions
-            </Link>
+            Privacy Policy | Terms & Conditions
           </Typography>
           <Typography
             tag="p"
