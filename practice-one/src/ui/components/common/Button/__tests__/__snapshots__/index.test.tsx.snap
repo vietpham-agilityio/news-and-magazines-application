@@ -6,13 +6,13 @@ exports[`Button component Button should render macth snapshot 1`] = `
     aria-label="button-element"
     class="bg-primary-100 flex items-center py-2.5 rounded-xl hover:opacity-80 undefined undefined"
   >
-    <p
-      aria-level="7"
+    <h2
+      aria-level="2"
       class="text-xsm font-medium text-dark-100 leading-5"
       role="heading"
     >
       Subcriber
-    </p>
+    </h2>
   </button>
 </DocumentFragment>
 `;

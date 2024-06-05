@@ -9,11 +9,11 @@ interface IProps {
 
 export const Comment = ({ userName, content }: IProps) => (
   <div className="bg-white-90 p-4 rounded-xl">
-    <Typography tag="p" textSize={Size.SM} additionalClasses="text-dark-100">
+    <Typography tag="h2" textSize={Size.SM} additionalClasses="text-dark-100">
       { userName }
     </Typography>
     <Typography
-      tag="p"
+      tag="h3"
       weight={FontWeight.Light}
       additionalClasses="text-p text-dark-75"
     >

@@ -56,7 +56,7 @@ export default memo(async function PostDetail({ postId }: { postId: number }) {
           {content?.split('\n').map((line, index) => (
             <Typography
               key={index}
-              tag="p"
+              tag="h2"
               textSize={Size.MD}
               weight={FontWeight.Normal}
               additionalClasses="text-dark-100"

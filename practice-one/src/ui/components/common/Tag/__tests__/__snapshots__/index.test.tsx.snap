@@ -22,13 +22,13 @@ exports[`Tag component should render Tag macth snapshot 1`] = `
         />
       </svg>
     </div>
-    <p
-      aria-level="7"
+    <h2
+      aria-level="2"
       class="text-md font-medium text-dark-75 text-xsm leading-4"
       role="heading"
     >
       Categories: Sport
-    </p>
+    </h2>
   </div>
 </DocumentFragment>
 `;
