@@ -6,12 +6,14 @@ exports[`Information component should render Information macth snapshot 1`] = `
     class="flex items-center justify-between"
   >
     <p
+      aria-level="7"
       class="text-sm font-medium text-dark-100"
       role="heading"
     >
       Bagari
     </p>
     <p
+      aria-level="7"
       class="text-xs font-light text-dark-75"
       role="heading"
     >

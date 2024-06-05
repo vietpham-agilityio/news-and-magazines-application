@@ -20,12 +20,14 @@ exports[`CardSingle component should render CardSingle macth snapshot 1`] = `
       class="absolute left-[9px] p-4 w-[95%] bg-white-75 rounded-xl opacity-90"
     >
       <h3
+        aria-level="3"
         class="text-lg font-normal text-black-100"
         role="heading"
       >
         Go Home After Long Time
       </h3>
       <p
+        aria-level="7"
         class="text-xsm font-light text-dark-100 h-10 w-[328px] leading-5 text-ellipsis overflow-hidden "
         role="heading"
       >
