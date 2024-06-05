@@ -53,7 +53,7 @@ export const RightSidebar = () => (
               <Button
                 label="Follow"
                 leftIcon={<Plus />}
-                bgColor="bg-primary-90"
+                bgColor="bg-gradient-to-bl from-sunSet-0 to-sunSet-100"
                 textColor="text-white-100"
               />
             </div>
