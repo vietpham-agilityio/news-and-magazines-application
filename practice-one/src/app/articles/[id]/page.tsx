@@ -62,7 +62,7 @@ export default async function Page({
           tag="p"
           textSize={Size.XS}
           weight={FontWeight.Normal}
-          additionalClasses="text-dark-50 h-5 text-ellipsis overflow-hidden"
+          additionalClasses="text-dark-90 h-5 text-ellipsis overflow-hidden"
         >
           {title}
         </Typography>
