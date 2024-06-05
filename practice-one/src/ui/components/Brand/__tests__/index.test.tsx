@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, cleanup } from '@testing-library/react';
+import { fireEvent, render, cleanup } from '@testing-library/react';
 
 // component
 import { Brand } from '@/ui/components';
@@ -25,12 +25,7 @@ describe('Brand component', () => {
 
     const nameBrand = getByText(brandName);
 
+    fireEvent.click(nameBrand);
     expect(nameBrand).toBeInTheDocument();
-  });
-
-  it('Brand should trigger event when clicked', () => {
-    const brandElement = screen.getByText(brandName);
-
-    fireEvent.click(brandElement);
   });
 });

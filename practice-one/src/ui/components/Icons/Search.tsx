@@ -10,6 +10,7 @@ export const Search = ({ color="#3E3232"}: IProps) => (
     width={22}
     height={22}
     fill="none"
+    data-testid= "search-icon"
   >
     <path
       fill={color}
