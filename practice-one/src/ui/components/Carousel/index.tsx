@@ -1,17 +1,17 @@
-"use client";
+'use client';
 
 // hooks
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback } from 'react';
 
 // components
-import Image from "next/image";
-import { BoxIcon, Typography } from "@/ui/components";
+import Image from 'next/image';
+import { BoxIcon, Typography } from '@/ui/components';
 
 // types
-import { FontWeight, ISlideItem, Size } from "@/types";
+import { FontWeight, ISlideItem, Size } from '@/types';
 
 // icons
-import { ArrowLeft, ArrowRight } from "@/ui/components/Icons";
+import { ArrowLeft, ArrowRight } from '@/ui/components/Icons';
 
 interface IProps {
   listSlider: ISlideItem[];
@@ -62,7 +62,10 @@ export const Carousel = ({
           const { image, title, content } = slider;
 
           return (
-            <div key={index} className="w-full flex-shrink-0 flex flex-col items-center relative">
+            <div
+              key={index}
+              className="w-full flex-shrink-0 flex flex-col items-center relative"
+            >
               <Image
                 key={index}
                 src={image}
@@ -105,7 +108,8 @@ export const Carousel = ({
         {listSlider.map((_, index) => (
           <button
             key={index}
-            className={`h-2.5 mr-2 z-10 rounded-full ${index === currentIndex ? "w-7 bg-white-100" : "w-2.5 bg-white-75"}`}
+            aria-label="slider-button"
+            className={`h-2.5 mr-2 z-10 rounded-full ${index === currentIndex ? 'w-7 bg-white-100' : 'w-2.5 bg-white-75'}`}
             onClick={() => setCurrentIndex(index)}
           ></button>
         ))}
