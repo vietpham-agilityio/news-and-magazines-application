@@ -22,14 +22,14 @@ export default memo(async function CardPost({
   information = 'June, 05 2024',
   isVertical,
 }: {
-  id: string;
-  title: string;
-  content: string;
-  imageSrc: string | StaticImageData;
-  alt: string;
+  id?: string;
+  title?: string;
+  content?: string;
+  imageSrc?: string | StaticImageData;
+  alt?: string;
   authorId: string;
-  information: string;
-  isVertical: boolean;
+  information?: string;
+  isVertical?: boolean;
 }) {
   const { data: author } = await getAuthorById(authorId);
 
