@@ -1,7 +1,5 @@
-// asset
-import AdvertisingOne from '@/images/advertising/advertising-one.webp';
-import AdvertisingTwo from '@/images/advertising/advertising-two.webp';
-import AvatarAuthor from '@/images/avatar/avatar-author.webp';
+// static image
+import Images from "@/constants/images";
 
 // componens
 import Image from 'next/image';
@@ -44,7 +42,7 @@ export const RightSidebar = () => (
           <Avatar
             width={87}
             height={87}
-            url={AvatarAuthor}
+            url={Images.AvatarAuthor}
             alt="Avatar author"
           />
           <div className="flex-1 ml-2.5 mt-3.5">
@@ -72,7 +70,7 @@ export const RightSidebar = () => (
         <Image
           width={360}
           height={180}
-          src={AdvertisingTwo}
+          src={Images.AdvertisingTwo}
           alt="Advertising"
         />
       </div>
@@ -80,7 +78,7 @@ export const RightSidebar = () => (
         <Image
           width={360}
           height={180}
-          src={AdvertisingOne}
+          src={Images.AdvertisingOne}
           alt="Advertising"
         />
       </div>

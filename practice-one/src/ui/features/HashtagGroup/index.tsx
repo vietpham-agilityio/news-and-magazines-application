@@ -1,10 +1,5 @@
-// assets
-import HashtagFood from "@/images/hashtag/hashtag-food.webp";
-import HashtagCar from "@/images/hashtag/hashtag-car.webp";
-import HashtagMusic from "@/images/hashtag/hashtag-music.webp";
-import HashtagSport from "@/images/hashtag/hashtag-sport.webp";
-import HashtagAnimal from "@/images/hashtag/hashtag-animal.webp";
-import HashtagAbstract from "@/images/hashtag/hashtag-abstract.webp";
+// static image
+import Images from "@/constants/images";
 
 // components
 import Image, { StaticImageData } from "next/image";
@@ -23,42 +18,42 @@ const listHashtagsItem: IHashtag[] = [
   {
     id: "1",
     name: "Hashtag Food",
-    imageUrl: HashtagFood,
+    imageUrl: Images.HashtagFood,
   },
   {
     id: "2",
     name: "Hashtag Animal",
-    imageUrl: HashtagAnimal,
+    imageUrl: Images.HashtagAnimal,
   },
   {
     id: "3",
     name: "Hashtag Car",
-    imageUrl: HashtagCar,
+    imageUrl: Images.HashtagCar,
   },
   {
     id: "4",
     name: "Hashtag Sport",
-    imageUrl: HashtagSport,
+    imageUrl: Images.HashtagSport,
   },
   {
     id: "5",
     name: "Hashtag Music",
-    imageUrl: HashtagMusic,
+    imageUrl: Images.HashtagMusic,
   },
   {
     id: "6",
     name: "Hashtag Food",
-    imageUrl: HashtagFood,
+    imageUrl: Images.HashtagFood,
   },
   {
     id: "7",
     name: "Hashtag Abstract",
-    imageUrl: HashtagAbstract,
+    imageUrl: Images.HashtagAbstract,
   },
   {
     id: "8",
     name: "Hashtag Animal",
-    imageUrl: HashtagAnimal,
+    imageUrl: Images.HashtagAnimal,
   },
 ];
 
