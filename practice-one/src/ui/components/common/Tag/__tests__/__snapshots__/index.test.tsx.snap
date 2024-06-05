@@ -23,6 +23,7 @@ exports[`Tag component should render Tag macth snapshot 1`] = `
       </svg>
     </div>
     <p
+      aria-level="7"
       class="text-md font-medium text-dark-75 text-xsm leading-4"
       role="heading"
     >

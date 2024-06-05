@@ -3,6 +3,7 @@
 exports[`Typography component Typography should render Typography macth snapshot 1`] = `
 <DocumentFragment>
   <h1
+    aria-level="1"
     class="text-md font-medium "
     role="heading"
   >

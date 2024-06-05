@@ -15,6 +15,7 @@ exports[`SubMenu component should render SubMenu macth snapshot 1`] = `
           href="/category/worldnews"
         >
           <p
+            aria-level="7"
             class="text-xs font-medium text-dark-75 hover:text-secondary-100 cursor-pointer"
             role="heading"
           >
@@ -29,6 +30,7 @@ exports[`SubMenu component should render SubMenu macth snapshot 1`] = `
           href="/category/nationalnews"
         >
           <p
+            aria-level="7"
             class="text-xs font-medium text-dark-75 hover:text-secondary-100 cursor-pointer"
             role="heading"
           >
@@ -43,6 +45,7 @@ exports[`SubMenu component should render SubMenu macth snapshot 1`] = `
           href="/category/localnews"
         >
           <p
+            aria-level="7"
             class="text-xs font-medium text-dark-75 hover:text-secondary-100 cursor-pointer"
             role="heading"
           >
@@ -57,6 +60,7 @@ exports[`SubMenu component should render SubMenu macth snapshot 1`] = `
           href="/category/business-and-finance"
         >
           <p
+            aria-level="7"
             class="text-xs font-medium text-dark-75 hover:text-secondary-100 cursor-pointer"
             role="heading"
           >
@@ -71,6 +75,7 @@ exports[`SubMenu component should render SubMenu macth snapshot 1`] = `
           href="/category/technology"
         >
           <p
+            aria-level="7"
             class="text-xs font-medium text-dark-75 hover:text-secondary-100 cursor-pointer"
             role="heading"
           >
@@ -85,6 +90,7 @@ exports[`SubMenu component should render SubMenu macth snapshot 1`] = `
           href="/category/health-and-wellness"
         >
           <p
+            aria-level="7"
             class="text-xs font-medium text-dark-75 hover:text-secondary-100 cursor-pointer"
             role="heading"
           >
@@ -99,6 +105,7 @@ exports[`SubMenu component should render SubMenu macth snapshot 1`] = `
           href="/category/science-and-environment"
         >
           <p
+            aria-level="7"
             class="text-xs font-medium text-dark-75 hover:text-secondary-100 cursor-pointer"
             role="heading"
           >
@@ -113,6 +120,7 @@ exports[`SubMenu component should render SubMenu macth snapshot 1`] = `
           href="/category/entertainment"
         >
           <p
+            aria-level="7"
             class="text-xs font-medium text-dark-75 hover:text-secondary-100 cursor-pointer"
             role="heading"
           >
@@ -127,6 +135,7 @@ exports[`SubMenu component should render SubMenu macth snapshot 1`] = `
           href="/category/sports"
         >
           <p
+            aria-level="7"
             class="text-xs font-medium text-dark-75 hover:text-secondary-100 cursor-pointer"
             role="heading"
           >
@@ -141,6 +150,7 @@ exports[`SubMenu component should render SubMenu macth snapshot 1`] = `
           href="/category/lifestyle"
         >
           <p
+            aria-level="7"
             class="text-xs font-medium text-dark-75 hover:text-secondary-100 cursor-pointer"
             role="heading"
           >

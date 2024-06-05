@@ -9,6 +9,7 @@ exports[`TitleSection component TitleSection should render macth snapshot 1`] = 
       class="w-1 h-[11px] bg-primary-100 rounded-2xl mr-1.5"
     />
     <h2
+      aria-level="2"
       class="text-md font-medium text-dark-100 leading-6"
       role="heading"
     >
