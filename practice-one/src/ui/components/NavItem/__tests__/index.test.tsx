@@ -42,6 +42,7 @@ describe('NavItem component', () => {
 
     const navItemName = getByText(navName);
 
+    fireEvent.click(navItemName);
     expect(navItemName).toBeInTheDocument();
   });
 });
