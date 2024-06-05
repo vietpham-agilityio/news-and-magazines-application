@@ -25,14 +25,14 @@ export const PaperPost = ({ title, content, imageSrc, alt }: IProps) => (
     />
     <div className="flex flex-col gap-1.5 ml-2.5 my-3">
       <Typography
-       tag="p"
+       tag="h2"
        textSize={Size.XS}
        additionalClasses="text-dark-100"
       >
         { title }
       </Typography>
       <Typography
-        tag="p"
+        tag="h3"
         weight={FontWeight.Light}
         additionalClasses="text-dark-75 text-p"
       >

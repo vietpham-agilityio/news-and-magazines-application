@@ -32,7 +32,7 @@ export const Button = ({
       <i className={`mr-2 ${isMarginBottom && 'mb-1'}`}>{leftIcon}</i>
     )}
     <Typography
-      tag="p"
+      tag="h2"
       textSize={Size.XSM}
       additionalClasses={`${textColor} leading-5`}
     >

@@ -10,7 +10,7 @@ interface IProps {
 export const Tag = ({ content, icon, additionalClass }: IProps) => (
   <div className={`flex ${additionalClass}`}>
     <div className="mr-2">{icon}</div>
-    <Typography tag="p" additionalClasses="text-dark-75 text-xsm leading-4">
+    <Typography tag="h2" additionalClasses="text-dark-75 text-xsm leading-4">
       { content }
     </Typography>
   </div>
