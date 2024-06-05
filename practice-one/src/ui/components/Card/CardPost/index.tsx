@@ -1,6 +1,7 @@
 import { memo } from 'react';
 
 // components
+import Link from 'next/link';
 import Image, { StaticImageData } from 'next/image';
 import { Avatar, Typography } from '@/ui/components';
 import { SaveTag } from '@/ui/components/Icons';
@@ -10,7 +11,6 @@ import { FontWeight, Size } from '@/types';
 
 // services
 import { getAuthorById } from '@/services';
-import Link from 'next/link';
 
 export default memo(async function CardPost({
   id = 'card-post',
@@ -19,17 +19,17 @@ export default memo(async function CardPost({
   imageSrc = 'https://images.unsplash.com/photo-1716872491847-03c73619a25d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyN3x8fGVufDB8fHx8fA%3D%3D',
   alt = 'This car',
   authorId,
-  information = 'August 18 , 2022',
+  information = 'June, 05 2024',
   isVertical,
 }: {
-  id?: string;
-  title?: string;
-  content?: string;
-  imageSrc?: string | StaticImageData;
-  alt?: string;
+  id: string;
+  title: string;
+  content: string;
+  imageSrc: string | StaticImageData;
+  alt: string;
   authorId: string;
-  information?: string;
-  isVertical?: boolean;
+  information: string;
+  isVertical: boolean;
 }) {
   const { data: author } = await getAuthorById(authorId);
 
@@ -54,17 +54,17 @@ export default memo(async function CardPost({
         <div className="flex flex-col flex-1">
           <div className="flex flex-col gap-4 p-4">
             <Typography
-              tag="h5"
+              tag="h2"
               textSize={Size.SM}
-              additionalClasses="text-dark-100"
+              additionalClasses="text-dark-100 text-ellipsis overflow-hidden"
             >
               {title}
             </Typography>
             <Typography
-              tag="p"
+              tag="h3"
               textSize={Size.XSM}
               weight={FontWeight.Light}
-              additionalClasses="text-dark-75 h-10 w-[328px] leading-5 text-ellipsis overflow-hidden "
+              additionalClasses="text-dark-75 h-10 w-[328px] leading-5 text-ellipsis overflow-hidden"
             >
               {content}
             </Typography>
@@ -82,14 +82,14 @@ export default memo(async function CardPost({
             <div className="flex flex-1 items-center justify-between">
               <div className="flex flex-col ml-2.5">
                 <Typography
-                  tag="p"
+                  tag="h4"
                   textSize={Size.XSM}
                   additionalClasses="text-dark-100"
                 >
                   {author.attributes.name}
                 </Typography>
                 <Typography
-                  tag="p"
+                  tag="h5"
                   weight={FontWeight.Light}
                   additionalClasses="text-dark-75 text-p leading-5"
                 >

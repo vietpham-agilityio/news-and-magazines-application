@@ -30,7 +30,7 @@ export const CardSingle = ({
     {/* card body */}
     <div className="absolute left-[9px] p-4 w-[95%] bg-white-75 rounded-xl opacity-90">
       <Typography
-        tag="h3"
+        tag="h2"
         textSize={Size.LG}
         weight={FontWeight.Normal}
         additionalClasses="text-black-100"
@@ -38,7 +38,7 @@ export const CardSingle = ({
         {title}
       </Typography>
       <Typography
-        tag="p"
+        tag="h3"
         textSize={Size.XSM}
         weight={FontWeight.Light}
         additionalClasses="text-dark-100 h-10 w-[328px] leading-5 text-ellipsis overflow-hidden "
