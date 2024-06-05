@@ -1,10 +1,10 @@
 // assets
-import HashtagFood from "@/images/hashtag/hashtag-food.png";
-import HashtagCar from "@/images/hashtag/hashtag-car.png";
-import HashtagMusic from "@/images/hashtag/hashtag-music.png";
-import HashtagSport from "@/images/hashtag/hashtag-sport.png";
-import HashtagAnimal from "@/images/hashtag/hashtag-animal.png";
-import HashtagAbstract from "@/images/hashtag/hashtag-abstract.png";
+import HashtagFood from "@/images/hashtag/hashtag-food.webp";
+import HashtagCar from "@/images/hashtag/hashtag-car.webp";
+import HashtagMusic from "@/images/hashtag/hashtag-music.webp";
+import HashtagSport from "@/images/hashtag/hashtag-sport.webp";
+import HashtagAnimal from "@/images/hashtag/hashtag-animal.webp";
+import HashtagAbstract from "@/images/hashtag/hashtag-abstract.webp";
 
 // components
 import Image, { StaticImageData } from "next/image";
