@@ -8,15 +8,16 @@ interface IProps {
 
 export const BoxIcon = ({
   icon,
-  width = "12",
-  height = "12",
+  width = '12',
+  height = '12',
   additionalClasses,
   onClick,
 }: IProps) => (
   <button
+    aria-label="box-button"
     className={`w-${width} h-${height} bg-white-90 flex items-center justify-center rounded-xl ${additionalClasses}`}
     onClick={onClick}
   >
-    { icon }
+    {icon}
   </button>
 );

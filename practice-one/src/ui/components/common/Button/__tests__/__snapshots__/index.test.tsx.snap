@@ -3,6 +3,7 @@
 exports[`Button component Button should render macth snapshot 1`] = `
 <DocumentFragment>
   <button
+    aria-label="button-element"
     class="bg-primary-100 flex items-center py-2.5 rounded-xl hover:opacity-80 undefined undefined"
   >
     <p
