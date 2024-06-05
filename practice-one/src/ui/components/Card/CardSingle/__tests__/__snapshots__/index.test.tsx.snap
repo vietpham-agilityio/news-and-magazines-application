@@ -19,20 +19,20 @@ exports[`CardSingle component should render CardSingle macth snapshot 1`] = `
     <div
       class="absolute left-[9px] p-4 w-[95%] bg-white-75 rounded-xl opacity-90"
     >
-      <h3
-        aria-level="3"
+      <h2
+        aria-level="2"
         class="text-lg font-normal text-black-100"
         role="heading"
       >
         Go Home After Long Time
-      </h3>
-      <p
-        aria-level="7"
+      </h2>
+      <h3
+        aria-level="3"
         class="text-xsm font-light text-dark-100 h-10 w-[328px] leading-5 text-ellipsis overflow-hidden "
         role="heading"
       >
         Download torrents from verified or trusted uploaders
-      </p>
+      </h3>
     </div>
   </div>
 </DocumentFragment>
