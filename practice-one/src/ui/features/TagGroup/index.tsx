@@ -21,7 +21,7 @@ export const TagGroup = ({ listTags = listTagItems }: IProps) => (
         return (
           <Typography
             key={id}
-            tag="p"
+            tag="h2"
             textSize={Size.XS}
             additionalClasses="text-dark-75 leading-4"
           >
