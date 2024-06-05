@@ -3,6 +3,7 @@
 exports[`BoxIcon component should render BoxIcon macth snapshot 1`] = `
 <DocumentFragment>
   <button
+    aria-label="box-button"
     class="w-12 h-12 bg-white-90 flex items-center justify-center rounded-xl undefined"
   >
     <svg
