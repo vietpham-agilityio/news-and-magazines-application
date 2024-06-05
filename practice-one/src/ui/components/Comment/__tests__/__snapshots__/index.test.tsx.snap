@@ -5,20 +5,20 @@ exports[`Comment component should render Comment macth snapshot 1`] = `
   <div
     class="bg-white-90 p-4 rounded-xl"
   >
-    <p
-      aria-level="7"
+    <h2
+      aria-level="2"
       class="text-sm font-medium text-dark-100"
       role="heading"
     >
       Raiden
-    </p>
-    <p
-      aria-level="7"
+    </h2>
+    <h3
+      aria-level="3"
       class="text-md font-light text-p text-dark-75"
       role="heading"
     >
       How the weather today?
-    </p>
+    </h3>
   </div>
 </DocumentFragment>
 `;

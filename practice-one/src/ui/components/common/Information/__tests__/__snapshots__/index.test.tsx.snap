@@ -5,20 +5,20 @@ exports[`Information component should render Information macth snapshot 1`] = `
   <div
     class="flex items-center justify-between"
   >
-    <p
-      aria-level="7"
+    <h2
+      aria-level="2"
       class="text-sm font-medium text-dark-100"
       role="heading"
     >
       Bagari
-    </p>
-    <p
-      aria-level="7"
+    </h2>
+    <h2
+      aria-level="2"
       class="text-xs font-light text-dark-75"
       role="heading"
     >
       02/12/2024
-    </p>
+    </h2>
   </div>
 </DocumentFragment>
 `;
