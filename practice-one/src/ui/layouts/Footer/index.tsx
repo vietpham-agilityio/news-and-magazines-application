@@ -96,14 +96,14 @@ export const Footer = () => (
       <div className="flex mt-8 bg-black-90 rounded-xl justify-center lg:justify-end">
         <div className="flex justify-between py-4 pr-4">
           <Typography
-            tag="p"
+            tag="h2"
             weight={FontWeight.Light}
             additionalClasses="text-dark-75 text-p leading-5 w-100 lg:mr-15 2xl:mr-30"
           >
             Privacy Policy | Terms & Conditions
           </Typography>
           <Typography
-            tag="p"
+            tag="h2"
             weight={FontWeight.Light}
             additionalClasses="text-dark-75 text-p leading-5"
           >
