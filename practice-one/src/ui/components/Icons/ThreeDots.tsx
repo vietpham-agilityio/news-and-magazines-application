@@ -10,6 +10,7 @@ export const ThreeDots = ({ color="#3E3232"}: IProps) => (
     width={6}
     height={18}
     fill="none"
+    data-testid= "three-dots-icon"
   >
     <path
       fill={color}
