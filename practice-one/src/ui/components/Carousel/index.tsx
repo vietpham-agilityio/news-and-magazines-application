@@ -76,7 +76,7 @@ export const Carousel = ({
               />
               <div className="absolute left-5 bottom-15 p-4 bg-white-75 rounded-xl opacity-80 w-[93%] lg:w-[96%] xl:w-[92%] 2xl:w-[95%]">
                 <Typography
-                  tag="h3"
+                  tag="h2"
                   textSize={Size.LG}
                   weight={FontWeight.Normal}
                   additionalClasses="text-black-100 h-10 text-ellipsis overflow-hidden"
@@ -84,7 +84,7 @@ export const Carousel = ({
                   {title}
                 </Typography>
                 <Typography
-                  tag="p"
+                  tag="h3"
                   textSize={Size.XSM}
                   weight={FontWeight.Light}
                   additionalClasses="text-dark-100 w-[400px] lg:w-full xl:w-[300px] 2xl:w-[543px] h-10 leading-5 text-ellipsis overflow-hidden"
