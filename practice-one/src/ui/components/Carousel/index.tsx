@@ -106,14 +106,14 @@ export const Carousel = ({
 
       <div className="flex absolute bottom-4 right-6">
         {listSlider.map((_, index) => (
-          <div
+          <button
             key={index}
             aria-label="slider-button"
             className="h-3 z-10 rounded-full w-6"
             onClick={() => setCurrentIndex(index)}
           >
             {index === currentIndex ? <Ellipse /> : <Circle />}
-          </div>
+          </button>
         ))}
       </div>
     </div>
