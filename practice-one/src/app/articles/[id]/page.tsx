@@ -34,7 +34,7 @@ export default async function Page({
       <div className="flex items-center my-11">
         <Link href="/">
           <Typography
-            tag="p"
+            tag="h2"
             textSize={Size.XS}
             weight={FontWeight.Normal}
             additionalClasses="text-dark-100 hover:text-primary-100"
@@ -46,7 +46,7 @@ export default async function Page({
           <ArrowRight />
         </i>
         <Typography
-          tag="p"
+          tag="h2"
           textSize={Size.XS}
           weight={FontWeight.Normal}
           additionalClasses="text-dark-100"
@@ -57,7 +57,7 @@ export default async function Page({
           <ArrowRight />
         </i>
         <Typography
-          tag="p"
+          tag="h2"
           textSize={Size.XS}
           weight={FontWeight.Normal}
           additionalClasses="text-dark-90 h-5 text-ellipsis overflow-hidden"
