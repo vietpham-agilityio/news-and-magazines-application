@@ -11,7 +11,7 @@ import { BoxIcon, Typography } from '@/ui/components';
 import { FontWeight, ISlideItem, Size } from '@/types';
 
 // icons
-import { ArrowLeft, ArrowRight } from '@/ui/components/Icons';
+import { ArrowLeft, ArrowRight, Circle, Ellipse } from '@/ui/components/Icons';
 
 interface IProps {
   listSlider: ISlideItem[];
@@ -106,12 +106,14 @@ export const Carousel = ({
 
       <div className="flex absolute bottom-4 right-6">
         {listSlider.map((_, index) => (
-          <button
+          <div
             key={index}
             aria-label="slider-button"
-            className={`h-2.5 mr-2 z-10 rounded-full ${index === currentIndex ? 'w-7 bg-white-100' : 'w-2.5 bg-white-75'}`}
+            className="h-3 z-10 rounded-full w-6"
             onClick={() => setCurrentIndex(index)}
-          ></button>
+          >
+            {index === currentIndex ? <Ellipse /> : <Circle />}
+          </div>
         ))}
       </div>
     </div>
