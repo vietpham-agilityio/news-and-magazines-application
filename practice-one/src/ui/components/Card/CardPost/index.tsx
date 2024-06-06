@@ -44,8 +44,6 @@ export default memo(async function CardPost({
       }`}
       >
         <Image
-          priority
-          quality={100}
           width={340}
           height={190}
           src={imageSrc}

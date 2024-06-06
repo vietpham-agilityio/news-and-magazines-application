@@ -70,8 +70,6 @@ export default function Home() {
       {/* scheduler */}
       <section className="w-full flex items-center justify-center my-10 sm:mt-9 sm:mb-12.5 lg:my-17.5">
         <Image
-          priority
-          quality={100}
           src={ImageStore.ScheduleLargeImage}
           alt="schedule"
           className="hidden lg:block"
@@ -81,8 +79,6 @@ export default function Home() {
           }}
         />
         <Image
-          priority
-          quality={100}
           src={ImageStore.ScheduleMediumImage}
           alt="schedule"
           className="hidden sm:block lg:hidden"
@@ -92,8 +88,6 @@ export default function Home() {
           }}
         />
         <Image
-          priority
-          quality={100}
           src={ImageStore.ScheduleSmallImage}
           alt="schedule"
           className="sm:hidden"
@@ -203,8 +197,6 @@ export default function Home() {
             {/* card first */}
             <div className="row-span-2 col-span-6 bg-white-90 hidden lg:block rounded-xl">
               <Image
-                priority
-                quality={100}
                 src={ImageStore.WeatherWidget}
                 alt="weather widget"
                 style={{
@@ -216,8 +208,6 @@ export default function Home() {
             {/* Weather Ankara */}
             <div className="bg-white-90 rounded-xl col-span-12 row-span-2 block sm:hidden lg:block lg:col-span-3 lg:row-span-1">
               <Image
-                priority
-                quality={100}
                 src={ImageStore.CityWeatherAnkara}
                 alt="weather city widget"
                 style={{
@@ -229,8 +219,6 @@ export default function Home() {
             {/* Weather Alaska */}
             <div className="col-span-3 bg-white-90 rounded-xl hidden lg:block">
               <Image
-                priority
-                quality={100}
                 src={ImageStore.CityWeatherAlaska}
                 alt="weather city widget"
                 style={{
@@ -242,8 +230,6 @@ export default function Home() {
             {/* Weather Paris */}
             <div className="col-span-3 bg-white-90 rounded-xl hidden lg:block">
               <Image
-                priority
-                quality={100}
                 src={ImageStore.CityWeatherParis}
                 alt="weather city widget"
                 style={{
@@ -255,8 +241,6 @@ export default function Home() {
             {/* Weather Berlin */}
             <div className="col-span-3 bg-white-90 rounded-xl hidden lg:block">
               <Image
-                priority
-                quality={100}
                 src={ImageStore.CityWeatherBerlin}
                 alt="weather city widget"
                 style={{
@@ -267,8 +251,6 @@ export default function Home() {
             </div>
             <div className="col-span-12 row-span-2 bg-white-90 rounded-xl hidden sm:block lg:hidden">
               <Image
-                priority
-                quality={100}
                 src={ImageStore.CityWeatherAnkaraLarge}
                 alt="weather city widget"
                 style={{
