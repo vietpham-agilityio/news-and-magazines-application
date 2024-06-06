@@ -3,7 +3,7 @@
 exports[`PaperPost component should render PaperPost macth snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="flex"
+    class="flex bg-white-100 h-[210px] w-full p-2.5 rounded-xl"
   >
     <img
       alt="This is museum"
@@ -14,22 +14,67 @@ exports[`PaperPost component should render PaperPost macth snapshot 1`] = `
       loading="lazy"
       src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=256&q=75"
       srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=96&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=256&q=75 2x"
-      style="color: transparent; height: 87px;"
+      style="color: transparent; width: 190px; height: 190px;"
       width="87"
     />
     <div
-      class="flex flex-col gap-1.5 ml-2.5 my-3"
+      class="flex flex-col gap-1.5 ml-2.5 py-4 flex-1"
     >
       <h2
         aria-level="2"
-        class="text-xs font-medium text-dark-100"
+        class="text-sm font-medium text-dark-100 text-ellipsis overflow-hidden h-7 px-1.5"
         role="heading"
       >
         The Privs museum close on 5AM
       </h2>
       <h3
         aria-level="3"
-        class="text-md font-light text-dark-75 text-p"
+        class="text-md font-light 
+          text-dark-75 text-ellipsis overflow-hidden
+           text-xsm
+           px-1.5"
+        role="heading"
+      >
+        The Privs start close and maintain all of the wall
+      </h3>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`PaperPost component should render PaperPost without isLargePaper prop to macth snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="flex undefined"
+  >
+    <img
+      alt="This is museum"
+      class="rounded-xl"
+      data-nimg="1"
+      decoding="async"
+      height="87"
+      loading="lazy"
+      src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=256&q=75"
+      srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=96&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=256&q=75 2x"
+      style="color: transparent; width: 87px; height: 87px;"
+      width="87"
+    />
+    <div
+      class="flex flex-col gap-1.5 ml-2.5  my-3"
+    >
+      <h2
+        aria-level="2"
+        class="text-xs font-medium text-dark-100 text-ellipsis overflow-hidden undefined"
+        role="heading"
+      >
+        The Privs museum close on 5AM
+      </h2>
+      <h3
+        aria-level="3"
+        class="text-md font-light 
+          text-dark-75 text-ellipsis overflow-hidden
+           text-p
+           undefined"
         role="heading"
       >
         The Privs start close and maintain all of the wall
