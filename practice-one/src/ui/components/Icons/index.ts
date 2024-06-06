@@ -13,6 +13,7 @@ export * from './Ellipse';
 export * from './Schedule';
 export * from './ArrowTop';
 export * from './ThreeDots';
+export * from './Triangle';
 export * from './Instagram';
 export * from './BurgerMenu';
 export * from './ChevronsUp';

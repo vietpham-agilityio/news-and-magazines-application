@@ -14,6 +14,8 @@ import {
   CardSingle,
   TitleSection,
   CardPostSkeleton,
+  Video,
+  PaperVideo,
 } from '@/ui/components';
 import { HashtagGroup, PostsByAttribute } from '@/ui/features';
 
@@ -97,7 +99,7 @@ export default function Home() {
       </section>
       {/* new posts */}
       <section className="new-posts container flex flex-col justify-between bg-white-100">
-        <div className="mb-7">
+        <div className="mb-10">
           <TitleSection title="New Posts" />
         </div>
         <div className="grid grid-cols-12 grid-rows-3 gap-6 m-auto overflow-hidden">
@@ -128,30 +130,38 @@ export default function Home() {
         </div>
       </section>
       {/* latest videos */}
-      <section className="latest-videos w-full flex flex-col justify-between bg-primary-75 h-[644px] my-10 py-16 sm:my-12.5 lg:my-17.5">
+      <section className="latest-videos w-full flex flex-col justify-between bg-white-90 h-[644px] my-10 py-16 sm:my-12.5 lg:my-17.5">
         <div className="container mx-auto">
-          <TitleSection title="Latest Videos" />
+          <div className="mb-10">
+            <TitleSection title="Latest Videos" />
+          </div>
 
-          <div className="card-group grid grid-cols-12 grid-rows-2 gap-6 mt-[30px] overflow-hidden">
+          <div className="h-[444px] grid grid-cols-12 grid-rows-2 gap-6 overflow-hidden">
             {/* card first */}
-            <div className="row-span-2 col-span-6 bg-dark-25 flex items-center justify-center">
-              <p>Latest video</p>
+            <div className="row-span-2 col-span-12 lg:col-span-6">
+              <Video
+                title="How Music Affects Your Brain (Plus 11 Artists To Listen To At Work)"
+                content="You’ve Read All Your Free Member-Only Stories, Become A Member To Get Unlimited Access. Your Membership Fee Supports The Voices You Want To Hear More From."
+                videoSrc="https://images.unsplash.com/photo-1717496002081-38a90d3cba26?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHx8"
+              />
             </div>
             {/* card secondary */}
-            <div className="h-[210px] col-span-3 bg-dark-25 flex items-center justify-center">
-              <p>Latest video</p>
+            <div className="h-[210px] hidden lg:grid lg:col-span-6">
+              <PaperVideo
+                title="5 reasons why you should wrap your hands when boxing"
+                content="So, you finally went to your first boxing class and learned the basics of the sport. You also learned that it’s recommended to wrap your hands before putting on the gloves. But there are times when you just don’t feel like wrapping them and you wonder why you even need them. Well, this blog is going to explain the benefits of wrapping your hands."
+                alt="boxing-article"
+                imageSrc="https://images.unsplash.com/photo-1622599511051-16f55a1234d0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJveGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+              />
             </div>
             {/* card tertinary */}
-            <div className="h-[210px] col-span-3 bg-dark-25 flex items-center justify-center">
-              <p>Latest video</p>
-            </div>
-            {/* card quaternary */}
-            <div className="h-[210px] col-span-3 bg-dark-25 flex items-center justify-center">
-              <p>Latest video</p>
-            </div>
-            {/* card quaternary */}
-            <div className="h-[210px] col-span-3 bg-dark-25 flex items-center justify-center">
-              <p>Latest video</p>
+            <div className="h-[210px] hidden lg:grid lg:col-span-6">
+              <PaperVideo
+                title="5 reasons why you should wrap your hands when boxing"
+                content="So, you finally went to your first boxing class and learned the basics of the sport. You also learned that it’s recommended to wrap your hands before putting on the gloves. But there are times when you just don’t feel like wrapping them and you wonder why you even need them. Well, this blog is going to explain the benefits of wrapping your hands."
+                alt="boxing-article"
+                imageSrc="https://images.unsplash.com/photo-1622599511051-16f55a1234d0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJveGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+              />
             </div>
           </div>
         </div>
