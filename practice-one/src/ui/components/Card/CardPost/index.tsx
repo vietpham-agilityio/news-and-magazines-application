@@ -44,11 +44,13 @@ export default memo(async function CardPost({
       }`}
       >
         <Image
-          className={`rounded-xl w-84.5 h-46.5 ${isVertical ? 'sm:w-87.5 sm:h-50' : 'sm:w-[190px] sm:[190px]'} lg:w-85 lg:h-47.5`}
-          width={360}
+          priority
+          quality={100}
+          width={340}
           height={190}
           src={imageSrc}
           alt={alt}
+          className={`rounded-xl w-84.5 h-46.5 ${isVertical ? 'sm:w-87.5 sm:h-50' : 'sm:w-[190px] sm:[190px]'} lg:w-85 lg:h-47.5`}
         />
         {/* card body */}
         <div className="flex flex-col flex-1">
