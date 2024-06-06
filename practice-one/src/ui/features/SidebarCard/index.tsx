@@ -1,9 +1,5 @@
-// assets
-import CarImage from '@/images/square/car.webp';
-import FrogImage from '@/images/square/frog.webp';
-import FoodImage from '@/images/square/food.webp';
-import PersonOne from '@/images/square/person-dance.webp';
-import PersonTwo from '@/images/square/person-play.webp';
+// static image
+import ImageStore from "@/constants/images";
 
 // components
 import { TitleSection, PaperPost } from "@/ui/components";
@@ -20,35 +16,35 @@ const listPostItems: IPostItem[] = [
     id: "1",
     title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
     content: "Subhead",
-    imageUrl: CarImage,
+    imageUrl: ImageStore.CarImage,
     alt: "Top post",
   },
   {
     id: "2",
     title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
     content: "Subhead",
-    imageUrl: FrogImage,
+    imageUrl: ImageStore.FrogImage,
     alt: "Top post",
   },
   {
     id: "3",
     title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
     content: "Subhead",
-    imageUrl: PersonOne,
+    imageUrl: ImageStore.PersonOne,
     alt: "Top post",
   },
   {
     id: "4",
     title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
     content: "Subhead",
-    imageUrl: FoodImage,
+    imageUrl: ImageStore.FoodImage,
     alt: "Top post",
   },
   {
     id: "5",
     title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
     content: "Subhead",
-    imageUrl: PersonTwo,
+    imageUrl: ImageStore.PersonTwo,
     alt: "Top post",
   },
 ];

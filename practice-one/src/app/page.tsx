@@ -1,15 +1,7 @@
 import { Suspense } from 'react';
 
-// assets
-import ScheduleSmallImage from '@/images/widget/sports-widget-small.webp';
-import ScheduleMediumImage from '@/images/widget/sports-widget-medium.webp';
-import ScheduleLargeImage from '@/images/widget/sports-widget-large.webp';
-import WeatherWidget from '@/images/widget/weather-widget.webp';
-import CityWeatherParis from '@/images/widget/paris-city-widget.webp';
-import CityWeatherAnkara from '@/images/widget/ankara-city-widget.webp';
-import CityWeatherBerlin from '@/images/widget/berlin-city-widget.webp';
-import CityWeatherAlaska from '@/images/widget/alaska-city-widget.webp';
-import CityWeatherAnkaraLarge from '@/images/widget/ankara-city-widget-large.webp';
+// static images
+import ImageStore from '@/constants/images';
 
 // mocks data
 import { listSlider } from '@/mocks';
@@ -73,7 +65,7 @@ export default function Home() {
       {/* scheduler */}
       <section className="w-full flex items-center justify-center my-10 sm:mt-9 sm:mb-12.5 lg:my-17.5">
         <Image
-          src={ScheduleLargeImage}
+          src={ImageStore.ScheduleLargeImage}
           alt="schedule"
           className="hidden lg:block"
           layout="responsive"
@@ -83,7 +75,7 @@ export default function Home() {
           }}
         />
         <Image
-          src={ScheduleMediumImage}
+          src={ImageStore.ScheduleMediumImage}
           alt="schedule"
           className="hidden sm:block lg:hidden"
           layout="responsive"
@@ -93,7 +85,7 @@ export default function Home() {
           }}
         />
         <Image
-          src={ScheduleSmallImage}
+          src={ImageStore.ScheduleSmallImage}
           alt="schedule"
           className="sm:hidden"
           layout="responsive"
@@ -181,7 +173,7 @@ export default function Home() {
             {/* card first */}
             <div className="row-span-2 col-span-6 bg-white-90 hidden lg:block rounded-xl">
               <Image
-                src={WeatherWidget}
+                src={ImageStore.WeatherWidget}
                 alt="weather widget"
                 layout="responsive"
                 style={{
@@ -193,7 +185,7 @@ export default function Home() {
             {/* card secondary */}
             <div className="bg-white-90 rounded-xl col-span-12 row-span-2 block sm:hidden lg:block lg:col-span-3 lg:row-span-1">
               <Image
-                src={CityWeatherAnkara}
+                src={ImageStore.CityWeatherAnkara}
                 alt="weather city widget"
                 layout="responsive"
                 style={{
@@ -205,7 +197,7 @@ export default function Home() {
             {/* card tertinary */}
             <div className="col-span-3 bg-white-90 rounded-xl hidden lg:block">
               <Image
-                src={CityWeatherAlaska}
+                src={ImageStore.CityWeatherAlaska}
                 alt="weather city widget"
                 layout="responsive"
                 style={{
@@ -217,7 +209,7 @@ export default function Home() {
             {/* card quaternary */}
             <div className="col-span-3 bg-white-90 rounded-xl hidden lg:block">
               <Image
-                src={CityWeatherParis}
+                src={ImageStore.CityWeatherParis}
                 alt="weather city widget"
                 layout="responsive"
                 style={{
@@ -229,7 +221,7 @@ export default function Home() {
             {/* card quaternary */}
             <div className="col-span-3 bg-white-90 rounded-xl hidden lg:block">
               <Image
-                src={CityWeatherBerlin}
+                src={ImageStore.CityWeatherBerlin}
                 alt="weather city widget"
                 layout="responsive"
                 style={{
@@ -240,7 +232,7 @@ export default function Home() {
             </div>
             <div className="col-span-12 row-span-2 bg-white-90 rounded-xl hidden sm:block lg:hidden">
               <Image
-                src={CityWeatherAnkaraLarge}
+                src={ImageStore.CityWeatherAnkaraLarge}
                 alt="weather city widget"
                 layout="responsive"
                 style={{
