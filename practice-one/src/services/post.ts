@@ -1,5 +1,6 @@
 import { PostResponse, PostVariant } from '@/types';
-import { SERVER_BASE_URL } from '@/constants';
+import { MESSAGE, SERVER_BASE_URL } from '@/constants';
+import { notFound } from 'next/navigation';
 
 interface PostsResponse {
   data: PostResponse[];
@@ -46,7 +47,8 @@ async function getPostDataById(
   });
 
   if (!res.ok) {
-    throw new Error('Failed to fetch data');
+    console.error(MESSAGE.NOT_FOUND);
+    notFound();
   }
 
   const data = res.json();
