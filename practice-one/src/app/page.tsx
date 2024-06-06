@@ -70,30 +70,33 @@ export default function Home() {
       {/* scheduler */}
       <section className="w-full flex items-center justify-center my-10 sm:mt-9 sm:mb-12.5 lg:my-17.5">
         <Image
+          priority
+          quality={100}
           src={ImageStore.ScheduleLargeImage}
           alt="schedule"
           className="hidden lg:block"
-          layout="responsive"
           style={{
             width: 'full',
             height: 'auto',
           }}
         />
         <Image
+          priority
+          quality={100}
           src={ImageStore.ScheduleMediumImage}
           alt="schedule"
           className="hidden sm:block lg:hidden"
-          layout="responsive"
           style={{
             width: 'full',
             height: 'auto',
           }}
         />
         <Image
+          priority
+          quality={100}
           src={ImageStore.ScheduleSmallImage}
           alt="schedule"
           className="sm:hidden"
-          layout="responsive"
           style={{
             width: 'full',
             height: 'auto',
@@ -133,20 +136,25 @@ export default function Home() {
         </div>
       </section>
       {/* latest videos */}
-      <section className="latest-videos w-full flex flex-col justify-between bg-white-90 h-[644px] my-10 py-16 sm:my-12.5 lg:my-17.5">
+      <section className="latest-videos w-full flex flex-col justify-between bg-white-90 h-[445px] sm:h-[644px] my-10 py-11 sm:py-16 sm:my-12.5 lg:my-17.5">
         <div className="container mx-auto">
-          <div className="mb-10">
+          <div className="mb-5 sm:mb-10">
             <TitleSection title="Latest Videos" />
           </div>
-          <div className="h-[444px] grid grid-cols-12 grid-rows-2 gap-6 overflow-hidden">
+          <div className="h-[295px] sm:h-[444px] grid grid-cols-12 grid-rows-2 gap-6 overflow-hidden">
             <div className="row-span-2 col-span-12 lg:col-span-6">
               {/* Video */}
-              <div className="h-full w-full relative rounded-xl flex justify-center bg-transparent p-2.5 hover:cursor-pointer">
+              <div className="h-full w-full relative rounded-xl flex items-center justify-center bg-transparent hover:cursor-pointer">
                 <Image
                   className="rounded-xl absolute"
-                  src="https://images.unsplash.com/photo-1717496002081-38a90d3cba26?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHx8"
+                  width={744}
+                  height={450}
+                  src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="panel of video"
-                  fill
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                  }}
                 />
                 <div className="hidden sm:block absolute left-2 xl:left-2.5 bottom-4 p-4 w-[97%] bg-white-75 rounded-xl opacity-90">
                   <Typography
@@ -169,7 +177,7 @@ export default function Home() {
                     The Voices You Want To Hear More From.
                   </Typography>
                 </div>
-                <div className="absolute flex items-center justify-center w-24 h-24 mt-32 bg-white-90 opacity-85 rounded-full hover:cursor-pointer sm:w-30 sm:h-30 sm:mt-24">
+                <div className="absolute flex items-center justify-center w-24 h-24 bg-white-90 opacity-85 rounded-full hover:cursor-pointer sm:w-30 sm:h-30">
                   <div className="ml-1">
                     <Triangle />
                   </div>
@@ -191,10 +199,10 @@ export default function Home() {
             <div className="h-[210px] hidden lg:grid lg:col-span-6">
               <PaperPost
                 isLargePaper
-                title="5 reasons why you should wrap your hands when boxing"
-                content="So, you finally went to your first boxing class and learned the basics of the sport. You also learned that it’s recommended to wrap your hands before putting on the gloves. But there are times when you just don’t feel like wrapping them and you wonder why you even need them. Well, this blog is going to explain the benefits of wrapping your hands."
+                title="The Health Benefits and Joys of Sunlight"
+                content="Sunlight is a spectrum of electromagnetic radiation that includes visible light, ultraviolet (UV) rays, and infrared radiation. Our bodies respond to these rays in various ways, producing essential vitamins and hormones that regulate numerous bodily functions. The most well-known benefit of sunlight is its role in the synthesis of vitamin D, a critical nutrient for bone health and immune function."
                 alt="boxing-article"
-                imageSrc="https://images.unsplash.com/photo-1622599511051-16f55a1234d0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJveGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+                imageSrc="https://images.unsplash.com/photo-1717196214681-0a66168248cf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMzR8fHxlbnwwfHx8fHw%3D"
               />
             </div>
           </div>
@@ -217,71 +225,77 @@ export default function Home() {
             {/* card first */}
             <div className="row-span-2 col-span-6 bg-white-90 hidden lg:block rounded-xl">
               <Image
+                priority
+                quality={100}
                 src={ImageStore.WeatherWidget}
                 alt="weather widget"
-                layout="responsive"
                 style={{
-                  width: 'auto',
-                  height: 'auto',
+                  width: '100%',
+                  height: '100%',
                 }}
               />
             </div>
-            {/* card secondary */}
+            {/* Weather Ankara */}
             <div className="bg-white-90 rounded-xl col-span-12 row-span-2 block sm:hidden lg:block lg:col-span-3 lg:row-span-1">
               <Image
+                priority
+                quality={100}
                 src={ImageStore.CityWeatherAnkara}
                 alt="weather city widget"
-                layout="responsive"
                 style={{
-                  width: 'auto',
-                  height: 'auto',
+                  width: '100%',
+                  height: '100%',
                 }}
               />
             </div>
-            {/* card tertinary */}
+            {/* Weather Alaska */}
             <div className="col-span-3 bg-white-90 rounded-xl hidden lg:block">
               <Image
+                priority
+                quality={100}
                 src={ImageStore.CityWeatherAlaska}
                 alt="weather city widget"
-                layout="responsive"
                 style={{
-                  width: 'auto',
-                  height: 'auto',
+                  width: '100%',
+                  height: '100%',
                 }}
               />
             </div>
-            {/* card quaternary */}
+            {/* Weather Paris */}
             <div className="col-span-3 bg-white-90 rounded-xl hidden lg:block">
               <Image
+                priority
+                quality={100}
                 src={ImageStore.CityWeatherParis}
                 alt="weather city widget"
-                layout="responsive"
                 style={{
-                  width: 'auto',
-                  height: 'auto',
+                  width: '100%',
+                  height: '100%',
                 }}
               />
             </div>
-            {/* card quaternary */}
+            {/* Weather Berlin */}
             <div className="col-span-3 bg-white-90 rounded-xl hidden lg:block">
               <Image
+                priority
+                quality={100}
                 src={ImageStore.CityWeatherBerlin}
                 alt="weather city widget"
-                layout="responsive"
                 style={{
-                  width: 'auto',
-                  height: 'auto',
+                  width: '100%',
+                  height: '100%',
                 }}
               />
             </div>
             <div className="col-span-12 row-span-2 bg-white-90 rounded-xl hidden sm:block lg:hidden">
               <Image
+                priority
+                quality={100}
                 src={ImageStore.CityWeatherAnkaraLarge}
                 alt="weather city widget"
-                layout="responsive"
                 style={{
-                  width: 'auto',
-                  height: 'auto',
+                  width: '100%',
+                  height: '100%',
                 }}
               />
             </div>
