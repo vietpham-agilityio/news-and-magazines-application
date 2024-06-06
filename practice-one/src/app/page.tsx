@@ -3,9 +3,6 @@ import { Suspense } from 'react';
 // static images
 import ImageStore from '@/constants/images';
 
-// mocks data
-import { listSlider } from '@/mocks';
-
 // components
 import Image from 'next/image';
 import {
@@ -14,13 +11,19 @@ import {
   CardSingle,
   TitleSection,
   CardPostSkeleton,
-  Video,
-  PaperVideo,
+  Typography,
+  PaperPost,
 } from '@/ui/components';
 import { HashtagGroup, PostsByAttribute } from '@/ui/features';
 
+// icons
+import { Triangle } from '@/ui/components/Icons';
+
+// mocks data
+import { listSlider } from '@/mocks';
+
 // types
-import { PostVariant, CardType } from '@/types';
+import { PostVariant, CardType, FontWeight, Size } from '@/types';
 
 export default function Home() {
   return (
@@ -135,28 +138,59 @@ export default function Home() {
           <div className="mb-10">
             <TitleSection title="Latest Videos" />
           </div>
-
           <div className="h-[444px] grid grid-cols-12 grid-rows-2 gap-6 overflow-hidden">
-            {/* card first */}
             <div className="row-span-2 col-span-12 lg:col-span-6">
-              <Video
-                title="How Music Affects Your Brain (Plus 11 Artists To Listen To At Work)"
-                content="You’ve Read All Your Free Member-Only Stories, Become A Member To Get Unlimited Access. Your Membership Fee Supports The Voices You Want To Hear More From."
-                videoSrc="https://images.unsplash.com/photo-1717496002081-38a90d3cba26?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHx8"
-              />
+              {/* Video */}
+              <div className="h-full w-full relative rounded-xl flex justify-center bg-transparent p-2.5 hover:cursor-pointer">
+                <Image
+                  className="rounded-xl absolute"
+                  src="https://images.unsplash.com/photo-1717496002081-38a90d3cba26?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHx8"
+                  alt="panel of video"
+                  fill
+                />
+                <div className="hidden sm:block absolute left-2 xl:left-2.5 bottom-4 p-4 w-[97%] bg-white-75 rounded-xl opacity-90">
+                  <Typography
+                    tag="h2"
+                    textSize={Size.MD}
+                    weight={FontWeight.Medium}
+                    additionalClasses="text-black-100"
+                  >
+                    How Music Affects Your Brain (Plus 11 Artists To Listen To
+                    At Work)
+                  </Typography>
+                  <Typography
+                    tag="h3"
+                    textSize={Size.XSM}
+                    weight={FontWeight.Light}
+                    additionalClasses="text-dark-100 h-10 w-full pr-10 leading-5 text-ellipsis overflow-hidden "
+                  >
+                    You’ve Read All Your Free Member-Only Stories, Become A
+                    Member To Get Unlimited Access. Your Membership Fee Supports
+                    The Voices You Want To Hear More From.
+                  </Typography>
+                </div>
+                <div className="absolute flex items-center justify-center w-24 h-24 mt-32 bg-white-90 opacity-85 rounded-full hover:cursor-pointer sm:w-30 sm:h-30 sm:mt-24">
+                  <div className="ml-1">
+                    <Triangle />
+                  </div>
+                </div>
+              </div>
             </div>
-            {/* card secondary */}
+
+            {/* card first */}
             <div className="h-[210px] hidden lg:grid lg:col-span-6">
-              <PaperVideo
+              <PaperPost
+                isLargePaper
                 title="5 reasons why you should wrap your hands when boxing"
                 content="So, you finally went to your first boxing class and learned the basics of the sport. You also learned that it’s recommended to wrap your hands before putting on the gloves. But there are times when you just don’t feel like wrapping them and you wonder why you even need them. Well, this blog is going to explain the benefits of wrapping your hands."
                 alt="boxing-article"
                 imageSrc="https://images.unsplash.com/photo-1622599511051-16f55a1234d0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJveGluZ3xlbnwwfHwwfHx8MA%3D%3D"
               />
             </div>
-            {/* card tertinary */}
+            {/* card secondary */}
             <div className="h-[210px] hidden lg:grid lg:col-span-6">
-              <PaperVideo
+              <PaperPost
+                isLargePaper
                 title="5 reasons why you should wrap your hands when boxing"
                 content="So, you finally went to your first boxing class and learned the basics of the sport. You also learned that it’s recommended to wrap your hands before putting on the gloves. But there are times when you just don’t feel like wrapping them and you wonder why you even need them. Well, this blog is going to explain the benefits of wrapping your hands."
                 alt="boxing-article"
