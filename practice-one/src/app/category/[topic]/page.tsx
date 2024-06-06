@@ -1,3 +1,5 @@
+// This page is deprecated and will be removed
+
 // constants
 import { flexItemCenter } from "@/constants";
 
