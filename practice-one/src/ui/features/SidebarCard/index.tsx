@@ -1,5 +1,5 @@
 // static image
-import Images from "@/constants/images";
+import ImageStore from "@/constants/images";
 
 // components
 import { TitleSection, PaperPost } from "@/ui/components";
@@ -16,35 +16,35 @@ const listPostItems: IPostItem[] = [
     id: "1",
     title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
     content: "Subhead",
-    imageUrl: Images.CarImage,
+    imageUrl: ImageStore.CarImage,
     alt: "Top post",
   },
   {
     id: "2",
     title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
     content: "Subhead",
-    imageUrl: Images.FrogImage,
+    imageUrl: ImageStore.FrogImage,
     alt: "Top post",
   },
   {
     id: "3",
     title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
     content: "Subhead",
-    imageUrl: Images.PersonOne,
+    imageUrl: ImageStore.PersonOne,
     alt: "Top post",
   },
   {
     id: "4",
     title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
     content: "Subhead",
-    imageUrl: Images.FoodImage,
+    imageUrl: ImageStore.FoodImage,
     alt: "Top post",
   },
   {
     id: "5",
     title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
     content: "Subhead",
-    imageUrl: Images.PersonTwo,
+    imageUrl: ImageStore.PersonTwo,
     alt: "Top post",
   },
 ];

@@ -22,7 +22,7 @@ import CityWeatherBerlin from '@/images/widget/berlin-city-widget.webp';
 import CityWeatherAlaska from '@/images/widget/alaska-city-widget.webp';
 import CityWeatherAnkaraLarge from '@/images/widget/ankara-city-widget-large.webp';
 
-const Images = {
+const ImageStore = {
   CarImage,
   FrogImage,
   FoodImage,
@@ -48,4 +48,4 @@ const Images = {
   AvatarAuthor,
 };
 
-export default Images;
+export default ImageStore;

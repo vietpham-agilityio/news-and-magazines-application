@@ -1,5 +1,5 @@
 // static image
-import Images from "@/constants/images";
+import ImageStore from "@/constants/images";
 
 // components
 import Image, { StaticImageData } from "next/image";
@@ -18,42 +18,42 @@ const listHashtagsItem: IHashtag[] = [
   {
     id: "1",
     name: "Hashtag Food",
-    imageUrl: Images.HashtagFood,
+    imageUrl: ImageStore.HashtagFood,
   },
   {
     id: "2",
     name: "Hashtag Animal",
-    imageUrl: Images.HashtagAnimal,
+    imageUrl: ImageStore.HashtagAnimal,
   },
   {
     id: "3",
     name: "Hashtag Car",
-    imageUrl: Images.HashtagCar,
+    imageUrl: ImageStore.HashtagCar,
   },
   {
     id: "4",
     name: "Hashtag Sport",
-    imageUrl: Images.HashtagSport,
+    imageUrl: ImageStore.HashtagSport,
   },
   {
     id: "5",
     name: "Hashtag Music",
-    imageUrl: Images.HashtagMusic,
+    imageUrl: ImageStore.HashtagMusic,
   },
   {
     id: "6",
     name: "Hashtag Food",
-    imageUrl: Images.HashtagFood,
+    imageUrl: ImageStore.HashtagFood,
   },
   {
     id: "7",
     name: "Hashtag Abstract",
-    imageUrl: Images.HashtagAbstract,
+    imageUrl: ImageStore.HashtagAbstract,
   },
   {
     id: "8",
     name: "Hashtag Animal",
-    imageUrl: Images.HashtagAnimal,
+    imageUrl: ImageStore.HashtagAnimal,
   },
 ];
 

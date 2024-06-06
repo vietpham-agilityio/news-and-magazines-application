@@ -1,5 +1,5 @@
 // static image
-import Images from "@/constants/images";
+import ImageStore from "@/constants/images";
 
 // componens
 import Image from 'next/image';
@@ -42,7 +42,7 @@ export const RightSidebar = () => (
           <Avatar
             width={87}
             height={87}
-            url={Images.AvatarAuthor}
+            url={ImageStore.AvatarAuthor}
             alt="Avatar author"
           />
           <div className="flex-1 ml-2.5 mt-3.5">
@@ -70,7 +70,7 @@ export const RightSidebar = () => (
         <Image
           width={360}
           height={180}
-          src={Images.AdvertisingTwo}
+          src={ImageStore.AdvertisingTwo}
           alt="Advertising"
         />
       </div>
@@ -78,7 +78,7 @@ export const RightSidebar = () => (
         <Image
           width={360}
           height={180}
-          src={Images.AdvertisingOne}
+          src={ImageStore.AdvertisingOne}
           alt="Advertising"
         />
       </div>
