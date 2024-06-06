@@ -14,7 +14,7 @@ import {
   Typography,
   PaperPost,
 } from '@/ui/components';
-import { HashtagGroup, PostsByAttribute } from '@/ui/features';
+import { HashtagGroup, PostsByAttribute, PostsGrid } from '@/ui/features';
 
 // icons
 import { Triangle } from '@/ui/components/Icons';
@@ -108,32 +108,10 @@ export default function Home() {
         <div className="mb-10">
           <TitleSection title="New Posts" />
         </div>
-        <div className="grid grid-cols-12 grid-rows-3 gap-6 m-auto overflow-hidden">
-          {/* card first */}
-          <div className="col-span-12 2xl:col-span-6">
-            <CardPost authorId="1" />
-          </div>
-          {/* card secondary */}
-          <div className="col-span-12 2xl:col-span-6">
-            <CardPost authorId="1" />
-          </div>
-          {/* card tertinary */}
-          <div className="col-span-12 2xl:col-span-6">
-            <CardPost authorId="1" />
-          </div>
-          {/* card quaternary */}
-          <div className="col-span-12 2xl:col-span-6">
-            <CardPost authorId="1" />
-          </div>
-          {/* card quaternary */}
-          <div className="col-span-12 2xl:col-span-6">
-            <CardPost authorId="1" />
-          </div>
-          {/* card quaternary */}
-          <div className="col-span-12 2xl:col-span-6">
-            <CardPost authorId="1" />
-          </div>
-        </div>
+         <PostsGrid
+          attribute={PostVariant.NEW}
+          cardType={CardType.HORIZONTAL}
+         />
       </section>
       {/* latest videos */}
       <section className="latest-videos w-full flex flex-col justify-between bg-white-90 h-[445px] sm:h-[644px] my-10 py-11 sm:py-16 sm:my-12.5 lg:my-17.5">
