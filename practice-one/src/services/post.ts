@@ -10,11 +10,21 @@ interface PostDataResponse {
 }
 
 async function getPostDataByAttribute(
-  attribute: PostVariant
+  attribute: PostVariant,
+  limit: number = 10,
+  page: number = 1,
 ): Promise<PostsResponse> {
-  const queryByAttribute = `sort=${attribute}:desc`;
+  const queryObject = {
+    populate: '*',
+    'pagination[pageSize]': `${limit}`,
+    'pagination[page]': `${page}`,
+    sort: `${attribute}:desc`,
+  };
 
-  const res = await fetch(`${SERVER_BASE_URL}/api/posts?${queryByAttribute}`, {
+  const query = new URLSearchParams(queryObject).toString();
+
+
+  const res = await fetch(`${SERVER_BASE_URL}/api/posts?${query}`, {
     next: { revalidate: 3600 },
   });
 
@@ -31,7 +41,9 @@ async function getPostDataById(
   id: number
 ): Promise<PostDataResponse> {
 
-  const res = await fetch(`${SERVER_BASE_URL}/api/posts/${id}`);
+  const res = await fetch(`${SERVER_BASE_URL}/api/posts/${id}`, {
+    next: { revalidate: 3600 },
+  });
 
   if (!res.ok) {
     throw new Error('Failed to fetch data');
