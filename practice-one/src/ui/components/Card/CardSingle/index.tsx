@@ -26,6 +26,7 @@ export const CardSingle = ({
       src={imageSrc}
       alt="car image"
       fill
+      sizes="100vh"
     />
     {/* card body */}
     <div className="absolute left-[9px] p-4 w-[95%] bg-white-75 rounded-xl opacity-90">

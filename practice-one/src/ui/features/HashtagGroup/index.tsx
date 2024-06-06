@@ -62,7 +62,14 @@ export const HashtagGroup = ({ listHashtags = listHashtagsItem }: IProps) =>
     const { id, name, imageUrl } = hashtag;
     return (
       <div key={id} className="mx-3 py-2.5 rounded-xl">
-        <Image src={imageUrl} width={170} height={48} alt={name} />
+        <Image
+         priority
+         quality={100}
+         src={imageUrl}
+         alt={name}
+         width={170}
+         height={48}
+        />
       </div>
     );
   });
