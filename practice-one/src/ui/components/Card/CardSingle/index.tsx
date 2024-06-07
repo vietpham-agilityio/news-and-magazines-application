@@ -4,6 +4,7 @@ import { Typography } from "@/ui/components";
 
 // types
 import { FontWeight, Size } from "@/types";
+import Link from "next/link";
 
 interface IProps {
   id: string;
@@ -20,6 +21,7 @@ export const CardSingle = ({
   imageSrc,
   alt = "Image cover",
 }: IProps) => (
+  <Link href={`articles/${id}`}>
   <div className="h-[452px] w-[300px] relative rounded-xl flex items-end justify-end bg-transparent p-2.5 hover:cursor-pointer xl:w-[360px]">
     <Image
       className="rounded-xl absolute"
@@ -48,4 +50,5 @@ export const CardSingle = ({
       </Typography>
     </div>
   </div>
+  </Link>
 );
