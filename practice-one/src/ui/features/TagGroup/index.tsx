@@ -5,7 +5,7 @@ import { ITagItem, Size } from '@/types';
 import { listTagItems } from '@/mocks';
 
 // components
-import { TitleSection, Typography } from '@/ui/components';
+import { Title, Typography } from '@/ui/components';
 
 interface IProps {
   listTags?: ITagItem[];
@@ -13,7 +13,7 @@ interface IProps {
 
 export const TagGroup = ({ listTags = listTagItems }: IProps) => (
   <div className="h-full px-[15px] py-5 bg-white-90 rounded-xl">
-    <TitleSection title="Tags" />
+    <Title title="Tags" />
     <div className="flex flex-wrap gap-3.5 mt-3">
       {listTags.map(tag => {
         const { id, tagName } = tag;

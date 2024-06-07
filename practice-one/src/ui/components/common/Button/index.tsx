@@ -25,7 +25,7 @@ export const Button = ({
 }: IProps) => (
   <button
     aria-label="button-element"
-    className={`${bgColor} flex items-center py-2.5 rounded-xl hover:opacity-80 ${leftIcon && 'pr-6 pl-4'} ${leftIcon && 'pr-6 pl-4'}`}
+    className={`${bgColor} flex items-center py-2.5 rounded-xl hover:opacity-80 ${leftIcon && 'pr-6 pl-4'} ${rightIcon && 'pr-4 pl-6'}`}
     onClick={onClick}
   >
     {leftIcon && (
