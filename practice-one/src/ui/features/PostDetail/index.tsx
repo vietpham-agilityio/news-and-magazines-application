@@ -26,13 +26,15 @@ export default async function PostDetail({ postId }: { postId: number }) {
           >
             {title}
           </Typography>
-          <Image
-            className="mx-auto rounded-xl w-[358px] h-[198px] sm:w-full sm:h-[336px] lg:h-[460px] xl:w-full xl:h-[538px] 2xl:h-[598px] 2xl:w-[1072px]"
-            src={imageUrl}
-            alt={title}
-            width={1072}
-            height={598}
-          />
+          <div className="relative mx-auto w-[358px] h-[198px] sm:w-full sm:h-[336px] lg:h-[380px] xl:w-full xl:h-[538px] 2xl:h-[598px] 2xl:w-[1072px]">
+            <Image
+              fill
+              objectFit='cover'
+              className="rounded-xl"
+              src={imageUrl}
+              alt={title}
+            />
+          </div>
         </div>
         <div className="flex w-full justify-evenly mx-auto mb-12 xl:w-2/4">
           <Tag icon={<Schedule />} content="July 14 , 2022" />

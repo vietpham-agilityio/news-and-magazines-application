@@ -8,14 +8,14 @@ interface IProps {
 }
 
 export const Avatar = ({ url, alt, width, height }: IProps) => (
+  <div style={{width: `${width}px`, height: `${height}px`, position: 'relative'}}>
   <Image
-    src={url}
+    className='rounded-xl'
     alt={alt}
-    width={width}
-    height={height}
-    className="rounded-xl cursor-pointer"
-    style={{
-      height: `${height}px`,
-    }}
+    src={url}
+    fill
+    objectFit='cover'
   />
+</div>
+
 );
