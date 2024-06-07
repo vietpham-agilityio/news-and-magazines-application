@@ -27,6 +27,7 @@ const config: Config = {
     '!**/ui/layouts/**',
     '!**/constants/**',
     '!**.storybook/**',
+    '!**/utils/**',
     '!**/*.stories.tsx',
   ],
 
