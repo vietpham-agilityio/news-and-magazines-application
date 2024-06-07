@@ -1,5 +1,3 @@
-import { memo } from 'react';
-
 // components
 import Link from 'next/link';
 import Image, { StaticImageData } from 'next/image';
@@ -12,7 +10,7 @@ import { FontWeight, Size } from '@/types';
 // services
 import { getAuthorById } from '@/services';
 
-export default memo(async function CardPost({
+export default async function CardPost({
   id = 'card-post',
   title = 'How to Drive a Car Safely',
   content = 'Ah, the joy of the open road—it’s a good feeling. But if you’re new to driving, you may feel a little nervous about getting behind the wheel. Don’t worry. While it’s true that accidents can happen to anybody, there are things you can do to drive safely and do your best to avoid them. ',
@@ -104,4 +102,4 @@ export default memo(async function CardPost({
       </div>
     </Link>
   );
-});
+}

@@ -1,5 +1,3 @@
-import { memo } from 'react';
-
 // service
 import { getPostDataByAttribute } from '@/services';
 
@@ -10,7 +8,7 @@ import CardPost from '@/ui/components/Card/CardPost';
 import { PostVariant, PostResponse } from '@/types';
 import { CardType } from '@/types';
 
-export default memo(async function PostGrid({
+export default async function PostGrid({
   attribute,
   cardType,
 }: {
@@ -42,4 +40,4 @@ export default memo(async function PostGrid({
       })}
     </div>
   );
-});
+}

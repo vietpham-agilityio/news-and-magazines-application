@@ -1,5 +1,3 @@
-import { memo } from 'react';
-
 // services
 import { getPostDataById } from '@/services';
 
@@ -13,7 +11,7 @@ import { FontWeight, Size } from '@/types';
 // icons
 import { ChatBox, File, Schedule } from '@/ui/components/Icons';
 
-export default memo(async function PostDetail({ postId }: { postId: number }) {
+export default async function PostDetail({ postId }: { postId: number }) {
   const postResponse = await getPostDataById(postId);
 
   const { title, content, imageUrl } = postResponse.data.attributes;
@@ -68,4 +66,4 @@ export default memo(async function PostDetail({ postId }: { postId: number }) {
       </article>
     </section>
   );
-});
+}
