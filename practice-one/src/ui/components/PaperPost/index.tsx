@@ -21,22 +21,24 @@ export const PaperPost = ({
 }: IProps) => {
   const titleSize = isLargePaper ? Size.SM : Size.XS;
   const contentSize = isLargePaper ? 'text-xsm' : 'text-p';
+  const imageWidth = isLargePaper ? '190px' : '87px';
+  const imageHeight = isLargePaper ? '190px' : '87px';
 
   return (
     <div
       className={`flex cursor-pointer ${isLargePaper && 'bg-white-100 h-[210px] w-full p-2.5 rounded-xl'}`}
     >
-      <Image
-        className="rounded-xl"
-        width={87}
-        height={87}
-        src={imageSrc}
-        alt={alt}
-        style={{
-          width: isLargePaper ? '190px' : '87px',
-          height: isLargePaper ? '190px' : '87px',
-        }}
-      />
+      <div
+        style={{ width: imageWidth, height: imageHeight, position: 'relative' }}
+      >
+        <Image
+          fill
+          objectFit="cover"
+          className="rounded-xl"
+          src={imageSrc}
+          alt={alt}
+        />
+      </div>
       <div
         className={`flex flex-col gap-1.5 ml-2.5 ${isLargePaper ? 'py-4 flex-1' : ' my-3'}`}
       >

@@ -28,6 +28,7 @@ export const CardSingle = ({
       src={imageSrc}
       alt="car image"
       fill
+      objectFit="cover"
       sizes="100vh"
     />
     {/* card body */}

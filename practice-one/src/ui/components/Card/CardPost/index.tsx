@@ -41,13 +41,9 @@ export default async function CardPost({
           : 'sm:flex-row lg:h-[210px] lg:w-[744px] gap-2.5'
       }`}
       >
-        <Image
-          width={340}
-          height={190}
-          src={imageSrc}
-          alt={alt}
-          className={`rounded-xl w-84.5 h-46.5 ${isVertical ? 'sm:w-87.5 sm:h-50' : 'sm:w-[190px] sm:[190px]'} lg:w-85 lg:h-47.5`}
-        />
+        <div className={`relative w-84.5 h-46.5 ${isVertical ? 'sm:w-87.5 sm:h-50' : 'sm:w-[190px] sm:[190px]'} lg:w-85 lg:h-47.5`}>
+          <Image className='rounded-xl' fill src={imageSrc} alt={alt} objectFit='cover' />
+        </div>
         {/* card body */}
         <div className="flex flex-col flex-1">
           <div className="flex flex-col gap-4 p-4">
