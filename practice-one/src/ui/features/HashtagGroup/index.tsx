@@ -61,9 +61,8 @@ export const HashtagGroup = ({ listHashtags = listHashtagsItem }: IProps) =>
   listHashtags.map((hashtag) => {
     const { id, name, imageUrl } = hashtag;
     return (
-      <div key={id} className="mx-3 py-2.5 rounded-xl">
+      <div key={id} className="mx-3 py-2.5 rounded-xl cursor-pointer">
         <Image
-         priority
          src={imageUrl}
          alt={name}
          width={170}

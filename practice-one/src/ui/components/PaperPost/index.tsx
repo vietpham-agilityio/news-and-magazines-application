@@ -24,7 +24,7 @@ export const PaperPost = ({
 
   return (
     <div
-      className={`flex ${isLargePaper && 'bg-white-100 h-[210px] w-full p-2.5 rounded-xl'}`}
+      className={`flex cursor-pointer ${isLargePaper && 'bg-white-100 h-[210px] w-full p-2.5 rounded-xl'}`}
     >
       <Image
         className="rounded-xl"

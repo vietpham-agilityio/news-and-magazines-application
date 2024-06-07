@@ -39,7 +39,7 @@ export default function Home() {
         {/* first card */}
         <div className="hidden xl:block h-full">
           <CardSingle
-            id="1"
+            id="15"
             title="Go Home After Long Time"
             content="Download torrents from verified or trusted uploaders. If you're a BitTorrent user looking for safety tips, use this method. Both of the big-name BitTorrent indexers (The Pirate Bay and KickAssTorrents) use symbols to highlight torrents uploaded by verified users. "
             imageSrc="https://images.unsplash.com/photo-1716223996696-ad6252a7fe7c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D"
@@ -48,7 +48,7 @@ export default function Home() {
         {/* second card */}
         <div className="hidden xl:block h-full">
           <CardSingle
-            id="2"
+            id="16"
             title="Street Way To The Conner"
             content="Download torrents from verified or trusted uploaders. If you're a BitTorrent user looking for safety tips, use this method. Both of the big-name BitTorrent indexers (The Pirate Bay and KickAssTorrents) use symbols to highlight torrents uploaded by verified users. "
             imageSrc="https://images.unsplash.com/photo-1716223996699-9738f0f12805?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D"
@@ -75,7 +75,6 @@ export default function Home() {
       <ComponentInView>
         <section className="w-full flex items-center justify-center my-10 sm:mt-9 sm:mb-12.5 lg:my-17.5">
           <Image
-            priority
             src={ImageStore.ScheduleLargeImage}
             alt="schedule"
             className="hidden lg:block"
@@ -85,7 +84,6 @@ export default function Home() {
             }}
           />
           <Image
-            priority
             src={ImageStore.ScheduleMediumImage}
             alt="schedule"
             className="hidden sm:block lg:hidden"
@@ -95,7 +93,6 @@ export default function Home() {
             }}
           />
           <Image
-            priority
             src={ImageStore.ScheduleSmallImage}
             alt="schedule"
             className="sm:hidden"

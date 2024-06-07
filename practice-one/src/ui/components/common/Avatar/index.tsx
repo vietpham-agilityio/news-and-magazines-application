@@ -13,7 +13,7 @@ export const Avatar = ({ url, alt, width, height }: IProps) => (
     alt={alt}
     width={width}
     height={height}
-    className="rounded-xl"
+    className="rounded-xl cursor-pointer"
     style={{
       height: `${height}px`,
     }}
