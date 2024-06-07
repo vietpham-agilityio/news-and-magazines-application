@@ -86,7 +86,7 @@ export const Footer = () => (
                 bgColor="bg-gradient-to-bl from-sunSet-0 to-sunSet-100"
                 leftIcon={<Instagram />}
               />
-              <div className="w-10 h-10 ml-4 bg-gradient-to-bl from-blueLinear-0 to-blueLinear-100 flex items-center justify-center rounded-xl">
+              <div className="w-10 h-10 ml-4 bg-gradient-to-bl from-blueLinear-0 to-blueLinear-100 flex items-center justify-center rounded-xl cursor-pointer">
                 <Twitter />
               </div>
             </div>
