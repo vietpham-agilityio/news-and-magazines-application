@@ -8,7 +8,7 @@ interface IProps {
   title: string;
 }
 
-export const TitleSection = ({ title }: IProps) => (
+export const Title = ({ title }: IProps) => (
   <div className={`${flexItemCenter}`}>
     {/* Dot color */}
     <div className="w-1 h-[11px] bg-primary-100 rounded-2xl mr-1.5" />

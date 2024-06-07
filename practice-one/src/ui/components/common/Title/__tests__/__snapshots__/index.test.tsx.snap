@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TitleSection component TitleSection should render macth snapshot 1`] = `
+exports[`Title component Title should render macth snapshot 1`] = `
 <DocumentFragment>
   <div
     class="flex items-center"
