@@ -63,6 +63,7 @@ export const HashtagGroup = ({ listHashtags = listHashtagsItem }: IProps) =>
     return (
       <div key={id} className="mx-3 py-2.5 rounded-xl">
         <Image
+         priority
          src={imageUrl}
          alt={name}
          width={170}
