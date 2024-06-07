@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 
 // constants
 import { flexItemCenter } from '@/constants';
@@ -47,6 +47,12 @@ export const BurgerMenu = ({ listNav }: IProps) => {
     () => (handleCloseMenu(), handleCloseSubMenu()),
     [handleCloseMenu, handleCloseSubMenu]
   );
+
+  useEffect(() => {
+    isOpenMenu
+      ? (document.body.style.overflow = 'hidden')
+      : (document.body.style.overflow = 'auto');
+  }, [isOpenMenu]);
 
   return (
     <div>
@@ -102,7 +108,7 @@ export const BurgerMenu = ({ listNav }: IProps) => {
                         textSize={Size.XS}
                         additionalClasses="text-dark-75 cursor-pointer hover:text-secondary-100"
                       >
-                        { item.name }
+                        {item.name}
                       </Typography>
                     </Link>
                   </li>
