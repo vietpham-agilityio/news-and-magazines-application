@@ -3,20 +3,23 @@
 exports[`PaperPost component should render PaperPost macth snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="flex bg-white-100 h-[210px] w-full p-2.5 rounded-xl"
+    class="flex cursor-pointer bg-white-100 h-[210px] w-full p-2.5 rounded-xl"
   >
-    <img
-      alt="This is museum"
-      class="rounded-xl"
-      data-nimg="1"
-      decoding="async"
-      height="87"
-      loading="lazy"
-      src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=256&q=75"
-      srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=96&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=256&q=75 2x"
-      style="color: transparent; width: 190px; height: 190px;"
-      width="87"
-    />
+    <div
+      style="width: 190px; height: 190px; position: relative;"
+    >
+      <img
+        alt="This is museum"
+        class="rounded-xl"
+        data-nimg="fill"
+        decoding="async"
+        loading="lazy"
+        sizes="100vw"
+        src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=3840&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=3840&q=75 3840w"
+        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+      />
+    </div>
     <div
       class="flex flex-col gap-1.5 ml-2.5 py-4 flex-1"
     >
@@ -45,20 +48,23 @@ exports[`PaperPost component should render PaperPost macth snapshot 1`] = `
 exports[`PaperPost component should render PaperPost without isLargePaper prop to macth snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="flex undefined"
+    class="flex cursor-pointer undefined"
   >
-    <img
-      alt="This is museum"
-      class="rounded-xl"
-      data-nimg="1"
-      decoding="async"
-      height="87"
-      loading="lazy"
-      src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=256&q=75"
-      srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=96&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=256&q=75 2x"
-      style="color: transparent; width: 87px; height: 87px;"
-      width="87"
-    />
+    <div
+      style="width: 87px; height: 87px; position: relative;"
+    >
+      <img
+        alt="This is museum"
+        class="rounded-xl"
+        data-nimg="fill"
+        decoding="async"
+        loading="lazy"
+        sizes="100vw"
+        src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=3840&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1563026915-32eba3e315de%3Fq%3D80%26w%3D2531%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&w=3840&q=75 3840w"
+        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+      />
+    </div>
     <div
       class="flex flex-col gap-1.5 ml-2.5  my-3"
     >
