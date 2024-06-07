@@ -14,6 +14,7 @@ import {
   Typography,
   PaperPost,
   Button,
+  TitleSection,
 } from '@/ui/components';
 import { HashtagGroup, PostsByAttribute, PostsGrid } from '@/ui/features';
 
@@ -30,6 +31,7 @@ import ComponentInView from '@/utils/InView';
 export default function Home() {
   return (
     <main className="flex flex-col items-center">
+
       {/* category */}
       <section className="category container bg-white-90 items-center justify-center rounded-xl hidden xl:flex lg:mt-11">
         <HashtagGroup />
@@ -63,9 +65,7 @@ export default function Home() {
 
       {/* popular posts */}
       <section className="popular-posts container flex flex-col bg-white-100 mt-7.5 sm:my-0">
-      <div className="mb-5 sm:mb-10">
-        <Title title="Popular Posts" />
-      </div>
+        <TitleSection title="Popular Posts" />
         <Suspense fallback={<CardPostSkeleton />}>
           <PostsByAttribute
             attribute={PostVariant.POPULAR}
@@ -106,6 +106,7 @@ export default function Home() {
           />
         </section>
       </ComponentInView>
+
       {/* new posts */}
       <ComponentInView>
         <section className="new-posts container flex flex-col justify-between bg-white-100">
@@ -200,9 +201,7 @@ export default function Home() {
       {/* trendy posts */}
       <ComponentInView>
         <section className="trendy-posts container flex flex-col justify-between bg-white-100 overflow-hidden">
-        <div className="mb-5 sm:mb-10 flex justify-between">
-          <Title title="Trendy Posts" />
-        </div>
+          <TitleSection title="Trendy Posts" />
           <Suspense fallback={<CardPostSkeleton />}>
             <PostsByAttribute
               attribute={PostVariant.TRENDY}
@@ -288,9 +287,7 @@ export default function Home() {
       {/* top posts */}
       <ComponentInView>
         <section className="top-posts container flex flex-col justify-between bg-white-100 mb-30 sm:mb-7.5 lg:mb-25">
-        <div className="mb-5 sm:mb-10">
-          <Title title="Top Posts" />
-        </div>
+          <TitleSection title="Top Posts" />
           <Suspense fallback={<CardPostSkeleton />}>
             <PostsByAttribute
               attribute={PostVariant.TOP}
