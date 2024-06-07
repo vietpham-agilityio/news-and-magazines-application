@@ -3,7 +3,7 @@ import { Suspense } from 'react';
 
 // componens
 import {
-  TitleSection,
+  Title,
   Typography,
   DetailPostSkeleton,
   CardPostSkeleton,
@@ -74,7 +74,7 @@ export default async function Page({
       </div>
 
       <section className="container flex flex-col justify-between bg-white-100 h-459 mt-17.5 mb-25">
-        <TitleSection title="Popular Posts" />
+        <Title title="Popular Posts" />
         <Suspense fallback={<CardPostSkeleton />}>
           <PostsByAttribute
             attribute={PostVariant.POPULAR}

@@ -1,7 +1,7 @@
 // components
 import Link from 'next/link';
 import Image from 'next/image';
-import { Button, TitleSection, Comment, Typography } from '@/ui/components';
+import { Button, Title, Comment, Typography } from '@/ui/components';
 
 // icons
 import { Instagram, MailBox, Twitter } from '@/ui/components/Icons';
@@ -15,7 +15,7 @@ export const Footer = () => (
         <div className="pl-6 lg:pl-10">
           <section className="w-100">
             <div className="mb-5">
-              <TitleSection title="Mega news" />
+              <Title title="Mega news" />
             </div>
             <p className="pr-8 lg:pr-12 h-40 text-xs text-justify font-normal text-black-75">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -30,7 +30,7 @@ export const Footer = () => (
           {/* Newsletters */}
           <section className="w-100">
             <div className="mb-5">
-              <TitleSection title="Newsletters" />
+              <Title title="Newsletters" />
             </div>
             <label htmlFor="search" className="relative mr-6 block">
               <div className="absolute left-6 top-4"></div>
@@ -51,7 +51,7 @@ export const Footer = () => (
         <div className="ml-4 lg:ml-16 2xl:ml-30">
           <section className="link-group">
             <div className="mb-5">
-              <TitleSection title="Categories" />
+              <Title title="Categories" />
             </div>
             <ul>
               <li className="text-p text-dark-100 mb-2 hover:text-secondary-100">
@@ -76,7 +76,7 @@ export const Footer = () => (
           </section>
           <section className="social-group">
             <div className="mb-5">
-              <TitleSection title="Social network" />
+              <Title title="Social network" />
             </div>
             <div className="h-12 flex items-center">
               <Button
@@ -116,7 +116,7 @@ export const Footer = () => (
       {/* comment group */}
       <section className="h-full bg-white-100 mx-5 w-full 2xl:w-90">
         <div className="mb-5">
-          <TitleSection title="New Comments" />
+          <Title title="New Comments" />
         </div>
         <div className="comment-wrapper">
           <div className="mb-2">
@@ -148,7 +148,7 @@ export const Footer = () => (
       {/* Social grid */}
       <section className="w-90 h-full bg-white-100 hidden 2xl:block ">
         <div className="mb-5">
-          <TitleSection title="Follow On Instagram" />
+          <Title title="Follow On Instagram" />
         </div>
         <div className="media-wrapper grid grid-cols-3 grid-rows-3 gap-5">
           <Image
