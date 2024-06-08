@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hashtag feature component HashtagGroup should render macth snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="mx-3 py-2.5 rounded-xl cursor-pointer"
+  >
+    <img
+      alt="Hashtag Food"
+      data-nimg="1"
+      decoding="async"
+      height="48"
+      loading="lazy"
+      src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
+      srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
+      style="color: transparent;"
+      width="170"
+    />
+  </div>
+  <div
+    class="mx-3 py-2.5 rounded-xl cursor-pointer"
+  >
+    <img
+      alt="Hashtag Animal"
+      data-nimg="1"
+      decoding="async"
+      height="48"
+      loading="lazy"
+      src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
+      srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
+      style="color: transparent;"
+      width="170"
+    />
+  </div>
+  <div
+    class="mx-3 py-2.5 rounded-xl cursor-pointer"
+  >
+    <img
+      alt="Hashtag Car"
+      data-nimg="1"
+      decoding="async"
+      height="48"
+      loading="lazy"
+      src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
+      srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
+      style="color: transparent;"
+      width="170"
+    />
+  </div>
+  <div
+    class="mx-3 py-2.5 rounded-xl cursor-pointer"
+  >
+    <img
+      alt="Hashtag Sport"
+      data-nimg="1"
+      decoding="async"
+      height="48"
+      loading="lazy"
+      src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
+      srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
+      style="color: transparent;"
+      width="170"
+    />
+  </div>
+  <div
+    class="mx-3 py-2.5 rounded-xl cursor-pointer"
+  >
+    <img
+      alt="Hashtag Music"
+      data-nimg="1"
+      decoding="async"
+      height="48"
+      loading="lazy"
+      src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
+      srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
+      style="color: transparent;"
+      width="170"
+    />
+  </div>
+  <div
+    class="mx-3 py-2.5 rounded-xl cursor-pointer"
+  >
+    <img
+      alt="Hashtag Food"
+      data-nimg="1"
+      decoding="async"
+      height="48"
+      loading="lazy"
+      src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
+      srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
+      style="color: transparent;"
+      width="170"
+    />
+  </div>
+  <div
+    class="mx-3 py-2.5 rounded-xl cursor-pointer"
+  >
+    <img
+      alt="Hashtag Abstract"
+      data-nimg="1"
+      decoding="async"
+      height="48"
+      loading="lazy"
+      src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
+      srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
+      style="color: transparent;"
+      width="170"
+    />
+  </div>
+  <div
+    class="mx-3 py-2.5 rounded-xl cursor-pointer"
+  >
+    <img
+      alt="Hashtag Animal"
+      data-nimg="1"
+      decoding="async"
+      height="48"
+      loading="lazy"
+      src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
+      srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
+      style="color: transparent;"
+      width="170"
+    />
+  </div>
+</DocumentFragment>
+`;

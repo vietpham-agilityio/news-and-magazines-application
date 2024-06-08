@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { CardSingle } from '@/ui/components';
 
 const meta = {
-  title: 'Components/CardSingle',
+  title: 'Components/Card/CardSingle',
   component: CardSingle,
   parameters: {
     layout: 'centered',
