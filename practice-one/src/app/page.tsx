@@ -30,7 +30,6 @@ import ComponentInView from '@/utils/InView';
 export default function Home() {
   return (
     <main className="flex flex-col items-center">
-
       {/* category */}
       <section className="category container bg-white-90 items-center justify-center rounded-xl hidden xl:flex lg:mt-11">
         <HashtagGroup listHashtags={listHashtagsItem} />
@@ -74,76 +73,67 @@ export default function Home() {
       </section>
 
       {/* scheduler */}
-      <ComponentInView>
-        <section className="w-full flex items-center justify-center my-10 sm:mt-9 sm:mb-12.5 lg:my-17.5">
-          <Image
-            src={ImageStore.ScheduleLargeImage}
-            alt="schedule"
-            className="hidden lg:block"
-            style={{
-              width: 'full',
-              height: 'auto',
-            }}
-          />
-          <Image
-            src={ImageStore.ScheduleMediumImage}
-            alt="schedule"
-            className="hidden sm:block lg:hidden"
-            style={{
-              width: 'full',
-              height: 'auto',
-            }}
-          />
-          <Image
-            src={ImageStore.ScheduleSmallImage}
-            alt="schedule"
-            className="sm:hidden"
-            style={{
-              width: 'full',
-              height: 'auto',
-            }}
-          />
-        </section>
-      </ComponentInView>
+      <section className="w-full flex items-center justify-center my-10 sm:mt-9 sm:mb-12.5 lg:my-17.5">
+        <Image
+          src={ImageStore.ScheduleLargeImage}
+          alt="schedule"
+          className="hidden lg:block"
+          style={{
+            width: 'full',
+            height: 'auto',
+          }}
+        />
+        <Image
+          src={ImageStore.ScheduleMediumImage}
+          alt="schedule"
+          className="hidden sm:block lg:hidden"
+          style={{
+            width: 'full',
+            height: 'auto',
+          }}
+        />
+        <Image
+          src={ImageStore.ScheduleSmallImage}
+          alt="schedule"
+          className="sm:hidden"
+          style={{
+            width: 'full',
+            height: 'auto',
+          }}
+        />
+      </section>
 
       {/* new posts */}
-      <ComponentInView>
-        <section className="new-posts container flex flex-col justify-between bg-white-100">
-          <div className="mb-5 sm:mb-10 flex justify-between">
-            <Title title="New Posts" />
-            <Button
-              label="Show All"
-              rightIcon={<ArrowRight />}
-              textColor="text-dark-75"
-              bgColor="bg-white-90"
-            />
-          </div>
-          <PostsGrid
-            attribute={PostVariant.NEW}
-            cardType={CardType.HORIZONTAL}
+      <section className="new-posts container flex flex-col justify-between bg-white-100">
+        <div className="mb-5 sm:mb-10 flex justify-between">
+          <Title title="New Posts" />
+          <Button
+            label="Show All"
+            rightIcon={<ArrowRight />}
+            textColor="text-dark-75"
+            bgColor="bg-white-90"
           />
-        </section>
-      </ComponentInView>
+        </div>
+        <PostsGrid attribute={PostVariant.NEW} cardType={CardType.HORIZONTAL} />
+      </section>
 
       {/* latest videos */}
-      <section className="latest-videos w-full flex flex-col justify-between bg-white-90 h-[445px] sm:h-[644px] my-10 py-11 sm:py-16 sm:my-12.5 lg:my-17.5">
+      <section className="w-full bg-white-90 my-10 py-11 sm:py-16 sm:my-12.5 lg:my-17.5">
         <div className="container mx-auto">
-          <div className="mb-5 sm:mb-10 flex justify-between">
+          <div className="mb-5 sm:mb-10">
             <Title title="Latest Videos" />
           </div>
-          <div className="h-[295px] sm:h-[444px] grid grid-cols-12 grid-rows-2 gap-6 overflow-hidden">
+          <div className="grid grid-cols-12 grid-rows-2 sm:gap-6">
             <div className="row-span-2 col-span-12 lg:col-span-6">
               {/* Video */}
-              <div className="h-full w-full relative rounded-xl flex items-center justify-center bg-transparent hover:cursor-pointer">
-                <div>
-                  <Image
-                    fill
-                    objectFit="cover"
-                    className="rounded-xl absolute"
-                    src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="panel of video"
-                  />
-                </div>
+              <div className="relative h-[295px] sm:h-[444px] rounded-xl flex items-center justify-center bg-transparent hover:cursor-pointer">
+                <Image
+                  fill
+                  objectFit="cover"
+                  className="rounded-xl absolute"
+                  src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="panel of video"
+                />
                 <div className="hidden sm:block absolute left-2 xl:left-2.5 bottom-4 p-4 w-[97%] bg-white-75 rounded-xl opacity-90">
                   <Typography
                     tag="h2"
