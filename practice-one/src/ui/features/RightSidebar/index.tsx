@@ -6,6 +6,9 @@ import Image from 'next/image';
 import { Avatar, Button, Information } from '@/ui/components';
 import { TagGroup, SidebarCard } from '@/ui/features';
 
+// mock data
+import { listPostItems } from "@/mocks";
+
 // icons
 import { ChatBox, PaperPlane, Plus, SaveTagSmall } from '@/ui/components/Icons';
 
@@ -63,7 +66,7 @@ export const RightSidebar = () => (
       </div>
     </div>
     <div className="mb-[25px] hidden lg:block">
-      <SidebarCard />
+      <SidebarCard listPosts={listPostItems} />
     </div>
     <div className="flex justify-between gap-5 lg:flex-col">
       <div className="">
