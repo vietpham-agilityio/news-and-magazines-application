@@ -1,0 +1,524 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer feature component Footer should render macth snapshot 1`] = `
+<DocumentFragment>
+  <footer
+    class="footer w-full hidden items-center justify-center bg-white-100 mb-12.5 sm:flex lg:mb-11"
+  >
+    <div
+      class="flex-1 bg-white-90 py-10 pr-6 rounded-e-[50px] mr-11 lg:mr-0 lg:pr-10"
+    >
+      <div
+        class="flex justify-center lg:justify-end pr-4 lg:pr-0"
+      >
+        <div
+          class="pl-6 lg:pl-10"
+        >
+          <section
+            class="w-100"
+          >
+            <div
+              class="mb-5"
+            >
+              <div
+                class="flex items-center"
+              >
+                <div
+                  class="w-1 h-[11px] bg-primary-100 rounded-2xl mr-1.5"
+                />
+                <h2
+                  aria-level="2"
+                  class="text-md font-medium text-dark-100 leading-6"
+                  role="heading"
+                >
+                  Mega news
+                </h2>
+              </div>
+            </div>
+            <p
+              class="pr-8 lg:pr-12 h-40 text-xs text-justify font-normal text-black-75"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin
+            </p>
+          </section>
+          <section
+            class="w-100"
+          >
+            <div
+              class="mb-5"
+            >
+              <div
+                class="flex items-center"
+              >
+                <div
+                  class="w-1 h-[11px] bg-primary-100 rounded-2xl mr-1.5"
+                />
+                <h2
+                  aria-level="2"
+                  class="text-md font-medium text-dark-100 leading-6"
+                  role="heading"
+                >
+                  Newsletters
+                </h2>
+              </div>
+            </div>
+            <label
+              class="relative mr-6 block"
+              for="search"
+            >
+              <div
+                class="absolute left-6 top-4"
+              />
+              <div
+                class="absolute right-3 top-4"
+              >
+                <svg
+                  fill="none"
+                  height="16"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.125.5C19.141.5 20 1.36 20 2.375c0 .625-.313 1.172-.781 1.523l-8.477 6.368a1.232 1.232 0 0 1-1.523 0L.742 3.898A1.87 1.87 0 0 1 0 2.375C0 1.359.82.5 1.875.5h16.25ZM8.477 11.281a2.52 2.52 0 0 0 3.007 0L20 4.875V13c0 1.406-1.133 2.5-2.5 2.5h-15A2.468 2.468 0 0 1 0 13V4.875l8.477 6.406Z"
+                    fill="#3E3232"
+                    fill-opacity="0.75"
+                  />
+                </svg>
+              </div>
+              <input
+                class="h-12 text-p bg-white-100 placeholder-dark-100 rounded-xl pl-3 pr-14 outline-none w-full lg:w-100"
+                id="search"
+                name="search"
+                placeholder="Write your email ..."
+                type="text"
+              />
+            </label>
+          </section>
+        </div>
+        <div
+          class="ml-4 lg:ml-16 2xl:ml-30"
+        >
+          <section
+            class="link-group"
+          >
+            <div
+              class="mb-5"
+            >
+              <div
+                class="flex items-center"
+              >
+                <div
+                  class="w-1 h-[11px] bg-primary-100 rounded-2xl mr-1.5"
+                />
+                <h2
+                  aria-level="2"
+                  class="text-md font-medium text-dark-100 leading-6"
+                  role="heading"
+                >
+                  Categories
+                </h2>
+              </div>
+            </div>
+            <ul>
+              <li
+                class="text-p text-dark-100 mb-2 hover:text-secondary-100"
+              >
+                <a
+                  href="/category/sports"
+                >
+                  Sports
+                </a>
+              </li>
+              <li
+                class="text-p text-dark-100 mb-2 hover:text-secondary-100"
+              >
+                <a
+                  href="/category/entertainment"
+                >
+                  Entertainment
+                </a>
+              </li>
+              <li
+                class="text-p text-dark-100 mb-2 hover:text-secondary-100"
+              >
+                <a
+                  href="/category/science-and-environment"
+                >
+                  Science
+                </a>
+              </li>
+              <li
+                class="text-p text-dark-100 mb-2 hover:text-secondary-100"
+              >
+                <a
+                  href="/category/health-and-wellness"
+                >
+                  Health Living
+                </a>
+              </li>
+              <li
+                class="text-p text-dark-100 mb-2 hover:text-secondary-100"
+              >
+                <a
+                  href="/category/lifestyle"
+                >
+                  Lifestyle
+                </a>
+              </li>
+              <li
+                class="text-p text-dark-100 mb-3 hover:text-secondary-100"
+              >
+                <a
+                  href="/category/technology"
+                >
+                  Technology
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section
+            class="social-group"
+          >
+            <div
+              class="mb-5"
+            >
+              <div
+                class="flex items-center"
+              >
+                <div
+                  class="w-1 h-[11px] bg-primary-100 rounded-2xl mr-1.5"
+                />
+                <h2
+                  aria-level="2"
+                  class="text-md font-medium text-dark-100 leading-6"
+                  role="heading"
+                >
+                  Social network
+                </h2>
+              </div>
+            </div>
+            <div
+              class="h-12 flex items-center"
+            >
+              <button
+                aria-label="button-element"
+                class="bg-gradient-to-bl from-sunSet-0 to-sunSet-100 flex items-center py-2.5 rounded-xl hover:opacity-80 pr-6 pl-4 undefined"
+              >
+                <i
+                  class="mr-2 mb-1"
+                >
+                  <svg
+                    fill="none"
+                    height="13"
+                    width="14"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 3.605a3.163 3.163 0 0 1 3.145 3.145A3.145 3.145 0 0 1 7 9.895 3.128 3.128 0 0 1 3.855 6.75 3.145 3.145 0 0 1 7 3.605Zm0 5.196c1.121 0 2.023-.903 2.023-2.051A2.019 2.019 0 0 0 7 4.727c-1.148 0-2.05.902-2.05 2.023 0 1.148.929 2.05 2.05 2.05Zm3.992-5.305a.735.735 0 0 0-.738-.738.735.735 0 0 0-.738.738c0 .41.328.738.738.738s.738-.328.738-.738Zm2.078.738c.055 1.012.055 4.047 0 5.059-.054.984-.273 1.832-.984 2.57-.711.711-1.586.93-2.57.985-1.012.054-4.047.054-5.059 0-.984-.055-1.832-.274-2.57-.985-.711-.738-.93-1.586-.985-2.57-.054-1.012-.054-4.047 0-5.059.055-.984.274-1.859.985-2.57.738-.71 1.586-.93 2.57-.984C5.469.625 8.504.625 9.516.68c.984.054 1.859.273 2.57.984.71.711.93 1.586.984 2.57Zm-1.312 6.125c.328-.793.246-2.707.246-3.609 0-.875.082-2.79-.246-3.61-.219-.519-.63-.956-1.149-1.148-.82-.328-2.734-.246-3.609-.246-.902 0-2.816-.082-3.61.246a2.11 2.11 0 0 0-1.175 1.149c-.328.82-.246 2.734-.246 3.609 0 .902-.082 2.816.246 3.61.219.546.629.956 1.176 1.175.793.328 2.707.246 3.609.246.875 0 2.79.082 3.61-.246.519-.219.956-.629 1.148-1.176Z"
+                      fill="#FFF"
+                    />
+                  </svg>
+                </i>
+                <h2
+                  aria-level="2"
+                  class="text-xsm font-medium text-white-100 leading-5"
+                  role="heading"
+                >
+                  Instagram
+                </h2>
+              </button>
+              <div
+                class="w-10 h-10 ml-4 bg-gradient-to-bl from-blueLinear-0 to-blueLinear-100 flex items-center justify-center rounded-xl cursor-pointer"
+              >
+                <svg
+                  fill="none"
+                  height="14"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.344 3.75v.438c0 4.343-3.281 9.312-9.313 9.312-1.875 0-3.593-.531-5.031-1.469.25.031.5.063.781.063a6.597 6.597 0 0 0 4.063-1.406A3.265 3.265 0 0 1 1.78 8.405c.219.031.407.063.625.063.281 0 .594-.063.844-.125A3.285 3.285 0 0 1 .625 5.125v-.031c.438.25.969.375 1.5.406A3.228 3.228 0 0 1 .656 2.781c0-.625.156-1.187.438-1.656a9.52 9.52 0 0 0 6.781 3.438c-.063-.25-.094-.5-.094-.75A3.28 3.28 0 0 1 11.063.53c.937 0 1.78.375 2.406 1.031A6.93 6.93 0 0 0 15.53.75a3.206 3.206 0 0 1-1.437 1.813 6.151 6.151 0 0 0 1.875-.5c-.438.656-1 1.218-1.625 1.687Z"
+                    fill="#FFF"
+                  />
+                </svg>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div
+        class="flex mt-8 bg-black-90 rounded-xl justify-center lg:justify-end"
+      >
+        <div
+          class="flex justify-between py-4 pr-4"
+        >
+          <h2
+            aria-level="2"
+            class="text-md font-light text-dark-75 text-p leading-5 w-100 lg:mr-15 2xl:mr-30"
+            role="heading"
+          >
+            Privacy Policy | Terms & Conditions
+          </h2>
+          <h2
+            aria-level="2"
+            class="text-md font-light text-dark-75 text-p leading-5"
+            role="heading"
+          >
+            All Copyright (C) 2022 Reserved
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div
+      class="hidden flex-1 h-full py-10 lg:flex"
+    >
+      <section
+        class="h-full bg-white-100 mx-5 w-full 2xl:w-90"
+      >
+        <div
+          class="mb-5"
+        >
+          <div
+            class="flex items-center"
+          >
+            <div
+              class="w-1 h-[11px] bg-primary-100 rounded-2xl mr-1.5"
+            />
+            <h2
+              aria-level="2"
+              class="text-md font-medium text-dark-100 leading-6"
+              role="heading"
+            >
+              New Comments
+            </h2>
+          </div>
+        </div>
+        <div
+          class="comment-wrapper"
+        >
+          <div
+            class="mb-2"
+          >
+            <div
+              class="bg-white-90 p-4 rounded-xl"
+            >
+              <h2
+                aria-level="2"
+                class="text-sm font-medium text-dark-100"
+                role="heading"
+              >
+                Ellsmartx
+              </h2>
+              <h3
+                aria-level="3"
+                class="text-md font-light text-p text-dark-75"
+                role="heading"
+              >
+                How Nice Does This Look 😍 I Feel It Should Be Delicious, Thank You
+              </h3>
+            </div>
+          </div>
+          <div
+            class="mb-2"
+          >
+            <div
+              class="bg-white-90 p-4 rounded-xl"
+            >
+              <h2
+                aria-level="2"
+                class="text-sm font-medium text-dark-100"
+                role="heading"
+              >
+                Cassia
+              </h2>
+              <h3
+                aria-level="3"
+                class="text-md font-light text-p text-dark-75"
+                role="heading"
+              >
+                Take A Rest, I'll Be Cheer Up You Again In 2 Next Game Go Go Go
+              </h3>
+            </div>
+          </div>
+          <div
+            class="mb-2"
+          >
+            <div
+              class="bg-white-90 p-4 rounded-xl"
+            >
+              <h2
+                aria-level="2"
+                class="text-sm font-medium text-dark-100"
+                role="heading"
+              >
+                Amanda
+              </h2>
+              <h3
+                aria-level="3"
+                class="text-md font-light text-p text-dark-75"
+                role="heading"
+              >
+                You Were Stunning Today, Jan! 💗 Great Match 👍🏽👍🏽
+              </h3>
+            </div>
+          </div>
+          <div>
+            <div
+              class="bg-white-90 p-4 rounded-xl"
+            >
+              <h2
+                aria-level="2"
+                class="text-sm font-medium text-dark-100"
+                role="heading"
+              >
+                Denis Simonassi
+              </h2>
+              <h3
+                aria-level="3"
+                class="text-md font-light text-p text-dark-75"
+                role="heading"
+              >
+                It Was A Great Match Today Janzi! You Did Great😉🇩🇪
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="w-90 h-full bg-white-100 hidden 2xl:block "
+      >
+        <div
+          class="mb-5"
+        >
+          <div
+            class="flex items-center"
+          >
+            <div
+              class="w-1 h-[11px] bg-primary-100 rounded-2xl mr-1.5"
+            />
+            <h2
+              aria-level="2"
+              class="text-md font-medium text-dark-100 leading-6"
+              role="heading"
+            >
+              Follow On Instagram
+            </h2>
+          </div>
+        </div>
+        <div
+          class="media-wrapper grid grid-cols-3 grid-rows-3 gap-5"
+        >
+          <img
+            alt="media-image"
+            class="rounded-3xl"
+            data-nimg="1"
+            decoding="async"
+            height="104"
+            loading="lazy"
+            src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=256&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=256&q=75 2x"
+            style="color: transparent;"
+            width="104"
+          />
+          <img
+            alt="media-image"
+            class="rounded-3xl"
+            data-nimg="1"
+            decoding="async"
+            height="104"
+            loading="lazy"
+            src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1534294228306-bd54eb9a7ba8%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MjQzfHxwbGFuZXR8ZW58MHx8MHx8fDA%253D&w=256&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1534294228306-bd54eb9a7ba8%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MjQzfHxwbGFuZXR8ZW58MHx8MHx8fDA%253D&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1534294228306-bd54eb9a7ba8%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MjQzfHxwbGFuZXR8ZW58MHx8MHx8fDA%253D&w=256&q=75 2x"
+            style="color: transparent;"
+            width="104"
+          />
+          <img
+            alt="media-image"
+            class="rounded-3xl"
+            data-nimg="1"
+            decoding="async"
+            height="104"
+            loading="lazy"
+            src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=256&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=256&q=75 2x"
+            style="color: transparent;"
+            width="104"
+          />
+          <img
+            alt="media-image"
+            class="rounded-3xl"
+            data-nimg="1"
+            decoding="async"
+            height="104"
+            loading="lazy"
+            src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=256&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=256&q=75 2x"
+            style="color: transparent;"
+            width="104"
+          />
+          <img
+            alt="media-image"
+            class="rounded-3xl"
+            data-nimg="1"
+            decoding="async"
+            height="104"
+            loading="lazy"
+            src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=256&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=256&q=75 2x"
+            style="color: transparent;"
+            width="104"
+          />
+          <img
+            alt="media-image"
+            class="rounded-3xl"
+            data-nimg="1"
+            decoding="async"
+            height="104"
+            loading="lazy"
+            src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1545156521-77bd85671d30%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8NHx8cGxhbmV0fGVufDB8fDB8fHww&w=256&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1545156521-77bd85671d30%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8NHx8cGxhbmV0fGVufDB8fDB8fHww&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1545156521-77bd85671d30%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8NHx8cGxhbmV0fGVufDB8fDB8fHww&w=256&q=75 2x"
+            style="color: transparent;"
+            width="104"
+          />
+          <img
+            alt="media-image"
+            class="rounded-3xl"
+            data-nimg="1"
+            decoding="async"
+            height="104"
+            loading="lazy"
+            src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1620421680906-275860f61e27%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8NTh8fHBsYW5ldHxlbnwwfHwwfHx8MA%253D%253D&w=256&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1620421680906-275860f61e27%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8NTh8fHBsYW5ldHxlbnwwfHwwfHx8MA%253D%253D&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1620421680906-275860f61e27%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8NTh8fHBsYW5ldHxlbnwwfHwwfHx8MA%253D%253D&w=256&q=75 2x"
+            style="color: transparent;"
+            width="104"
+          />
+          <img
+            alt="media-image"
+            class="rounded-3xl"
+            data-nimg="1"
+            decoding="async"
+            height="104"
+            loading="lazy"
+            src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1632395627760-72e6eca7f9c7%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MzF8fHBsYW5ldHxlbnwwfHwwfHx8MA%253D%253D&w=256&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1632395627760-72e6eca7f9c7%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MzF8fHBsYW5ldHxlbnwwfHwwfHx8MA%253D%253D&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1632395627760-72e6eca7f9c7%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MzF8fHBsYW5ldHxlbnwwfHwwfHx8MA%253D%253D&w=256&q=75 2x"
+            style="color: transparent;"
+            width="104"
+          />
+          <img
+            alt="media-image"
+            class="rounded-3xl"
+            data-nimg="1"
+            decoding="async"
+            height="104"
+            loading="lazy"
+            src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=256&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=256&q=75 2x"
+            style="color: transparent;"
+            width="104"
+          />
+        </div>
+      </section>
+    </div>
+  </footer>
+</DocumentFragment>
+`;
