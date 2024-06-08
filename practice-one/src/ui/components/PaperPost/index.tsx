@@ -40,7 +40,7 @@ export const PaperPost = ({
         />
       </div>
       <div
-        className={`flex flex-col gap-1.5 ml-2.5 ${isLargePaper ? 'py-4 flex-1' : ' my-3'}`}
+        className={`flex flex-col gap-1.5 ml-2.5 flex-1 ${isLargePaper ? 'py-4' : ' my-3'}`}
       >
         <Typography
           tag="h2"

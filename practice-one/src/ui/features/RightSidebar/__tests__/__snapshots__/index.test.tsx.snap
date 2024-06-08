@@ -1,0 +1,526 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RightSidebar feature component RightSidebar should render macth snapshot 1`] = `
+<DocumentFragment>
+  <aside
+    class="bg-white-100 lg:ml-[23px] lg:w-[360px]"
+  >
+    <div
+      class="flex flex-col-reverse sm:gap-5 sm:flex-row lg:flex-col lg:gap-0"
+    >
+      <div
+        class="flex flex-col w-[360px]"
+      >
+        <div
+          class="flex justify-between bg-white-100 mb-[25px]"
+        >
+          <button
+            aria-label="button-element"
+            class="bg-white-90 flex items-center py-2.5 rounded-xl hover:opacity-80 pr-6 pl-4 undefined"
+          >
+            <i
+              class="mr-2 mb-1"
+            >
+              <svg
+                fill="none"
+                height="15"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.7.887c.218.136.327.383.245.629l-1.75 11.812c-.027.192-.136.383-.328.465a.573.573 0 0 1-.3.11c-.11 0-.192-.028-.274-.055l-2.68-1.149-3.035 1.969a.842.842 0 0 1-.355.082c-.082 0-.192-.027-.301-.055a.686.686 0 0 1-.328-.601v-3.09l-4.211-1.75C1.164 9.144 1 8.926 1 8.68a.609.609 0 0 1 .328-.602L14.016.86a.62.62 0 0 1 .683.028ZM11.09 4.03 3.133 8.543l2.844 1.203 5.113-5.715Zm-4.211 8.86 1.258-.793-1.258-.547v1.34Zm5.168-.602 1.312-8.832-6.125 6.809 4.813 2.023Z"
+                  fill="#404040"
+                  fill-opacity="0.5"
+                />
+              </svg>
+            </i>
+            <h2
+              aria-level="2"
+              class="text-xsm font-medium text-dark-75 leading-5"
+              role="heading"
+            >
+              Share
+            </h2>
+          </button>
+          <button
+            aria-label="button-element"
+            class="bg-white-90 flex items-center py-2.5 rounded-xl hover:opacity-80 pr-6 pl-4 undefined"
+          >
+            <i
+              class="mr-2 mb-1"
+            >
+              <svg
+                fill="none"
+                height="15"
+                width="11"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.438.75c.71 0 1.312.602 1.312 1.313v11.812c0 .684-.738 1.094-1.34.766L5.5 12.344 1.562 14.64a.875.875 0 0 1-1.312-.766V2.062C.25 1.353.824.75 1.563.75h7.875Zm0 12.36V2.226c0-.082-.083-.164-.192-.164H1.7c-.082 0-.137.082-.137.164v10.882L5.5 10.813l3.938 2.296Z"
+                  fill="#404040"
+                  fill-opacity="0.5"
+                />
+              </svg>
+            </i>
+            <h2
+              aria-level="2"
+              class="text-xsm font-medium text-dark-75 leading-5"
+              role="heading"
+            >
+              Marking
+            </h2>
+          </button>
+          <button
+            aria-label="button-element"
+            class="bg-white-90 flex items-center py-2.5 rounded-xl hover:opacity-80 pr-6 pl-4 undefined"
+          >
+            <i
+              class="mr-2 mb-1"
+            >
+              <svg
+                fill="none"
+                height="13"
+                width="15"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.938 5.438c.464 0 .847.41.847.875a.858.858 0 0 1-.848.875.864.864 0 0 1-.875-.875c0-.465.383-.875.875-.875Zm3.062 0c.465 0 .848.41.848.875 0 .437-.41.847-.848.847-.465 0-.875-.383-.875-.848 0-.492.383-.875.875-.875Zm3.063 0c.464 0 .874.41.847.875a.858.858 0 0 1-.848.875.881.881 0 0 1-.874-.875c0-.465.382-.875.874-.875ZM8 .625c3.855 0 6.973 2.598 6.973 5.715S11.855 12 8 12a8.402 8.402 0 0 1-2.543-.383c-.82.574-2.133 1.258-3.8 1.258-.274 0-.52-.137-.602-.41-.082-.246-.055-.52.136-.711 0 0 .848-.93 1.258-1.996C1.547 8.8 1 7.598 1 6.313 1 3.167 4.117.625 8 .625Zm0 10.063c3.117 0 5.633-1.942 5.633-4.376 0-2.406-2.543-4.375-5.66-4.375-3.118 0-5.66 1.97-5.66 4.375 0 1.176.574 2.051 1.066 2.57l.574.602-.3.766a5.116 5.116 0 0 1-.548 1.094 6.104 6.104 0 0 0 1.586-.793l.52-.383.629.191a7.132 7.132 0 0 0 2.16.329Z"
+                  fill="#404040"
+                  fill-opacity="0.5"
+                />
+              </svg>
+            </i>
+            <h2
+              aria-level="2"
+              class="text-xsm font-medium text-dark-75 leading-5"
+              role="heading"
+            >
+              Comment
+            </h2>
+          </button>
+        </div>
+        <div
+          class="bg-white-90 flex p-[15px] mb-[25px] rounded-xl"
+        >
+          <div
+            style="width: 87px; height: 87px; position: relative;"
+          >
+            <img
+              alt="Avatar author"
+              class="rounded-xl"
+              data-nimg="fill"
+              decoding="async"
+              loading="lazy"
+              sizes="100vw"
+              src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+            />
+          </div>
+          <div
+            class="flex-1 ml-2.5 mt-3.5"
+          >
+            <div
+              class="flex items-center justify-between"
+            >
+              <h2
+                aria-level="2"
+                class="text-sm font-medium text-dark-100"
+                role="heading"
+              >
+                Louis Hoebregts
+              </h2>
+              <h2
+                aria-level="2"
+                class="text-xs font-light text-dark-75"
+                role="heading"
+              >
+                27 posts
+              </h2>
+            </div>
+            <div
+              class="mt-2"
+            >
+              <button
+                aria-label="button-element"
+                class="bg-gradient-to-bl from-sunSet-0 to-sunSet-100 flex items-center py-2.5 rounded-xl hover:opacity-80 pr-6 pl-4 undefined"
+              >
+                <i
+                  class="mr-2 undefined"
+                >
+                  <svg
+                    fill="none"
+                    height="12"
+                    width="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.688 5.75c0 .492-.41.902-.876.902H6.876v3.938c0 .465-.41.848-.875.848a.858.858 0 0 1-.875-.848V6.652H1.187c-.492 0-.875-.41-.875-.902 0-.465.383-.848.875-.848h3.938V.965c0-.492.383-.902.875-.902.465 0 .875.41.875.902v3.937h3.938c.464-.027.874.383.874.848Z"
+                      fill="#FFF"
+                    />
+                  </svg>
+                </i>
+                <h2
+                  aria-level="2"
+                  class="text-xsm font-medium text-white-100 leading-5"
+                  role="heading"
+                >
+                  Follow
+                </h2>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex-1 mb-[25px]"
+      >
+        <div
+          class="h-full px-[15px] py-5 bg-white-90 rounded-xl"
+        >
+          <div
+            class="flex items-center"
+          >
+            <div
+              class="w-1 h-[11px] bg-primary-100 rounded-2xl mr-1.5"
+            />
+            <h2
+              aria-level="2"
+              class="text-md font-medium text-dark-100 leading-6"
+              role="heading"
+            >
+              Tags
+            </h2>
+          </div>
+          <div
+            class="flex flex-wrap gap-3.5 mt-3"
+          >
+            <h2
+              aria-level="2"
+              class="text-xs font-medium text-dark-75 leading-4 cursor-pointer"
+              role="heading"
+            >
+              Montenegro
+            </h2>
+            <h2
+              aria-level="2"
+              class="text-xs font-medium text-dark-75 leading-4 cursor-pointer"
+              role="heading"
+            >
+              Visit Croatia
+            </h2>
+            <h2
+              aria-level="2"
+              class="text-xs font-medium text-dark-75 leading-4 cursor-pointer"
+              role="heading"
+            >
+              Luxury Travel
+            </h2>
+            <h2
+              aria-level="2"
+              class="text-xs font-medium text-dark-75 leading-4 cursor-pointer"
+              role="heading"
+            >
+              Travel Log
+            </h2>
+            <h2
+              aria-level="2"
+              class="text-xs font-medium text-dark-75 leading-4 cursor-pointer"
+              role="heading"
+            >
+              Paradise Island
+            </h2>
+            <h2
+              aria-level="2"
+              class="text-xs font-medium text-dark-75 leading-4 cursor-pointer"
+              role="heading"
+            >
+              Travel Info
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mb-[25px] hidden lg:block"
+    >
+      <div
+        class="px-[15px] py-5 bg-white-90 rounded-xl"
+      >
+        <div
+          class="flex items-center"
+        >
+          <div
+            class="w-1 h-[11px] bg-primary-100 rounded-2xl mr-1.5"
+          />
+          <h2
+            aria-level="2"
+            class="text-md font-medium text-dark-100 leading-6"
+            role="heading"
+          >
+            Top Posts
+          </h2>
+        </div>
+        <div
+          class="mt-5"
+        >
+          <div
+            class="mb-5"
+          >
+            <div
+              class="flex cursor-pointer undefined"
+            >
+              <div
+                style="width: 87px; height: 87px; position: relative;"
+              >
+                <img
+                  alt="Top post"
+                  class="rounded-xl"
+                  data-nimg="fill"
+                  decoding="async"
+                  loading="lazy"
+                  sizes="100vw"
+                  src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+                  srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+                  style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+                />
+              </div>
+              <div
+                class="flex flex-col gap-1.5 ml-2.5 flex-1  my-3"
+              >
+                <h2
+                  aria-level="2"
+                  class="text-xs font-medium text-dark-100 text-ellipsis overflow-hidden undefined"
+                  role="heading"
+                >
+                  How to Spend the Perfect Day on Croatia’s Most Magical Island
+                </h2>
+                <h3
+                  aria-level="3"
+                  class="text-md font-light 
+          text-dark-75 text-ellipsis overflow-hidden
+           text-p
+           undefined"
+                  role="heading"
+                >
+                  Subhead
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mb-5"
+          >
+            <div
+              class="flex cursor-pointer undefined"
+            >
+              <div
+                style="width: 87px; height: 87px; position: relative;"
+              >
+                <img
+                  alt="Top post"
+                  class="rounded-xl"
+                  data-nimg="fill"
+                  decoding="async"
+                  loading="lazy"
+                  sizes="100vw"
+                  src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+                  srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+                  style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+                />
+              </div>
+              <div
+                class="flex flex-col gap-1.5 ml-2.5 flex-1  my-3"
+              >
+                <h2
+                  aria-level="2"
+                  class="text-xs font-medium text-dark-100 text-ellipsis overflow-hidden undefined"
+                  role="heading"
+                >
+                  How to Spend the Perfect Day on Croatia’s Most Magical Island
+                </h2>
+                <h3
+                  aria-level="3"
+                  class="text-md font-light 
+          text-dark-75 text-ellipsis overflow-hidden
+           text-p
+           undefined"
+                  role="heading"
+                >
+                  Subhead
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mb-5"
+          >
+            <div
+              class="flex cursor-pointer undefined"
+            >
+              <div
+                style="width: 87px; height: 87px; position: relative;"
+              >
+                <img
+                  alt="Top post"
+                  class="rounded-xl"
+                  data-nimg="fill"
+                  decoding="async"
+                  loading="lazy"
+                  sizes="100vw"
+                  src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+                  srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+                  style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+                />
+              </div>
+              <div
+                class="flex flex-col gap-1.5 ml-2.5 flex-1  my-3"
+              >
+                <h2
+                  aria-level="2"
+                  class="text-xs font-medium text-dark-100 text-ellipsis overflow-hidden undefined"
+                  role="heading"
+                >
+                  How to Spend the Perfect Day on Croatia’s Most Magical Island
+                </h2>
+                <h3
+                  aria-level="3"
+                  class="text-md font-light 
+          text-dark-75 text-ellipsis overflow-hidden
+           text-p
+           undefined"
+                  role="heading"
+                >
+                  Subhead
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mb-5"
+          >
+            <div
+              class="flex cursor-pointer undefined"
+            >
+              <div
+                style="width: 87px; height: 87px; position: relative;"
+              >
+                <img
+                  alt="Top post"
+                  class="rounded-xl"
+                  data-nimg="fill"
+                  decoding="async"
+                  loading="lazy"
+                  sizes="100vw"
+                  src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+                  srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+                  style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+                />
+              </div>
+              <div
+                class="flex flex-col gap-1.5 ml-2.5 flex-1  my-3"
+              >
+                <h2
+                  aria-level="2"
+                  class="text-xs font-medium text-dark-100 text-ellipsis overflow-hidden undefined"
+                  role="heading"
+                >
+                  How to Spend the Perfect Day on Croatia’s Most Magical Island
+                </h2>
+                <h3
+                  aria-level="3"
+                  class="text-md font-light 
+          text-dark-75 text-ellipsis overflow-hidden
+           text-p
+           undefined"
+                  role="heading"
+                >
+                  Subhead
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div
+            class="false"
+          >
+            <div
+              class="flex cursor-pointer undefined"
+            >
+              <div
+                style="width: 87px; height: 87px; position: relative;"
+              >
+                <img
+                  alt="Top post"
+                  class="rounded-xl"
+                  data-nimg="fill"
+                  decoding="async"
+                  loading="lazy"
+                  sizes="100vw"
+                  src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+                  srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+                  style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+                />
+              </div>
+              <div
+                class="flex flex-col gap-1.5 ml-2.5 flex-1  my-3"
+              >
+                <h2
+                  aria-level="2"
+                  class="text-xs font-medium text-dark-100 text-ellipsis overflow-hidden undefined"
+                  role="heading"
+                >
+                  How to Spend the Perfect Day on Croatia’s Most Magical Island
+                </h2>
+                <h3
+                  aria-level="3"
+                  class="text-md font-light 
+          text-dark-75 text-ellipsis overflow-hidden
+           text-p
+           undefined"
+                  role="heading"
+                >
+                  Subhead
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex justify-between gap-5 lg:flex-col"
+    >
+      <div
+        class=""
+      >
+        <img
+          alt="Advertising"
+          data-nimg="1"
+          decoding="async"
+          height="180"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=750&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg.jpg&w=750&q=75 2x"
+          style="color: transparent;"
+          width="360"
+        />
+      </div>
+      <div
+        class="hidden sm:block"
+      >
+        <img
+          alt="Advertising"
+          data-nimg="1"
+          decoding="async"
+          height="180"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=750&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg.jpg&w=750&q=75 2x"
+          style="color: transparent;"
+          width="360"
+        />
+      </div>
+    </div>
+  </aside>
+</DocumentFragment>
+`;
