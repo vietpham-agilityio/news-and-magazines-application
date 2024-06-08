@@ -1,4 +1,5 @@
-import { IMenu, ISlideItem, ITagItem } from '@/types';
+import ImageStore from '@/constants/images';
+import { IHashtag, IMenu, IPostItem, ISlideItem, ITagItem } from '@/types';
 
 const listTypePosts: string[] = ['New', 'Trendy', 'Popular', 'Top'];
 
@@ -130,10 +131,94 @@ const listSlider: ISlideItem[] = [
   },
 ];
 
+// List hashtag
+const listHashtagsItem: IHashtag[] = [
+  {
+    id: "1",
+    name: "Hashtag Food",
+    imageUrl: ImageStore.HashtagFood,
+  },
+  {
+    id: "2",
+    name: "Hashtag Animal",
+    imageUrl: ImageStore.HashtagAnimal,
+  },
+  {
+    id: "3",
+    name: "Hashtag Car",
+    imageUrl: ImageStore.HashtagCar,
+  },
+  {
+    id: "4",
+    name: "Hashtag Sport",
+    imageUrl: ImageStore.HashtagSport,
+  },
+  {
+    id: "5",
+    name: "Hashtag Music",
+    imageUrl: ImageStore.HashtagMusic,
+  },
+  {
+    id: "6",
+    name: "Hashtag Food",
+    imageUrl: ImageStore.HashtagFood,
+  },
+  {
+    id: "7",
+    name: "Hashtag Abstract",
+    imageUrl: ImageStore.HashtagAbstract,
+  },
+  {
+    id: "8",
+    name: "Hashtag Animal",
+    imageUrl: ImageStore.HashtagAnimal,
+  },
+];
+
+const listPostItems: IPostItem[] = [
+  {
+    id: "1",
+    title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
+    content: "Subhead",
+    imageUrl: ImageStore.CarImage,
+    alt: "Top post",
+  },
+  {
+    id: "2",
+    title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
+    content: "Subhead",
+    imageUrl: ImageStore.FrogImage,
+    alt: "Top post",
+  },
+  {
+    id: "3",
+    title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
+    content: "Subhead",
+    imageUrl: ImageStore.PersonOne,
+    alt: "Top post",
+  },
+  {
+    id: "4",
+    title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
+    content: "Subhead",
+    imageUrl: ImageStore.FoodImage,
+    alt: "Top post",
+  },
+  {
+    id: "5",
+    title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
+    content: "Subhead",
+    imageUrl: ImageStore.PersonTwo,
+    alt: "Top post",
+  },
+];
+
 export {
   listSlider,
   listTagItems,
   listNavItems,
+  listPostItems,
   listTypePosts,
   listCategories,
+  listHashtagsItem,
 };
