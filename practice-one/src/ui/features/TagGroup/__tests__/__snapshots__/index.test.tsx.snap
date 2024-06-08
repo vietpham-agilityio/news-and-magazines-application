@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TagGroup feature component TagGroup should render macth snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="h-full px-[15px] py-5 bg-white-90 rounded-xl"
+  >
+    <div
+      class="flex items-center"
+    >
+      <div
+        class="w-1 h-[11px] bg-primary-100 rounded-2xl mr-1.5"
+      />
+      <h2
+        aria-level="2"
+        class="text-md font-medium text-dark-100 leading-6"
+        role="heading"
+      >
+        Tags
+      </h2>
+    </div>
+    <div
+      class="flex flex-wrap gap-3.5 mt-3"
+    >
+      <h2
+        aria-level="2"
+        class="text-xs font-medium text-dark-75 leading-4 cursor-pointer"
+        role="heading"
+      >
+        Montenegro
+      </h2>
+      <h2
+        aria-level="2"
+        class="text-xs font-medium text-dark-75 leading-4 cursor-pointer"
+        role="heading"
+      >
+        Visit Croatia
+      </h2>
+      <h2
+        aria-level="2"
+        class="text-xs font-medium text-dark-75 leading-4 cursor-pointer"
+        role="heading"
+      >
+        Luxury Travel
+      </h2>
+      <h2
+        aria-level="2"
+        class="text-xs font-medium text-dark-75 leading-4 cursor-pointer"
+        role="heading"
+      >
+        Travel Log
+      </h2>
+      <h2
+        aria-level="2"
+        class="text-xs font-medium text-dark-75 leading-4 cursor-pointer"
+        role="heading"
+      >
+        Paradise Island
+      </h2>
+      <h2
+        aria-level="2"
+        class="text-xs font-medium text-dark-75 leading-4 cursor-pointer"
+        role="heading"
+      >
+        Travel Info
+      </h2>
+    </div>
+  </div>
+</DocumentFragment>
+`;
