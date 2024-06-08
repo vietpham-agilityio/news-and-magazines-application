@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FooterBar feature component FooterBar should render macth snapshot 1`] = `
+<DocumentFragment>
+  <footer
+    class="footer w-full flex items-center justify-between bg-white-100 h-[70px] fixed bottom-0 px-7.5 py-4 rounded-t-2xl shadow-inner sm:hidden"
+  >
+    <button
+      aria-label="button-element"
+      class="bg-gradient-to-bl from-sunSet-0 to-sunSet-100 flex items-center py-2.5 rounded-xl hover:opacity-80 pr-6 pl-4 undefined"
+    >
+      <i
+        class="mr-2 undefined"
+      >
+        <svg
+          fill="none"
+          height="15"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M15.848 7.75c0 .492-.41.875-.875.875h-.875L14.125 13v.656a1.08 1.08 0 0 1-1.094 1.094h-2.187a1.063 1.063 0 0 1-1.094-1.094V11.25a.9.9 0 0 0-.875-.875h-1.75a.881.881 0 0 0-.875.875v2.406a1.08 1.08 0 0 1-1.094 1.094H2.97a1.063 1.063 0 0 1-1.094-1.094V8.625H1a.864.864 0 0 1-.875-.875c0-.246.082-.465.273-.656l7-6.098A.823.823 0 0 1 8 .75a.94.94 0 0 1 .574.219l6.973 6.125c.219.191.328.41.3.656Z"
+            fill="#FFFFFF"
+            fill-opacity="0.75"
+          />
+        </svg>
+      </i>
+      <h2
+        aria-level="2"
+        class="text-xsm font-medium text-white-100 leading-5"
+        role="heading"
+      >
+        Home
+      </h2>
+    </button>
+    <div
+      class="flex items-center justify-center w-10 h-10"
+    >
+      <svg
+        fill="none"
+        height="21"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13.625 0C14.641 0 15.5.86 15.5 1.875V18.75c0 .977-1.055 1.563-1.914 1.094L8 16.562l-5.625 3.282C1.515 20.312.5 19.727.5 18.75V1.875C.5.859 1.32 0 2.375 0h11.25Zm0 17.656V2.11c0-.117-.117-.234-.273-.234H2.57c-.117 0-.195.117-.195.234v15.547L8 14.375l5.625 3.281Z"
+          fill="#3E3232"
+        />
+      </svg>
+    </div>
+    <div
+      class="flex items-center justify-center w-10 h-10"
+    >
+      <svg
+        fill="none"
+        height="16"
+        width="14"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7 8C4.781 8 3 6.219 3 4c0-2.188 1.781-4 4-4 2.188 0 4 1.813 4 4 0 2.219-1.813 4-4 4Zm1.563 1.5c3 0 5.437 2.438 5.437 5.438C14 15.53 13.5 16 12.906 16H1.062A1.054 1.054 0 0 1 0 14.937c0-3 2.406-5.437 5.406-5.437h3.157Z"
+          fill="#3E3232"
+          fill-opacity="0.75"
+        />
+      </svg>
+    </div>
+    <div
+      class="flex items-center justify-center w-10 h-10"
+    >
+      <svg
+        fill="none"
+        height="15"
+        width="14"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2.688 7.719a.964.964 0 0 1-1.407 0 .964.964 0 0 1 0-1.407l5-5a.964.964 0 0 1 1.407 0l5 5a.964.964 0 0 1 0 1.407A.97.97 0 0 1 12 8a.99.99 0 0 1-.719-.281L7 3.437 2.687 7.72Zm5-.407 5 5a.964.964 0 0 1 0 1.407A.97.97 0 0 1 12 14a.99.99 0 0 1-.719-.281L7 9.438l-4.313 4.28a.964.964 0 0 1-1.406 0 .964.964 0 0 1 0-1.405l5-5a.964.964 0 0 1 1.407 0Z"
+          fill="#3E3232"
+          fill-opacity="0.75"
+        />
+      </svg>
+    </div>
+  </footer>
+</DocumentFragment>
+`;
