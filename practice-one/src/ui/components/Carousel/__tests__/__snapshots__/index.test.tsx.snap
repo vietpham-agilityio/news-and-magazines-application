@@ -1,0 +1,324 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Carousel component should render Carousel macth snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="relative flex flex-col items-center w-full h-full mx-auto overflow-hidden border-2 bg-black-100 border-dark-10 rounded-lg"
+  >
+    <button
+      aria-label="box-button"
+      class="w-10 h-10 bg-white-90 flex items-center justify-center rounded-xl absolute left-4 z-10 top-1/2 hover:opacity-80"
+    >
+      <svg
+        data-testid="arrow-left"
+        fill="none"
+        height="13"
+        width="9"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7 13a.99.99 0 0 1-.719-.281l-5-5a.964.964 0 0 1 0-1.407l5-5a.964.964 0 0 1 1.407 0 .964.964 0 0 1 0 1.407L3.405 7l4.281 4.313a.964.964 0 0 1 0 1.406A.97.97 0 0 1 7 13Z"
+          fill="#3E3232"
+          fill-opacity="0.5"
+        />
+      </svg>
+    </button>
+    <div
+      class="flex transition-transform duration-500"
+      style="transform: translateX(-0%);"
+    >
+      <div
+        class="w-full flex-shrink-0 flex flex-col items-center relative"
+      >
+        <img
+          alt="Slide 0"
+          class="w-[744px] h-[500px]"
+          data-nimg="1"
+          decoding="async"
+          height="600"
+          loading="lazy"
+          src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1716995164712-a5a4e72a8d67%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8&w=1920&q=75"
+          srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1716995164712-a5a4e72a8d67%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8&w=1080&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1716995164712-a5a4e72a8d67%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8&w=1920&q=75 2x"
+          style="color: transparent;"
+          width="900"
+        />
+        <div
+          class="absolute left-5 bottom-15 p-4 bg-white-75 rounded-xl opacity-80 w-[93%] lg:w-[96%] xl:w-[92%] 2xl:w-[95%]"
+        >
+          <h2
+            aria-level="2"
+            class="text-lg font-normal text-black-100 h-10 text-ellipsis overflow-hidden"
+            role="heading"
+          >
+            Exploring Urban Wonders: The Joy of a Street Walk
+          </h2>
+          <h3
+            aria-level="3"
+            class="text-xsm font-light text-dark-100 w-[400px] lg:w-full xl:w-[300px] 2xl:w-[543px] h-10 leading-5 text-ellipsis overflow-hidden"
+            role="heading"
+          >
+            Immerse yourself in the urban landscape by taking a street walk. Marvel at architectural wonders, enjoy spontaneous street performances, and soak in the vibrant energy that defines city life. Each step offers a new adventure.
+          </h3>
+        </div>
+      </div>
+      <div
+        class="w-full flex-shrink-0 flex flex-col items-center relative"
+      >
+        <img
+          alt="Slide 1"
+          class="w-[744px] h-[500px]"
+          data-nimg="1"
+          decoding="async"
+          height="600"
+          loading="lazy"
+          src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1521714161819-15534968fc5f%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8NHx8c3BpZGVybWFufGVufDB8fDB8fHww&w=1920&q=75"
+          srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1521714161819-15534968fc5f%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8NHx8c3BpZGVybWFufGVufDB8fDB8fHww&w=1080&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1521714161819-15534968fc5f%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8NHx8c3BpZGVybWFufGVufDB8fDB8fHww&w=1920&q=75 2x"
+          style="color: transparent;"
+          width="900"
+        />
+        <div
+          class="absolute left-5 bottom-15 p-4 bg-white-75 rounded-xl opacity-80 w-[93%] lg:w-[96%] xl:w-[92%] 2xl:w-[95%]"
+        >
+          <h2
+            aria-level="2"
+            class="text-lg font-normal text-black-100 h-10 text-ellipsis overflow-hidden"
+            role="heading"
+          >
+            Culinary Journeys: Street Food Adventures
+          </h2>
+          <h3
+            aria-level="3"
+            class="text-xsm font-light text-dark-100 w-[400px] lg:w-full xl:w-[300px] 2xl:w-[543px] h-10 leading-5 text-ellipsis overflow-hidden"
+            role="heading"
+          >
+            Embark on a culinary journey through the streets, where the aroma of diverse cuisines fills the air. Taste the flavors of the world, from food trucks to street vendors, and experience the city’s culinary heartbeat.
+          </h3>
+        </div>
+      </div>
+      <div
+        class="w-full flex-shrink-0 flex flex-col items-center relative"
+      >
+        <img
+          alt="Slide 2"
+          class="w-[744px] h-[500px]"
+          data-nimg="1"
+          decoding="async"
+          height="600"
+          loading="lazy"
+          src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1674606033420-f9a43a1dde41%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHx8&w=1920&q=75"
+          srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1674606033420-f9a43a1dde41%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHx8&w=1080&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1674606033420-f9a43a1dde41%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHx8&w=1920&q=75 2x"
+          style="color: transparent;"
+          width="900"
+        />
+        <div
+          class="absolute left-5 bottom-15 p-4 bg-white-75 rounded-xl opacity-80 w-[93%] lg:w-[96%] xl:w-[92%] 2xl:w-[95%]"
+        >
+          <h2
+            aria-level="2"
+            class="text-lg font-normal text-black-100 h-10 text-ellipsis overflow-hidden"
+            role="heading"
+          >
+            Historical Strolls: Walking Through Time
+          </h2>
+          <h3
+            aria-level="3"
+            class="text-xsm font-light text-dark-100 w-[400px] lg:w-full xl:w-[300px] 2xl:w-[543px] h-10 leading-5 text-ellipsis overflow-hidden"
+            role="heading"
+          >
+            Take a walk back in time as you traverse historical streets. Learn about the rich heritage and significant events that shaped the city. Each building and monument has a tale to tell, connecting the past with the present.
+          </h3>
+        </div>
+      </div>
+      <div
+        class="w-full flex-shrink-0 flex flex-col items-center relative"
+      >
+        <img
+          alt="Slide 3"
+          class="w-[744px] h-[500px]"
+          data-nimg="1"
+          decoding="async"
+          height="600"
+          loading="lazy"
+          src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1488972685288-c3fd157d7c7a%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwyMzkxNDZ8fGVufDB8fHx8fA%253D%253D&w=1920&q=75"
+          srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1488972685288-c3fd157d7c7a%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwyMzkxNDZ8fGVufDB8fHx8fA%253D%253D&w=1080&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1488972685288-c3fd157d7c7a%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwyMzkxNDZ8fGVufDB8fHx8fA%253D%253D&w=1920&q=75 2x"
+          style="color: transparent;"
+          width="900"
+        />
+        <div
+          class="absolute left-5 bottom-15 p-4 bg-white-75 rounded-xl opacity-80 w-[93%] lg:w-[96%] xl:w-[92%] 2xl:w-[95%]"
+        >
+          <h2
+            aria-level="2"
+            class="text-lg font-normal text-black-100 h-10 text-ellipsis overflow-hidden"
+            role="heading"
+          >
+            Architectural Wonders: Discovering Urban Design on Foot
+          </h2>
+          <h3
+            aria-level="3"
+            class="text-xsm font-light text-dark-100 w-[400px] lg:w-full xl:w-[300px] 2xl:w-[543px] h-10 leading-5 text-ellipsis overflow-hidden"
+            role="heading"
+          >
+            Explore the city’s architectural wonders on foot. From modern skyscrapers to historic facades, the streets are lined with impressive structures that showcase the evolution of design and engineering over the years.
+          </h3>
+        </div>
+      </div>
+      <div
+        class="w-full flex-shrink-0 flex flex-col items-center relative"
+      >
+        <img
+          alt="Slide 4"
+          class="w-[744px] h-[500px]"
+          data-nimg="1"
+          decoding="async"
+          height="600"
+          loading="lazy"
+          src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1716857892273-3649e30f09b1%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0MHx8fGVufDB8fHx8fA%253D%253D&w=1920&q=75"
+          srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1716857892273-3649e30f09b1%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0MHx8fGVufDB8fHx8fA%253D%253D&w=1080&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1716857892273-3649e30f09b1%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0MHx8fGVufDB8fHx8fA%253D%253D&w=1920&q=75 2x"
+          style="color: transparent;"
+          width="900"
+        />
+        <div
+          class="absolute left-5 bottom-15 p-4 bg-white-75 rounded-xl opacity-80 w-[93%] lg:w-[96%] xl:w-[92%] 2xl:w-[95%]"
+        >
+          <h2
+            aria-level="2"
+            class="text-lg font-normal text-black-100 h-10 text-ellipsis overflow-hidden"
+            role="heading"
+          >
+            Serendipitous Encounters: The Magic of Street Walking
+          </h2>
+          <h3
+            aria-level="3"
+            class="text-xsm font-light text-dark-100 w-[400px] lg:w-full xl:w-[300px] 2xl:w-[543px] h-10 leading-5 text-ellipsis overflow-hidden"
+            role="heading"
+          >
+            Embrace the serendipity of street walking, where unexpected encounters and spontaneous discoveries make each journey unique. Whether it’s a street musician or a hidden alley, the magic lies in the surprises along the way.
+          </h3>
+        </div>
+      </div>
+    </div>
+    <button
+      aria-label="box-button"
+      class="w-10 h-10 bg-white-90 flex items-center justify-center rounded-xl absolute right-4 top-1/2 hover:opacity-80"
+    >
+      <svg
+        data-testid="arrow-right"
+        fill="none"
+        height="11"
+        width="7"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6.25 5.5a.866.866 0 0 1-.246.629l-4.375 4.375a.843.843 0 0 1-1.23 0 .843.843 0 0 1 0-1.23L4.144 5.5.398 1.754a.843.843 0 0 1 0-1.23.843.843 0 0 1 1.23 0l4.376 4.374a.848.848 0 0 1 .246.602Z"
+          fill="#3E3232"
+          fill-opacity="0.5"
+        />
+      </svg>
+    </button>
+    <div
+      class="flex absolute bottom-4 right-6"
+    >
+      <button
+        aria-label="slider-button"
+        class="h-3 z-10 rounded-full w-6"
+      >
+        <svg
+          data-testid="ellipse-icon"
+          fill="none"
+          height="10"
+          width="27"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            fill="#fff"
+            height="10"
+            rx="5"
+            width="10"
+          />
+        </svg>
+      </button>
+      <button
+        aria-label="slider-button"
+        class="h-3 z-10 rounded-full w-6"
+      >
+        <svg
+          data-testid="circle-icon"
+          fill="none"
+          height="10"
+          width="10"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="5"
+            cy="5"
+            fill="#3E3232"
+            fill-opacity="0.5"
+            r="5"
+          />
+        </svg>
+      </button>
+      <button
+        aria-label="slider-button"
+        class="h-3 z-10 rounded-full w-6"
+      >
+        <svg
+          data-testid="circle-icon"
+          fill="none"
+          height="10"
+          width="10"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="5"
+            cy="5"
+            fill="#3E3232"
+            fill-opacity="0.5"
+            r="5"
+          />
+        </svg>
+      </button>
+      <button
+        aria-label="slider-button"
+        class="h-3 z-10 rounded-full w-6"
+      >
+        <svg
+          data-testid="circle-icon"
+          fill="none"
+          height="10"
+          width="10"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="5"
+            cy="5"
+            fill="#3E3232"
+            fill-opacity="0.5"
+            r="5"
+          />
+        </svg>
+      </button>
+      <button
+        aria-label="slider-button"
+        class="h-3 z-10 rounded-full w-6"
+      >
+        <svg
+          data-testid="circle-icon"
+          fill="none"
+          height="10"
+          width="10"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="5"
+            cy="5"
+            fill="#3E3232"
+            fill-opacity="0.5"
+            r="5"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

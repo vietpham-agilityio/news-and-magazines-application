@@ -20,7 +20,7 @@ interface IProps {
 }
 
 export const Carousel = ({
-  listSlider = [],
+  listSlider,
   autoPlay = true,
   autoPlayTime = 3000,
 }: IProps) => {
