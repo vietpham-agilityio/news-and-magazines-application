@@ -4,6 +4,7 @@ export const Ellipse = () => (
     width={27}
     height={10}
     fill="none"
+    data-testid="ellipse-icon"
   >
     <rect width={10} height={10} fill="#fff" rx={5} />
   </svg>
