@@ -19,6 +19,7 @@ const config: StorybookConfig = {
     config.resolve!.alias = {
       ...config.resolve!.alias,
       "@": path.resolve(__dirname, "../src"),
+      "@/images": path.resolve(__dirname, "../public/images"),
     };
     return config;
   },

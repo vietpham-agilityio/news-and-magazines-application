@@ -23,6 +23,7 @@ describe('Typography component', () => {
   it('Typography should be rendered with role heading', () => {
     const typoElement = screen.getByRole('heading');
 
+    expect(typoElement).toHaveAttribute('aria-level', '1');
     expect(typoElement).toBeInTheDocument();
   });
 
