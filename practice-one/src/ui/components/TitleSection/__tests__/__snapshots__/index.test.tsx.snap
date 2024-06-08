@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BoxIcon component TitleSection should render macth snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="mb-5 sm:mb-10 flex justify-between"
+  >
+    <div
+      class="flex items-center"
+    >
+      <div
+        class="w-1 h-[11px] bg-primary-100 rounded-2xl mr-1.5"
+      />
+      <h2
+        aria-level="2"
+        class="text-md font-medium text-dark-100 leading-6"
+        role="heading"
+      >
+        Trendy Posts
+      </h2>
+    </div>
+    <div
+      class="flex gap-5"
+    >
+      <button
+        aria-label="box-button"
+        class="w-10 h-10 bg-white-90 flex items-center justify-center rounded-xl hover:opacity-80"
+      >
+        <svg
+          data-testid="arrow-left"
+          fill="none"
+          height="13"
+          width="9"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7 13a.99.99 0 0 1-.719-.281l-5-5a.964.964 0 0 1 0-1.407l5-5a.964.964 0 0 1 1.407 0 .964.964 0 0 1 0 1.407L3.405 7l4.281 4.313a.964.964 0 0 1 0 1.406A.97.97 0 0 1 7 13Z"
+            fill="#3E3232"
+            fill-opacity="0.5"
+          />
+        </svg>
+      </button>
+      <button
+        aria-label="box-button"
+        class="w-10 h-10 bg-white-90 flex items-center justify-center rounded-xl hover:opacity-80"
+      >
+        <svg
+          data-testid="arrow-right"
+          fill="none"
+          height="11"
+          width="7"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.25 5.5a.866.866 0 0 1-.246.629l-4.375 4.375a.843.843 0 0 1-1.23 0 .843.843 0 0 1 0-1.23L4.144 5.5.398 1.754a.843.843 0 0 1 0-1.23.843.843 0 0 1 1.23 0l4.376 4.374a.848.848 0 0 1 .246.602Z"
+            fill="#000"
+            fill-opacity="0.5"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
