@@ -1,6 +1,3 @@
-// static image
-import ImageStore from "@/constants/images";
-
 // components
 import { Title, PaperPost } from "@/ui/components";
 
@@ -8,48 +5,10 @@ import { Title, PaperPost } from "@/ui/components";
 import { IPostItem } from "@/types";
 
 interface IProps {
-  listPosts?: IPostItem[];
+  listPosts: IPostItem[];
 }
 
-const listPostItems: IPostItem[] = [
-  {
-    id: "1",
-    title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
-    content: "Subhead",
-    imageUrl: ImageStore.CarImage,
-    alt: "Top post",
-  },
-  {
-    id: "2",
-    title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
-    content: "Subhead",
-    imageUrl: ImageStore.FrogImage,
-    alt: "Top post",
-  },
-  {
-    id: "3",
-    title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
-    content: "Subhead",
-    imageUrl: ImageStore.PersonOne,
-    alt: "Top post",
-  },
-  {
-    id: "4",
-    title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
-    content: "Subhead",
-    imageUrl: ImageStore.FoodImage,
-    alt: "Top post",
-  },
-  {
-    id: "5",
-    title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
-    content: "Subhead",
-    imageUrl: ImageStore.PersonTwo,
-    alt: "Top post",
-  },
-];
-
-export const SidebarCard = ({ listPosts = listPostItems }: IProps) => (
+export const SidebarCard = ({ listPosts }: IProps) => (
   <div className="px-[15px] py-5 bg-white-90 rounded-xl">
     <Title title="Top Posts" />
     <div className="mt-5">

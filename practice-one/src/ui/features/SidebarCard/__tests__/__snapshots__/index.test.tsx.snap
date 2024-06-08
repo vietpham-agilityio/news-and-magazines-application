@@ -1,0 +1,248 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SidebarCard feature component SidebarCard should render macth snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="px-[15px] py-5 bg-white-90 rounded-xl"
+  >
+    <div
+      class="flex items-center"
+    >
+      <div
+        class="w-1 h-[11px] bg-primary-100 rounded-2xl mr-1.5"
+      />
+      <h2
+        aria-level="2"
+        class="text-md font-medium text-dark-100 leading-6"
+        role="heading"
+      >
+        Top Posts
+      </h2>
+    </div>
+    <div
+      class="mt-5"
+    >
+      <div
+        class="mb-5"
+      >
+        <div
+          class="flex cursor-pointer undefined"
+        >
+          <div
+            style="width: 87px; height: 87px; position: relative;"
+          >
+            <img
+              alt="Top post"
+              class="rounded-xl"
+              data-nimg="fill"
+              decoding="async"
+              loading="lazy"
+              sizes="100vw"
+              src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+            />
+          </div>
+          <div
+            class="flex flex-col gap-1.5 ml-2.5 flex-1  my-3"
+          >
+            <h2
+              aria-level="2"
+              class="text-xs font-medium text-dark-100 text-ellipsis overflow-hidden undefined"
+              role="heading"
+            >
+              How to Spend the Perfect Day on Croatia’s Most Magical Island
+            </h2>
+            <h3
+              aria-level="3"
+              class="text-md font-light 
+          text-dark-75 text-ellipsis overflow-hidden
+           text-p
+           undefined"
+              role="heading"
+            >
+              Subhead
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mb-5"
+      >
+        <div
+          class="flex cursor-pointer undefined"
+        >
+          <div
+            style="width: 87px; height: 87px; position: relative;"
+          >
+            <img
+              alt="Top post"
+              class="rounded-xl"
+              data-nimg="fill"
+              decoding="async"
+              loading="lazy"
+              sizes="100vw"
+              src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+            />
+          </div>
+          <div
+            class="flex flex-col gap-1.5 ml-2.5 flex-1  my-3"
+          >
+            <h2
+              aria-level="2"
+              class="text-xs font-medium text-dark-100 text-ellipsis overflow-hidden undefined"
+              role="heading"
+            >
+              How to Spend the Perfect Day on Croatia’s Most Magical Island
+            </h2>
+            <h3
+              aria-level="3"
+              class="text-md font-light 
+          text-dark-75 text-ellipsis overflow-hidden
+           text-p
+           undefined"
+              role="heading"
+            >
+              Subhead
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mb-5"
+      >
+        <div
+          class="flex cursor-pointer undefined"
+        >
+          <div
+            style="width: 87px; height: 87px; position: relative;"
+          >
+            <img
+              alt="Top post"
+              class="rounded-xl"
+              data-nimg="fill"
+              decoding="async"
+              loading="lazy"
+              sizes="100vw"
+              src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+            />
+          </div>
+          <div
+            class="flex flex-col gap-1.5 ml-2.5 flex-1  my-3"
+          >
+            <h2
+              aria-level="2"
+              class="text-xs font-medium text-dark-100 text-ellipsis overflow-hidden undefined"
+              role="heading"
+            >
+              How to Spend the Perfect Day on Croatia’s Most Magical Island
+            </h2>
+            <h3
+              aria-level="3"
+              class="text-md font-light 
+          text-dark-75 text-ellipsis overflow-hidden
+           text-p
+           undefined"
+              role="heading"
+            >
+              Subhead
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mb-5"
+      >
+        <div
+          class="flex cursor-pointer undefined"
+        >
+          <div
+            style="width: 87px; height: 87px; position: relative;"
+          >
+            <img
+              alt="Top post"
+              class="rounded-xl"
+              data-nimg="fill"
+              decoding="async"
+              loading="lazy"
+              sizes="100vw"
+              src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+            />
+          </div>
+          <div
+            class="flex flex-col gap-1.5 ml-2.5 flex-1  my-3"
+          >
+            <h2
+              aria-level="2"
+              class="text-xs font-medium text-dark-100 text-ellipsis overflow-hidden undefined"
+              role="heading"
+            >
+              How to Spend the Perfect Day on Croatia’s Most Magical Island
+            </h2>
+            <h3
+              aria-level="3"
+              class="text-md font-light 
+          text-dark-75 text-ellipsis overflow-hidden
+           text-p
+           undefined"
+              role="heading"
+            >
+              Subhead
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div
+        class="false"
+      >
+        <div
+          class="flex cursor-pointer undefined"
+        >
+          <div
+            style="width: 87px; height: 87px; position: relative;"
+          >
+            <img
+              alt="Top post"
+              class="rounded-xl"
+              data-nimg="fill"
+              decoding="async"
+              loading="lazy"
+              sizes="100vw"
+              src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
+              srcset="/_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+            />
+          </div>
+          <div
+            class="flex flex-col gap-1.5 ml-2.5 flex-1  my-3"
+          >
+            <h2
+              aria-level="2"
+              class="text-xs font-medium text-dark-100 text-ellipsis overflow-hidden undefined"
+              role="heading"
+            >
+              How to Spend the Perfect Day on Croatia’s Most Magical Island
+            </h2>
+            <h3
+              aria-level="3"
+              class="text-md font-light 
+          text-dark-75 text-ellipsis overflow-hidden
+           text-p
+           undefined"
+              role="heading"
+            >
+              Subhead
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
