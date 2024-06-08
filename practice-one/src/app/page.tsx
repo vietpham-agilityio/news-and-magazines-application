@@ -7,7 +7,6 @@ import ImageStore from '@/constants/images';
 import Image from 'next/image';
 import {
   Carousel,
-  CardPost,
   CardSingle,
   Title,
   CardPostSkeleton,
@@ -22,7 +21,7 @@ import { HashtagGroup, PostsByAttribute, PostsGrid } from '@/ui/features';
 import { ArrowRight, Triangle } from '@/ui/components/Icons';
 
 // mocks data
-import { listSlider } from '@/mocks';
+import { listHashtagsItem, listSlider } from '@/mocks';
 
 // types
 import { PostVariant, CardType, FontWeight, Size } from '@/types';
@@ -34,7 +33,7 @@ export default function Home() {
 
       {/* category */}
       <section className="category container bg-white-90 items-center justify-center rounded-xl hidden xl:flex lg:mt-11">
-        <HashtagGroup />
+        <HashtagGroup listHashtags={listHashtagsItem} />
       </section>
 
       {/* fantastic posts */}
