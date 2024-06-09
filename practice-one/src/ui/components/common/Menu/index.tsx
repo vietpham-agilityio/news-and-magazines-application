@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { memo, useCallback, useState } from "react";
 
 // components
 import { SubMenu } from "@/ui/components/common";
@@ -16,10 +16,10 @@ interface IProps {
   listMenu?: IMenu[];
 }
 
-export const Menu = ({ name, listMenu }: IProps) => {
+export const Menu = memo(({ name, listMenu }: IProps) => {
   const [isOpenSubMenu, setIsOpenSubMenu] = useState<boolean>(false);
 
-  const handleToggleSubMenu = () => setIsOpenSubMenu((prev) => !prev);
+  const handleToggleSubMenu = useCallback(() => setIsOpenSubMenu((prev) => !prev), []);
 
   return (
     <>
@@ -43,4 +43,6 @@ export const Menu = ({ name, listMenu }: IProps) => {
       )}
     </>
   );
-};
+});
+
+Menu.displayName = "Menu";

@@ -32,7 +32,7 @@ export default async function CardPost({
   const { data: author } = await getAuthorById(authorId);
 
   return (
-    <Link href={`articles/${id}`}>
+    <Link href={`/articles/${id}`}>
       <div
         className={`bg-white-100 flex flex-col items-center justify-center p-2.5 shadow-custom rounded-xl hover:cursor-pointer hover:opacity-90
       ${

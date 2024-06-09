@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback, useEffect } from 'react';
+import { memo, useState, useCallback, useEffect } from 'react';
 
 // constants
 import { flexItemCenter } from '@/constants';
@@ -28,7 +28,7 @@ interface IProps {
   listNav: IMenu[];
 }
 
-export const BurgerMenu = ({ listNav }: IProps) => {
+export const BurgerMenu = memo(({ listNav }: IProps) => {
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
   const [isOpenSubMenu, setIsOpenSubMenu] = useState<boolean>(false);
 
@@ -128,4 +128,6 @@ export const BurgerMenu = ({ listNav }: IProps) => {
         )}
     </div>
   );
-};
+});
+
+BurgerMenu.displayName = "BurgerMenu"

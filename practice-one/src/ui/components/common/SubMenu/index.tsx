@@ -1,3 +1,5 @@
+import { memo } from "react";
+
 // constants
 import { flexCenter } from "@/constants";
 
@@ -13,7 +15,7 @@ interface IProps {
   onClick: () => void;
 }
 
-export const SubMenu = ({ listItem, onClick }: IProps) => (
+export const SubMenu = memo(({ listItem, onClick }: IProps) => (
   <div className={`${flexCenter} py-5 px-4 w-[360px] bg-white-100 rounded-xl shadow-xl`}>
     <ul className="list-none w-full grid grid-cols-2 grid-rows-5">
       {listItem.map((item) => (
@@ -31,4 +33,6 @@ export const SubMenu = ({ listItem, onClick }: IProps) => (
       ))}
     </ul>
   </div>
-);
+));
+
+SubMenu.displayName = "SubMenu";
