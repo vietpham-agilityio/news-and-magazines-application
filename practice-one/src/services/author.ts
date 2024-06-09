@@ -1,6 +1,11 @@
 import { SERVER_BASE_URL } from '@/constants';
+import { AuthorResponse } from '@/types';
 
-async function getAuthorById(id: string) {
+interface AuthorDataResponse {
+  data: AuthorResponse;
+}
+
+async function getAuthorById(id: string): Promise<AuthorDataResponse>  {
   const res = await fetch(`${SERVER_BASE_URL}/api/authors/${id}`);
 
   if (!res.ok) {

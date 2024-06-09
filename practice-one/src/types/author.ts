@@ -1,13 +1,7 @@
 export interface AuthorDataItem {
-  title: string;
-  content: string;
-  publicationDate: string;
-  imageUrl: string;
-  videoUrl: string;
-  authorId: string;
-  views: number;
-  likes: number;
-  shared: number;
+  name: string;
+  email: string;
+  avatarUrl: string;
   createdAt: string;
   updatedAt: string;
   publishedAt: string;

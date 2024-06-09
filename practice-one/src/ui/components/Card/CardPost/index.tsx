@@ -11,22 +11,22 @@ import { FontWeight, Size } from '@/types';
 import { getAuthorById } from '@/services';
 
 export default async function CardPost({
-  id = 'card-post',
-  title = 'How to Drive a Car Safely',
-  content = 'Ah, the joy of the open road—it’s a good feeling. But if you’re new to driving, you may feel a little nervous about getting behind the wheel. Don’t worry. While it’s true that accidents can happen to anybody, there are things you can do to drive safely and do your best to avoid them. ',
-  imageSrc = 'https://images.unsplash.com/photo-1716872491847-03c73619a25d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyN3x8fGVufDB8fHx8fA%3D%3D',
-  alt = 'This car',
+  id,
+  title,
+  content,
+  imageSrc,
+  alt,
   authorId,
-  information = 'June, 05 2024',
+  information,
   isVertical,
 }: {
-  id?: string;
-  title?: string;
-  content?: string;
-  imageSrc?: string | StaticImageData;
-  alt?: string;
+  id: string;
+  title: string;
+  content: string;
+  imageSrc: string | StaticImageData;
+  alt: string;
   authorId: string;
-  information?: string;
+  information: string;
   isVertical?: boolean;
 }) {
   const { data: author } = await getAuthorById(authorId);
