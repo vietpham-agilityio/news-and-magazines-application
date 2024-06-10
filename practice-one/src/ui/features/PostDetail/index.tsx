@@ -19,14 +19,14 @@ export default async function PostDetail({ postId }: { postId: number }) {
   return (
     <section className="flex flex-1">
       <article className="flex-1 mb-17.5">
-        <div className="mb-7.5 lg:bg-white-90 lg:p-7 xl:mb-[130px] xl:h-[604px] rounded-xl">
+        <div className="mb-7.5 lg:bg-white-90 lg:p-7 xl:mb-32.5 xl:h-151 rounded-xl">
           <Typography
             tag="h1"
             additionalClasses="text-md font-medium sm:text-xxl sm:font-normal mb-7"
           >
             {title}
           </Typography>
-          <div className="relative mx-auto w-[358px] h-[198px] sm:w-full sm:h-[336px] lg:h-[380px] xl:w-full xl:h-[538px] 2xl:h-[598px] 2xl:w-[1072px]">
+          <div className="relative mx-auto w-89.5 h-49.5 sm:w-full sm:h-84 lg:h-95 xl:w-full xl:h-134.5 2xl:h-149.5 2xl:w-268">
             <Image
               fill
               objectFit='cover'

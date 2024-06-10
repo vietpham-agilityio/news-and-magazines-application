@@ -3,13 +3,13 @@
 exports[`RightSidebar feature component RightSidebar should render macth snapshot 1`] = `
 <DocumentFragment>
   <aside
-    class="bg-white-100 lg:ml-[23px] lg:w-[360px]"
+    class="bg-white-100 lg:ml-[23px] lg:w-90"
   >
     <div
       class="flex flex-col-reverse sm:gap-5 sm:flex-row lg:flex-col lg:gap-0"
     >
       <div
-        class="flex flex-col w-[360px]"
+        class="flex flex-col w-90"
       >
         <div
           class="flex justify-between bg-white-100 mb-[25px]"
