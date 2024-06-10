@@ -31,12 +31,12 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center">
       {/* category */}
-      <section className="category container bg-white-90 items-center justify-center rounded-xl hidden xl:flex lg:mt-11">
+      <section className="container bg-white-90 items-center justify-center rounded-xl hidden lg:mt-11 xl:flex">
         <HashtagGroup listHashtags={listHashtagsItem} />
       </section>
 
       {/* fantastic posts */}
-      <section className="container hidden items-center gap-6 bg-white-100 h-[452px] mt-9 mb-12.5 sm:flex lg:my-15">
+      <section className="container hidden items-center gap-6 bg-white-100 h-113 mt-9 mb-12.5 sm:flex lg:my-15">
         {/* first card */}
         <div className="hidden xl:block h-full">
           <CardSingle
@@ -62,7 +62,7 @@ export default function Home() {
       </section>
 
       {/* popular posts */}
-      <section className="popular-posts container flex flex-col bg-white-100 mt-7.5 sm:my-0">
+      <section className="container bg-white-100 mt-7.5 sm:mt-0">
         <TitleSection title="Popular Posts" />
         <Suspense fallback={<CardPostSkeleton />}>
           <PostsByAttribute
@@ -104,7 +104,7 @@ export default function Home() {
       </section>
 
       {/* new posts */}
-      <section className="new-posts container flex flex-col justify-between bg-white-100">
+      <section className="container flex flex-col justify-between bg-white-100">
         <div className="mb-5 sm:mb-10 flex justify-between">
           <Title title="New Posts" />
           <Button
@@ -134,7 +134,7 @@ export default function Home() {
                   src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="panel of video"
                 />
-                <div className="hidden sm:block absolute left-2 xl:left-2.5 bottom-4 p-4 w-[97%] bg-white-75 rounded-xl opacity-90">
+                <div className="hidden absolute left-2 bottom-4 p-4 w-[97%] bg-white-75 rounded-xl opacity-90 sm:block xl:left-2.5">
                   <Typography
                     tag="h2"
                     textSize={Size.MD}
@@ -148,7 +148,7 @@ export default function Home() {
                     tag="h3"
                     textSize={Size.XSM}
                     weight={FontWeight.Light}
-                    additionalClasses="text-dark-100 h-10 w-full pr-10 leading-5 text-ellipsis overflow-hidden "
+                    additionalClasses="text-dark-100 h-10 w-full pr-10 leading-5 text-ellipsis overflow-hidden"
                   >
                     You’ve Read All Your Free Member-Only Stories, Become A
                     Member To Get Unlimited Access. Your Membership Fee Supports
@@ -164,7 +164,7 @@ export default function Home() {
             </div>
 
             {/* card first */}
-            <div className="h-[210px] hidden lg:grid lg:col-span-6">
+            <div className="h-52.5 hidden lg:grid lg:col-span-6">
               <PaperPost
                 isLargePaper
                 title="5 reasons why you should wrap your hands when boxing"
@@ -174,7 +174,7 @@ export default function Home() {
               />
             </div>
             {/* card secondary */}
-            <div className="h-[210px] hidden lg:grid lg:col-span-6">
+            <div className="h-52.5 hidden lg:grid lg:col-span-6">
               <PaperPost
                 isLargePaper
                 title="The Health Benefits and Joys of Sunlight"
@@ -189,7 +189,7 @@ export default function Home() {
 
       {/* trendy posts */}
       <ComponentInView>
-        <section className="trendy-posts container flex flex-col justify-between bg-white-100 overflow-hidden">
+        <section className="container bg-white-100">
           <TitleSection title="Trendy Posts" />
           <Suspense fallback={<CardPostSkeleton />}>
             <PostsByAttribute
@@ -201,11 +201,11 @@ export default function Home() {
       </ComponentInView>
 
       {/* weather */}
-      <section className="weather w-full flex items-center justify-center bg-white-90 p-16 my-10 sm:mt-7.5 sm:mb-12.5 lg:my-17.5">
+      <section className="w-full flex items-center justify-center bg-white-90 p-16 my-10 sm:mt-7.5 sm:mb-12.5 lg:my-17.5">
         <div className="container mx-auto">
           <div className="card-group grid grid-cols-12 grid-rows-2 gap-6">
             {/* card first */}
-            <div className="row-span-2 col-span-6 bg-white-90 hidden lg:block rounded-xl">
+            <div className="row-span-2 col-span-6 bg-white-90 hidden rounded-xl lg:block">
               <Image
                 src={ImageStore.WeatherWidget}
                 alt="weather widget"
@@ -275,7 +275,7 @@ export default function Home() {
 
       {/* top posts */}
       <ComponentInView>
-        <section className="top-posts container flex flex-col justify-between bg-white-100 mb-30 sm:mb-7.5 lg:mb-25">
+        <section className="container flex flex-col justify-between bg-white-100 mb-30 sm:mb-7.5 lg:mb-25">
           <TitleSection title="Top Posts" />
           <Suspense fallback={<CardPostSkeleton />}>
             <PostsByAttribute
