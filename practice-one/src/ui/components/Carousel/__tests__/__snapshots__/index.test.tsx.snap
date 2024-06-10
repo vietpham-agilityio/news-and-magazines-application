@@ -24,7 +24,7 @@ exports[`Carousel component should render Carousel macth snapshot 1`] = `
       </svg>
     </button>
     <div
-      class="w-full flex transition-transform duration-500 xl:w-[506px] 2xl:w-[744px]"
+      class="w-full flex transition-transform duration-500 xl:w-126.5 2xl:w-186"
       style="transform: translateX(-0%);"
     >
       <div
@@ -52,7 +52,7 @@ exports[`Carousel component should render Carousel macth snapshot 1`] = `
           </h2>
           <h3
             aria-level="3"
-            class="text-xsm font-light text-dark-100 w-[400px] lg:w-full xl:w-75 2xl:w-[543px] h-10 leading-5 text-ellipsis overflow-hidden"
+            class="text-xsm font-light text-dark-100 w-100 lg:w-full xl:w-75 2xl:w-[543px] h-10 leading-5 text-ellipsis overflow-hidden"
             role="heading"
           >
             Immerse yourself in the urban landscape by taking a street walk. Marvel at architectural wonders, enjoy spontaneous street performances, and soak in the vibrant energy that defines city life. Each step offers a new adventure.
@@ -84,7 +84,7 @@ exports[`Carousel component should render Carousel macth snapshot 1`] = `
           </h2>
           <h3
             aria-level="3"
-            class="text-xsm font-light text-dark-100 w-[400px] lg:w-full xl:w-75 2xl:w-[543px] h-10 leading-5 text-ellipsis overflow-hidden"
+            class="text-xsm font-light text-dark-100 w-100 lg:w-full xl:w-75 2xl:w-[543px] h-10 leading-5 text-ellipsis overflow-hidden"
             role="heading"
           >
             Embark on a culinary journey through the streets, where the aroma of diverse cuisines fills the air. Taste the flavors of the world, from food trucks to street vendors, and experience the city’s culinary heartbeat.
@@ -116,7 +116,7 @@ exports[`Carousel component should render Carousel macth snapshot 1`] = `
           </h2>
           <h3
             aria-level="3"
-            class="text-xsm font-light text-dark-100 w-[400px] lg:w-full xl:w-75 2xl:w-[543px] h-10 leading-5 text-ellipsis overflow-hidden"
+            class="text-xsm font-light text-dark-100 w-100 lg:w-full xl:w-75 2xl:w-[543px] h-10 leading-5 text-ellipsis overflow-hidden"
             role="heading"
           >
             Take a walk back in time as you traverse historical streets. Learn about the rich heritage and significant events that shaped the city. Each building and monument has a tale to tell, connecting the past with the present.
@@ -148,7 +148,7 @@ exports[`Carousel component should render Carousel macth snapshot 1`] = `
           </h2>
           <h3
             aria-level="3"
-            class="text-xsm font-light text-dark-100 w-[400px] lg:w-full xl:w-75 2xl:w-[543px] h-10 leading-5 text-ellipsis overflow-hidden"
+            class="text-xsm font-light text-dark-100 w-100 lg:w-full xl:w-75 2xl:w-[543px] h-10 leading-5 text-ellipsis overflow-hidden"
             role="heading"
           >
             Explore the city’s architectural wonders on foot. From modern skyscrapers to historic facades, the streets are lined with impressive structures that showcase the evolution of design and engineering over the years.
@@ -180,7 +180,7 @@ exports[`Carousel component should render Carousel macth snapshot 1`] = `
           </h2>
           <h3
             aria-level="3"
-            class="text-xsm font-light text-dark-100 w-[400px] lg:w-full xl:w-75 2xl:w-[543px] h-10 leading-5 text-ellipsis overflow-hidden"
+            class="text-xsm font-light text-dark-100 w-100 lg:w-full xl:w-75 2xl:w-[543px] h-10 leading-5 text-ellipsis overflow-hidden"
             role="heading"
           >
             Embrace the serendipity of street walking, where unexpected encounters and spontaneous discoveries make each journey unique. Whether it’s a street musician or a hidden alley, the magic lies in the surprises along the way.

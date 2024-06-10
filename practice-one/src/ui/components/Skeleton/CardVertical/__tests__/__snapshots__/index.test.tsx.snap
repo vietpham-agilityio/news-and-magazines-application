@@ -3,7 +3,7 @@
 exports[`CardVerticalSkeleton component should render CardVerticalSkeleton macth snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="col-span-12 2xl:col-span-6 w-full 2xl:w-[744px]"
+    class="col-span-12 2xl:col-span-6 w-full 2xl:w-186"
   >
     <div
       class="animate-pulse flex flex-col sm:flex-row"

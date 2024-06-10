@@ -55,7 +55,7 @@ export const Carousel = ({
         onClick={goToPrevious}
       />
       <div
-        className="w-full flex transition-transform duration-500 xl:w-[506px] 2xl:w-[744px]"
+        className="w-full flex transition-transform duration-500 xl:w-126.5 2xl:w-186"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {listSlider.map((slider, index) => {
@@ -86,7 +86,7 @@ export const Carousel = ({
                   tag="h3"
                   textSize={Size.XSM}
                   weight={FontWeight.Light}
-                  additionalClasses="text-dark-100 w-[400px] lg:w-full xl:w-75 2xl:w-[543px] h-10 leading-5 text-ellipsis overflow-hidden"
+                  additionalClasses="text-dark-100 w-100 lg:w-full xl:w-75 2xl:w-[543px] h-10 leading-5 text-ellipsis overflow-hidden"
                 >
                   {content}
                 </Typography>

@@ -9,10 +9,10 @@ exports[`Header feature component Header should render macth snapshot 1`] = `
       class="h-12 w-full flex items-center justify-between"
     >
       <div
-        class="flex items-center w-full sm:w-[664px] lg:flex-0 lg:justify-between"
+        class="flex items-center w-full sm:w-166 lg:flex-0 lg:justify-between"
       >
         <div
-          class="mr-[30px] lg:hidden"
+          class="mr-7.5 lg:hidden"
         >
           <div>
             <button
@@ -96,7 +96,7 @@ exports[`Header feature component Header should render macth snapshot 1`] = `
           </a>
         </div>
         <nav
-          class="hidden w-[476px] items-center justify-center lg:flex"
+          class="hidden w-119 items-center justify-center lg:flex"
         >
           <div
             class="mr-8"
@@ -165,7 +165,7 @@ exports[`Header feature component Header should render macth snapshot 1`] = `
         </nav>
       </div>
       <div
-        class="w-[350px] items-center justify-end hidden sm:flex lg:w-[656px]"
+        class="w-87.5 items-center justify-end hidden sm:flex lg:w-164"
       >
         <label
           class="relative mr-6 hidden xl:block"

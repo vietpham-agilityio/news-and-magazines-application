@@ -13,10 +13,10 @@ import { listPostItems } from "@/mocks";
 import { ChatBox, PaperPlane, Plus, SaveTagSmall } from '@/ui/components/Icons';
 
 export const RightSidebar = () => (
-  <aside className="bg-white-100 lg:ml-[23px] lg:w-[360px]">
+  <aside className="bg-white-100 lg:ml-[23px] lg:w-90">
     {/* tag and author */}
     <div className="flex flex-col-reverse sm:gap-5 sm:flex-row lg:flex-col lg:gap-0">
-      <div className="flex flex-col w-[360px]">
+      <div className="flex flex-col w-90">
         <div className="flex justify-between bg-white-100 mb-[25px]">
           <Button
             isMarginBottom

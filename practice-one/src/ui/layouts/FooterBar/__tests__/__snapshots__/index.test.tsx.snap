@@ -3,7 +3,7 @@
 exports[`FooterBar feature component FooterBar should render macth snapshot 1`] = `
 <DocumentFragment>
   <footer
-    class="footer w-full flex items-center justify-between bg-white-100 h-[70px] fixed bottom-0 px-7.5 py-4 rounded-t-2xl shadow-inner sm:hidden"
+    class="footer w-full flex items-center justify-between bg-white-100 h-17.5 fixed bottom-0 px-7.5 py-4 rounded-t-2xl shadow-inner sm:hidden"
   >
     <button
       aria-label="button-element"

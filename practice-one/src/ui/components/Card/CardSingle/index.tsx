@@ -22,7 +22,7 @@ export const CardSingle = ({
   alt = "Image cover",
 }: IProps) => (
   <Link href={`articles/${id}`}>
-  <div className="h-113 w-75 relative rounded-xl flex items-end justify-end bg-transparent p-2.5 hover:cursor-pointer xl:w-[360px]">
+  <div className="h-113 w-75 relative rounded-xl flex items-end justify-end bg-transparent p-2.5 hover:cursor-pointer xl:w-90">
     <Image
       className="rounded-xl absolute"
       src={imageSrc}
@@ -45,7 +45,7 @@ export const CardSingle = ({
         tag="h3"
         textSize={Size.XSM}
         weight={FontWeight.Light}
-        additionalClasses="text-dark-100 h-10 w-[328px] leading-5 text-ellipsis overflow-hidden "
+        additionalClasses="text-dark-100 h-10 w-82 leading-5 text-ellipsis overflow-hidden "
       >
         {content}
       </Typography>

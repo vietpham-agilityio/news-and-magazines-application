@@ -3,7 +3,7 @@
 exports[`SubMenu component should render SubMenu macth snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="flex items-center justify-center py-5 px-4 w-[360px] bg-white-100 rounded-xl shadow-xl"
+    class="flex items-center justify-center py-5 px-4 w-90 bg-white-100 rounded-xl shadow-xl"
   >
     <ul
       class="list-none w-full grid grid-cols-2 grid-rows-5"
