@@ -22,7 +22,7 @@ export const CardSingle = ({
   alt = "Image cover",
 }: IProps) => (
   <Link href={`articles/${id}`}>
-  <div className="h-[452px] w-[300px] relative rounded-xl flex items-end justify-end bg-transparent p-2.5 hover:cursor-pointer xl:w-[360px]">
+  <div className="h-113 w-75 relative rounded-xl flex items-end justify-end bg-transparent p-2.5 hover:cursor-pointer xl:w-[360px]">
     <Image
       className="rounded-xl absolute"
       src={imageSrc}

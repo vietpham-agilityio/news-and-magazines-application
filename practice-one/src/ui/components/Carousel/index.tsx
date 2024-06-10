@@ -64,7 +64,7 @@ export const Carousel = ({
           return (
             <div
               key={index}
-              className="w-full h-[452px] flex-shrink-0 flex flex-col items-center relative"
+              className="w-full h-113 flex-shrink-0 flex flex-col items-center relative"
             >
               <Image
                 fill
@@ -86,7 +86,7 @@ export const Carousel = ({
                   tag="h3"
                   textSize={Size.XSM}
                   weight={FontWeight.Light}
-                  additionalClasses="text-dark-100 w-[400px] lg:w-full xl:w-[300px] 2xl:w-[543px] h-10 leading-5 text-ellipsis overflow-hidden"
+                  additionalClasses="text-dark-100 w-[400px] lg:w-full xl:w-75 2xl:w-[543px] h-10 leading-5 text-ellipsis overflow-hidden"
                 >
                   {content}
                 </Typography>

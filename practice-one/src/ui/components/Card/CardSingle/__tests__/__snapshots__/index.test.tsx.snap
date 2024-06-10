@@ -6,7 +6,7 @@ exports[`CardSingle component should render CardSingle macth snapshot 1`] = `
     href="articles/1"
   >
     <div
-      class="h-[452px] w-[300px] relative rounded-xl flex items-end justify-end bg-transparent p-2.5 hover:cursor-pointer xl:w-[360px]"
+      class="h-113 w- relative rounded-xl flex items-end justify-end bg-transparent p-2.5 hover:cursor-pointer xl:w-[360px]"
     >
       <img
         alt="car image"

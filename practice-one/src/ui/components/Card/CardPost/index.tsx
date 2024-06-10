@@ -38,7 +38,7 @@ export default async function CardPost({
       ${
         isVertical
           ? 'w-[358px] h-[385px] sm:h-100 lg:h-[389px] sm:w-[370px] lg:w-[360px]'
-          : 'sm:flex-row lg:h-[210px] lg:w-[744px] gap-2.5'
+          : 'sm:flex-row lg:h-52.5 lg:w-[744px] gap-2.5'
       }`}
       >
         <div className={`relative w-84.5 h-46.5 ${isVertical ? 'sm:w-87.5 sm:h-50' : 'sm:w-[190px] sm:[190px]'} lg:w-85 lg:h-47.5`}>

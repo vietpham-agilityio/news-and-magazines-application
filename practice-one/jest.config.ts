@@ -22,6 +22,7 @@ const config: Config = {
   collectCoverageFrom: [
     '**/*.tsx',
     '!**/app/**',
+    '!**/utils/**',
     '!**/ui/components/Icons/**',
     '!**/constants/**',
     '!**/mocks/**',
