@@ -30,7 +30,6 @@ export default async function Page({
 
   return (
     <main className="container mx-auto">
-      {/* Path */}
       <div className="flex items-center my-11">
         <Link href="/">
           <Typography
@@ -60,7 +59,7 @@ export default async function Page({
           tag="h2"
           textSize={Size.XS}
           weight={FontWeight.Normal}
-          additionalClasses="text-dark-90 h-5 text-ellipsis overflow-hidden"
+          additionalClasses="text-dark-90 h-5 truncate text-ellipsis overflow-hidden"
         >
           {title}
         </Typography>
