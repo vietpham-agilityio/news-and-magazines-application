@@ -55,7 +55,7 @@ export const Carousel = ({
         onClick={goToPrevious}
       />
       <div
-        className="flex transition-transform duration-500"
+        className="w-full flex transition-transform duration-500 xl:w-[506px] 2xl:w-[744px]"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {listSlider.map((slider, index) => {
@@ -64,17 +64,16 @@ export const Carousel = ({
           return (
             <div
               key={index}
-              className="w-full flex-shrink-0 flex flex-col items-center relative"
+              className="w-full h-[452px] flex-shrink-0 flex flex-col items-center relative"
             >
               <Image
+                fill
+                objectFit='cover'
                 key={index}
                 src={image}
-                width={900}
-                height={600}
                 alt={`Slide ${index}`}
-                className="w-[744px] h-[500px]"
               />
-              <div className="absolute left-5 bottom-15 p-4 bg-white-75 rounded-xl opacity-80 w-[93%] lg:w-[96%] xl:w-[92%] 2xl:w-[95%]">
+              <div className="absolute left-5 bottom-3.5 p-4 bg-white-75 rounded-xl opacity-80 w-[93%] lg:w-[96%] xl:w-[92%] 2xl:w-[95%]">
                 <Typography
                   tag="h2"
                   textSize={Size.LG}
