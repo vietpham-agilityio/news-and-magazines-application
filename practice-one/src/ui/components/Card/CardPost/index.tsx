@@ -37,12 +37,20 @@ export default async function CardPost({
         className={`bg-white-100 flex flex-col items-center justify-center p-2.5 shadow-custom rounded-xl hover:cursor-pointer hover:opacity-90
       ${
         isVertical
-          ? 'w-[358px] h-[385px] sm:h-100 lg:h-[389px] sm:w-[370px] lg:w-[360px]'
-          : 'sm:flex-row lg:h-52.5 lg:w-[744px] gap-2.5'
+          ? 'w-89.5 h-[385px] sm:h-100 lg:h-[389px] sm:w-92.5 lg:w-90'
+          : 'sm:flex-row lg:h-52.5 lg:w-186 gap-2.5'
       }`}
       >
-        <div className={`relative w-84.5 h-46.5 ${isVertical ? 'sm:w-87.5 sm:h-50' : 'sm:w-[190px] sm:[190px]'} lg:w-85 lg:h-47.5`}>
-          <Image className='rounded-xl' fill src={imageSrc} alt={alt} objectFit='cover' />
+        <div
+          className={`relative w-84.5 h-46.5 ${isVertical ? 'sm:w-87.5 sm:h-50' : 'sm:w-47.5'} lg:w-85 lg:h-47.5`}
+        >
+          <Image
+            className="rounded-xl"
+            fill
+            src={imageSrc}
+            alt={alt}
+            objectFit="cover"
+          />
         </div>
         {/* card body */}
         <div className="flex flex-col flex-1">
@@ -58,7 +66,7 @@ export default async function CardPost({
               tag="h3"
               textSize={Size.XSM}
               weight={FontWeight.Light}
-              additionalClasses="text-dark-75 h-10 w-[328px] leading-5 text-ellipsis overflow-hidden"
+              additionalClasses="text-dark-75 h-10 w-82 leading-5 text-ellipsis overflow-hidden"
             >
               {content}
             </Typography>

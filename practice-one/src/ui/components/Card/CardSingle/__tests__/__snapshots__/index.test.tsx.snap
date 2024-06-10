@@ -6,7 +6,7 @@ exports[`CardSingle component should render CardSingle macth snapshot 1`] = `
     href="articles/1"
   >
     <div
-      class="h-113 w- relative rounded-xl flex items-end justify-end bg-transparent p-2.5 hover:cursor-pointer xl:w-[360px]"
+      class="h-113 w-75 relative rounded-xl flex items-end justify-end bg-transparent p-2.5 hover:cursor-pointer xl:w-90"
     >
       <img
         alt="car image"
@@ -31,7 +31,7 @@ exports[`CardSingle component should render CardSingle macth snapshot 1`] = `
         </h2>
         <h3
           aria-level="3"
-          class="text-xsm font-light text-dark-100 h-10 w-[328px] leading-5 text-ellipsis overflow-hidden "
+          class="text-xsm font-light text-dark-100 h-10 w-82 leading-5 text-ellipsis overflow-hidden "
           role="heading"
         >
           Download torrents from verified or trusted uploaders
