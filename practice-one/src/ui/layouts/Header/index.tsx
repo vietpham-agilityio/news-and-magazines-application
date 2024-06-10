@@ -18,9 +18,9 @@ import { ArrowBottom, SaveTag, Search, ThreeDots } from '@/ui/components/Icons';
 export const Header = () => (
   <header className="header container flex flex-col items-center justify-center bg-white-100 h-auto mx-auto mt-11 sm:mt-4 lg:mt-11 lg:flex-row">
     <div className="h-12 w-full flex items-center justify-between">
-      <div className="flex items-center w-full sm:w-[664px] lg:flex-0 lg:justify-between">
+      <div className="flex items-center w-full sm:w-166 lg:flex-0 lg:justify-between">
         {/* Burger menu */}
-        <div className="mr-[30px] lg:hidden">
+        <div className="mr-7.5 lg:hidden">
           <BurgerMenu listNav={listNavItems} />
         </div>
         {/* Search in small screen */}
@@ -37,7 +37,7 @@ export const Header = () => (
         <div className="hidden sm:block">
           <Brand brandName="MEGA.news" url="/" />
         </div>
-        <nav className="hidden w-[476px] items-center justify-center lg:flex">
+        <nav className="hidden w-119 items-center justify-center lg:flex">
           <div className="mr-8">
             <Menu name="Categories" listMenu={listCategories} />
           </div>
@@ -52,7 +52,7 @@ export const Header = () => (
       </div>
 
       {/*Search and user*/}
-      <div className="w-[350px] items-center justify-end hidden sm:flex lg:w-[656px]">
+      <div className="w-87.5 items-center justify-end hidden sm:flex lg:w-164">
         <label htmlFor="search" className="relative mr-6 hidden xl:block">
           <div className="absolute left-6 top-4">
             <ThreeDots />
