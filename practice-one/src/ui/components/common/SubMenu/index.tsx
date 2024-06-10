@@ -16,7 +16,7 @@ interface IProps {
 }
 
 export const SubMenu = memo(({ listItem, onClick }: IProps) => (
-  <div className={`${flexCenter} py-5 px-4 w-[360px] bg-white-100 rounded-xl shadow-xl`}>
+  <div className={`${flexCenter} py-5 px-4 w-90 bg-white-100 rounded-xl shadow-xl`}>
     <ul className="list-none w-full grid grid-cols-2 grid-rows-5">
       {listItem.map((item) => (
         <li key={item.key} className="mb-2 last:mb-0" onClick={onClick}>
