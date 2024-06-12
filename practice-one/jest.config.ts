@@ -27,7 +27,7 @@ const config: Config = {
     '!**/constants/**',
     '!**/mocks/**',
     '!**.storybook/**',
-    '!**/utils/**',
+    '!**/HOC/**',
     '!**/*.stories.tsx',
   ],
 
