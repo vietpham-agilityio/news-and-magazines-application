@@ -3,65 +3,8 @@
 exports[`CardPostSkeleton component should render CardPostSkeleton macth snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="h-[385px] flex overflow-hidden"
+    class="h-101 flex overflow-hidden"
   >
-    <div
-      class="animate-pulse mr-4"
-    >
-      <div
-        class="bg-gray-300 h-46.5 w-90 mb-14 rounded-md"
-      />
-      <div
-        class="h-6 bg-gray-300 rounded w-3/4 mb-2"
-      />
-      <div
-        class="h-6 bg-gray-300 rounded w-3/2 mb-2"
-      />
-      <div
-        class="h-6 bg-gray-300 rounded w-3/4 mb-2"
-      />
-      <div
-        class="h-6 bg-gray-300 rounded w-3/2 mb-2"
-      />
-    </div>
-    <div
-      class="animate-pulse mr-4"
-    >
-      <div
-        class="bg-gray-300 h-46.5 w-90 mb-14 rounded-md"
-      />
-      <div
-        class="h-6 bg-gray-300 rounded w-3/4 mb-2"
-      />
-      <div
-        class="h-6 bg-gray-300 rounded w-3/2 mb-2"
-      />
-      <div
-        class="h-6 bg-gray-300 rounded w-3/4 mb-2"
-      />
-      <div
-        class="h-6 bg-gray-300 rounded w-3/2 mb-2"
-      />
-    </div>
-    <div
-      class="animate-pulse mr-4"
-    >
-      <div
-        class="bg-gray-300 h-46.5 w-90 mb-14 rounded-md"
-      />
-      <div
-        class="h-6 bg-gray-300 rounded w-3/4 mb-2"
-      />
-      <div
-        class="h-6 bg-gray-300 rounded w-3/2 mb-2"
-      />
-      <div
-        class="h-6 bg-gray-300 rounded w-3/4 mb-2"
-      />
-      <div
-        class="h-6 bg-gray-300 rounded w-3/2 mb-2"
-      />
-    </div>
     <div
       class="animate-pulse mr-4"
     >
