@@ -12,7 +12,7 @@ exports[`SubMenu component should render SubMenu macth snapshot 1`] = `
         class="mb-2 last:mb-0"
       >
         <a
-          href="/category/worldnews"
+          href="/category/WorldNews"
         >
           <p
             aria-level="7"
@@ -27,7 +27,7 @@ exports[`SubMenu component should render SubMenu macth snapshot 1`] = `
         class="mb-2 last:mb-0"
       >
         <a
-          href="/category/nationalnews"
+          href="/category/NationalNews"
         >
           <p
             aria-level="7"
@@ -42,7 +42,7 @@ exports[`SubMenu component should render SubMenu macth snapshot 1`] = `
         class="mb-2 last:mb-0"
       >
         <a
-          href="/category/localnews"
+          href="/category/LocalNews"
         >
           <p
             aria-level="7"
@@ -57,7 +57,7 @@ exports[`SubMenu component should render SubMenu macth snapshot 1`] = `
         class="mb-2 last:mb-0"
       >
         <a
-          href="/category/business-and-finance"
+          href="/category/BusinessandFinance"
         >
           <p
             aria-level="7"
@@ -72,7 +72,7 @@ exports[`SubMenu component should render SubMenu macth snapshot 1`] = `
         class="mb-2 last:mb-0"
       >
         <a
-          href="/category/technology"
+          href="/category/Technology"
         >
           <p
             aria-level="7"
@@ -87,7 +87,7 @@ exports[`SubMenu component should render SubMenu macth snapshot 1`] = `
         class="mb-2 last:mb-0"
       >
         <a
-          href="/category/health-and-wellness"
+          href="/category/HealthandWellness"
         >
           <p
             aria-level="7"
@@ -102,7 +102,7 @@ exports[`SubMenu component should render SubMenu macth snapshot 1`] = `
         class="mb-2 last:mb-0"
       >
         <a
-          href="/category/science-and-environment"
+          href="/category/ScienceandEnvironment"
         >
           <p
             aria-level="7"
@@ -117,7 +117,7 @@ exports[`SubMenu component should render SubMenu macth snapshot 1`] = `
         class="mb-2 last:mb-0"
       >
         <a
-          href="/category/entertainment"
+          href="/category/Entertainment"
         >
           <p
             aria-level="7"
@@ -132,7 +132,7 @@ exports[`SubMenu component should render SubMenu macth snapshot 1`] = `
         class="mb-2 last:mb-0"
       >
         <a
-          href="/category/sports"
+          href="/category/Sports"
         >
           <p
             aria-level="7"
@@ -147,7 +147,7 @@ exports[`SubMenu component should render SubMenu macth snapshot 1`] = `
         class="mb-2 last:mb-0"
       >
         <a
-          href="/category/lifestyle"
+          href="/category/Lifestyle"
         >
           <p
             aria-level="7"
