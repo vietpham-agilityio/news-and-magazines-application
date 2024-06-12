@@ -1,16 +1,23 @@
 import ImageStore from '@/constants/images';
-import { IHashtag, IMenu, IPostItem, ISlideItem, ITagItem } from '@/types';
+import {
+  IBreadCrumbItem,
+  IHashtag,
+  IMenu,
+  IPostItem,
+  ISlideItem,
+  ITagItem,
+} from '@/types';
 
 const listTypePosts: string[] = ['New', 'Trendy', 'Popular', 'Top'];
 
 // Tags
 const listTagItems: ITagItem[] = [
-  { id: "1", tagName: "Montenegro" },
-  { id: "2", tagName: "Visit Croatia" },
-  { id: "3", tagName: "Luxury Travel" },
-  { id: "4", tagName: "Travel Log" },
-  { id: "5", tagName: "Paradise Island" },
-  { id: "6", tagName: "Travel Info" },
+  { id: '1', tagName: 'Montenegro' },
+  { id: '2', tagName: 'Visit Croatia' },
+  { id: '3', tagName: 'Luxury Travel' },
+  { id: '4', tagName: 'Travel Log' },
+  { id: '5', tagName: 'Paradise Island' },
+  { id: '6', tagName: 'Travel Info' },
 ];
 
 // Categories
@@ -134,82 +141,93 @@ const listSlider: ISlideItem[] = [
 // List hashtag
 const listHashtagsItem: IHashtag[] = [
   {
-    id: "1",
-    name: "Hashtag Food",
+    id: '1',
+    name: 'Hashtag Food',
     imageUrl: ImageStore.HashtagFood,
   },
   {
-    id: "2",
-    name: "Hashtag Animal",
+    id: '2',
+    name: 'Hashtag Animal',
     imageUrl: ImageStore.HashtagAnimal,
   },
   {
-    id: "3",
-    name: "Hashtag Car",
+    id: '3',
+    name: 'Hashtag Car',
     imageUrl: ImageStore.HashtagCar,
   },
   {
-    id: "4",
-    name: "Hashtag Sport",
+    id: '4',
+    name: 'Hashtag Sport',
     imageUrl: ImageStore.HashtagSport,
   },
   {
-    id: "5",
-    name: "Hashtag Music",
+    id: '5',
+    name: 'Hashtag Music',
     imageUrl: ImageStore.HashtagMusic,
   },
   {
-    id: "6",
-    name: "Hashtag Food",
+    id: '6',
+    name: 'Hashtag Food',
     imageUrl: ImageStore.HashtagFood,
   },
   {
-    id: "7",
-    name: "Hashtag Abstract",
+    id: '7',
+    name: 'Hashtag Abstract',
     imageUrl: ImageStore.HashtagAbstract,
   },
   {
-    id: "8",
-    name: "Hashtag Animal",
+    id: '8',
+    name: 'Hashtag Animal',
     imageUrl: ImageStore.HashtagAnimal,
   },
 ];
 
 const listPostItems: IPostItem[] = [
   {
-    id: "1",
-    title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
-    content: "Subhead",
+    id: '1',
+    title: 'How to Spend the Perfect Day on Croatia’s Most Magical Island',
+    content: 'Subhead',
     imageUrl: ImageStore.CarImage,
-    alt: "Top post",
+    alt: 'Top post',
   },
   {
-    id: "2",
-    title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
-    content: "Subhead",
+    id: '2',
+    title: 'How to Spend the Perfect Day on Croatia’s Most Magical Island',
+    content: 'Subhead',
     imageUrl: ImageStore.FrogImage,
-    alt: "Top post",
+    alt: 'Top post',
   },
   {
-    id: "3",
-    title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
-    content: "Subhead",
+    id: '3',
+    title: 'How to Spend the Perfect Day on Croatia’s Most Magical Island',
+    content: 'Subhead',
     imageUrl: ImageStore.PersonOne,
-    alt: "Top post",
+    alt: 'Top post',
   },
   {
-    id: "4",
-    title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
-    content: "Subhead",
+    id: '4',
+    title: 'How to Spend the Perfect Day on Croatia’s Most Magical Island',
+    content: 'Subhead',
     imageUrl: ImageStore.FoodImage,
-    alt: "Top post",
+    alt: 'Top post',
   },
   {
-    id: "5",
-    title: "How to Spend the Perfect Day on Croatia’s Most Magical Island",
-    content: "Subhead",
+    id: '5',
+    title: 'How to Spend the Perfect Day on Croatia’s Most Magical Island',
+    content: 'Subhead',
     imageUrl: ImageStore.PersonTwo,
-    alt: "Top post",
+    alt: 'Top post',
+  },
+];
+
+const listBreadCrumb: IBreadCrumbItem[] = [
+  {
+    name: 'Home',
+    path: '/',
+  },
+  {
+    name: 'Articles',
+    path: '',
   },
 ];
 
@@ -220,5 +238,6 @@ export {
   listPostItems,
   listTypePosts,
   listCategories,
+  listBreadCrumb,
   listHashtagsItem,
 };

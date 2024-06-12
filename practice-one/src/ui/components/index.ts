@@ -9,6 +9,7 @@ export * from '@/ui/components/Carousel';
 export * from '@/ui/components/SearchBar';
 export * from '@/ui/components/PaperPost';
 export * from '@/ui/components/BurgerMenu';
+export * from '@/ui/components/BreadCrumbs';
 export * from '@/ui/components/TitleSection';
 export * from '@/ui/components/Card/CardSingle';
 export * from '@/ui/components/Skeleton/CardPost';
