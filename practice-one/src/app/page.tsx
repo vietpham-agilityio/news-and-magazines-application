@@ -17,6 +17,9 @@ import {
 } from '@/ui/components';
 import { HashtagGroup, PostsByAttribute, PostsGrid } from '@/ui/features';
 
+// HOC
+import ComponentInView from '@/HOC/InView';
+
 // icons
 import { ArrowRight, Triangle } from '@/ui/components/Icons';
 
@@ -25,7 +28,6 @@ import { listHashtagsItem, listSlider } from '@/mocks';
 
 // types
 import { PostVariant, CardType, FontWeight, Size } from '@/types';
-import ComponentInView from '@/utils/InView';
 
 export default function Home() {
   return (

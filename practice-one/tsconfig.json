@@ -20,9 +20,15 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@/images/*": ["./public/images/*"],
+      "@/images/*": ["./public/images/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/utils/sum.js", "src/utils/sum.test.js", "setupTests.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "setupTests.ts"
+  ],
   "exclude": ["node_modules"]
 }
