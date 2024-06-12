@@ -1,6 +1,3 @@
-// mocks
-import { listCategories, listNavItems } from '@/mocks';
-
 // components
 import {
   Menu,
@@ -9,8 +6,8 @@ import {
   NavItem,
   BoxIcon,
   SearchBar,
-  BurgerMenu,
 } from '@/ui/components';
+import { CategoryBurgerMenu, CategoryMenu } from '@/ui/features';
 
 // icons
 import { ArrowBottom, SaveTag, Search } from '@/ui/components/Icons';
@@ -21,7 +18,7 @@ export const Header = () => (
       <div className="flex items-center w-full sm:w-166 lg:flex-0 lg:justify-between">
         {/* Burger menu */}
         <div className="mr-7.5 lg:hidden">
-          <BurgerMenu listNav={listNavItems} />
+          <CategoryBurgerMenu />
         </div>
         {/* Search in small screen */}
         <div className="flex flex-1 sm:hidden">
@@ -37,7 +34,7 @@ export const Header = () => (
         </div>
         <nav className="hidden w-119 items-center justify-center lg:flex">
           <div className="mr-8">
-            <Menu name="Categories" listMenu={listCategories} />
+            <CategoryMenu />
           </div>
           <div className="mr-8">
             <NavItem name="Pages" url="/pages" />
@@ -81,7 +78,7 @@ export const Header = () => (
 
     {/*search on small screen*/}
     <div className="container h-14 hidden my-5 sm:flex lg:hidden">
-      <SearchBar
+    <SearchBar
         name="search"
         type="text"
         placeholder="Search everything"
