@@ -36,27 +36,21 @@ exports[`Header feature component Header should render macth snapshot 1`] = `
         <div
           class="flex flex-1 sm:hidden"
         >
-          <label
-            class="relative flex-1"
-            for="search"
+          <div
+            class="w-full flex relative"
           >
-            <div
-              class="absolute left-6 top-4"
+            <label
+              class="flex-1"
+              for="search"
             >
-              <svg
-                data-testid="three-dots-icon"
-                fill="none"
-                height="18"
-                width="6"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3 13.063c1.172 0 2.188 1.015 2.188 2.187 0 1.21-1.016 2.188-2.188 2.188A2.184 2.184 0 0 1 .812 15.25c0-1.172.977-2.188 2.188-2.188Zm0-6.25c1.172 0 2.188 1.015 2.188 2.187 0 1.21-1.016 2.188-2.188 2.188A2.184 2.184 0 0 1 .812 9c0-1.172.977-2.188 2.188-2.188Zm0-1.875A2.184 2.184 0 0 1 .812 2.75C.813 1.578 1.79.562 3 .562c1.172 0 2.188 1.016 2.188 2.188 0 1.21-1.016 2.188-2.188 2.188Z"
-                  fill="#3E3232"
-                  fill-opacity="0.75"
-                />
-              </svg>
-            </div>
+              <input
+                class="w-full h-12 bg-white-90 placeholder-dark-100 rounded-xl outline-none pl-4 pr-14"
+                id="search"
+                name="search"
+                placeholder="Search everything"
+                type="text"
+              />
+            </label>
             <div
               class="absolute right-4 top-3"
             >
@@ -73,14 +67,7 @@ exports[`Header feature component Header should render macth snapshot 1`] = `
                 />
               </svg>
             </div>
-            <input
-              class="w-full h-12 bg-white-90 placeholder-dark-100 rounded-xl outline-none px-14"
-              id="search"
-              name="search"
-              placeholder="Search everything"
-              type="text"
-            />
-          </label>
+          </div>
         </div>
         <div
           class="hidden sm:block"
@@ -172,24 +159,7 @@ exports[`Header feature component Header should render macth snapshot 1`] = `
           for="search"
         >
           <div
-            class="absolute left-6 top-4"
-          >
-            <svg
-              data-testid="three-dots-icon"
-              fill="none"
-              height="18"
-              width="6"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M3 13.063c1.172 0 2.188 1.015 2.188 2.187 0 1.21-1.016 2.188-2.188 2.188A2.184 2.184 0 0 1 .812 15.25c0-1.172.977-2.188 2.188-2.188Zm0-6.25c1.172 0 2.188 1.015 2.188 2.187 0 1.21-1.016 2.188-2.188 2.188A2.184 2.184 0 0 1 .812 9c0-1.172.977-2.188 2.188-2.188Zm0-1.875A2.184 2.184 0 0 1 .812 2.75C.813 1.578 1.79.562 3 .562c1.172 0 2.188 1.016 2.188 2.188 0 1.21-1.016 2.188-2.188 2.188Z"
-                fill="#3E3232"
-                fill-opacity="0.75"
-              />
-            </svg>
-          </div>
-          <div
-            class="absolute right-4 top-3"
+            class="absolute right-4 top-3 cursor-pointer"
           >
             <svg
               data-testid="search-icon"
@@ -205,7 +175,7 @@ exports[`Header feature component Header should render macth snapshot 1`] = `
             </svg>
           </div>
           <input
-            class="h-12 bg-white-90 placeholder-dark-100 rounded-xl outline-none px-14 lg:w-100"
+            class="h-12 bg-white-90 placeholder-dark-100 rounded-xl outline-none pl-4 pr-14 lg:w-100"
             id="search"
             name="search"
             placeholder="Search Anything"
@@ -273,27 +243,21 @@ exports[`Header feature component Header should render macth snapshot 1`] = `
     <div
       class="container h-14 hidden my-5 sm:flex lg:hidden"
     >
-      <label
-        class="relative flex-1"
-        for="search"
+      <div
+        class="w-full flex relative"
       >
-        <div
-          class="absolute left-6 top-4"
+        <label
+          class="flex-1"
+          for="search"
         >
-          <svg
-            data-testid="three-dots-icon"
-            fill="none"
-            height="18"
-            width="6"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M3 13.063c1.172 0 2.188 1.015 2.188 2.187 0 1.21-1.016 2.188-2.188 2.188A2.184 2.184 0 0 1 .812 15.25c0-1.172.977-2.188 2.188-2.188Zm0-6.25c1.172 0 2.188 1.015 2.188 2.187 0 1.21-1.016 2.188-2.188 2.188A2.184 2.184 0 0 1 .812 9c0-1.172.977-2.188 2.188-2.188Zm0-1.875A2.184 2.184 0 0 1 .812 2.75C.813 1.578 1.79.562 3 .562c1.172 0 2.188 1.016 2.188 2.188 0 1.21-1.016 2.188-2.188 2.188Z"
-              fill="#3E3232"
-              fill-opacity="0.75"
-            />
-          </svg>
-        </div>
+          <input
+            class="w-full h-12 bg-white-90 placeholder-dark-100 rounded-xl outline-none pl-4 pr-14"
+            id="search"
+            name="search"
+            placeholder="Search everything"
+            type="text"
+          />
+        </label>
         <div
           class="absolute right-4 top-3"
         >
@@ -310,14 +274,7 @@ exports[`Header feature component Header should render macth snapshot 1`] = `
             />
           </svg>
         </div>
-        <input
-          class="w-full h-12 bg-white-90 placeholder-dark-100 rounded-xl outline-none px-14"
-          id="search"
-          name="search"
-          placeholder="Search everything"
-          type="text"
-        />
-      </label>
+      </div>
     </div>
   </header>
 </DocumentFragment>

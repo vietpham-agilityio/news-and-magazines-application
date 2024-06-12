@@ -13,7 +13,7 @@ import {
 } from '@/ui/components';
 
 // icons
-import { ArrowBottom, SaveTag, Search, ThreeDots } from '@/ui/components/Icons';
+import { ArrowBottom, SaveTag, Search } from '@/ui/components/Icons';
 
 export const Header = () => (
   <header className="header container flex flex-col items-center justify-center bg-white-100 h-auto mx-auto mt-11 sm:mt-4 lg:mt-11 lg:flex-row">
@@ -28,8 +28,6 @@ export const Header = () => (
           <SearchBar
             name="search"
             type="text"
-            leftIcon={<ThreeDots />}
-            rightIcon={<Search />}
             placeholder="Search everything"
           />
         </div>
@@ -54,17 +52,14 @@ export const Header = () => (
       {/*Search and user*/}
       <div className="w-87.5 items-center justify-end hidden sm:flex lg:w-164">
         <label htmlFor="search" className="relative mr-6 hidden xl:block">
-          <div className="absolute left-6 top-4">
-            <ThreeDots />
-          </div>
-          <div className="absolute right-4 top-3">
+          <div className="absolute right-4 top-3 cursor-pointer">
             <Search />
           </div>
           <input
             type="text"
             name="search"
             id="search"
-            className="h-12 bg-white-90 placeholder-dark-100 rounded-xl outline-none px-14 lg:w-100"
+            className="h-12 bg-white-90 placeholder-dark-100 rounded-xl outline-none pl-4 pr-14 lg:w-100"
             placeholder="Search Anything"
           />
         </label>
@@ -89,8 +84,6 @@ export const Header = () => (
       <SearchBar
         name="search"
         type="text"
-        leftIcon={<ThreeDots />}
-        rightIcon={<Search />}
         placeholder="Search everything"
       />
     </div>
