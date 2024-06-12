@@ -1,6 +1,6 @@
 'use client';
 
-import { memo, useState, useCallback, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 // constants
 import { flexItemCenter } from '@/constants';
@@ -28,25 +28,19 @@ interface IProps {
   listNav: IMenu[];
 }
 
-export const BurgerMenu = memo(({ listNav }: IProps) => {
+export const BurgerMenu = ({ listNav }: IProps) => {
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
   const [isOpenSubMenu, setIsOpenSubMenu] = useState<boolean>(false);
 
   const classNavItem = `w-full h-12 pl-2 rounded-xl hover:bg-white-90 ${flexItemCenter}`;
 
-  const handleToggleMenu = useCallback(() => setIsOpenMenu(prev => !prev), []);
-  const handleCloseMenu = useCallback(() => setIsOpenMenu(false), []);
-  const handleCloseSubMenu = useCallback(() => setIsOpenSubMenu(false), []);
+  const handleToggleMenu = () => setIsOpenMenu(prev => !prev);
+  const handleCloseMenu = () => setIsOpenMenu(false);
+  const handleCloseSubMenu = () => setIsOpenSubMenu(false);
 
-  const handleToggleSubMenu = useCallback(
-    () => setIsOpenSubMenu(prev => !prev),
-    []
-  );
+  const handleToggleSubMenu = () => setIsOpenSubMenu(prev => !prev);
 
-  const handleCloseAllMenu = useCallback(
-    () => (handleCloseMenu(), handleCloseSubMenu()),
-    [handleCloseMenu, handleCloseSubMenu]
-  );
+  const handleCloseAllMenu = () => (handleCloseMenu(), handleCloseSubMenu());
 
   useEffect(() => {
     isOpenMenu
@@ -128,6 +122,4 @@ export const BurgerMenu = memo(({ listNav }: IProps) => {
         )}
     </div>
   );
-});
-
-BurgerMenu.displayName = "BurgerMenu"
+};

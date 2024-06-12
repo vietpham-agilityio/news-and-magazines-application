@@ -64,7 +64,7 @@ export const Header = () => (
           />
         </label>
         <div className="flex xl:flex-1 justify-between">
-          <div className="flex items-center mr-8 xl:mr-0">
+          <div className="flex items-center mr-8 cursor-pointer xl:mr-0">
             <Avatar
               width={48}
               height={48}
