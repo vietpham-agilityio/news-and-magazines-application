@@ -1,6 +1,5 @@
 "use client"
 
-import { CardPostSkeleton } from "@/ui/components"
 import { InView } from "react-intersection-observer"
 
 export default function ComponentInView({
