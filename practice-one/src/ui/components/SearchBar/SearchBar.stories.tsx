@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
+// components
 import { SearchBar } from '@/ui/components';
-import { ThreeDots, Search } from '@/ui/components/Icons';
 
 const meta = {
   title: 'Components/SearchBar',
