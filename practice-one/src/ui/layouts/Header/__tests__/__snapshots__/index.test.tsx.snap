@@ -88,27 +88,29 @@ exports[`Header feature component Header should render macth snapshot 1`] = `
           <div
             class="mr-8"
           >
-            <div
-              class="flex items-center relative hover:cursor-pointer"
-              data-testid="menu-item"
-            >
-              <p
-                class="text-sm font-medium text-dark-100 hover:text-primary-100 mr-2"
+            <div>
+              <div
+                class="flex items-center relative hover:cursor-pointer"
+                data-testid="menu-item"
               >
-                Categories
-              </p>
-              <svg
-                fill="none"
-                height="7"
-                width="12"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 6.75a.866.866 0 0 1-.629-.246L.996 2.129a.843.843 0 0 1 0-1.23.843.843 0 0 1 1.23 0L6 4.644 9.746.898a.843.843 0 0 1 1.23 0 .843.843 0 0 1 0 1.23L6.603 6.505A.848.848 0 0 1 6 6.75Z"
-                  fill="#3E3232"
-                  fill-opacity="0.5"
-                />
-              </svg>
+                <p
+                  class="text-sm font-medium text-dark-100 hover:text-primary-100 mr-2"
+                >
+                  Categories
+                </p>
+                <svg
+                  fill="none"
+                  height="7"
+                  width="12"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 6.75a.866.866 0 0 1-.629-.246L.996 2.129a.843.843 0 0 1 0-1.23.843.843 0 0 1 1.23 0L6 4.644 9.746.898a.843.843 0 0 1 1.23 0 .843.843 0 0 1 0 1.23L6.603 6.505A.848.848 0 0 1 6 6.75Z"
+                    fill="#3E3232"
+                    fill-opacity="0.5"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
           <div
@@ -186,7 +188,7 @@ exports[`Header feature component Header should render macth snapshot 1`] = `
           class="flex xl:flex-1 justify-between"
         >
           <div
-            class="flex items-center mr-8 xl:mr-0"
+            class="flex items-center mr-8 cursor-pointer xl:mr-0"
           >
             <div
               style="width: 48px; height: 48px; position: relative;"
