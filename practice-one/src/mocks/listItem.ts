@@ -23,52 +23,52 @@ const listTagItems: ITagItem[] = [
 // Categories
 const listCategories: IMenu[] = [
   {
-    key: 'World',
+    id: 'World',
     name: 'World News',
     path: '/category/worldnews',
   },
   {
-    key: 'National',
+    id: 'National',
     name: 'National News',
     path: '/category/nationalnews',
   },
   {
-    key: 'Local',
+    id: 'Local',
     name: 'Local News',
     path: '/category/localnews',
   },
   {
-    key: 'Business',
+    id: 'Business',
     name: 'Business and Finance',
     path: '/category/business-and-finance',
   },
   {
-    key: 'Technology',
+    id: 'Technology',
     name: 'Technology',
     path: '/category/technology',
   },
   {
-    key: 'Health',
+    id: 'Health',
     name: 'Health and Wellness',
     path: '/category/health-and-wellness',
   },
   {
-    key: 'Science',
+    id: 'Science',
     name: 'Science and Environment',
     path: '/category/science-and-environment',
   },
   {
-    key: 'Entertainment',
+    id: 'Entertainment',
     name: 'Entertainment',
     path: '/category/entertainment',
   },
   {
-    key: 'Sports',
+    id: 'Sports',
     name: 'Sports',
     path: '/category/sports',
   },
   {
-    key: 'Lifestyle',
+    id: 'Lifestyle',
     name: 'Lifestyle',
     path: '/category/lifestyle',
   },
@@ -77,17 +77,17 @@ const listCategories: IMenu[] = [
 // Navigates
 const listNavItems: IMenu[] = [
   {
-    key: 'pages',
+    id: '1',
     name: 'Pages',
     path: '/pages',
   },
   {
-    key: 'contact',
+    id: '2',
     name: 'Contact Us',
     path: '/contact-us',
   },
   {
-    key: 'about',
+    id: '3',
     name: 'About Us',
     path: '/about-us',
   },
