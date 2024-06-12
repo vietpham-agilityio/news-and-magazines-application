@@ -66,7 +66,7 @@ export default function Home() {
       {/* popular posts */}
       <section className="container bg-white-100 mt-7.5 sm:mt-0">
         <TitleSection title="Popular Posts" />
-        <Suspense fallback={<CardPostSkeleton />}>
+        <Suspense fallback={<CardPostSkeleton count={4} />}>
           <PostsByAttribute
             attribute={PostVariant.POPULAR}
             cardType={CardType.VERTICAL}
@@ -193,7 +193,7 @@ export default function Home() {
       <ComponentInView>
         <section className="container bg-white-100">
           <TitleSection title="Trendy Posts" />
-          <Suspense fallback={<CardPostSkeleton />}>
+          <Suspense fallback={<CardPostSkeleton count={4} />}>
             <PostsByAttribute
               attribute={PostVariant.TRENDY}
               cardType={CardType.VERTICAL}
@@ -279,7 +279,7 @@ export default function Home() {
       <ComponentInView>
         <section className="container flex flex-col justify-between bg-white-100 mb-30 sm:mb-7.5 lg:mb-25">
           <TitleSection title="Top Posts" />
-          <Suspense fallback={<CardPostSkeleton />}>
+          <Suspense fallback={<CardPostSkeleton count={4} />}>
             <PostsByAttribute
               attribute={PostVariant.TOP}
               cardType={CardType.VERTICAL}
