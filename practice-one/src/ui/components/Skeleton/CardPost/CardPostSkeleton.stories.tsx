@@ -13,4 +13,26 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof CardPostSkeleton>;
 
-export const Default: Story = {};
+export const OneCardPostSkeleton: Story = {
+  args: {
+    count: 1,
+  }
+};
+
+export const TwoCardPostSkeletons: Story = {
+  args: {
+    count: 2,
+  }
+};
+
+export const ThreeCardPostSkeletons: Story = {
+  args: {
+    count: 3,
+  }
+};
+
+export const FourCardPostSkeletons: Story = {
+  args: {
+    count: 4,
+  }
+};

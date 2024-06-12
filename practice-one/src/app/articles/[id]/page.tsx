@@ -74,7 +74,7 @@ export default async function Page({
 
       <section className="container flex flex-col justify-between bg-white-100 h-459 mt-17.5 mb-25">
         <Title title="Popular Posts" />
-        <Suspense fallback={<CardPostSkeleton />}>
+        <Suspense fallback={<CardPostSkeleton count={4} />}>
           <PostsByAttribute
             attribute={PostVariant.POPULAR}
             cardType={CardType.VERTICAL}
