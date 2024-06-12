@@ -4,13 +4,13 @@ import { fireEvent, render, screen, cleanup } from '@testing-library/react';
 import { BurgerMenu } from '@/ui/components';
 
 // mock data
-import { listNavItems } from '@/mocks';
+import { listCategories } from '@/mocks';
 
 let renderBurgerMenu: any;
 
 describe('BurgerMenu component', () => {
   beforeEach(() => {
-    renderBurgerMenu = render(<BurgerMenu listNav={listNavItems} />);
+    renderBurgerMenu = render(<BurgerMenu listCategories={listCategories} />);
   });
 
   afterEach(() => {
@@ -27,13 +27,13 @@ describe('BurgerMenu component', () => {
 
     fireEvent.click(buttonElement);
 
-    const { getByText } = renderBurgerMenu
+    const { getByText } = renderBurgerMenu;
 
-    const categoriesItem = getByText("Categories");
+    const categoriesItem = getByText('Categories');
     expect(categoriesItem).toBeInTheDocument();
 
     fireEvent.click(categoriesItem);
-    const technologyItem = getByText("Technology");
+    const technologyItem = getByText('Technology');
     expect(technologyItem).toBeInTheDocument();
     fireEvent.click(technologyItem);
   });

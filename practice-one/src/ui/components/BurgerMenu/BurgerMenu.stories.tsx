@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { BurgerMenu } from "@/ui/components";
 
 // mock
-import { listNavItems } from "@/mocks";
+import { listCategories } from "@/mocks";
 
 const meta = {
   title: "Components/BurgerMenu",
@@ -18,6 +18,6 @@ type Story = StoryObj<typeof BurgerMenu>;
 
 export const Default: Story = {
   args: {
-   listNav: listNavItems
+  listCategories: listCategories
   },
 };

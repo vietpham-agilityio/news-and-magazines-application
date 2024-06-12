@@ -1,4 +1,4 @@
-import { SERVER_BASE_URL } from '@/constants';
+import { SERVER_BASE_URL, END_POINT } from '@/constants';
 import { AuthorResponse } from '@/types';
 
 interface AuthorDataResponse {
@@ -6,7 +6,7 @@ interface AuthorDataResponse {
 }
 
 async function getAuthorById(id: string): Promise<AuthorDataResponse>  {
-  const res = await fetch(`${SERVER_BASE_URL}/api/authors/${id}`);
+  const res = await fetch(`${SERVER_BASE_URL}/api/${END_POINT.AUTHORS}/${id}`);
 
   if (!res.ok) {
     throw new Error('Failed to fetch data');

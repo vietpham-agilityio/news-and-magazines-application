@@ -1,7 +1,7 @@
 export interface IMenu {
-  key: string;
+  id: string;
   name: string;
-  path: string;
+  path?: string;
 }
 
 export interface INavMenu extends IMenu {

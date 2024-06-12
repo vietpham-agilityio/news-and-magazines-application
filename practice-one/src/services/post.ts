@@ -1,5 +1,5 @@
 import { PostResponse, PostVariant } from '@/types';
-import { MESSAGE, SERVER_BASE_URL } from '@/constants';
+import { MESSAGE, SERVER_BASE_URL, END_POINT } from '@/constants';
 import { notFound } from 'next/navigation';
 
 interface PostsResponse {
@@ -13,7 +13,7 @@ interface PostDataResponse {
 async function getPostDataByAttribute(
   attribute: PostVariant,
   limit: number = 10,
-  page: number = 1,
+  page: number = 1
 ): Promise<PostsResponse> {
   const queryObject = {
     populate: '*',
@@ -24,10 +24,12 @@ async function getPostDataByAttribute(
 
   const query = new URLSearchParams(queryObject).toString();
 
-
-  const res = await fetch(`${SERVER_BASE_URL}/api/posts?${query}`, {
-    next: { revalidate: 3600 },
-  });
+  const res = await fetch(
+    `${SERVER_BASE_URL}/api/${END_POINT.POSTS}?${query}`,
+    {
+      next: { revalidate: 3600 },
+    }
+  );
 
   if (!res.ok) {
     throw new Error('Failed to fetch data');
@@ -38,11 +40,8 @@ async function getPostDataByAttribute(
   return data;
 }
 
-async function getPostDataById(
-  id: number
-): Promise<PostDataResponse> {
-
-  const res = await fetch(`${SERVER_BASE_URL}/api/posts/${id}`, {
+async function getPostDataById(id: number): Promise<PostDataResponse> {
+  const res = await fetch(`${SERVER_BASE_URL}/api/${END_POINT.POSTS}/${id}`, {
     next: { revalidate: 3600 },
   });
 

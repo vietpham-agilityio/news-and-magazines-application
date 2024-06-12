@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 import { flexItemCenter } from '@/constants';
 
 // mocks
-import { listCategories } from '@/mocks';
+import { listNavItems } from '@/mocks';
 
 // components
 import { BoxIcon, Brand, NavItem, Typography } from '@/ui/components';
@@ -25,10 +25,10 @@ import { FontWeight, IMenu, Size } from '@/types';
 import { createPortal } from 'react-dom';
 
 interface IProps {
-  listNav: IMenu[];
+  listCategories: IMenu[];
 }
 
-export const BurgerMenu = ({ listNav }: IProps) => {
+export const BurgerMenu = ({ listCategories }: IProps) => {
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
   const [isOpenSubMenu, setIsOpenSubMenu] = useState<boolean>(false);
 
@@ -90,29 +90,32 @@ export const BurgerMenu = ({ listNav }: IProps) => {
 
             {isOpenSubMenu && (
               <ul className="list-none mt-1.5 pl-5">
-                {listCategories.map(item => (
-                  <li
-                    key={item.key}
-                    className="mb-2 last:mb-0"
-                    onClick={handleCloseAllMenu}
-                  >
-                    <Link href={item.path}>
-                      <Typography
-                        tag="p"
-                        textSize={Size.XS}
-                        additionalClasses="text-dark-75 cursor-pointer hover:text-secondary-100"
-                      >
-                        {item.name}
-                      </Typography>
-                    </Link>
-                  </li>
-                ))}
+                {listCategories.map(category => {
+                  const { id, name } = category;
+                  return (
+                    <li
+                      key={id}
+                      className="mb-2 last:mb-0"
+                      onClick={handleCloseAllMenu}
+                    >
+                      <Link href={`/category/${name.replace(/\s+/g, '')}`}>
+                        <Typography
+                          tag="p"
+                          textSize={Size.XS}
+                          additionalClasses="text-dark-75 cursor-pointer hover:text-secondary-100"
+                        >
+                          {name}
+                        </Typography>
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             )}
 
             <div>
-              {listNav.map(navItem => (
-                <div key={navItem.key} className={classNavItem}>
+              {listNavItems.map(navItem => (
+                <div key={navItem.id} className={classNavItem}>
                   <NavItem name={navItem.name} url={navItem.path} />
                 </div>
               ))}
