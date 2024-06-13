@@ -1,9 +1,5 @@
 import { SERVER_BASE_URL, END_POINT } from '@/constants';
-import { AuthorResponse } from '@/types';
-
-interface AuthorDataResponse {
-  data: AuthorResponse;
-}
+import { AuthorDataResponse } from '@/types';
 
 async function getAuthorById(id: string): Promise<AuthorDataResponse>  {
   const res = await fetch(`${SERVER_BASE_URL}/api/${END_POINT.AUTHORS}/${id}`);

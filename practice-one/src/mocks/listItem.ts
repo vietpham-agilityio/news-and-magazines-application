@@ -1,5 +1,6 @@
 import ImageStore from '@/constants/images';
 import {
+  AuthorDataResponse,
   CategoriesResponse,
   IBreadCrumbItem,
   IHashtag,
@@ -233,7 +234,7 @@ const listBreadCrumb: IBreadCrumbItem[] = [
   },
 ];
 
-export const mockCategoryData: CategoriesResponse = {
+const mockCategoryData: CategoriesResponse = {
   data: [
     {
       id: 1,
@@ -245,7 +246,7 @@ export const mockCategoryData: CategoriesResponse = {
   ],
 };
 
-export const mockPostDetailData: PostDataResponse = {
+const mockPostDetailData: PostDataResponse = {
   data: {
     id: 1,
     attributes: {
@@ -267,6 +268,20 @@ export const mockPostDetailData: PostDataResponse = {
   },
 };
 
+const mockAuthorData: AuthorDataResponse = {
+  data: {
+    id: 2,
+    attributes: {
+      name: "Benzamine",
+      email: "benzo@gmail.com",
+      avatarUrl: "https://www.unsplash.com/image?v",
+      updatedAt: "2024-5-30",
+      createdAt: new Date().toString(),
+      publishedAt: new Date().toString(),
+    },
+  }
+} 
+
 export {
   listSlider,
   listTagItems,
@@ -276,4 +291,7 @@ export {
   listCategories,
   listBreadCrumb,
   listHashtagsItem,
+  mockAuthorData,
+  mockCategoryData,
+  mockPostDetailData,
 };
