@@ -15,6 +15,7 @@ interface IProps {
 
 export const SubMenu = ({ listItem, onClick }: IProps) => (
   <div
+    data-testid="sub-menu"
     className={`${flexCenter} py-5 px-4 w-90 bg-white-100 rounded-xl shadow-xl`}
   >
     <ul className="list-none w-full grid grid-cols-2 grid-rows-5">
