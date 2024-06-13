@@ -1,4 +1,5 @@
 import { Suspense } from 'react';
+import type { Metadata } from 'next';
 
 // static images
 import ImageStore from '@/constants/images';
@@ -28,6 +29,12 @@ import { listHashtagsItem, listSlider } from '@/mocks';
 
 // types
 import { PostVariant, CardType, FontWeight, Size } from '@/types';
+
+export const metadata: Metadata = {
+  title: 'Home - News & Magazine',
+  description:
+    'Welcome to News & Magazine. Stay updated with the latest headlines, in-depth articles, and trending topics from around the world.',
+};
 
 export default function Home() {
   return (

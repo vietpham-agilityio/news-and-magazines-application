@@ -1,4 +1,5 @@
 import { Suspense } from 'react';
+import type { Metadata } from 'next';
 
 // components
 import {
@@ -14,6 +15,12 @@ import { getPostDataById } from '@/services';
 
 // types
 import { CardType, IBreadCrumbItem, PostVariant } from '@/types';
+
+export const metadata: Metadata = {
+  title: 'Article - News & Magazine',
+  description:
+    'Read in-depth coverage on our latest article. Stay informed with News & Magazine.',
+};
 
 export default async function Page({
   params: { id },
