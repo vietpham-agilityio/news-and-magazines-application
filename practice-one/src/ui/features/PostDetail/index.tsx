@@ -14,7 +14,11 @@ import { ChatBox, File, Schedule } from '@/ui/components/Icons';
 export default async function PostDetail({ postId }: { postId: number }) {
   const postResponse = await getPostDataById(postId);
 
-  const { title, content, imageUrl } = postResponse.data.attributes;
+  const attributes = postResponse?.data?.attributes;
+
+  const title = attributes?.title ?? 'Title is not available';
+  const content = attributes?.content ?? 'Content is not available';
+  const imageUrl = attributes?.imageUrl ?? '';
 
   return (
     <section className="flex flex-1">
@@ -29,7 +33,7 @@ export default async function PostDetail({ postId }: { postId: number }) {
           <div className="relative mx-auto w-89.5 h-49.5 sm:w-full sm:h-84 lg:h-95 xl:w-full xl:h-134.5 2xl:h-149.5 2xl:w-268">
             <Image
               fill
-              objectFit='cover'
+              objectFit="cover"
               className="rounded-xl"
               src={imageUrl}
               alt={title}
