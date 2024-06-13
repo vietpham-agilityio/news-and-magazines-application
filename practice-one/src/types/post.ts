@@ -12,7 +12,6 @@ export interface PostDataItem {
   content: string;
   publicationDate: string;
   imageUrl: string;
-  videoUrl: string;
   authorId: string;
   views: number;
   likes: number;
@@ -40,5 +39,5 @@ export interface PostsResponse {
 }
 
 export interface PostDataResponse {
-  data?: PostResponse;
+  data: PostResponse;
 }
