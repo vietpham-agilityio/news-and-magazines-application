@@ -5,47 +5,55 @@ exports[`BreadCrumbs component should render BreadCrumbs macth snapshot 1`] = `
   <div
     class="flex items-center my-11"
   >
-    <a
-      href="/"
+    <div
+      class="flex items-center"
     >
-      <h2
-        aria-level="2"
-        class="text-xs font-normal 
+      <a
+        href="/"
+      >
+        <h2
+          aria-level="2"
+          class="text-xs font-normal 
                text-dark-100 hover:text-primary-100"
-        role="heading"
+          role="heading"
+        >
+          Home
+        </h2>
+      </a>
+      <i
+        class="mx-2"
       >
-        Home
-      </h2>
-    </a>
-    <i
-      class="mx-2"
+        <svg
+          data-testid="arrow-right"
+          fill="none"
+          height="11"
+          width="7"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.25 5.5a.866.866 0 0 1-.246.629l-4.375 4.375a.843.843 0 0 1-1.23 0 .843.843 0 0 1 0-1.23L4.144 5.5.398 1.754a.843.843 0 0 1 0-1.23.843.843 0 0 1 1.23 0l4.376 4.374a.848.848 0 0 1 .246.602Z"
+            fill="#3E3232"
+            fill-opacity="0.5"
+          />
+        </svg>
+      </i>
+    </div>
+    <div
+      class="flex items-center"
     >
-      <svg
-        data-testid="arrow-right"
-        fill="none"
-        height="11"
-        width="7"
-        xmlns="http://www.w3.org/2000/svg"
+      <a
+        href=""
       >
-        <path
-          d="M6.25 5.5a.866.866 0 0 1-.246.629l-4.375 4.375a.843.843 0 0 1-1.23 0 .843.843 0 0 1 0-1.23L4.144 5.5.398 1.754a.843.843 0 0 1 0-1.23.843.843 0 0 1 1.23 0l4.376 4.374a.848.848 0 0 1 .246.602Z"
-          fill="#3E3232"
-          fill-opacity="0.5"
-        />
-      </svg>
-    </i>
-    <a
-      href=""
-    >
-      <h2
-        aria-level="2"
-        class="text-xs font-normal 
+        <h2
+          aria-level="2"
+          class="text-xs font-normal 
               w-57.5 text-dark-90 h-5 truncate text-ellipsis overflow-hidden sm:w-full"
-        role="heading"
-      >
-        Articles
-      </h2>
-    </a>
+          role="heading"
+        >
+          Articles
+        </h2>
+      </a>
+    </div>
   </div>
 </DocumentFragment>
 `;
