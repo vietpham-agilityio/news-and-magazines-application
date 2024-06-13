@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoryBurgerMenu component Should render match with snapshot. 1`] = `
+<div>
+  <div>
+    <button
+      aria-label="box-button"
+      class="w-12 h-12 bg-white-90 flex items-center justify-center rounded-xl w-12"
+    >
+      <svg
+        fill="none"
+        height="16"
+        width="18"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M.25 1.75C.25 1.086.797.5 1.5.5h15c.664 0 1.25.586 1.25 1.25 0 .703-.586 1.25-1.25 1.25h-15C.797 3 .25 2.453.25 1.75ZM.25 8c0-.664.547-1.25 1.25-1.25h15c.664 0 1.25.586 1.25 1.25 0 .703-.586 1.25-1.25 1.25h-15C.797 9.25.25 8.703.25 8Zm16.25 7.5h-15c-.703 0-1.25-.547-1.25-1.25C.25 13.586.797 13 1.5 13h15c.664 0 1.25.586 1.25 1.25 0 .703-.586 1.25-1.25 1.25Z"
+          fill="#3E3232"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`CategoryBurgerMenu component Should render with falsy value response and match with snapshot. 1`] = `
+<div>
+  <div>
+    <button
+      aria-label="box-button"
+      class="w-12 h-12 bg-white-90 flex items-center justify-center rounded-xl w-12"
+    >
+      <svg
+        fill="none"
+        height="16"
+        width="18"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M.25 1.75C.25 1.086.797.5 1.5.5h15c.664 0 1.25.586 1.25 1.25 0 .703-.586 1.25-1.25 1.25h-15C.797 3 .25 2.453.25 1.75ZM.25 8c0-.664.547-1.25 1.25-1.25h15c.664 0 1.25.586 1.25 1.25 0 .703-.586 1.25-1.25 1.25h-15C.797 9.25.25 8.703.25 8Zm16.25 7.5h-15c-.703 0-1.25-.547-1.25-1.25C.25 13.586.797 13 1.5 13h15c.664 0 1.25.586 1.25 1.25 0 .703-.586 1.25-1.25 1.25Z"
+          fill="#3E3232"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;
