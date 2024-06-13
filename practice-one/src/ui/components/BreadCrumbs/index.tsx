@@ -18,7 +18,7 @@ export const BreadCrumbs = ({ listBreadCrumb }: IProps) => (
       const { path, name } = item;
 
       return (
-        <>
+        <div key={name} className="flex items-center">
           <Link href={path}>
             <Typography
               tag="h2"
@@ -31,7 +31,7 @@ export const BreadCrumbs = ({ listBreadCrumb }: IProps) => (
                   : ' text-dark-100 hover:text-primary-100'
               }`}
             >
-              { name }
+              {name}
             </Typography>
           </Link>
           {index !== listBreadCrumb.length - 1 && (
@@ -39,7 +39,7 @@ export const BreadCrumbs = ({ listBreadCrumb }: IProps) => (
               <ArrowRight />
             </i>
           )}
-        </>
+        </div>
       );
     })}
   </div>
