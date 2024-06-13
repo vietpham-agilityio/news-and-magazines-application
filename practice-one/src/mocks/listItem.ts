@@ -1,5 +1,6 @@
 import ImageStore from '@/constants/images';
 import {
+  CategoriesResponse,
   IBreadCrumbItem,
   IHashtag,
   IMenu,
@@ -230,6 +231,18 @@ const listBreadCrumb: IBreadCrumbItem[] = [
     path: '',
   },
 ];
+
+export const mockCategoryData: CategoriesResponse = {
+  data: [
+    {
+      id: 1,
+      attributes: {
+        name: 'Category',
+        description: 'Category description',
+      },
+    },
+  ],
+};
 
 export {
   listSlider,
