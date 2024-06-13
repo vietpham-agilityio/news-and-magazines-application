@@ -6,7 +6,7 @@ import { CategoryResponse, IMenu } from '@/types';
 import { Menu } from '@/ui/components';
 
 export default async function CategoryMenu() {
-  const { data: categoryDataResponse } = await getCategoryData();
+  const { data: categoryDataResponse = [] } = await getCategoryData();
 
   const listCategories: IMenu[] = [];
 

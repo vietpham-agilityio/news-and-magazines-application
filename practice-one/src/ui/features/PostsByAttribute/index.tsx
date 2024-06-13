@@ -15,7 +15,7 @@ export default async function PostByAttribute({
   attribute: PostVariant;
   cardType: CardType;
 }) {
-  const { data: postDataResponse } = await getPostDataByAttribute(attribute);
+  const { data: postDataResponse = [] } = await getPostDataByAttribute(attribute);
   const typeCardPost = cardType === 'isVertical';
 
   return (

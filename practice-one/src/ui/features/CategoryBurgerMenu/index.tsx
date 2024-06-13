@@ -6,11 +6,11 @@ import { CategoryResponse, IMenu } from '@/types';
 import { BurgerMenu } from '@/ui/components';
 
 export default async function CategoryBurgerMenu() {
-  const { data: categoryDataResponse } = await getCategoryData();
+  const { data: categoryDataResponse = [] } = await getCategoryData();
 
   const listCategories: IMenu[] = [];
 
-  categoryDataResponse.map((category: CategoryResponse) => {
+  categoryDataResponse?.map((category: CategoryResponse) => {
     const { id } = category;
     const { name } = category.attributes;
 
