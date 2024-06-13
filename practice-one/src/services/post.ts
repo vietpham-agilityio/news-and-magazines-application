@@ -1,14 +1,6 @@
-import { PostResponse, PostVariant } from '@/types';
+import { PostDataResponse, PostVariant, PostsResponse } from '@/types';
 import { MESSAGE, SERVER_BASE_URL, END_POINT } from '@/constants';
 import { notFound } from 'next/navigation';
-
-interface PostsResponse {
-  data: PostResponse[];
-}
-
-interface PostDataResponse {
-  data: PostResponse;
-}
 
 async function getPostDataByAttribute(
   attribute: PostVariant,

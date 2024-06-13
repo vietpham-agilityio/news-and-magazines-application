@@ -1,0 +1,376 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostDetail component Should render default values when attributes are missing. 1`] = `
+<div>
+  <section
+    class="flex flex-1"
+  >
+    <article
+      class="flex-1 mb-17.5"
+    >
+      <div
+        class="mb-7.5 lg:bg-white-90 lg:p-7 xl:mb-32.5 xl:h-151 rounded-xl"
+      >
+        <h1
+          aria-level="1"
+          class="text-md font-medium text-md font-medium sm:text-xxl sm:font-normal mb-7"
+          role="heading"
+        >
+          Title is not available
+        </h1>
+        <div
+          class="relative mx-auto w-89.5 h-49.5 sm:w-full sm:h-84 lg:h-95 xl:w-full xl:h-134.5 2xl:h-149.5 2xl:w-268"
+        >
+          <img
+            alt="Title is not available"
+            class="rounded-xl"
+            data-nimg="fill"
+            decoding="async"
+            src=""
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+          />
+        </div>
+      </div>
+      <div
+        class="flex w-full justify-evenly mx-auto mb-12 xl:w-2/4"
+      >
+        <div
+          class="flex cursor-pointer undefined"
+        >
+          <div
+            class="mr-2"
+          >
+            <svg
+              fill="none"
+              height="15"
+              width="13"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.531 2.5H8.47V1.406c0-.355.273-.656.656-.656.355 0 .656.3.656.656V2.5h1.094c.957 0 1.75.793 1.75 1.75V13c0 .984-.793 1.75-1.75 1.75h-8.75c-.984 0-1.75-.766-1.75-1.75V4.25c0-.957.766-1.75 1.75-1.75h1.094V1.406c0-.355.273-.656.656-.656.355 0 .656.3.656.656V2.5ZM1.688 13c0 .246.19.438.437.438h8.75a.45.45 0 0 0 .438-.438V6H1.687v7Z"
+                fill="#3E3232"
+                fill-opacity="0.5"
+              />
+            </svg>
+          </div>
+          <h2
+            aria-level="2"
+            class="text-md font-medium text-dark-75 text-xsm leading-4"
+            role="heading"
+          >
+            July 14 , 2022
+          </h2>
+        </div>
+        <div
+          class="flex cursor-pointer hidden sm:flex"
+        >
+          <div
+            class="mr-2"
+          >
+            <svg
+              fill="none"
+              height="13"
+              width="15"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.938 5.438c.464 0 .847.41.847.875a.858.858 0 0 1-.848.875.864.864 0 0 1-.875-.875c0-.465.383-.875.875-.875Zm3.062 0c.465 0 .848.41.848.875 0 .437-.41.847-.848.847-.465 0-.875-.383-.875-.848 0-.492.383-.875.875-.875Zm3.063 0c.464 0 .874.41.847.875a.858.858 0 0 1-.848.875.881.881 0 0 1-.874-.875c0-.465.382-.875.874-.875ZM8 .625c3.855 0 6.973 2.598 6.973 5.715S11.855 12 8 12a8.402 8.402 0 0 1-2.543-.383c-.82.574-2.133 1.258-3.8 1.258-.274 0-.52-.137-.602-.41-.082-.246-.055-.52.136-.711 0 0 .848-.93 1.258-1.996C1.547 8.8 1 7.598 1 6.313 1 3.167 4.117.625 8 .625Zm0 10.063c3.117 0 5.633-1.942 5.633-4.376 0-2.406-2.543-4.375-5.66-4.375-3.118 0-5.66 1.97-5.66 4.375 0 1.176.574 2.051 1.066 2.57l.574.602-.3.766a5.116 5.116 0 0 1-.548 1.094 6.104 6.104 0 0 0 1.586-.793l.52-.383.629.191a7.132 7.132 0 0 0 2.16.329Z"
+                fill="#3E3232"
+                fill-opacity="0.5"
+              />
+            </svg>
+          </div>
+          <h2
+            aria-level="2"
+            class="text-md font-medium text-dark-75 text-xsm leading-4"
+            role="heading"
+          >
+            Comments: 35
+          </h2>
+        </div>
+        <div
+          class="flex cursor-pointer hidden sm:flex"
+        >
+          <div
+            class="mr-2"
+          >
+            <svg
+              data-testid="file-icon"
+              fill="none"
+              height="13"
+              width="15"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.723 2.375c.984 0 1.75.793 1.75 1.75v7c0 .984-.793 1.75-1.75 1.75h-10.5c-.985 0-1.75-.766-1.75-1.75v-8.75c0-.957.765-1.75 1.75-1.75h3.226c.465 0 .903.191 1.23.52l1.34 1.23h4.704Zm.437 8.75v-7a.47.47 0 0 0-.437-.438h-5.25l-1.75-1.613a.44.44 0 0 0-.301-.136h-3.2a.45.45 0 0 0-.437.437v8.75c0 .246.192.438.438.438h10.5a.45.45 0 0 0 .437-.438Z"
+                fill="#3E3232"
+                fill-opacity="0.5"
+              />
+            </svg>
+          </div>
+          <h2
+            aria-level="2"
+            class="text-md font-medium text-dark-75 text-xsm leading-4"
+            role="heading"
+          >
+            Categories: Sport
+          </h2>
+        </div>
+        <div
+          class="flex cursor-pointer sm:hidden"
+        >
+          <div
+            class="mr-2"
+          >
+            <svg
+              fill="none"
+              height="13"
+              width="15"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.938 5.438c.464 0 .847.41.847.875a.858.858 0 0 1-.848.875.864.864 0 0 1-.875-.875c0-.465.383-.875.875-.875Zm3.062 0c.465 0 .848.41.848.875 0 .437-.41.847-.848.847-.465 0-.875-.383-.875-.848 0-.492.383-.875.875-.875Zm3.063 0c.464 0 .874.41.847.875a.858.858 0 0 1-.848.875.881.881 0 0 1-.874-.875c0-.465.382-.875.874-.875ZM8 .625c3.855 0 6.973 2.598 6.973 5.715S11.855 12 8 12a8.402 8.402 0 0 1-2.543-.383c-.82.574-2.133 1.258-3.8 1.258-.274 0-.52-.137-.602-.41-.082-.246-.055-.52.136-.711 0 0 .848-.93 1.258-1.996C1.547 8.8 1 7.598 1 6.313 1 3.167 4.117.625 8 .625Zm0 10.063c3.117 0 5.633-1.942 5.633-4.376 0-2.406-2.543-4.375-5.66-4.375-3.118 0-5.66 1.97-5.66 4.375 0 1.176.574 2.051 1.066 2.57l.574.602-.3.766a5.116 5.116 0 0 1-.548 1.094 6.104 6.104 0 0 0 1.586-.793l.52-.383.629.191a7.132 7.132 0 0 0 2.16.329Z"
+                fill="#3E3232"
+                fill-opacity="0.5"
+              />
+            </svg>
+          </div>
+          <h2
+            aria-level="2"
+            class="text-md font-medium text-dark-75 text-xsm leading-4"
+            role="heading"
+          >
+            35
+          </h2>
+        </div>
+        <div
+          class="flex cursor-pointer sm:hidden"
+        >
+          <div
+            class="mr-2"
+          >
+            <svg
+              data-testid="file-icon"
+              fill="none"
+              height="13"
+              width="15"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.723 2.375c.984 0 1.75.793 1.75 1.75v7c0 .984-.793 1.75-1.75 1.75h-10.5c-.985 0-1.75-.766-1.75-1.75v-8.75c0-.957.765-1.75 1.75-1.75h3.226c.465 0 .903.191 1.23.52l1.34 1.23h4.704Zm.437 8.75v-7a.47.47 0 0 0-.437-.438h-5.25l-1.75-1.613a.44.44 0 0 0-.301-.136h-3.2a.45.45 0 0 0-.437.437v8.75c0 .246.192.438.438.438h10.5a.45.45 0 0 0 .437-.438Z"
+                fill="#3E3232"
+                fill-opacity="0.5"
+              />
+            </svg>
+          </div>
+          <h2
+            aria-level="2"
+            class="text-md font-medium text-dark-75 text-xsm leading-4"
+            role="heading"
+          >
+            Sport
+          </h2>
+        </div>
+      </div>
+      <section>
+        <h2
+          aria-level="2"
+          class="text-md font-normal text-dark-100"
+          role="heading"
+        >
+          Content is not available
+        </h2>
+      </section>
+    </article>
+  </section>
+</div>
+`;
+
+exports[`PostDetail component Should render match with snapshot. 1`] = `
+<div>
+  <section
+    class="flex flex-1"
+  >
+    <article
+      class="flex-1 mb-17.5"
+    >
+      <div
+        class="mb-7.5 lg:bg-white-90 lg:p-7 xl:mb-32.5 xl:h-151 rounded-xl"
+      >
+        <h1
+          aria-level="1"
+          class="text-md font-medium text-md font-medium sm:text-xxl sm:font-normal mb-7"
+          role="heading"
+        >
+          Go Home After Long Time
+        </h1>
+        <div
+          class="relative mx-auto w-89.5 h-49.5 sm:w-full sm:h-84 lg:h-95 xl:w-full xl:h-134.5 2xl:h-149.5 2xl:w-268"
+        >
+          <img
+            alt="Go Home After Long Time"
+            class="rounded-xl"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            sizes="100vw"
+            src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1716223996696-ad6252a7fe7c%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%253D&w=3840&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1716223996696-ad6252a7fe7c%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%253D&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1716223996696-ad6252a7fe7c%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%253D&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1716223996696-ad6252a7fe7c%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%253D&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1716223996696-ad6252a7fe7c%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%253D&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1716223996696-ad6252a7fe7c%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%253D&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1716223996696-ad6252a7fe7c%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%253D&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1716223996696-ad6252a7fe7c%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%253D&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1716223996696-ad6252a7fe7c%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%253D&w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+          />
+        </div>
+      </div>
+      <div
+        class="flex w-full justify-evenly mx-auto mb-12 xl:w-2/4"
+      >
+        <div
+          class="flex cursor-pointer undefined"
+        >
+          <div
+            class="mr-2"
+          >
+            <svg
+              fill="none"
+              height="15"
+              width="13"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.531 2.5H8.47V1.406c0-.355.273-.656.656-.656.355 0 .656.3.656.656V2.5h1.094c.957 0 1.75.793 1.75 1.75V13c0 .984-.793 1.75-1.75 1.75h-8.75c-.984 0-1.75-.766-1.75-1.75V4.25c0-.957.766-1.75 1.75-1.75h1.094V1.406c0-.355.273-.656.656-.656.355 0 .656.3.656.656V2.5ZM1.688 13c0 .246.19.438.437.438h8.75a.45.45 0 0 0 .438-.438V6H1.687v7Z"
+                fill="#3E3232"
+                fill-opacity="0.5"
+              />
+            </svg>
+          </div>
+          <h2
+            aria-level="2"
+            class="text-md font-medium text-dark-75 text-xsm leading-4"
+            role="heading"
+          >
+            July 14 , 2022
+          </h2>
+        </div>
+        <div
+          class="flex cursor-pointer hidden sm:flex"
+        >
+          <div
+            class="mr-2"
+          >
+            <svg
+              fill="none"
+              height="13"
+              width="15"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.938 5.438c.464 0 .847.41.847.875a.858.858 0 0 1-.848.875.864.864 0 0 1-.875-.875c0-.465.383-.875.875-.875Zm3.062 0c.465 0 .848.41.848.875 0 .437-.41.847-.848.847-.465 0-.875-.383-.875-.848 0-.492.383-.875.875-.875Zm3.063 0c.464 0 .874.41.847.875a.858.858 0 0 1-.848.875.881.881 0 0 1-.874-.875c0-.465.382-.875.874-.875ZM8 .625c3.855 0 6.973 2.598 6.973 5.715S11.855 12 8 12a8.402 8.402 0 0 1-2.543-.383c-.82.574-2.133 1.258-3.8 1.258-.274 0-.52-.137-.602-.41-.082-.246-.055-.52.136-.711 0 0 .848-.93 1.258-1.996C1.547 8.8 1 7.598 1 6.313 1 3.167 4.117.625 8 .625Zm0 10.063c3.117 0 5.633-1.942 5.633-4.376 0-2.406-2.543-4.375-5.66-4.375-3.118 0-5.66 1.97-5.66 4.375 0 1.176.574 2.051 1.066 2.57l.574.602-.3.766a5.116 5.116 0 0 1-.548 1.094 6.104 6.104 0 0 0 1.586-.793l.52-.383.629.191a7.132 7.132 0 0 0 2.16.329Z"
+                fill="#3E3232"
+                fill-opacity="0.5"
+              />
+            </svg>
+          </div>
+          <h2
+            aria-level="2"
+            class="text-md font-medium text-dark-75 text-xsm leading-4"
+            role="heading"
+          >
+            Comments: 35
+          </h2>
+        </div>
+        <div
+          class="flex cursor-pointer hidden sm:flex"
+        >
+          <div
+            class="mr-2"
+          >
+            <svg
+              data-testid="file-icon"
+              fill="none"
+              height="13"
+              width="15"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.723 2.375c.984 0 1.75.793 1.75 1.75v7c0 .984-.793 1.75-1.75 1.75h-10.5c-.985 0-1.75-.766-1.75-1.75v-8.75c0-.957.765-1.75 1.75-1.75h3.226c.465 0 .903.191 1.23.52l1.34 1.23h4.704Zm.437 8.75v-7a.47.47 0 0 0-.437-.438h-5.25l-1.75-1.613a.44.44 0 0 0-.301-.136h-3.2a.45.45 0 0 0-.437.437v8.75c0 .246.192.438.438.438h10.5a.45.45 0 0 0 .437-.438Z"
+                fill="#3E3232"
+                fill-opacity="0.5"
+              />
+            </svg>
+          </div>
+          <h2
+            aria-level="2"
+            class="text-md font-medium text-dark-75 text-xsm leading-4"
+            role="heading"
+          >
+            Categories: Sport
+          </h2>
+        </div>
+        <div
+          class="flex cursor-pointer sm:hidden"
+        >
+          <div
+            class="mr-2"
+          >
+            <svg
+              fill="none"
+              height="13"
+              width="15"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.938 5.438c.464 0 .847.41.847.875a.858.858 0 0 1-.848.875.864.864 0 0 1-.875-.875c0-.465.383-.875.875-.875Zm3.062 0c.465 0 .848.41.848.875 0 .437-.41.847-.848.847-.465 0-.875-.383-.875-.848 0-.492.383-.875.875-.875Zm3.063 0c.464 0 .874.41.847.875a.858.858 0 0 1-.848.875.881.881 0 0 1-.874-.875c0-.465.382-.875.874-.875ZM8 .625c3.855 0 6.973 2.598 6.973 5.715S11.855 12 8 12a8.402 8.402 0 0 1-2.543-.383c-.82.574-2.133 1.258-3.8 1.258-.274 0-.52-.137-.602-.41-.082-.246-.055-.52.136-.711 0 0 .848-.93 1.258-1.996C1.547 8.8 1 7.598 1 6.313 1 3.167 4.117.625 8 .625Zm0 10.063c3.117 0 5.633-1.942 5.633-4.376 0-2.406-2.543-4.375-5.66-4.375-3.118 0-5.66 1.97-5.66 4.375 0 1.176.574 2.051 1.066 2.57l.574.602-.3.766a5.116 5.116 0 0 1-.548 1.094 6.104 6.104 0 0 0 1.586-.793l.52-.383.629.191a7.132 7.132 0 0 0 2.16.329Z"
+                fill="#3E3232"
+                fill-opacity="0.5"
+              />
+            </svg>
+          </div>
+          <h2
+            aria-level="2"
+            class="text-md font-medium text-dark-75 text-xsm leading-4"
+            role="heading"
+          >
+            35
+          </h2>
+        </div>
+        <div
+          class="flex cursor-pointer sm:hidden"
+        >
+          <div
+            class="mr-2"
+          >
+            <svg
+              data-testid="file-icon"
+              fill="none"
+              height="13"
+              width="15"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.723 2.375c.984 0 1.75.793 1.75 1.75v7c0 .984-.793 1.75-1.75 1.75h-10.5c-.985 0-1.75-.766-1.75-1.75v-8.75c0-.957.765-1.75 1.75-1.75h3.226c.465 0 .903.191 1.23.52l1.34 1.23h4.704Zm.437 8.75v-7a.47.47 0 0 0-.437-.438h-5.25l-1.75-1.613a.44.44 0 0 0-.301-.136h-3.2a.45.45 0 0 0-.437.437v8.75c0 .246.192.438.438.438h10.5a.45.45 0 0 0 .437-.438Z"
+                fill="#3E3232"
+                fill-opacity="0.5"
+              />
+            </svg>
+          </div>
+          <h2
+            aria-level="2"
+            class="text-md font-medium text-dark-75 text-xsm leading-4"
+            role="heading"
+          >
+            Sport
+          </h2>
+        </div>
+      </div>
+      <section>
+        <h2
+          aria-level="2"
+          class="text-md font-normal text-dark-100"
+          role="heading"
+        >
+          Download torrents from verified or trusted uploaders. If you're a BitTorrent user looking for safety tips, use this method. Both of the big-name BitTorrent indexers (The Pirate Bay and KickAssTorrents) use symbols to highlight torrents uploaded by verified users.
+        </h2>
+      </section>
+    </article>
+  </section>
+</div>
+`;

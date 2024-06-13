@@ -7,6 +7,7 @@ import {
   IPostItem,
   ISlideItem,
   ITagItem,
+  PostDataResponse,
 } from '@/types';
 
 const listTypePosts: string[] = ['New', 'Trendy', 'Popular', 'Top'];
@@ -242,6 +243,28 @@ export const mockCategoryData: CategoriesResponse = {
       },
     },
   ],
+};
+
+export const mockPostDetailData: PostDataResponse = {
+  data: {
+    id: 1,
+    attributes: {
+      authorId: '2',
+      title: 'Go Home After Long Time',
+      content:
+        "Download torrents from verified or trusted uploaders. If you're a BitTorrent user looking for safety tips, use this method. Both of the big-name BitTorrent indexers (The Pirate Bay and KickAssTorrents) use symbols to highlight torrents uploaded by verified users.",
+      imageUrl:
+        'https://images.unsplash.com/photo-1716223996696-ad6252a7fe7c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D',
+      updatedAt: '2024-6-1',
+      videoUrl: 'https://www.youtube.com/watch?v',
+      likes: 3499,
+      shared: 221,
+      views: 9930,
+      publicationDate: '2024-5-30',
+      createdAt: new Date().toString(),
+      publishedAt: new Date().toString(),
+    },
+  },
 };
 
 export {
