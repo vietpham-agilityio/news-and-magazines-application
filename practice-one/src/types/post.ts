@@ -35,3 +35,10 @@ export interface IPostItem {
   alt: string;
 }
 
+export interface PostsResponse {
+  data: PostResponse[];
+}
+
+export interface PostDataResponse {
+  data?: PostResponse;
+}
