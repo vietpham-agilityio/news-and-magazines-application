@@ -1,9 +1,5 @@
-import { CategoryResponse } from '@/types';
+import { CategoriesResponse } from '@/types';
 import { MESSAGE, SERVER_BASE_URL, END_POINT } from '@/constants';
-
-interface CategoriesResponse {
-  data: CategoryResponse[];
-}
 
 async function getCategoryData(): Promise<CategoriesResponse> {
   const res = await fetch(`${SERVER_BASE_URL}/api/${END_POINT.CATEGORIES}`, {
