@@ -27,6 +27,23 @@ describe('Typography component', () => {
     expect(typoElement).toBeInTheDocument();
   });
 
+  it('Typography with an H6 tag should have aria-level 6', () => {
+    render(<Typography tag="h6">H6 Heading</Typography>);
+    const typoElement = screen.getByText('H6 Heading');
+
+    expect(typoElement).toHaveAttribute('aria-level', '6');
+    expect(typoElement).toBeInTheDocument();
+  });
+
+
+  it('Typography with an p tag should have aria-level 7', () => {
+    render(<Typography tag="p">Some content</Typography>);
+    const typoElement = screen.getByText('Some content');
+
+    expect(typoElement).toHaveAttribute('aria-level', '7');
+    expect(typoElement).toBeInTheDocument();
+  });
+
   it('Typography should be rendered with contain the children passed', () => {
     const typoElement = screen.getByText('This typography');
 

@@ -23,9 +23,21 @@ describe('Menu component', () => {
     expect(renderMenu.asFragment()).toMatchSnapshot();
   });
 
-  it('Menu should trigger event when clicked', () => {
+  it('should render sub-menu when clicked', () => {
     const menuElement = screen.getByTestId('menu-item');
 
     fireEvent.click(menuElement);
+
+    expect(screen.getByTestId('sub-menu')).toBeInTheDocument();
+  });
+
+  it('should close sub-menu when clicked outside', () => {
+    const menuElement = screen.getByTestId('menu-item');
+
+    fireEvent.click(menuElement);
+    expect(screen.getByTestId('sub-menu')).toBeInTheDocument();
+
+    fireEvent.mouseDown(document);
+    expect(screen.queryByTestId('sub-menu')).not.toBeInTheDocument();
   });
 });
