@@ -12,7 +12,7 @@ export const TitleSection = ({
   onClickArrowLeft,
   onClickArrowRight,
 }: IProps) => (
-  <div className="mb-5 sm:mb-10 flex justify-between">
+  <div className="mb-5 sm:mb-10 mx-6 flex justify-between lg:mx-0">
     <Title title={title} />
     <div className="flex gap-5">
       <BoxIcon
