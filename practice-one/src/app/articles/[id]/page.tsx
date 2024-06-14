@@ -29,7 +29,7 @@ export default async function Page({
 }) {
   const postResponse = await getPostDataById(id);
 
-  const { title } = postResponse.data.attributes;
+  const { title = "Title is not available" } = postResponse.data.attributes;
 
   const listBreadCrumb: IBreadCrumbItem[] = [
     {

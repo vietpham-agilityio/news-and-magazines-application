@@ -9,6 +9,7 @@ import {
   ISlideItem,
   ITagItem,
   PostDataResponse,
+  PostsResponse,
 } from '@/types';
 
 const listTypePosts: string[] = ['New', 'Trendy', 'Popular', 'Top'];
@@ -257,7 +258,6 @@ const mockPostDetailData: PostDataResponse = {
       imageUrl:
         'https://images.unsplash.com/photo-1716223996696-ad6252a7fe7c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D',
       updatedAt: '2024-6-1',
-      videoUrl: 'https://www.youtube.com/watch?v',
       likes: 3499,
       shared: 221,
       views: 9930,
@@ -268,19 +268,42 @@ const mockPostDetailData: PostDataResponse = {
   },
 };
 
+const mockPostsByAttributeData: PostsResponse = {
+  data: [
+    {
+      id: 12,
+      attributes: {
+        title: 'Balancing Innovation and Responsibility',
+        content:
+          'Artificial Intelligence (AI) technologies have the potential to revolutionize industries, streamline processes, and improve lives. However, the rapid advancement and deployment of AI also raise significant ethical considerations regarding fairness, accountability, transparency, and privacy. This article examines the ethical implications of AI, the challenges they present, and strategies for promoting responsible AI development and deployment',
+        imageUrl:
+          'https://images.unsplash.com/photo-1608904063217-4e24362cda27?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fEJhbGFuY2luZyUyMElubm92YXRpb24lMjBhbmQlMjBSZXNwb25zaWJpbGl0eXxlbnwwfHwwfHx8MA%3D%3D',
+        authorId: '3',
+        publicationDate: '2024-06-10',
+        views: 32424,
+        likes: 14433,
+        shared: 4323,
+        createdAt: '2024-06-09T22:02:46.341Z',
+        updatedAt: '2024-06-09T22:03:28.281Z',
+        publishedAt: '2024-06-09T22:04:52.520Z',
+      },
+    },
+  ],
+};
+
 const mockAuthorData: AuthorDataResponse = {
   data: {
     id: 2,
     attributes: {
-      name: "Benzamine",
-      email: "benzo@gmail.com",
-      avatarUrl: "https://www.unsplash.com/image?v",
-      updatedAt: "2024-5-30",
+      name: 'Benzamine',
+      email: 'benzo@gmail.com',
+      avatarUrl: 'https://www.unsplash.com/image?v',
+      updatedAt: '2024-5-30',
       createdAt: new Date().toString(),
       publishedAt: new Date().toString(),
     },
-  }
-} 
+  },
+};
 
 export {
   listSlider,
@@ -294,4 +317,5 @@ export {
   mockAuthorData,
   mockCategoryData,
   mockPostDetailData,
+  mockPostsByAttributeData,
 };
