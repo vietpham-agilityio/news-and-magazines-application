@@ -13,7 +13,7 @@ import { CategoryBurgerMenu, CategoryMenu } from '@/ui/features';
 import { ArrowBottom, SaveTag, Search } from '@/ui/components/Icons';
 
 export const Header = () => (
-  <header className="header container flex flex-col items-center justify-center bg-white-100 h-auto mx-auto mt-11 sm:mt-4 lg:mt-11 lg:flex-row">
+  <header className="flex flex-col items-center justify-center bg-white-100 h-auto mt-11 mx-2 sm:mx-6 sm:mt-4 lg:mt-11 lg:flex-row lg:container lg:mx-auto">
     <div className="h-12 w-full flex items-center justify-between">
       <div className="flex items-center w-full sm:w-166 lg:flex-0 lg:justify-between">
         {/* Burger menu */}
@@ -77,7 +77,7 @@ export const Header = () => (
     </div>
 
     {/*search on small screen*/}
-    <div className="container h-14 hidden my-5 sm:flex lg:hidden">
+    <div className="w-full h-14 hidden my-5 sm:flex lg:hidden">
     <SearchBar
         name="search"
         type="text"

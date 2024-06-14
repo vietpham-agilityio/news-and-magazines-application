@@ -10,7 +10,7 @@ export default function ComponentInView({
   return (
     <InView triggerOnce threshold={1}>
       {({ ref, inView }) => (
-        <div ref={ref}>
+        <div ref={ref} className="w-full">
           { inView && children }
         </div>
       )}

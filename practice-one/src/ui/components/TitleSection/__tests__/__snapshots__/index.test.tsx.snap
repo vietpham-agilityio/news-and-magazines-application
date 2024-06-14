@@ -3,7 +3,7 @@
 exports[`BoxIcon component TitleSection should render macth snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="mb-5 sm:mb-10 flex justify-between"
+    class="mb-5 sm:mb-10 mx-6 flex justify-between lg:mx-0"
   >
     <div
       class="flex items-center"

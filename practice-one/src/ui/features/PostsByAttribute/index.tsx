@@ -11,15 +11,20 @@ import { CardType } from '@/types';
 export default async function PostByAttribute({
   attribute,
   cardType,
+  isMarginSmall = false,
 }: {
   attribute: PostVariant;
   cardType: CardType;
+  isMarginSmall?: boolean;
 }) {
-  const { data: postDataResponse = [] } = await getPostDataByAttribute(attribute);
+  const { data: postDataResponse = [] } =
+    await getPostDataByAttribute(attribute);
   const typeCardPost = cardType === 'isVertical';
 
   return (
-    <div className="card-group flex gap-6 overflow-x-scroll">
+    <div
+      className={`${isMarginSmall && 'mx-6'} pb-2 card-group flex gap-6 overflow-x-scroll lg:mx-0`}
+    >
       {postDataResponse.map((post: PostResponse) => {
         const { title, content, imageUrl, authorId, publicationDate } =
           post.attributes;
