@@ -88,6 +88,8 @@ export default function Home() {
           src={ImageStore.ScheduleLargeImage}
           alt="schedule"
           className="hidden lg:block"
+          layout="responsive"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           style={{
             width: 'full',
             height: 'auto',
