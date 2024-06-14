@@ -1,6 +1,9 @@
 // services
 import { getPostDataById } from '@/services';
 
+// utils
+import generateRGBDataURL from '@/utils/color';
+
 // componens
 import Image from 'next/image';
 import { Typography, Tag } from '@/ui/components';
@@ -37,6 +40,8 @@ export default async function PostDetail({ postId }: { postId: number }) {
               className="rounded-xl"
               src={imageUrl}
               alt={title}
+              placeholder="blur"
+              blurDataURL={generateRGBDataURL(64,64,64)}
             />
           </div>
         </div>
