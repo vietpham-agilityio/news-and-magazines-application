@@ -6,7 +6,7 @@ exports[`Footer feature component Footer should render macth snapshot 1`] = `
     class="footer w-full hidden items-center justify-center bg-white-100 mb-12.5 sm:flex lg:mb-11"
   >
     <div
-      class="flex-1 bg-white-90 py-10 pr-6 rounded-e-[50px] mr-11 lg:mr-0 lg:pr-10"
+      class="flex-1 bg-white-90 py-10 pr-6 rounded-e-[50px] mr-6 lg:mr-0 lg:pr-10"
     >
       <div
         class="flex justify-center lg:justify-end pr-4 lg:pr-0"

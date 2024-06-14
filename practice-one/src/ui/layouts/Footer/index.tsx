@@ -9,7 +9,7 @@ import { FontWeight } from '@/types';
 
 export const Footer = () => (
   <footer className="footer w-full hidden items-center justify-center bg-white-100 mb-12.5 sm:flex lg:mb-11">
-    <div className="flex-1 bg-white-90 py-10 pr-6 rounded-e-[50px] mr-11 lg:mr-0 lg:pr-10">
+    <div className="flex-1 bg-white-90 py-10 pr-6 rounded-e-[50px] mr-6 lg:mr-0 lg:pr-10">
       <div className="flex justify-center lg:justify-end pr-4 lg:pr-0">
         {/* footer content */}
         <div className="pl-6 lg:pl-10">

@@ -9,7 +9,7 @@ exports[`RightSidebar feature component RightSidebar should render macth snapsho
       class="flex flex-col-reverse sm:gap-5 sm:flex-row lg:flex-col lg:gap-0"
     >
       <div
-        class="flex flex-col w-90"
+        class="flex flex-col sm:w-87.5 lg:w-90"
       >
         <div
           class="flex justify-between bg-white-100 mb-[25px]"
@@ -491,7 +491,7 @@ exports[`RightSidebar feature component RightSidebar should render macth snapsho
       class="flex justify-between gap-5 lg:flex-col"
     >
       <div
-        class=""
+        class="mx-auto sm:mx-0"
       >
         <img
           alt="Advertising"
