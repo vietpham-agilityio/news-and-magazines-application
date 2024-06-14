@@ -42,6 +42,9 @@ export default async function PostDetail({ postId }: { postId: number }) {
               alt={title}
               placeholder="blur"
               blurDataURL={generateRGBDataURL(64,64,64)}
+              sizes="(max-width: 603px) 358px,
+              (min-width: 604px) and (max-width: 1535px) 100vw,
+              (min-width: 1535px) 1072px"
             />
           </div>
         </div>

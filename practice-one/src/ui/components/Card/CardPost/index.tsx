@@ -50,6 +50,9 @@ export default async function CardPost({
             src={imageSrc}
             alt={alt}
             objectFit="cover"
+            sizes={`(max-width: 603px) 338px,
+            (min-width: 604px) and (max-width: 1023px) ${isVertical ? '350px' : '190px'},
+            (min-width: 1024px) 340px`}
           />
         </div>
         {/* card body */}

@@ -14,6 +14,7 @@ export const Avatar = ({ url, alt, width, height }: IProps) => (
     alt={alt}
     src={url}
     fill
+    sizes={`${width}px`}
     objectFit='cover'
   />
 </div>
