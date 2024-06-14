@@ -47,7 +47,7 @@ export default async function Page({
   ];
 
   return (
-    <main className="container mx-auto">
+    <main className="mx-2 sm:mx-6 lg:container lg:mx-auto">
       <BreadCrumbs listBreadCrumb={listBreadCrumb} />
 
       <div className="flex flex-col lg:flex-row mb-12">
@@ -57,7 +57,7 @@ export default async function Page({
         <RightSidebar />
       </div>
 
-      <section className="container flex flex-col justify-between bg-white-100 h-459 mt-17.5 mb-25">
+      <section className="w-full lg:container flex flex-col justify-between bg-white-100 h-459 mt-17.5 mb-25">
         <Title title="Popular Posts" />
         <Suspense fallback={<CardPostSkeleton count={4} />}>
           <PostsByAttribute

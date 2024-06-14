@@ -45,7 +45,7 @@ export default function Home() {
       </section>
 
       {/* fantastic posts */}
-      <section className="container hidden items-center gap-6 bg-white-100 h-113 mt-9 mb-12.5 sm:flex lg:my-15">
+      <section className="w-full hidden items-center gap-6 bg-white-100 h-113 mt-9 mb-12.5 sm:flex lg:my-15 lg:container">
         {/* first card */}
         <div className="hidden xl:block h-full">
           <CardSingle
@@ -65,16 +65,17 @@ export default function Home() {
           />
         </div>
         {/* slide card */}
-        <div className="h-full flex flex-1 items-center justify-center ">
+        <div className="h-full mx-6 flex flex-1 items-center justify-center lg:mx-0">
           <Carousel listSlider={listSlider} />
         </div>
       </section>
 
       {/* popular posts */}
-      <section className="container bg-white-100 mt-7.5 sm:mt-0">
+      <section className="bg-white-100 mt-7.5 sm:mt-0 w-full lg:container">
         <TitleSection title="Popular Posts" />
         <Suspense fallback={<CardPostSkeleton count={4} />}>
           <PostsByAttribute
+            isMarginSmall
             attribute={PostVariant.POPULAR}
             cardType={CardType.VERTICAL}
           />
@@ -113,8 +114,8 @@ export default function Home() {
       </section>
 
       {/* new posts */}
-      <section className="container flex flex-col justify-between bg-white-100">
-        <div className="mb-5 sm:mb-10 flex justify-between">
+      <section className="flex flex-col justify-between bg-white-100 w-full lg:container">
+        <div className="mx-6 mb-5 flex justify-between sm:mb-10 lg:mx-0">
           <Title title="New Posts" />
           <Button
             label="Show All"
@@ -128,7 +129,7 @@ export default function Home() {
 
       {/* latest videos */}
       <section className="w-full bg-white-90 my-10 py-11 sm:py-16 sm:my-12.5 lg:my-17.5">
-        <div className="container mx-auto">
+        <div className="mx-6 lg:mx-auto lg:container">
           <div className="mb-5 sm:mb-10">
             <Title title="Latest Videos" />
           </div>
@@ -198,10 +199,11 @@ export default function Home() {
 
       {/* trendy posts */}
       <ComponentInView>
-        <section className="container bg-white-100">
+        <section className="mx-auto bg-white-100 lg:container">
           <TitleSection title="Trendy Posts" />
           <Suspense fallback={<CardPostSkeleton count={4} />}>
             <PostsByAttribute
+              isMarginSmall
               attribute={PostVariant.TRENDY}
               cardType={CardType.VERTICAL}
             />
@@ -284,10 +286,11 @@ export default function Home() {
 
       {/* top posts */}
       <ComponentInView>
-        <section className="container flex flex-col justify-between bg-white-100 mb-30 sm:mb-7.5 lg:mb-25">
+        <section className="mx-auto flex flex-col justify-between bg-white-100 mb-30 sm:mb-7.5 lg:mb-25 lg:container">
           <TitleSection title="Top Posts" />
           <Suspense fallback={<CardPostSkeleton count={4} />}>
             <PostsByAttribute
+              isMarginSmall
               attribute={PostVariant.TOP}
               cardType={CardType.VERTICAL}
             />
