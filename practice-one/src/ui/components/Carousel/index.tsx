@@ -72,6 +72,9 @@ export const Carousel = ({
                 key={index}
                 src={image}
                 alt={`Slide ${index}`}
+                sizes="(max-width: 1023px) 588px,
+                (min-width: 1024px) and (max-width: 1279px) 1020px,
+                (min-width: 1280px) 506px"
               />
               <div className="absolute left-5 bottom-3.5 p-4 bg-white-75 rounded-xl opacity-80 w-[93%] lg:w-[96%] xl:w-[92%] 2xl:w-[95%]">
                 <Typography
