@@ -180,11 +180,6 @@ You can reference this [Entity-Relationship](https://drive.google.com/drive/u/0/
 
 You can use API with template: `http://localhost:1337/api/end-point`
 
-
-### My Strapi deploy on Render
-
-( Will update later )
-
 ### Install Package
 
 **Run to install the package**
@@ -204,6 +199,10 @@ You can use API with template: `http://localhost:1337/api/end-point`
 ```
 SERVER_BASE_URL = 'Url your server' || 'http://localhost:1337'
 ```
+
+**My Strapi deploy on Render**
+
+> https://news-and-magazine-strapi-server.onrender.com
 
 **You can access my pages**
 
