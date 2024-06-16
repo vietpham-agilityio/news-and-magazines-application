@@ -37,6 +37,7 @@ export const PaperPost = ({
           className="rounded-xl"
           src={imageSrc}
           alt={alt}
+          sizes={`${isLargePaper ? '190px' : '87px'}`}
         />
       </div>
       <div
