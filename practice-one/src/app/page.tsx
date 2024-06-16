@@ -49,7 +49,7 @@ export default function Home() {
         {/* first card */}
         <div className="hidden xl:block h-full">
           <CardSingle
-            id="15"
+            id="33"
             title="Go Home After Long Time"
             content="Download torrents from verified or trusted uploaders. If you're a BitTorrent user looking for safety tips, use this method. Both of the big-name BitTorrent indexers (The Pirate Bay and KickAssTorrents) use symbols to highlight torrents uploaded by verified users. "
             imageSrc="https://images.unsplash.com/photo-1716223996696-ad6252a7fe7c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D"
@@ -58,7 +58,7 @@ export default function Home() {
         {/* second card */}
         <div className="hidden xl:block h-full">
           <CardSingle
-            id="16"
+            id="34"
             title="Street Way To The Conner"
             content="Download torrents from verified or trusted uploaders. If you're a BitTorrent user looking for safety tips, use this method. Both of the big-name BitTorrent indexers (The Pirate Bay and KickAssTorrents) use symbols to highlight torrents uploaded by verified users. "
             imageSrc="https://images.unsplash.com/photo-1716223996699-9738f0f12805?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D"
@@ -88,6 +88,7 @@ export default function Home() {
           src={ImageStore.ScheduleLargeImage}
           alt="schedule"
           className="hidden lg:block"
+          sizes="(min-width: 1024px) 100vw"
           style={{
             width: 'full',
             height: 'auto',
@@ -97,6 +98,7 @@ export default function Home() {
           src={ImageStore.ScheduleMediumImage}
           alt="schedule"
           className="hidden sm:block lg:hidden"
+          sizes="(min-width: 604px) and (max-width: 1023px) 100vw"
           style={{
             width: 'full',
             height: 'auto',
@@ -106,6 +108,7 @@ export default function Home() {
           src={ImageStore.ScheduleSmallImage}
           alt="schedule"
           className="sm:hidden"
+          sizes="(max-width: 603px) 100vw"
           style={{
             width: 'full',
             height: 'auto',
@@ -143,6 +146,9 @@ export default function Home() {
                   className="rounded-xl"
                   src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="panel of video"
+                  sizes="(max-width: 1023px) 98vw,
+                  (min-width: 1024px) and (max-width: 1279px) 500px,
+                  (min-width: 1280px) 628px"
                 />
                 <div className="hidden absolute left-2 bottom-4 p-4 w-[97%] bg-white-75 rounded-xl opacity-90 sm:block xl:left-2.5">
                   <Typography
