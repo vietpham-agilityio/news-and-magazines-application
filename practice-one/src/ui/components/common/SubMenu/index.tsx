@@ -21,7 +21,7 @@ export const SubMenu = ({ listItem, onClick }: IProps) => (
     <ul className="list-none w-full grid grid-cols-2 grid-rows-5">
       {listItem.map(item => (
         <li key={item.id} className="mb-2 last:mb-0" onClick={onClick}>
-          <Link href={`/category/${item.name.replace(/\s+/g, '')}`}>
+          <Link href={`/category/${item.id}`}>
             <Typography
               tag="p"
               textSize={Size.XS}

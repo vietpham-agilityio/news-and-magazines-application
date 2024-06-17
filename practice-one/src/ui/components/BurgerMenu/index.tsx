@@ -98,13 +98,13 @@ export const BurgerMenu = ({ listCategories }: IProps) => {
                       className="mb-2 last:mb-0"
                       onClick={handleCloseAllMenu}
                     >
-                      <Link href={`/category/${name.replace(/\s+/g, '')}`}>
+                      <Link href={`/category/${id}`}>
                         <Typography
                           tag="p"
                           textSize={Size.XS}
                           additionalClasses="text-dark-75 cursor-pointer hover:text-secondary-100"
                         >
-                          {name}
+                          { name }
                         </Typography>
                       </Link>
                     </li>
