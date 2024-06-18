@@ -1,6 +1,6 @@
 // services
 import { getCategoryData } from '@/services';
-import { CategoryResponse, IMenu } from '@/types';
+import { CategoryItem, IMenu } from '@/types';
 
 // componens
 import { BurgerMenu } from '@/ui/components';
@@ -10,7 +10,7 @@ export default async function CategoryBurgerMenu() {
 
   const listCategories: IMenu[] = [];
 
-  categoryDataResponse?.map((category: CategoryResponse) => {
+  categoryDataResponse?.map((category: CategoryItem) => {
     const { id } = category;
     const { name } = category.attributes;
 
