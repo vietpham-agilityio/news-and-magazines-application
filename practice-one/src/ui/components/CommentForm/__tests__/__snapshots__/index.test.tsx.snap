@@ -82,11 +82,11 @@ exports[`CommentForm component should render CommentForm macth snapshot 1`] = `
       </div>
     </div>
     <div
-      class="flex w-full justify-end mt-7 sm:mt-10 lg:mt-0"
+      class="flex w-full justify-end mt-7 mb-30 sm:mt-10 sm:mb-12 lg:mt-0"
     >
       <button
         aria-label="button-element"
-        class="bg-gradient-to-r from-sunSet-0 to-sunSet-100 flex items-center py-2.5 rounded-xl hover:opacity-80 pr-6 pl-4 undefined"
+        class="bg-gradient-to-r from-sunSet-0 to-sunSet-100 flex items-center rounded-xl hover:opacity-80 py-3.5 pr-6 pl-4 undefined"
       >
         <i
           class="mr-2 undefined"

@@ -22,8 +22,9 @@ export const CommentForm = () => (
         <TextArea label="Comment" placeholder="What do you think?" />
       </div>
     </div>
-    <div className="flex w-full justify-end mt-7 sm:mt-10 lg:mt-0">
+    <div className="flex w-full justify-end mt-7 mb-30 sm:mt-10 sm:mb-12 lg:mt-0">
       <Button
+        isButtonLarge
         label="Send Comment"
         leftIcon={<ChatBoxSmall />}
         bgColor="bg-gradient-to-r from-sunSet-0 to-sunSet-100"
