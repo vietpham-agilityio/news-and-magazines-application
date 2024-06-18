@@ -6,5 +6,6 @@ export * from './Avatar';
 export * from './Button';
 export * from './BoxIcon';
 export * from './SubMenu';
+export * from './TextArea';
 export * from './Typography';
 export * from './Information';
