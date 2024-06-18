@@ -19,3 +19,10 @@ export const CommentWithContent: Story = {
     content: 'This is a comment I said on this website!',
   },
 };
+
+export const CommentWithPublicDate: Story = {
+  args: {
+    ...CommentWithContent.args,
+    publicDate: '22-12-2015',
+  },
+};
