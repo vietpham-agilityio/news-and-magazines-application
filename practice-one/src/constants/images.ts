@@ -3,6 +3,7 @@ import FrogImage from '@/images/square/frog.webp';
 import FoodImage from '@/images/square/food.webp';
 import PersonTwo from '@/images/square/person-play.webp';
 import PersonOne from '@/images/square/person-dance.webp';
+import AvatarUser from '@/images/avatar/avatar-user.webp';
 import AvatarAuthor from '@/images/avatar/avatar-author.webp';
 import HashtagCar from '@/images/hashtag/hashtag-car.webp';
 import HashtagFood from '@/images/hashtag/hashtag-food.webp';
@@ -46,6 +47,7 @@ const ImageStore = {
   AdvertisingOne,
   AdvertisingTwo,
   AvatarAuthor,
+  AvatarUser,
 };
 
 export default ImageStore;
