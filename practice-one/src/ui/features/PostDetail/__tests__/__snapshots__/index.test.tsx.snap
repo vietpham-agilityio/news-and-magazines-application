@@ -6,7 +6,7 @@ exports[`PostDetail component Should render default values when attributes are m
     class="flex flex-1"
   >
     <article
-      class="flex-1 mb-17.5"
+      class="flex-1"
     >
       <div
         class="mb-7.5 lg:bg-white-90 lg:p-7 xl:mb-32.5 xl:h-151 rounded-xl"
@@ -192,7 +192,7 @@ exports[`PostDetail component Should render match with snapshot. 1`] = `
     class="flex flex-1"
   >
     <article
-      class="flex-1 mb-17.5"
+      class="flex-1"
     >
       <div
         class="mb-7.5 lg:bg-white-90 lg:p-7 xl:mb-32.5 xl:h-151 rounded-xl"
