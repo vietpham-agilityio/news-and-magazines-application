@@ -10,7 +10,7 @@ interface IProps {
 export const Input = ({ name, label, type, placeholder }: IProps) => (
   <div>
     <label
-      className="block text-dark-100 text-sm font-medium mb-4"
+      className="block text-dark-100 text-sm font-medium leading-5 mb-4"
       htmlFor={name}
     >
       { label }
