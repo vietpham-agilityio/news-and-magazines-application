@@ -4,7 +4,7 @@ exports[`Input component should render Input macth snapshot 1`] = `
 <DocumentFragment>
   <div>
     <label
-      class="block text-dark-100 text-sm font-medium mb-4"
+      class="block text-dark-100 text-sm font-medium leading-5 mb-4"
       for="username"
     >
       Name

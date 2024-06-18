@@ -21,4 +21,5 @@ export * from './ArrowLeft';
 export * from './ArrowRight';
 export * from './PaperPlane';
 export * from './ArrowBottom';
+export * from './ChatBoxSmall';
 export * from './SaveTagSmall';
