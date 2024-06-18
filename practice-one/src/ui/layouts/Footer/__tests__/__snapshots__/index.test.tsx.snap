@@ -202,7 +202,7 @@ exports[`Footer feature component Footer should render macth snapshot 1`] = `
             >
               <button
                 aria-label="button-element"
-                class="bg-gradient-to-bl from-sunSet-0 to-sunSet-100 flex items-center py-2.5 rounded-xl hover:opacity-80 pr-6 pl-4 undefined"
+                class="bg-gradient-to-bl from-sunSet-0 to-sunSet-100 flex items-center rounded-xl hover:opacity-80 py-2.5 pr-6 pl-4 undefined"
               >
                 <i
                   class="mr-2 mb-1"

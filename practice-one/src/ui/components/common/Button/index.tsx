@@ -11,6 +11,7 @@ interface IProps {
   leftIcon?: JSX.Element;
   bgColor?: string;
   isMarginBottom?: boolean;
+  isButtonLarge?: boolean;
   onClick?: () => void;
 }
 
@@ -21,11 +22,12 @@ export const Button = ({
   leftIcon,
   bgColor,
   isMarginBottom,
+  isButtonLarge,
   onClick,
 }: IProps) => (
   <button
     aria-label="button-element"
-    className={`${bgColor} flex items-center py-2.5 rounded-xl hover:opacity-80 ${leftIcon && 'pr-6 pl-4'} ${rightIcon && 'pr-4 pl-6'}`}
+    className={`${bgColor} flex items-center rounded-xl hover:opacity-80 ${isButtonLarge ? 'py-3.5' : 'py-2.5'} ${leftIcon && 'pr-6 pl-4'} ${rightIcon && 'pr-4 pl-6'}`}
     onClick={onClick}
   >
     {leftIcon && (

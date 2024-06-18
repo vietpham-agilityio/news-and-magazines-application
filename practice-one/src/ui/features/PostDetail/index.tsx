@@ -25,7 +25,7 @@ export default async function PostDetail({ postId }: { postId: number }) {
 
   return (
     <section className="flex flex-1">
-      <article className="flex-1 mb-17.5">
+      <article className="flex-1">
         <div className="mb-7.5 lg:bg-white-90 lg:p-7 xl:mb-32.5 xl:h-151 rounded-xl">
           <Typography
             tag="h1"
