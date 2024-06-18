@@ -1,14 +1,30 @@
 export interface CategoryDataItem {
-    name: string;
-    description?: string;
-  }
-  
-  export interface CategoriesResponse {
-    data: CategoryResponse[];
-  }
-  
+  name: string;
+  description?: string;
+}
+
+export interface CategoriesResponse {
+  data: CategoryItem[];
+}
+
 export interface CategoryResponse {
-    id: number;
-    attributes: CategoryDataItem;
-  };
-  
+  data: CategoryItem;
+}
+
+export interface CategoryItem {
+  id: number;
+  attributes: CategoryDataItem;
+}
+
+export interface PostCategoriesDataItem {
+  postId: string,
+  categoryId: string,
+}
+export interface PostCategoriesItem {
+  id: number;
+  attributes: PostCategoriesDataItem
+}
+
+export interface PostCategoriesResponse {
+  data: PostCategoriesItem[];
+}

@@ -1,4 +1,8 @@
-import { CategoriesResponse } from '@/types';
+import {
+  CategoriesResponse,
+  CategoryResponse,
+  PostCategoriesResponse,
+} from '@/types';
 import {
   MESSAGE,
   SERVER_BASE_URL,
@@ -20,11 +24,27 @@ async function getCategoryData(): Promise<CategoriesResponse> {
   return data;
 }
 
+async function getCategoryById(id: number): Promise<CategoryResponse> {
+  const res = await fetch(
+    `${SERVER_BASE_URL}/api/${END_POINT.CATEGORIES}/${id}`,
+    {
+      next: { revalidate: 3600 },
+    }
+  );
+
+  if (!res.ok) {
+    throw new Error(MESSAGE.ERROR);
+  }
+
+  const data = res.json();
+
+  return data;
+}
+
 async function getPostCategoryById(
-  categoryId: string,
-  attribute: string = ATTRIBUTE_TYPE.CATEGORY_ID
-) {
-  const query = `filters[${attribute}][$eq]=${categoryId}`;
+  categoryId: number
+): Promise<PostCategoriesResponse> {
+  const query = `filters[${ATTRIBUTE_TYPE.CATEGORY_ID}][$eq]=${categoryId}`;
 
   const res = await fetch(
     `${SERVER_BASE_URL}/api/${END_POINT.POST_CATEGORIES}?${query}`,
@@ -42,4 +62,4 @@ async function getPostCategoryById(
   return data;
 }
 
-export { getCategoryData, getPostCategoryById };
+export { getCategoryData, getPostCategoryById, getCategoryById };
