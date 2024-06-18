@@ -97,18 +97,8 @@ export default function Home() {
         <Image
           src={ImageStore.ScheduleMediumImage}
           alt="schedule"
-          className="hidden sm:block lg:hidden"
+          className="block lg:hidden"
           sizes="(min-width: 604px) and (max-width: 1023px) 100vw"
-          style={{
-            width: 'full',
-            height: 'auto',
-          }}
-        />
-        <Image
-          src={ImageStore.ScheduleSmallImage}
-          alt="schedule"
-          className="sm:hidden"
-          sizes="(max-width: 603px) 100vw"
           style={{
             width: 'full',
             height: 'auto',
