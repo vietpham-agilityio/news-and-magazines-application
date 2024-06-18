@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     'Read in-depth coverage on our latest article. Stay informed with News & Magazine.',
 };
 
-export default async function Page({
+export default async function DetailPage({
   params: { id },
 }: {
   params: { id: number };
