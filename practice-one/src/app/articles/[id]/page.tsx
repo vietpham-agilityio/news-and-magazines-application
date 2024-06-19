@@ -50,7 +50,9 @@ export default async function DetailPage({
 
   return (
     <main className="mx-2 sm:mx-6 lg:container lg:mx-auto">
-      <BreadCrumbs listBreadCrumb={listBreadCrumb} />
+      <div className="my-11">
+        <BreadCrumbs listBreadCrumb={listBreadCrumb} />
+      </div>
 
       <div className="flex flex-col lg:flex-row">
         <Suspense fallback={<DetailPostSkeleton />}>
