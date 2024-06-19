@@ -5,7 +5,7 @@ import { flexItemCenter } from '@/constants';
 import { listTypePosts } from '@/mocks';
 import { getCategoryById, getPostCategoryById } from '@/services';
 import { IBreadCrumbItem, CardType } from '@/types';
-import { BreadCrumbs, CardPost, TitleSection } from '@/ui/components';
+import { BreadCrumbs, CardCategory, CardPost, TitleSection } from '@/ui/components';
 
 export default async function CategoryPage({
   params: { id },
@@ -59,16 +59,7 @@ export default async function CategoryPage({
             {postCategoriesDataResponse.map(post => {
               return (
                 <div className="col-span-12 lg:col-span-3" key={post.id}>
-                <CardPost
-                  isVertical
-                  key={post.id}
-                  id={post.id.toString()}
-                  title="Go Home After Long Time"
-                  alt="Go Home After Long Time"
-                  content="Download torrents from verified or trusted uploaders. If you're a BitTorrent user looking for safety tips, use this method. Both of the big-name BitTorrent indexers (The Pirate Bay and KickAssTorrents) use symbols to highlight torrents uploaded by verified users."
-                  imageSrc="https://images.unsplash.com/photo-1716223996696-ad6252a7fe7c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D"
-                  authorId={'2'}
-                  information="2024-6-1"
+                <CardCategory id={post.id}
                 />
             </div>
               );

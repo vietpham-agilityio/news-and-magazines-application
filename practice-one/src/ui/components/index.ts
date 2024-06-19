@@ -17,3 +17,4 @@ export * from '@/ui/components/Skeleton/CardPost';
 export * from '@/ui/components/Skeleton/DetailPost';
 export * from '@/ui/components/Skeleton/CardVertical';
 export { default as CardPost } from '@/ui/components/Card/CardPost';
+export { default as CardCategory } from '@/ui/components/Card/CardCategory';
