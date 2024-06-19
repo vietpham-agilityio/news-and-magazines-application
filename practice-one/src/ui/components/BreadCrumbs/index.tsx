@@ -13,7 +13,7 @@ interface IProps {
 }
 
 export const BreadCrumbs = ({ listBreadCrumb }: IProps) => (
-  <div className="flex items-center my-11">
+  <div className="flex items-center">
     {listBreadCrumb.map((item, index) => {
       const { path, name } = item;
 
