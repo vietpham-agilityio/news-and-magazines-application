@@ -14,6 +14,7 @@ export * from '@/ui/components/CommentForm';
 export * from '@/ui/components/BreadCrumbs';
 export * from '@/ui/components/TitleSection';
 export * from '@/ui/components/Card/CardSingle';
+export * from '@/ui/components/Skeleton/Comment';
 export * from '@/ui/components/Skeleton/CardPost';
 export * from '@/ui/components/Skeleton/DetailPost';
 export * from '@/ui/components/Skeleton/CardVertical';

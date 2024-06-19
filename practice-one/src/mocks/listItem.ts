@@ -2,6 +2,7 @@ import ImageStore from '@/constants/images';
 import {
   AuthorDataResponse,
   CategoriesResponse,
+  CommentsResponse,
   IBreadCrumbItem,
   IHashtag,
   IMenu,
@@ -306,7 +307,7 @@ const mockAuthorData: AuthorDataResponse = {
   },
 };
 
-const listPaginationPage:PaginationPage[] = [
+const listPaginationPage: PaginationPage[] = [
   {
     id: 1,
     pageNumber: 1,
@@ -321,6 +322,37 @@ const listPaginationPage:PaginationPage[] = [
   },
 ];
 
+const mockCommentData: CommentsResponse = {
+  data: [
+    {
+      id: 1,
+      attributes: {
+        name: 'Emily Johnson',
+        email: 'emily.johnson@gmail.com',
+        content: 'This is my first comment on this website',
+        avatarUrl:
+          'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww',
+        website: 'http://www.sample.com',
+        postId: 2,
+        createdAt: '2024-06-17T21:38:19.068Z',
+      },
+    },
+    {
+      id: 2,
+      attributes: {
+        name: 'Emily Johnson',
+        email: 'emily.johnson@gmail.com',
+        content: 'This is my second comment on this website',
+        avatarUrl:
+          'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww',
+        website: 'http://www.sample.com',
+        postId: 2,
+        createdAt: '2024-03-17T21:48:19.068Z',
+      },
+    },
+  ],
+};
+
 export {
   listSlider,
   listTagItems,
@@ -334,5 +366,6 @@ export {
   mockCategoryData,
   mockPostDetailData,
   listPaginationPage,
+  mockCommentData,
   mockPostsByAttributeData,
 };
