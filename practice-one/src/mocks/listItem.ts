@@ -8,6 +8,7 @@ import {
   IPostItem,
   ISlideItem,
   ITagItem,
+  PaginationPage,
   PostDataResponse,
   PostsResponse,
 } from '@/types';
@@ -305,6 +306,21 @@ const mockAuthorData: AuthorDataResponse = {
   },
 };
 
+const listPaginationPage:PaginationPage[] = [
+  {
+    id: 1,
+    pageNumber: 1,
+  },
+  {
+    id: 2,
+    pageNumber: 2,
+  },
+  {
+    id: 3,
+    pageNumber: 3,
+  },
+];
+
 export {
   listSlider,
   listTagItems,
@@ -317,5 +333,6 @@ export {
   mockAuthorData,
   mockCategoryData,
   mockPostDetailData,
+  listPaginationPage,
   mockPostsByAttributeData,
 };
