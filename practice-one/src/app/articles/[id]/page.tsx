@@ -4,13 +4,18 @@ import type { Metadata } from 'next';
 // components
 import {
   Title,
-  Comment,
   BreadCrumbs,
   CommentForm,
   DetailPostSkeleton,
   CardPostSkeleton,
+  CommentSkeleton,
 } from '@/ui/components';
-import { PostDetail, PostsByAttribute, RightSidebar } from '@/ui/features';
+import {
+  PostDetail,
+  PostsByAttribute,
+  RightSidebar,
+  CommentGroup,
+} from '@/ui/features';
 
 // services
 import { getPostDataById } from '@/services';
@@ -63,26 +68,9 @@ export default async function DetailPage({
       <section className="2xl:max-w-[1128px] mt-10 sm:mt-12 lg:mt-17.5">
         {/* comment */}
         <Title title="Comment" />
-        <div className="flex flex-col gap-9 mt-7.5 mb-10 sm:mb-12 lg:mb-15">
-          <Comment
-            userName="Bonggo"
-            content="An island (or isle) is an isolated piece of habitat that is surrounded by a dramatically different habitat, such as water. Very small islands such as emergent land features on atolls can be called islets, skerries, cays or keys."
-            publicDate="2022 04 July"
-          />
-
-          <Comment
-            userName="Bonggo"
-            content="An island (or isle) is an isolated piece of habitat that is surrounded by a dramatically different habitat, such as water. Very small islands such as emergent land features on atolls can be called islets, skerries, cays or keys."
-            publicDate="2022 04 July"
-          />
-
-          <Comment
-            userName="Bonggo"
-            content="An island (or isle) is an isolated piece of habitat that is surrounded by a dramatically different habitat, such as water. Very small islands such as emergent land features on atolls can be called islets, skerries, cays or keys."
-            publicDate="2022 04 July"
-          />
-        </div>
-
+        <Suspense fallback={<CommentSkeleton />}>
+          <CommentGroup postId={id} />
+        </Suspense>
         {/* comment form */}
         <div className="mb-7.5">
           <Title title="Add A Comment" />
