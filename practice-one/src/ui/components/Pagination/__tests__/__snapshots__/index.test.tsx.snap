@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination component should render Pagination macth snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="h-10 mt-10 mb-30 sm:mt-11 sm:mb-12 lg:mb-25 flex items-center"
+  >
+    <div
+      class="flex items-center justify-between px-4 py-3 sm:px-6"
+    >
+      <div
+        class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between"
+      >
+        <div>
+          <nav
+            aria-label="Pagination"
+            class="flex gap-1"
+          >
+            <button
+              aria-label="pagination-button-1"
+              class="w-10 h-10 flex items-center justify-center rounded-xl hover:bg-white-90 bg-white-90"
+              data-testid="pagination-button-1"
+            >
+              <h2
+                aria-level="2"
+                class="text-sm font-medium text-dark-100"
+                role="heading"
+              >
+                1
+              </h2>
+            </button>
+            <button
+              aria-label="pagination-button-2"
+              class="w-10 h-10 flex items-center justify-center rounded-xl hover:bg-white-90 false"
+              data-testid="pagination-button-2"
+            >
+              <h2
+                aria-level="2"
+                class="text-sm font-medium text-dark-100"
+                role="heading"
+              >
+                2
+              </h2>
+            </button>
+            <button
+              aria-label="pagination-button-3"
+              class="w-10 h-10 flex items-center justify-center rounded-xl hover:bg-white-90 false"
+              data-testid="pagination-button-3"
+            >
+              <h2
+                aria-level="2"
+                class="text-sm font-medium text-dark-100"
+                role="heading"
+              >
+                3
+              </h2>
+            </button>
+            <button
+              aria-label="button-element"
+              class="flex items-center rounded-xl py-2.5 undefined pr-4 pl-6 bg-white-90 hover:opacity-80"
+              data-testid="next-pagination-button"
+            >
+              <h2
+                aria-level="2"
+                class="text-xsm font-medium text-dark-75 leading-5"
+                role="heading"
+              >
+                Next
+              </h2>
+              <i
+                class="ml-2"
+              >
+                <svg
+                  data-testid="arrow-right"
+                  fill="none"
+                  height="11"
+                  width="7"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.25 5.5a.866.866 0 0 1-.246.629l-4.375 4.375a.843.843 0 0 1-1.23 0 .843.843 0 0 1 0-1.23L4.144 5.5.398 1.754a.843.843 0 0 1 0-1.23.843.843 0 0 1 1.23 0l4.376 4.374a.848.848 0 0 1 .246.602Z"
+                    fill="#404040"
+                    fill-opacity="0.5"
+                  />
+                </svg>
+              </i>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
