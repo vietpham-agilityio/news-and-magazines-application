@@ -42,9 +42,11 @@ async function getCategoryById(id: number): Promise<CategoryResponse> {
 }
 
 async function getPostCategoryById(
-  categoryId: number
+  categoryId: number,
+  limit: number = 12,
+  page: number = 1
 ): Promise<PostCategoriesResponse> {
-  const query = `filters[${ATTRIBUTE_TYPE.CATEGORY_ID}][$eq]=${categoryId}`;
+  const query = `filters[${ATTRIBUTE_TYPE.CATEGORY_ID}][$eq]=${categoryId}&pagination[page]=${page}&pagination[pageSize]=${limit}`;
 
   const res = await fetch(
     `${SERVER_BASE_URL}/api/${END_POINT.POST_CATEGORIES}?${query}`,
