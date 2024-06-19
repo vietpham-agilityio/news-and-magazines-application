@@ -6,6 +6,7 @@ export * from './card';
 export * from './fonts';
 export * from './slide';
 export * from './author';
+export * from './comment';
 export * from './category';
 export * from './breadCrumb';
 export * from './pagination';

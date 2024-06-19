@@ -6,6 +6,7 @@ const END_POINT = {
     CATEGORIES: 'categories',
     AUTHORS: 'authors',
     POST_CATEGORIES: 'post-categories',
+    COMMENTS: 'comments',
 }
 
 const ATTRIBUTE_TYPE = {
