@@ -74,4 +74,19 @@ describe('Button component', () => {
 
     expect(iconElement).toBeInTheDocument();
   });
+
+  it('Button should render disabled state macth snapshot', () => {
+    const { asFragment } = render(
+      <Button
+        isDisabled
+        isMarginBottom
+        label="Subcriber"
+        textColor="text-dark-100"
+        bgColor="bg-primary-100"
+        rightIcon={<ArrowRight />}
+        onClick={onClickMock}
+      />
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
 });

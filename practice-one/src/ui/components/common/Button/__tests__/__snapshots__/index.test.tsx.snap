@@ -1,10 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Button component Button should render disabled state macth snapshot 1`] = `
+<DocumentFragment>
+  <button
+    aria-label="button-element"
+    class="flex items-center rounded-xl py-2.5 undefined pr-4 pl-6 bg-white-100 hover:cursor-not-allowed"
+    disabled=""
+  >
+    <h2
+      aria-level="2"
+      class="text-xsm font-medium text-dark-100 leading-5"
+      role="heading"
+    >
+      Subcriber
+    </h2>
+    <i
+      class="ml-2"
+    >
+      <svg
+        data-testid="arrow-right"
+        fill="none"
+        height="11"
+        width="7"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6.25 5.5a.866.866 0 0 1-.246.629l-4.375 4.375a.843.843 0 0 1-1.23 0 .843.843 0 0 1 0-1.23L4.144 5.5.398 1.754a.843.843 0 0 1 0-1.23.843.843 0 0 1 1.23 0l4.376 4.374a.848.848 0 0 1 .246.602Z"
+          fill="#3E3232"
+          fill-opacity="0.5"
+        />
+      </svg>
+    </i>
+  </button>
+</DocumentFragment>
+`;
+
 exports[`Button component Button should render macth snapshot 1`] = `
 <DocumentFragment>
   <button
     aria-label="button-element"
-    class="bg-primary-100 flex items-center rounded-xl hover:opacity-80 py-2.5 undefined undefined"
+    class="flex items-center rounded-xl py-2.5 undefined undefined bg-primary-100 hover:opacity-80"
   >
     <h2
       aria-level="2"

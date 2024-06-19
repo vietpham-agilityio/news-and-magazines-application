@@ -12,6 +12,8 @@ interface IProps {
   bgColor?: string;
   isMarginBottom?: boolean;
   isButtonLarge?: boolean;
+  isDisabled?: boolean;
+  dataTestId?: string;
   onClick?: () => void;
 }
 
@@ -21,13 +23,17 @@ export const Button = ({
   rightIcon,
   leftIcon,
   bgColor,
+  isDisabled,
+  dataTestId,
   isMarginBottom,
   isButtonLarge,
   onClick,
 }: IProps) => (
   <button
+    data-testId={dataTestId}
     aria-label="button-element"
-    className={`${bgColor} flex items-center rounded-xl hover:opacity-80 ${isButtonLarge ? 'py-3.5' : 'py-2.5'} ${leftIcon && 'pr-6 pl-4'} ${rightIcon && 'pr-4 pl-6'}`}
+    disabled={isDisabled}
+    className={`flex items-center rounded-xl ${isButtonLarge ? 'py-3.5' : 'py-2.5'} ${leftIcon && 'pr-6 pl-4'} ${rightIcon && 'pr-4 pl-6'} ${isDisabled ? 'bg-white-100 hover:cursor-not-allowed' : `${bgColor} hover:opacity-80`}`}
     onClick={onClick}
   >
     {leftIcon && (
