@@ -12,16 +12,40 @@ import { ArrowLeft, ArrowRight } from '@/ui/components/Icons';
 import { PaginationPage, Size } from '@/types';
 
 export interface IProps {
-  listPagination: PaginationPage[];
+  pageCount: number;
 }
 
-export const Pagination = ({ listPagination }: IProps) => {
+export const Pagination = ({ pageCount }: IProps) => {
   const [pageIndex, setPageIndex] = useState<number>(1);
 
   const handlePrevious = () => setPageIndex(prev => prev - 1);
   const handleNext = () => setPageIndex(prev => prev + 1);
 
   const handlePagination = (pageIndex: number) => setPageIndex(pageIndex);
+
+  const paginationButtons = [];
+
+  for (let i = 1; i <= pageCount; i++) {
+    paginationButtons.push(
+      <button
+        key={i}
+        data-testid={`pagination-button-${i}`}
+        aria-label={`pagination-button-${i}`}
+        className={`w-10 h-10 flex items-center justify-center rounded-xl hover:bg-white-90 ${
+          pageIndex === i && 'bg-white-90'
+        }`}
+        onClick={() => handlePagination(i)}
+      >
+        <Typography
+          tag="h2"
+          textSize={Size.SM}
+          additionalClasses="text-dark-100"
+        >
+          {i}
+        </Typography>
+      </button>
+    );
+  }
 
   return (
     <div className="h-10 mt-10 mb-30 sm:mt-11 sm:mb-12 lg:mb-25 flex items-center">
@@ -40,26 +64,8 @@ export const Pagination = ({ listPagination }: IProps) => {
                   onClick={handlePrevious}
                 />
               )}
-              {listPagination.map(page => (
-                <button
-                  key={page.id}
-                  data-testid={`pagination-button-${page.pageNumber}`}
-                  aria-label={`pagination-button-${page.pageNumber}`}
-                  className={`w-10 h-10 flex items-center justify-center rounded-xl hover:bg-white-90 ${
-                    pageIndex === page.pageNumber && 'bg-white-90'
-                  }`}
-                  onClick={() => handlePagination(page.pageNumber)}
-                >
-                  <Typography
-                    tag="h2"
-                    textSize={Size.SM}
-                    additionalClasses="text-dark-100"
-                  >
-                    {page.pageNumber}
-                  </Typography>
-                </button>
-              ))}
-              {pageIndex !== listPagination.length && (
+              { paginationButtons }
+              {pageIndex !== pageCount && (
                 <Button
                   dataTestId="next-pagination-button"
                   isMarginBottom
