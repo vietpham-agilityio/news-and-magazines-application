@@ -65,7 +65,7 @@ exports[`Comment component should render Comment macth snapshot 1`] = `
           </div>
           <button
             aria-label="button-element"
-            class="bg-dark-30 flex items-center rounded-xl hover:opacity-80 py-2.5 pr-6 pl-4 undefined"
+            class="flex items-center rounded-xl py-2.5 pr-6 pl-4 undefined bg-dark-30 hover:opacity-80"
           >
             <i
               class="mr-2 mb-1"
