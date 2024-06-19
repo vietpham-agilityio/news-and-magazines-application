@@ -1,3 +1,5 @@
+import { Pagination } from "./pagination";
+
 export interface CategoryDataItem {
   name: string;
   description?: string;
@@ -27,4 +29,5 @@ export interface PostCategoriesItem {
 
 export interface PostCategoriesResponse {
   data: PostCategoriesItem[];
+  meta: Pagination,
 }
