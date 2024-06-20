@@ -8,7 +8,7 @@ import {
 // types
 import { CommentsResponse } from '@/types';
 
-async function getCommentByPostId(postId: number): Promise<CommentsResponse> {
+async function getCommentByPostId(postId: string): Promise<CommentsResponse> {
   const query = `filters[${ATTRIBUTE_TYPE.POST_ID}][$eq]=${postId}`;
 
   const res = await fetch(

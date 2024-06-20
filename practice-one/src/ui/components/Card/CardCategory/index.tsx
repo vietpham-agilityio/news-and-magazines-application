@@ -10,7 +10,7 @@ import { FontWeight, Size } from '@/types';
 // services
 import { getAuthorById, getPostDataById } from '@/services';
 
-export default async function CardCategory({ id }: { id: number }) {
+export default async function CardCategory({ id }: { id: string }) {
   const postResponse = await getPostDataById(id);
 
   const { title, content, authorId, imageUrl, publicationDate } =

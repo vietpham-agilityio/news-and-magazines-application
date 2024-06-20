@@ -8,7 +8,7 @@ import { getCommentByPostId } from '@/services';
 import { formatDate } from '@/utils';
 
 interface IProps {
-  postId: number;
+  postId: string;
 }
 
 export default async function CommentGroup({ postId }: IProps) {

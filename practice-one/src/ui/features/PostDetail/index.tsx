@@ -14,7 +14,7 @@ import { FontWeight, Size } from '@/types';
 // icons
 import { ChatBox, File, Schedule } from '@/ui/components/Icons';
 
-export default async function PostDetail({ postId }: { postId: number }) {
+export default async function PostDetail({ postId }: { postId: string }) {
   const postResponse = await getPostDataById(postId);
 
   const attributes = postResponse?.data?.attributes;
