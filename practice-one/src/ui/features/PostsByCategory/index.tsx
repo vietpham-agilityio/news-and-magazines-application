@@ -9,14 +9,16 @@ import { CardCategory, Pagination, TitleSection } from '@/ui/components';
 
 export default async function PostByCategory({
   categoryId,
+  pageIndex,
 }: {
   categoryId: number;
+  pageIndex: number;
 }) {
   const { data: categoryDataResponse } = await getCategoryById(categoryId);
-  const { data: postCategoriesDataResponse, meta } = await getPostCategoryById( categoryId, 12, 1);
+  const { data: postCategoriesDataResponse, meta } = await getPostCategoryById( categoryId, 12, pageIndex);
 
   const { name: categoryType } = categoryDataResponse.attributes;
-  const { page, pageCount, pageSize } = meta.pagination;
+  const { pageCount} = meta.pagination;
 
   return (
     <>
@@ -37,7 +39,7 @@ export default async function PostByCategory({
           })}
         </div>
       </section>
-      <Pagination pageCount={pageCount} />
+      <Pagination pageCount={pageCount} categoryId={categoryId} />
     </>
   );
 }

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 
 // components
+import Link from 'next/link';
 import { Button, Typography } from '@/ui/components';
 
 // icons
@@ -13,9 +14,10 @@ import { PaginationPage, Size } from '@/types';
 
 export interface IProps {
   pageCount: number;
+  categoryId: number;
 }
 
-export const Pagination = ({ pageCount }: IProps) => {
+export const Pagination = ({ pageCount, categoryId }: IProps) => {
   const [pageIndex, setPageIndex] = useState<number>(1);
 
   const handlePrevious = () => setPageIndex(prev => prev - 1);
@@ -27,14 +29,14 @@ export const Pagination = ({ pageCount }: IProps) => {
 
   for (let i = 1; i <= pageCount; i++) {
     paginationButtons.push(
-      <button
+      <Link
         key={i}
+        href={`/category/${categoryId}/?page=${pageIndex}`}
         data-testid={`pagination-button-${i}`}
         aria-label={`pagination-button-${i}`}
         className={`w-10 h-10 flex items-center justify-center rounded-xl hover:bg-white-90 ${
           pageIndex === i && 'bg-white-90'
         }`}
-        onClick={() => handlePagination(i)}
       >
         <Typography
           tag="h2"
@@ -43,7 +45,7 @@ export const Pagination = ({ pageCount }: IProps) => {
         >
           {i}
         </Typography>
-      </button>
+      </Link>
     );
   }
 

@@ -8,10 +8,7 @@ import { listTypePosts } from '@/mocks';
 import { getCategoryById } from '@/services';
 
 // components
-import {
-  BreadCrumbs,
-  Typography,
-} from '@/ui/components';
+import { BreadCrumbs, Typography } from '@/ui/components';
 
 // types
 import { IBreadCrumbItem, Size, FontWeight } from '@/types';
@@ -19,12 +16,17 @@ import PostByCategory from '@/ui/features/PostsByCategory';
 
 export default async function CategoryPage({
   params: { id },
+  searchParams,
 }: {
   params: { id: number };
+  searchParams: { [key: string]: string | string[] | undefined };
 }) {
   const { data: categoryDataResponse } = await getCategoryById(id);
 
   const { name: categoryType } = categoryDataResponse.attributes;
+
+  const pageIndex =
+    typeof searchParams.page === 'string' ? parseInt(searchParams.page, 10) : 1;
 
   const listBreadCrumb: IBreadCrumbItem[] = [
     {
@@ -62,7 +64,7 @@ export default async function CategoryPage({
         {listTypeContents}
       </div>
       {/* new posts */}
-    <PostByCategory categoryId={id} />
+      <PostByCategory categoryId={id} pageIndex={pageIndex} />
     </main>
   );
 }
