@@ -32,7 +32,7 @@ async function getPostDataByAttribute(
   return data;
 }
 
-async function getPostDataById(id: number): Promise<PostDataResponse> {
+async function getPostDataById(id: string): Promise<PostDataResponse> {
   const res = await fetch(`${SERVER_BASE_URL}/api/${END_POINT.POSTS}/${id}`, {
     next: { revalidate: 3600 },
   });
