@@ -34,7 +34,7 @@ export default async function DetailPage({
 }: {
   params: { id: number };
 }) {
-  const postResponse = await getPostDataById(id);
+  const postResponse = await getPostDataById(id.toString());
 
   const { title = 'Title is not available' } = postResponse.data.attributes;
 
@@ -61,7 +61,7 @@ export default async function DetailPage({
 
       <div className="flex flex-col lg:flex-row">
         <Suspense fallback={<DetailPostSkeleton />}>
-          <PostDetail postId={id} />
+          <PostDetail postId={id.toString()} />
         </Suspense>
         <RightSidebar />
       </div>
@@ -69,7 +69,7 @@ export default async function DetailPage({
         {/* comment */}
         <Title title="Comment" />
         <Suspense fallback={<CommentSkeleton />}>
-          <CommentGroup postId={id} />
+          <CommentGroup postId={id.toString()} />
         </Suspense>
         {/* comment form */}
         <div className="mb-7.5">
