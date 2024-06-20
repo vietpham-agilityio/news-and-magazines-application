@@ -2,21 +2,31 @@
 import { flexItemCenter } from '@/constants';
 
 // mocks
-import { listPaginationPage, listTypePosts } from '@/mocks';
-import { getCategoryById, getPostCategoryById } from '@/services';
-import { IBreadCrumbItem, CardType, Size, FontWeight } from '@/types';
-import { BreadCrumbs, CardCategory, CardPost, Pagination, TitleSection, Typography } from '@/ui/components';
+import { listTypePosts } from '@/mocks';
+
+// services
+import { getCategoryById } from '@/services';
+
+// components
+import { BreadCrumbs, Typography } from '@/ui/components';
+
+// types
+import { IBreadCrumbItem, Size, FontWeight } from '@/types';
+import PostByCategory from '@/ui/features/PostsByCategory';
 
 export default async function CategoryPage({
   params: { id },
+  searchParams,
 }: {
   params: { id: number };
+  searchParams: { [key: string]: string | string[] | undefined };
 }) {
   const { data: categoryDataResponse } = await getCategoryById(id);
 
-  const { data: postCategoriesDataResponse } = await getPostCategoryById(id);
-
   const { name: categoryType } = categoryDataResponse.attributes;
+
+  const pageIndex =
+    typeof searchParams.page === 'string' ? parseInt(searchParams.page, 10) : 1;
 
   const listBreadCrumb: IBreadCrumbItem[] = [
     {
@@ -35,7 +45,7 @@ export default async function CategoryPage({
     return (
       <Typography
         key={type}
-        tag='h2'
+        tag="h2"
         textSize={Size.XS}
         weight={FontWeight.Medium}
         additionalClasses={`pr-5 ${isActive ? 'text-dark-100' : 'text-dark-75'}`}
@@ -54,22 +64,7 @@ export default async function CategoryPage({
         {listTypeContents}
       </div>
       {/* new posts */}
-      <section className="new-posts lg:container flex flex-col justify-between bg-white-100">
-        <div className="mt-7.5 sm:mt-11 lg:mt-9">
-          <TitleSection isDisableButton title={`Category : ${categoryType}`} />
-        </div>
-        <div className="card-group grid grid-cols-12 grid-rows-3 gap-5 sm:gap-6">
-            {postCategoriesDataResponse.map(post => {
-              return (
-                <div className="col-span-12 lg:col-span-6 xl:col-span-4 2xl:col-span-3" key={post.id}>
-                <CardCategory id={post.id}
-                />
-              </div>
-            );
-          })}
-        </div>
-      </section>
-      <Pagination listPagination={listPaginationPage} />
+      <PostByCategory categoryId={id} pageIndex={pageIndex} />
     </main>
   );
 }

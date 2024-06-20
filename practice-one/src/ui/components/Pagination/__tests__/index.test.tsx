@@ -11,7 +11,7 @@ let renderPagination: any;
 describe('Pagination component', () => {
   beforeEach(() => {
     renderPagination = render(
-      <Pagination listPagination={listPaginationPage} />
+      <Pagination pageCount={4} />
     );
   });
 

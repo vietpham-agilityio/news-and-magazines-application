@@ -56,6 +56,19 @@ exports[`Pagination component should render Pagination macth snapshot 1`] = `
               </h2>
             </button>
             <button
+              aria-label="pagination-button-4"
+              class="w-10 h-10 flex items-center justify-center rounded-xl hover:bg-white-90 false"
+              data-testid="pagination-button-4"
+            >
+              <h2
+                aria-level="2"
+                class="text-sm font-medium text-dark-100"
+                role="heading"
+              >
+                4
+              </h2>
+            </button>
+            <button
               aria-label="button-element"
               class="flex items-center rounded-xl py-2.5 undefined pr-4 pl-6 bg-white-90 hover:opacity-80"
               data-testid="next-pagination-button"
