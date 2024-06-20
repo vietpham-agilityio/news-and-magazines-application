@@ -33,7 +33,7 @@ export default async function PostByCategory({
                 className="col-span-12 lg:col-span-6 xl:col-span-4 2xl:col-span-3"
                 key={post.id}
               >
-                <CardCategory id={post.id} />
+                <CardCategory id={post.attributes.postId} />
               </div>
             );
           })}
