@@ -1,5 +1,7 @@
 'use server';
 
+import { revalidateTag } from 'next/cache';
+
 import {
   ATTRIBUTE_TYPE,
   END_POINT,
@@ -29,28 +31,32 @@ async function getCommentByPostId(postId: string): Promise<CommentsResponse> {
   return data;
 }
 
-async function createComment(postId: string, formData: FormData) {
-
+async function createComment(formData: FormData) {
   const rawFormData = {
     name: formData.get('name'),
     email: formData.get('email'),
+    postId: formData.get('postId'),
     content: formData.get('content'),
     website: formData.get('website'),
-  }
- 
-  console.log('Post ID:', postId);
-  console.log('Form Data:', rawFormData);
+  };
+
   const res = await fetch(`${SERVER_BASE_URL}/api/${END_POINT.COMMENTS}`, {
-      method: 'POST',
-      headers: {
-          'Content-Type': 'application/json'
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      data: {
+        ...rawFormData,
       },
-      body: JSON.stringify({ postId, ...rawFormData })
+    }),
   });
 
   if (!res.ok) {
     throw new Error(MESSAGE.ERROR);
   }
+
+  revalidateTag('collect-comments');
 
   return res.json();
 }
