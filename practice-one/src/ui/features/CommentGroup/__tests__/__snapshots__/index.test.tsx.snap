@@ -68,7 +68,7 @@ exports[`CommentGroup component Should render match with snapshot. 1`] = `
             </div>
             <button
               aria-label="button-element"
-              class="flex items-center rounded-xl py-2.5 pr-6 pl-4 undefined bg-dark-30 hover:opacity-80"
+              class="flex items-center rounded-xl bg-dark-30 py-2.5 pr-6 pl-4 undefined hover:opacity-80"
             >
               <i
                 class="mr-2 mb-1"
@@ -168,7 +168,7 @@ exports[`CommentGroup component Should render match with snapshot. 1`] = `
             </div>
             <button
               aria-label="button-element"
-              class="flex items-center rounded-xl py-2.5 pr-6 pl-4 undefined bg-dark-30 hover:opacity-80"
+              class="flex items-center rounded-xl bg-dark-30 py-2.5 pr-6 pl-4 undefined hover:opacity-80"
             >
               <i
                 class="mr-2 mb-1"

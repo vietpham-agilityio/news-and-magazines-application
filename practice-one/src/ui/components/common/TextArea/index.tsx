@@ -1,9 +1,10 @@
 interface IProps {
   label: string;
   placeholder?: string;
+  name: string;
 }
 
-export const TextArea = ({ label, placeholder }: IProps) => (
+export const TextArea = ({ label, placeholder, name }: IProps) => (
   <div className="w-full">
     <label
       htmlFor="textarea"
@@ -13,6 +14,7 @@ export const TextArea = ({ label, placeholder }: IProps) => (
     </label>
     <textarea
       id="textarea"
+      name={name}
       className="rounded-2xl w-full h-36 sm:h-63 py-6 px-5 bg-white-90 text-dark-90 placeholder-dark-50 leading-tight focus:outline-none focus:shadow-outline"
       placeholder={placeholder}
     />

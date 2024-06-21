@@ -18,6 +18,7 @@ export const Input = ({ name, label, type, placeholder }: IProps) => (
     <input
       className="rounded-2xl w-full h-12 py-2 px-4 bg-white-90 text-dark-90 placeholder-dark-50 leading-tight focus:outline-none focus:shadow-outline"
       id={name}
+      name={name}
       type={type}
       placeholder={placeholder}
     />

@@ -4,8 +4,7 @@ exports[`Button component Button should render disabled state macth snapshot 1`]
 <DocumentFragment>
   <button
     aria-label="button-element"
-    class="flex items-center rounded-xl py-2.5 undefined pr-4 pl-6 bg-white-100 hover:cursor-not-allowed"
-    disabled=""
+    class="flex items-center rounded-xl bg-primary-100 py-2.5 undefined pr-4 pl-6 hover:cursor-not-allowed hover:opacity-70"
   >
     <h2
       aria-level="2"
@@ -39,7 +38,7 @@ exports[`Button component Button should render macth snapshot 1`] = `
 <DocumentFragment>
   <button
     aria-label="button-element"
-    class="flex items-center rounded-xl py-2.5 undefined undefined bg-primary-100 hover:opacity-80"
+    class="flex items-center rounded-xl bg-primary-100 py-2.5 undefined undefined hover:opacity-80"
   >
     <h2
       aria-level="2"
