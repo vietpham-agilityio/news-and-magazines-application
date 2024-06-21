@@ -75,7 +75,7 @@ export default async function DetailPage({
         <div className="mb-7.5">
           <Title title="Add A Comment" />
         </div>
-        <CommentForm />
+        <CommentForm postId={id.toString()} />
       </section>
 
       <section className="w-full lg:container flex flex-col justify-between bg-white-100 h-459 mt-10 lg:mt-20 mb-25">
