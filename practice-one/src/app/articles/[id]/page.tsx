@@ -61,7 +61,9 @@ export default async function DetailPage({
 
       <div className="flex flex-col lg:flex-row">
         <Suspense fallback={<DetailPostSkeleton />}>
-          <PostDetail postId={id.toString()} />
+          <div className="mb-10 sm:mb-12 lg:mb-0">
+            <PostDetail postId={id.toString()} />
+          </div>
         </Suspense>
         <RightSidebar />
       </div>
@@ -69,7 +71,9 @@ export default async function DetailPage({
         {/* comment */}
         <Title title="Comment" />
         <Suspense fallback={<CommentSkeleton />}>
-          <CommentGroup postId={id.toString()} />
+          <div className="mt-7.5">
+            <CommentGroup postId={id.toString()} />
+          </div>
         </Suspense>
         {/* comment form */}
         <div className="mb-7.5">
