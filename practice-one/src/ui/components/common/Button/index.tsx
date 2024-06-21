@@ -14,10 +14,12 @@ interface IProps {
   isButtonLarge?: boolean;
   isDisabled?: boolean;
   dataTestId?: string;
+  type?: 'submit' | 'reset' | 'button';
   onClick?: () => void;
 }
 
 export const Button = ({
+  type,
   label,
   textColor,
   rightIcon,
@@ -30,10 +32,10 @@ export const Button = ({
   onClick,
 }: IProps) => (
   <button
+    type={type}
     data-testId={dataTestId}
     aria-label="button-element"
-    disabled={isDisabled}
-    className={`flex items-center rounded-xl ${isButtonLarge ? 'py-3.5' : 'py-2.5'} ${leftIcon && 'pr-6 pl-4'} ${rightIcon && 'pr-4 pl-6'} ${isDisabled ? 'bg-white-100 hover:cursor-not-allowed' : `${bgColor} hover:opacity-80`}`}
+    className={`flex items-center rounded-xl ${bgColor} ${isButtonLarge ? 'py-3.5' : 'py-2.5'} ${leftIcon && 'pr-6 pl-4'} ${rightIcon && 'pr-4 pl-6'} ${isDisabled ? 'hover:cursor-not-allowed hover:opacity-70' : `hover:opacity-80`}`}
     onClick={onClick}
   >
     {leftIcon && (
