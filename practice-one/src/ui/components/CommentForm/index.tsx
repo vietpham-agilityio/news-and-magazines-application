@@ -10,12 +10,12 @@ interface IProps {
 }
 
 export const CommentForm = ({postId}: IProps) => {
-  const createCommentWithId = createComment.bind(null, postId)
 
 return (
-  <form action={createCommentWithId}>
+  <form action={createComment}>
     <div className="grid grid-cols-12 grid-rows-3 lg:gap-6">
       <div className="row-span-3 col-span-12 lg:col-span-6">
+        <input name="postId" type="hidden" value={postId} />
         <div className="mb-5 row-span-1">
           <Input label="Name" name="name" type="text" />
         </div>

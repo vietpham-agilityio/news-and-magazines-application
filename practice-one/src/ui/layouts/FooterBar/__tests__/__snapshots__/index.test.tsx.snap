@@ -7,7 +7,7 @@ exports[`FooterBar feature component FooterBar should render macth snapshot 1`] 
   >
     <button
       aria-label="button-element"
-      class="flex items-center rounded-xl py-2.5 pr-6 pl-4 undefined bg-gradient-to-bl from-sunSet-0 to-sunSet-100 hover:opacity-80"
+      class="flex items-center rounded-xl bg-gradient-to-bl from-sunSet-0 to-sunSet-100 py-2.5 pr-6 pl-4 undefined hover:opacity-80"
     >
       <i
         class="mr-2 undefined"

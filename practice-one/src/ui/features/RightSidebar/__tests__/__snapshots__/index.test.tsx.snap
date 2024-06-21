@@ -16,7 +16,7 @@ exports[`RightSidebar feature component RightSidebar should render macth snapsho
         >
           <button
             aria-label="button-element"
-            class="flex items-center rounded-xl py-2.5 pr-6 pl-4 undefined bg-white-90 hover:opacity-80"
+            class="flex items-center rounded-xl bg-white-90 py-2.5 pr-6 pl-4 undefined hover:opacity-80"
           >
             <i
               class="mr-2 mb-1"
@@ -44,7 +44,7 @@ exports[`RightSidebar feature component RightSidebar should render macth snapsho
           </button>
           <button
             aria-label="button-element"
-            class="flex items-center rounded-xl py-2.5 pr-6 pl-4 undefined bg-white-90 hover:opacity-80"
+            class="flex items-center rounded-xl bg-white-90 py-2.5 pr-6 pl-4 undefined hover:opacity-80"
           >
             <i
               class="mr-2 mb-1"
@@ -72,7 +72,7 @@ exports[`RightSidebar feature component RightSidebar should render macth snapsho
           </button>
           <button
             aria-label="button-element"
-            class="flex items-center rounded-xl py-2.5 pr-6 pl-4 undefined bg-white-90 hover:opacity-80"
+            class="flex items-center rounded-xl bg-white-90 py-2.5 pr-6 pl-4 undefined hover:opacity-80"
           >
             <i
               class="mr-2 mb-1"
@@ -143,7 +143,7 @@ exports[`RightSidebar feature component RightSidebar should render macth snapsho
             >
               <button
                 aria-label="button-element"
-                class="flex items-center rounded-xl py-2.5 pr-6 pl-4 undefined bg-gradient-to-bl from-sunSet-0 to-sunSet-100 hover:opacity-80"
+                class="flex items-center rounded-xl bg-gradient-to-bl from-sunSet-0 to-sunSet-100 py-2.5 pr-6 pl-4 undefined hover:opacity-80"
               >
                 <i
                   class="mr-2 undefined"
