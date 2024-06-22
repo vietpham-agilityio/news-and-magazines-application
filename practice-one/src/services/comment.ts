@@ -1,7 +1,9 @@
 'use server';
 
+import { z } from 'zod';
 import { revalidateTag } from 'next/cache';
 
+// constants
 import {
   ATTRIBUTE_TYPE,
   END_POINT,
@@ -11,6 +13,16 @@ import {
 
 // types
 import { CommentsResponse } from '@/types';
+
+const schemaForm = z.object({
+  postId: z.string().min(1),
+  name: z.string().min(1, 'Please enter your name'),
+  email: z
+    .string()
+    .email('Please enter a valid email. example: your@example.com'),
+  content: z.string().min(1, 'Please write your comment'),
+  website: z.string().url('Please enter URL. example: http://www.example.com'),
+});
 
 async function getCommentByPostId(postId: string): Promise<CommentsResponse> {
   const query = `filters[${ATTRIBUTE_TYPE.POST_ID}][$eq]=${postId}`;
@@ -31,14 +43,28 @@ async function getCommentByPostId(postId: string): Promise<CommentsResponse> {
   return data;
 }
 
-async function createComment(formData: FormData) {
-  const rawFormData = {
+async function createComment(prevState: any, formData: FormData) {
+  const validatedFields = schemaForm.safeParse({
     name: formData.get('name'),
     email: formData.get('email'),
     postId: formData.get('postId'),
     content: formData.get('content'),
     website: formData.get('website'),
-  };
+  });
+
+  if (!validatedFields.success) {
+    const errors = validatedFields.error.errors.reduce(
+      (acc: Record<string, string>, error) => {
+        acc[error.path[0]] = error.message;
+        return acc;
+      },
+      {}
+    );
+
+    return {
+      message: errors,
+    };
+  }
 
   const res = await fetch(`${SERVER_BASE_URL}/api/${END_POINT.COMMENTS}`, {
     method: 'POST',
@@ -46,9 +72,7 @@ async function createComment(formData: FormData) {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      data: {
-        ...rawFormData,
-      },
+      data: validatedFields.data,
     }),
   });
 
