@@ -66,7 +66,7 @@ export const RightSidebar = () => (
       </div>
     </div>
     <div className="mb-[25px] hidden lg:block">
-      <SidebarCard listPosts={listPostItems} />
+      <SidebarCard />
     </div>
     <div className="flex justify-between gap-5 lg:flex-col">
       <div className="mx-auto sm:mx-0">
