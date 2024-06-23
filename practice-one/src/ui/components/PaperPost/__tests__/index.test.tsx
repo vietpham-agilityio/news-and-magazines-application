@@ -14,6 +14,7 @@ describe('PaperPost component', () => {
   beforeEach(() => {
     renderPaperPost = render(
       <PaperPost
+        id={1}
         isLargePaper
         imageSrc={image}
         title={title}
@@ -35,6 +36,7 @@ describe('PaperPost component', () => {
   it('should render PaperPost without isLargePaper prop to macth snapshot', () => {
     const { asFragment } = render(
       <PaperPost
+        id={1}
         imageSrc={image}
         title={title}
         alt={altValue}

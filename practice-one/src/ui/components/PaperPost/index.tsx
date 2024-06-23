@@ -3,8 +3,10 @@ import { Typography } from '@/ui/components';
 
 // types
 import { FontWeight, Size } from '@/types';
+import Link from 'next/link';
 
 interface IProps {
+  id: number;
   title: string;
   content: string;
   imageSrc: string | StaticImageData;
@@ -13,6 +15,7 @@ interface IProps {
 }
 
 export const PaperPost = ({
+  id,
   title,
   content,
   imageSrc,
@@ -25,42 +28,44 @@ export const PaperPost = ({
   const imageHeight = isLargePaper ? '190px' : '87px';
 
   return (
-    <div
-      className={`flex cursor-pointer ${isLargePaper && 'bg-white-100 h-52.5 w-full p-2.5 rounded-xl'}`}
-    >
+    <Link href={`/articles/${id}`}>
       <div
-        style={{ width: imageWidth, height: imageHeight, position: 'relative' }}
+        className={`flex cursor-pointer ${isLargePaper && 'bg-white-100 h-52.5 w-full p-2.5 rounded-xl'}`}
       >
-        <Image
-          fill
-          objectFit="cover"
-          className="rounded-xl"
-          src={imageSrc}
-          alt={alt}
-          sizes={`${isLargePaper ? '190px' : '87px'}`}
-        />
-      </div>
-      <div
-        className={`flex flex-col gap-1.5 ml-2.5 flex-1 ${isLargePaper ? 'py-4' : ' my-3'}`}
-      >
-        <Typography
-          tag="h2"
-          textSize={titleSize}
-          additionalClasses={`text-dark-100 text-ellipsis overflow-hidden ${isLargePaper && 'h-7 px-1.5'}`}
+        <div
+          style={{ width: imageWidth, height: imageHeight, position: 'relative' }}
         >
-          {title}
-        </Typography>
-        <Typography
-          tag="h3"
-          weight={FontWeight.Light}
-          additionalClasses={`
-          text-dark-75 text-ellipsis overflow-hidden
-           ${contentSize}
-           ${isLargePaper && 'px-1.5'}`}
+          <Image
+            fill
+            objectFit="cover"
+            className="rounded-xl"
+            src={imageSrc}
+            alt={alt}
+            sizes={`${isLargePaper ? '190px' : '87px'}`}
+          />
+        </div>
+        <div
+          className={`flex flex-col gap-1.5 ml-2.5 flex-1 ${isLargePaper ? 'py-4' : ' my-3'}`}
         >
-          {content}
-        </Typography>
+          <Typography
+            tag="h2"
+            textSize={titleSize}
+            additionalClasses={`w-[223px] text-dark-100 text-ellipsis  ${isLargePaper && 'h-7 px-1.5 w-auto'}`}
+          >
+            {title}
+          </Typography>
+          <Typography
+            tag="h3"
+            weight={FontWeight.Light}
+            additionalClasses={`
+            h-8 w-[223px] text-dark-75 text-wrap truncate text-ellipsis overflow-hidden
+            ${contentSize}
+            ${isLargePaper && 'px-1.5 h-auto w-auto'}`}
+          >
+            {content}
+          </Typography>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 };

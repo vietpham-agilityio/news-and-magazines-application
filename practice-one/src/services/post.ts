@@ -2,11 +2,15 @@ import { PostDataResponse, PostVariant, PostsResponse } from '@/types';
 import { MESSAGE, SERVER_BASE_URL, END_POINT } from '@/constants';
 import { notFound } from 'next/navigation';
 
-async function getPostDataByAttribute(
-  attribute: PostVariant,
-  limit: number = 10,
-  page: number = 1
-): Promise<PostsResponse> {
+async function getPostDataByAttribute({
+  attribute,
+  limit = 10,
+  page = 1,
+}: {
+  attribute: PostVariant;
+  limit?: number;
+  page?: number;
+}): Promise<PostsResponse> {
   const queryObject = {
     populate: '*',
     'pagination[pageSize]': `${limit}`,

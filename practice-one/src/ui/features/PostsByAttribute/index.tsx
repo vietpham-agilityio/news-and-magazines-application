@@ -18,7 +18,7 @@ export default async function PostByAttribute({
   isMarginSmall?: boolean;
 }) {
   const { data: postDataResponse = [] } =
-    await getPostDataByAttribute(attribute);
+    await getPostDataByAttribute({attribute});
   const typeCardPost = cardType === 'isVertical';
 
   return (
