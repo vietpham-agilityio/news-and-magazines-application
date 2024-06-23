@@ -72,4 +72,31 @@ async function getPostCategoryById(
   return data;
 }
 
-export { getCategoryData, getPostCategoryById, getCategoryById };
+async function getCategoryByPostId({
+  postId,
+  limit = 10,
+  page = 1,
+}: {
+  postId: string,
+  limit?: number;
+  page?: number;
+}): Promise<PostCategoriesResponse> {
+  const query = `filters[${ATTRIBUTE_TYPE.POST_ID}][$eq]=${postId}&pagination[page]=${page}&pagination[pageSize]=${limit}`;
+
+  const res = await fetch(
+    `${SERVER_BASE_URL}/api/${END_POINT.POST_CATEGORIES}?${query}`,
+    {
+      next: { revalidate: 3600 },
+    }
+  );
+
+  if (!res.ok) {
+    throw new Error(MESSAGE.ERROR);
+  }
+
+  const data = res.json();
+
+  return data;
+}
+
+export { getCategoryData, getPostCategoryById, getCategoryByPostId, getCategoryById };
