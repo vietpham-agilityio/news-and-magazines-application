@@ -10,8 +10,16 @@ import {
   ATTRIBUTE_TYPE,
 } from '@/constants';
 
-async function getCategoryData(): Promise<CategoriesResponse> {
-  const res = await fetch(`${SERVER_BASE_URL}/api/${END_POINT.CATEGORIES}`, {
+async function getCategoryData({
+  limit = 10,
+  page = 1,
+}: {
+  limit?: number;
+  page?: number;
+} = {}): Promise<CategoriesResponse> {
+  const query = `pagination[page]=${page}&pagination[pageSize]=${limit}`;
+
+  const res = await fetch(`${SERVER_BASE_URL}/api/${END_POINT.CATEGORIES}?${query}`, {
     next: { revalidate: 86400 },
   });
 
