@@ -10,7 +10,7 @@
 
 ## TIMELINE
 
-* May 20th, 2024 - June 10th, 2024 (14 days working)
+* May 20th, 2024 - June 24th, 2024 (23 days working) (2 days off)
 
 ## TEAM SIZE
 
@@ -50,6 +50,8 @@
 
 * **[Vercel](https://vercel.com/)** is a frontend cloud that gives developers the frameworks, workflows, and infrastructure to build a faster, more personalized Web.
 
+* **[Render](https://render.com/)** build, deploy, and scale your apps with unparalleled ease – from your first user to your billionth.
+
 ## EDITOR
 
 * **[Visual Studio Code](https://code.visualstudio.com/)**
@@ -70,26 +72,32 @@ practice-one/
 │   │   ├── articles/
 │   │   │   └── [id]/
 │   │   ├── categories/
-│   │   │   └── [topic]/
+│   │   │   └── [id]/
 │   │   ├── global-error.tsx
 │   │   ├── layout.tsx
 │   │   ├── not-found.tsx
 │   │   └── page.tsx
 │   ├── constants/
+│   ├── hocs/
 │   ├── mocks/
 │   ├── services/
 │   ├── types/
-│   └── ui/
-│       ├── components/
-│       │   ├── common/
-│       │   └── [other files]
-│       ├── features/
-│       └── layouts/
+│   ├── ui/
+│   │   ├── components/
+│   │   │   ├── common/
+│   │   │   └── [other shared component]
+│   │   ├── features/
+│   │   └── layouts/
+│   │
+│   └── utils/
 ├── .gitignore
 ├── package.json
 ├── README.md
 └── next.config.js
 ```
+## DATA ENTITY RELATIONSHIP
+
+> ![image](/uploads/beb9abb80f8573af45f985fc1e64033f/image.png) 
 
 ## HOW TO RUN PROJECT
 
@@ -99,86 +107,6 @@ practice-one/
 
 > cd ./practice-one/
 
-
-### Run Strapi local
-
-**Using Node version 20**
-
-- nvm install v20.12.2
-- nvm use v20.12.2
-
-**Your preferred Node.js package manager:**
- * npm (v6 and above)
- * yarn
-
-**Step 1: Run the installation script:**
-
-```
-npx create-strapi-app@latest my-project --quickstart
-
-or
-
-yarn create strapi-app my-project --quickstart
-
-```
-
-**Step 2: Register the first local administrator user**
-
-> If the server is not already running, in your terminal, cd into the `my-project` folder and run `npm run develop` (or `yarn develop`) to launch it.
-
-This is register admin local screen:
-
-![image](/uploads/90bb3dabcc20f37cbf7ca9c1b780d6f5/image.png)
-
-
-You now have access to the admin panel:
-
-![image](/uploads/3282460e5b670e85045e90a3a1b45eb5/image.png)
-
-
-**Step 3: Build your data structure with the Content-type Builder**
-
-  > 1. Go to **Content-type Builder** in the main navigation.
-  > 2. Click on **Create new collection type**.
- 
-You can reference this [Entity-Relationship](https://drive.google.com/drive/u/0/folders/1DY2xQsgBDzQEnLDjrORcXXhZMauw6WQf) diagram to create Content type or create collection type with template:
-
-* `Post`:
-
-![image](/uploads/48fdbe16063d7e9b6d4a03c00a1247f6/image.png)
-
-* `Author`:
-![image](/uploads/b2dace1d02564453b26b9cf06568afd1/image.png)
-
-
-**Step 4: Add content to your Strapi project with the Content Manager**
-
-* `Post`
-![image](/uploads/7cca9451134f7c5ae0662dd32fc9e3a4/image.png)
-
-* `Author`
-![image](/uploads/0a1ab65b5d6615934ab96362216d3893/image.png)
-
-
-**Step 5: Set Roles & Permissions**
-
-  1. Click on **Settings** at the bottom of the main navigation.
-  2. Under **Users & Permissions Plugin**, choose **Roles**.
-  3. Click the **Public** role.
-  4. Scroll down under **Permissions**.
-  5. In the **Permissions** tab, find `Post` and click on it.
-  6. Click the checkboxes next to **find** and **findOne**.
-  7. Repeat with Author: click the checkboxes next to **find** and **findOne**.
-  8. Finally, click **Save**.
-
-**Step 6: Publish the content**
-
-![image](/uploads/85971fc76d91b0b4e64a855cab19109b/image.png)
-
-
-**Step 7: Use the API**
-
-You can use API with template: `http://localhost:1337/api/end-point`
 
 ### Install Package
 
@@ -197,16 +125,12 @@ You can use API with template: `http://localhost:1337/api/end-point`
 **With template**
 
 ```
-SERVER_BASE_URL = 'Url your server' || 'http://localhost:1337'
+SERVER_BASE_URL = 'Url your server'
 ```
 
 **My Strapi deploy on Render**
 
 > https://news-and-magazine-strapi-server.onrender.com
-
-**You can access my pages**
-
-> [News & Magazine-Website](https://news-and-magazines-application.vercel.app/)
 
 
 ### Run Project
@@ -228,6 +152,10 @@ SERVER_BASE_URL = 'Url your server' || 'http://localhost:1337'
 ### Run build in production environment
 
 > pnpm build
+
+**You can access my pages**
+
+> [News & Magazine-Website](https://news-and-magazines-application.vercel.app/)
 
 ## Author
 
