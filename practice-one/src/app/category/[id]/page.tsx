@@ -8,11 +8,17 @@ import { listTypePosts } from '@/mocks';
 import { getCategoryById } from '@/services';
 
 // components
-import { BreadCrumbs, Typography } from '@/ui/components';
+import {
+  BreadCrumbs,
+  CardCategorySkeleton,
+  TitleSection,
+  Typography,
+} from '@/ui/components';
 
 // types
 import { IBreadCrumbItem, Size, FontWeight } from '@/types';
 import PostByCategory from '@/ui/features/PostsByCategory';
+import { Suspense } from 'react';
 
 export default async function CategoryPage({
   params: { id },
@@ -63,8 +69,13 @@ export default async function CategoryPage({
       <div className={`${flexItemCenter} h-12 bg-white-90 rounded-xl p-4`}>
         {listTypeContents}
       </div>
+      <div className="mt-7.5 sm:mt-11 lg:mt-9">
+        <TitleSection isDisableButton title={`Category : ${categoryType}`} />
+      </div>
       {/* new posts */}
-      <PostByCategory categoryId={id} pageIndex={pageIndex} />
+      <Suspense fallback={<CardCategorySkeleton count={12} />}>
+        <PostByCategory categoryId={id} pageIndex={pageIndex} />
+      </Suspense>
     </main>
   );
 }

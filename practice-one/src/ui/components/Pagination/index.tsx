@@ -40,9 +40,9 @@ export const Pagination = ({ pageCount, categoryId }: IProps) => {
 
   return (
     <div className="h-10 mt-10 mb-30 sm:mt-11 sm:mb-12 lg:mb-25 flex items-center">
-      <div className="flex items-center justify-between px-4 py-3 sm:px-6">
-        <div className="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
-          <div>
+      <div className="mx-auto flex items-center justify-between px-4 py-3 sm:mx-0 sm:px-6">
+        <div className="flex sm:flex-1 sm:items-center sm:justify-between">
+          <div className="w-90">
             <nav className="flex gap-1" aria-label="Pagination">
               {pageIndex !== 1 && (
                 <Button
