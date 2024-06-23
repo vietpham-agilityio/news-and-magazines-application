@@ -15,7 +15,7 @@ export default async function PostGrid({
   attribute: PostVariant;
   cardType: CardType;
 }) {
-  const { data: postDataResponse = [] } = await getPostDataByAttribute(attribute, 6);
+  const { data: postDataResponse = [] } = await getPostDataByAttribute({attribute, limit: 6});
   const typeCardPost = cardType === 'isVertical';
 
   return (

@@ -28,7 +28,10 @@ import { ArrowRight, Triangle } from '@/ui/components/Icons';
 import { listHashtagsItem, listSlider } from '@/mocks';
 
 // types
-import { PostVariant, CardType, FontWeight, Size } from '@/types';
+import { PostVariant, CardType, FontWeight, Size, PostResponse } from '@/types';
+
+// services
+import { getPostDataByAttribute } from '@/services';
 
 export const metadata: Metadata = {
   title: 'Home - News & Magazine',
@@ -36,7 +39,12 @@ export const metadata: Metadata = {
     'Welcome to News & Magazine. Stay updated with the latest headlines, in-depth articles, and trending topics from around the world.',
 };
 
-export default function Home() {
+export default async function Home() {
+  const { data: postDataResponse } = await getPostDataByAttribute({
+    attribute: PostVariant.NEW,
+    limit: 2,
+  });
+
   return (
     <main className="flex flex-col items-center">
       {/* category */}
@@ -168,27 +176,21 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
-            {/* card first */}
-            <div className="h-52.5 hidden lg:grid lg:col-span-6">
-              <PaperPost
-                isLargePaper
-                title="5 reasons why you should wrap your hands when boxing"
-                content="So, you finally went to your first boxing class and learned the basics of the sport. You also learned that it’s recommended to wrap your hands before putting on the gloves. But there are times when you just don’t feel like wrapping them and you wonder why you even need them. Well, this blog is going to explain the benefits of wrapping your hands."
-                alt="boxing-article"
-                imageSrc="https://images.unsplash.com/photo-1622599511051-16f55a1234d0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJveGluZ3xlbnwwfHwwfHx8MA%3D%3D"
-              />
-            </div>
-            {/* card secondary */}
-            <div className="h-52.5 hidden lg:grid lg:col-span-6">
-              <PaperPost
-                isLargePaper
-                title="The Health Benefits and Joys of Sunlight"
-                content="Sunlight is a spectrum of electromagnetic radiation that includes visible light, ultraviolet (UV) rays, and infrared radiation. Our bodies respond to these rays in various ways, producing essential vitamins and hormones that regulate numerous bodily functions. The most well-known benefit of sunlight is its role in the synthesis of vitamin D, a critical nutrient for bone health and immune function."
-                alt="boxing-article"
-                imageSrc="https://images.unsplash.com/photo-1717196214681-0a66168248cf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMzR8fHxlbnwwfHx8fHw%3D"
-              />
-            </div>
+            {postDataResponse.map((post: PostResponse) => {
+              const { title, content, imageUrl } = post.attributes;
+              return (
+                <div className="h-52.5 hidden lg:grid lg:col-span-6">
+                  <PaperPost
+                    id={post.id}
+                    isLargePaper
+                    title={title}
+                    content={content}
+                    alt={title}
+                    imageSrc={imageUrl}
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
