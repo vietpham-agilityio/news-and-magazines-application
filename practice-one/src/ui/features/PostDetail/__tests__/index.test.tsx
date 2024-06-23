@@ -5,6 +5,8 @@ import { getPostDataById } from '@/services';
 
 // component
 import { PostDetail } from '@/ui/features';
+
+// mocks
 import { mockPostDetailData } from '@/mocks';
 
 jest.mock('../../../../services', () => ({
@@ -24,7 +26,7 @@ afterEach(() => {
 
 describe('PostDetail component', () => {
   test('Should render match with snapshot.', async () => {
-    const { container } = render(await PostDetail({ postId: 1 }));
+    const { container } = render(await PostDetail({ postId: "1" }));
 
     await waitFor(() => {
       expect(container).toMatchSnapshot();
@@ -36,7 +38,7 @@ describe('PostDetail component', () => {
       {}
     );
 
-    const { container } = render(await PostDetail({ postId: 1 }));
+    const { container } = render(await PostDetail({ postId: "1" }));
 
     await waitFor(() => {
       expect(container).toMatchSnapshot();
