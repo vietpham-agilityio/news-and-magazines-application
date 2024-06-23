@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer feature component Footer should render macth snapshot 1`] = `
-<DocumentFragment>
+exports[`Footer component Should render match with snapshot. 1`] = `
+<div>
   <footer
     class="footer w-full hidden items-center justify-center bg-white-100 mb-12.5 sm:flex lg:mb-11"
   >
@@ -38,7 +38,7 @@ exports[`Footer feature component Footer should render macth snapshot 1`] = `
             <p
               class="pr-8 lg:pr-12 h-40 text-xs text-justify font-normal text-black-75"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin
+              Mega news delivers the latest news, insightful articles, and in-depth features on topics. Our mission is to keep you informed and entertained with high-quality content you can trust. Stay connected with us on social media for real-time updates, and subscribe to our newsletter for exclusive content and special offers. Thank you for choosing Mega news as your trusted source of information.
             </p>
           </section>
           <section
@@ -124,54 +124,9 @@ exports[`Footer feature component Footer should render macth snapshot 1`] = `
                 class="text-p text-dark-100 mb-2 hover:text-secondary-100"
               >
                 <a
-                  href="/category/sports"
+                  href="/category/1"
                 >
-                  Sports
-                </a>
-              </li>
-              <li
-                class="text-p text-dark-100 mb-2 hover:text-secondary-100"
-              >
-                <a
-                  href="/category/entertainment"
-                >
-                  Entertainment
-                </a>
-              </li>
-              <li
-                class="text-p text-dark-100 mb-2 hover:text-secondary-100"
-              >
-                <a
-                  href="/category/science-and-environment"
-                >
-                  Science
-                </a>
-              </li>
-              <li
-                class="text-p text-dark-100 mb-2 hover:text-secondary-100"
-              >
-                <a
-                  href="/category/health-and-wellness"
-                >
-                  Health Living
-                </a>
-              </li>
-              <li
-                class="text-p text-dark-100 mb-2 hover:text-secondary-100"
-              >
-                <a
-                  href="/category/lifestyle"
-                >
-                  Lifestyle
-                </a>
-              </li>
-              <li
-                class="text-p text-dark-100 mb-3 hover:text-secondary-100"
-              >
-                <a
-                  href="/category/technology"
-                >
-                  Technology
+                  Category
                 </a>
               </li>
             </ul>
@@ -520,5 +475,5 @@ exports[`Footer feature component Footer should render macth snapshot 1`] = `
       </section>
     </div>
   </footer>
-</DocumentFragment>
+</div>
 `;
