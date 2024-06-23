@@ -179,7 +179,7 @@ export default async function Home() {
             {postDataResponse.map((post: PostResponse) => {
               const { title, content, imageUrl } = post.attributes;
               return (
-                <div className="h-52.5 hidden lg:grid lg:col-span-6">
+                <div key={post.id} className="h-52.5 hidden lg:grid lg:col-span-6">
                   <PaperPost
                     id={post.id}
                     isLargePaper
