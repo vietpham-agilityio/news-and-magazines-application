@@ -19,7 +19,7 @@ import {
 import { HashtagGroup, PostsByAttribute, PostsGrid } from '@/ui/features';
 
 // HOC
-import ComponentInView from '@/HOC/InView';
+import ComponentInView from '@/hocs/InView';
 
 // icons
 import { ArrowRight, Triangle } from '@/ui/components/Icons';
