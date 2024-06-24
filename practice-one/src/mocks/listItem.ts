@@ -365,6 +365,14 @@ const mockPostCategoriesResponse: PostCategoriesResponse = {
       },
     },
   ],
+  meta: {
+    pagination: {
+      page: 1,
+      pageCount: 2,
+      pageSize: 10,
+      total: 20,
+    },
+  },
 };
 
 const mockCategoryResponseData: CategoryResponse = {
