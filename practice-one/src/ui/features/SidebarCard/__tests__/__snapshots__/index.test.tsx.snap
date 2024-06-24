@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SidebarCard feature component SidebarCard should render macth snapshot 1`] = `
-<DocumentFragment>
+exports[`SidebarCard component Should render match with snapshot. 1`] = `
+<div>
   <div
     class="px-[15px] py-5 bg-white-90 rounded-xl"
   >
@@ -20,229 +20,55 @@ exports[`SidebarCard feature component SidebarCard should render macth snapshot 
       </h2>
     </div>
     <div
-      class="mt-5"
+      class="flex flex-col justify-between mt-5 h-155.5"
     >
-      <div
-        class="mb-5"
-      >
-        <div
-          class="flex cursor-pointer undefined"
+      <div>
+        <a
+          href="/articles/12"
         >
           <div
-            style="width: 87px; height: 87px; position: relative;"
+            class="flex cursor-pointer undefined"
           >
-            <img
-              alt="Top post"
-              class="rounded-xl"
-              data-nimg="fill"
-              decoding="async"
-              loading="lazy"
-              sizes="87px"
-              src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
-              srcset="/_next/image?url=%2Fimg.jpg&w=16&q=75 16w, /_next/image?url=%2Fimg.jpg&w=32&q=75 32w, /_next/image?url=%2Fimg.jpg&w=48&q=75 48w, /_next/image?url=%2Fimg.jpg&w=64&q=75 64w, /_next/image?url=%2Fimg.jpg&w=96&q=75 96w, /_next/image?url=%2Fimg.jpg&w=128&q=75 128w, /_next/image?url=%2Fimg.jpg&w=256&q=75 256w, /_next/image?url=%2Fimg.jpg&w=384&q=75 384w, /_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
-              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
-            />
-          </div>
-          <div
-            class="flex flex-col gap-1.5 ml-2.5 flex-1  my-3"
-          >
-            <h2
-              aria-level="2"
-              class="text-xs font-medium text-dark-100 text-ellipsis overflow-hidden undefined"
-              role="heading"
+            <div
+              style="width: 87px; height: 87px; position: relative;"
             >
-              How to Spend the Perfect Day on Croatia’s Most Magical Island
-            </h2>
-            <h3
-              aria-level="3"
-              class="text-md font-light 
-          text-dark-75 text-ellipsis overflow-hidden
-           text-p
-           undefined"
-              role="heading"
+              <img
+                alt="Balancing Innovation and Responsibility"
+                class="rounded-xl"
+                data-nimg="fill"
+                decoding="async"
+                loading="lazy"
+                sizes="87px"
+                src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608904063217-4e24362cda27%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTB8fEJhbGFuY2luZyUyMElubm92YXRpb24lMjBhbmQlMjBSZXNwb25zaWJpbGl0eXxlbnwwfHwwfHx8MA%253D%253D&w=3840&q=75"
+                srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608904063217-4e24362cda27%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTB8fEJhbGFuY2luZyUyMElubm92YXRpb24lMjBhbmQlMjBSZXNwb25zaWJpbGl0eXxlbnwwfHwwfHx8MA%253D%253D&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608904063217-4e24362cda27%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTB8fEJhbGFuY2luZyUyMElubm92YXRpb24lMjBhbmQlMjBSZXNwb25zaWJpbGl0eXxlbnwwfHwwfHx8MA%253D%253D&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608904063217-4e24362cda27%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTB8fEJhbGFuY2luZyUyMElubm92YXRpb24lMjBhbmQlMjBSZXNwb25zaWJpbGl0eXxlbnwwfHwwfHx8MA%253D%253D&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608904063217-4e24362cda27%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTB8fEJhbGFuY2luZyUyMElubm92YXRpb24lMjBhbmQlMjBSZXNwb25zaWJpbGl0eXxlbnwwfHwwfHx8MA%253D%253D&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608904063217-4e24362cda27%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTB8fEJhbGFuY2luZyUyMElubm92YXRpb24lMjBhbmQlMjBSZXNwb25zaWJpbGl0eXxlbnwwfHwwfHx8MA%253D%253D&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608904063217-4e24362cda27%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTB8fEJhbGFuY2luZyUyMElubm92YXRpb24lMjBhbmQlMjBSZXNwb25zaWJpbGl0eXxlbnwwfHwwfHx8MA%253D%253D&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608904063217-4e24362cda27%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTB8fEJhbGFuY2luZyUyMElubm92YXRpb24lMjBhbmQlMjBSZXNwb25zaWJpbGl0eXxlbnwwfHwwfHx8MA%253D%253D&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608904063217-4e24362cda27%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTB8fEJhbGFuY2luZyUyMElubm92YXRpb24lMjBhbmQlMjBSZXNwb25zaWJpbGl0eXxlbnwwfHwwfHx8MA%253D%253D&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608904063217-4e24362cda27%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTB8fEJhbGFuY2luZyUyMElubm92YXRpb24lMjBhbmQlMjBSZXNwb25zaWJpbGl0eXxlbnwwfHwwfHx8MA%253D%253D&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608904063217-4e24362cda27%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTB8fEJhbGFuY2luZyUyMElubm92YXRpb24lMjBhbmQlMjBSZXNwb25zaWJpbGl0eXxlbnwwfHwwfHx8MA%253D%253D&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608904063217-4e24362cda27%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTB8fEJhbGFuY2luZyUyMElubm92YXRpb24lMjBhbmQlMjBSZXNwb25zaWJpbGl0eXxlbnwwfHwwfHx8MA%253D%253D&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608904063217-4e24362cda27%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTB8fEJhbGFuY2luZyUyMElubm92YXRpb24lMjBhbmQlMjBSZXNwb25zaWJpbGl0eXxlbnwwfHwwfHx8MA%253D%253D&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608904063217-4e24362cda27%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTB8fEJhbGFuY2luZyUyMElubm92YXRpb24lMjBhbmQlMjBSZXNwb25zaWJpbGl0eXxlbnwwfHwwfHx8MA%253D%253D&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608904063217-4e24362cda27%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTB8fEJhbGFuY2luZyUyMElubm92YXRpb24lMjBhbmQlMjBSZXNwb25zaWJpbGl0eXxlbnwwfHwwfHx8MA%253D%253D&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608904063217-4e24362cda27%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTB8fEJhbGFuY2luZyUyMElubm92YXRpb24lMjBhbmQlMjBSZXNwb25zaWJpbGl0eXxlbnwwfHwwfHx8MA%253D%253D&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1608904063217-4e24362cda27%3Fw%3D800%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTB8fEJhbGFuY2luZyUyMElubm92YXRpb24lMjBhbmQlMjBSZXNwb25zaWJpbGl0eXxlbnwwfHwwfHx8MA%253D%253D&w=3840&q=75 3840w"
+                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+              />
+            </div>
+            <div
+              class="flex flex-col gap-1.5 ml-2.5 flex-1  my-3"
             >
-              Subhead
-            </h3>
+              <h2
+                aria-level="2"
+                class="text-xs font-medium w-[223px] text-dark-100 text-ellipsis  undefined"
+                role="heading"
+              >
+                Balancing Innovation and Responsibility
+              </h2>
+              <h3
+                aria-level="3"
+                class="text-md font-light 
+            h-8 w-[223px] text-dark-75 text-wrap truncate text-ellipsis overflow-hidden
+            text-p
+            undefined"
+                role="heading"
+              >
+                Artificial Intelligence (AI) technologies have the potential to revolutionize industries, streamline processes, and improve lives. However, the rapid advancement and deployment of AI also raise significant ethical considerations regarding fairness, accountability, transparency, and privacy. This article examines the ethical implications of AI, the challenges they present, and strategies for promoting responsible AI development and deployment
+              </h3>
+            </div>
           </div>
-        </div>
-      </div>
-      <div
-        class="mb-5"
-      >
-        <div
-          class="flex cursor-pointer undefined"
-        >
-          <div
-            style="width: 87px; height: 87px; position: relative;"
-          >
-            <img
-              alt="Top post"
-              class="rounded-xl"
-              data-nimg="fill"
-              decoding="async"
-              loading="lazy"
-              sizes="87px"
-              src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
-              srcset="/_next/image?url=%2Fimg.jpg&w=16&q=75 16w, /_next/image?url=%2Fimg.jpg&w=32&q=75 32w, /_next/image?url=%2Fimg.jpg&w=48&q=75 48w, /_next/image?url=%2Fimg.jpg&w=64&q=75 64w, /_next/image?url=%2Fimg.jpg&w=96&q=75 96w, /_next/image?url=%2Fimg.jpg&w=128&q=75 128w, /_next/image?url=%2Fimg.jpg&w=256&q=75 256w, /_next/image?url=%2Fimg.jpg&w=384&q=75 384w, /_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
-              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
-            />
-          </div>
-          <div
-            class="flex flex-col gap-1.5 ml-2.5 flex-1  my-3"
-          >
-            <h2
-              aria-level="2"
-              class="text-xs font-medium text-dark-100 text-ellipsis overflow-hidden undefined"
-              role="heading"
-            >
-              How to Spend the Perfect Day on Croatia’s Most Magical Island
-            </h2>
-            <h3
-              aria-level="3"
-              class="text-md font-light 
-          text-dark-75 text-ellipsis overflow-hidden
-           text-p
-           undefined"
-              role="heading"
-            >
-              Subhead
-            </h3>
-          </div>
-        </div>
-      </div>
-      <div
-        class="mb-5"
-      >
-        <div
-          class="flex cursor-pointer undefined"
-        >
-          <div
-            style="width: 87px; height: 87px; position: relative;"
-          >
-            <img
-              alt="Top post"
-              class="rounded-xl"
-              data-nimg="fill"
-              decoding="async"
-              loading="lazy"
-              sizes="87px"
-              src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
-              srcset="/_next/image?url=%2Fimg.jpg&w=16&q=75 16w, /_next/image?url=%2Fimg.jpg&w=32&q=75 32w, /_next/image?url=%2Fimg.jpg&w=48&q=75 48w, /_next/image?url=%2Fimg.jpg&w=64&q=75 64w, /_next/image?url=%2Fimg.jpg&w=96&q=75 96w, /_next/image?url=%2Fimg.jpg&w=128&q=75 128w, /_next/image?url=%2Fimg.jpg&w=256&q=75 256w, /_next/image?url=%2Fimg.jpg&w=384&q=75 384w, /_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
-              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
-            />
-          </div>
-          <div
-            class="flex flex-col gap-1.5 ml-2.5 flex-1  my-3"
-          >
-            <h2
-              aria-level="2"
-              class="text-xs font-medium text-dark-100 text-ellipsis overflow-hidden undefined"
-              role="heading"
-            >
-              How to Spend the Perfect Day on Croatia’s Most Magical Island
-            </h2>
-            <h3
-              aria-level="3"
-              class="text-md font-light 
-          text-dark-75 text-ellipsis overflow-hidden
-           text-p
-           undefined"
-              role="heading"
-            >
-              Subhead
-            </h3>
-          </div>
-        </div>
-      </div>
-      <div
-        class="mb-5"
-      >
-        <div
-          class="flex cursor-pointer undefined"
-        >
-          <div
-            style="width: 87px; height: 87px; position: relative;"
-          >
-            <img
-              alt="Top post"
-              class="rounded-xl"
-              data-nimg="fill"
-              decoding="async"
-              loading="lazy"
-              sizes="87px"
-              src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
-              srcset="/_next/image?url=%2Fimg.jpg&w=16&q=75 16w, /_next/image?url=%2Fimg.jpg&w=32&q=75 32w, /_next/image?url=%2Fimg.jpg&w=48&q=75 48w, /_next/image?url=%2Fimg.jpg&w=64&q=75 64w, /_next/image?url=%2Fimg.jpg&w=96&q=75 96w, /_next/image?url=%2Fimg.jpg&w=128&q=75 128w, /_next/image?url=%2Fimg.jpg&w=256&q=75 256w, /_next/image?url=%2Fimg.jpg&w=384&q=75 384w, /_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
-              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
-            />
-          </div>
-          <div
-            class="flex flex-col gap-1.5 ml-2.5 flex-1  my-3"
-          >
-            <h2
-              aria-level="2"
-              class="text-xs font-medium text-dark-100 text-ellipsis overflow-hidden undefined"
-              role="heading"
-            >
-              How to Spend the Perfect Day on Croatia’s Most Magical Island
-            </h2>
-            <h3
-              aria-level="3"
-              class="text-md font-light 
-          text-dark-75 text-ellipsis overflow-hidden
-           text-p
-           undefined"
-              role="heading"
-            >
-              Subhead
-            </h3>
-          </div>
-        </div>
-      </div>
-      <div
-        class="false"
-      >
-        <div
-          class="flex cursor-pointer undefined"
-        >
-          <div
-            style="width: 87px; height: 87px; position: relative;"
-          >
-            <img
-              alt="Top post"
-              class="rounded-xl"
-              data-nimg="fill"
-              decoding="async"
-              loading="lazy"
-              sizes="87px"
-              src="/_next/image?url=%2Fimg.jpg&w=3840&q=75"
-              srcset="/_next/image?url=%2Fimg.jpg&w=16&q=75 16w, /_next/image?url=%2Fimg.jpg&w=32&q=75 32w, /_next/image?url=%2Fimg.jpg&w=48&q=75 48w, /_next/image?url=%2Fimg.jpg&w=64&q=75 64w, /_next/image?url=%2Fimg.jpg&w=96&q=75 96w, /_next/image?url=%2Fimg.jpg&w=128&q=75 128w, /_next/image?url=%2Fimg.jpg&w=256&q=75 256w, /_next/image?url=%2Fimg.jpg&w=384&q=75 384w, /_next/image?url=%2Fimg.jpg&w=640&q=75 640w, /_next/image?url=%2Fimg.jpg&w=750&q=75 750w, /_next/image?url=%2Fimg.jpg&w=828&q=75 828w, /_next/image?url=%2Fimg.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimg.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fimg.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fimg.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fimg.jpg&w=3840&q=75 3840w"
-              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
-            />
-          </div>
-          <div
-            class="flex flex-col gap-1.5 ml-2.5 flex-1  my-3"
-          >
-            <h2
-              aria-level="2"
-              class="text-xs font-medium text-dark-100 text-ellipsis overflow-hidden undefined"
-              role="heading"
-            >
-              How to Spend the Perfect Day on Croatia’s Most Magical Island
-            </h2>
-            <h3
-              aria-level="3"
-              class="text-md font-light 
-          text-dark-75 text-ellipsis overflow-hidden
-           text-p
-           undefined"
-              role="heading"
-            >
-              Subhead
-            </h3>
-          </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
-</DocumentFragment>
+</div>
 `;

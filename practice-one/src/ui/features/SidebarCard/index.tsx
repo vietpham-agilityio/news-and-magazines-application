@@ -15,13 +15,12 @@ export const SidebarCard = async () => {
   return (
     <div className="px-[15px] py-5 bg-white-90 rounded-xl">
       <Title title="Top Posts" />
-      <div className="mt-5">
+      <div className="flex flex-col justify-between mt-5 h-155.5">
         {postDataResponse.map((post: PostResponse, index) => {
           const { title, content, imageUrl } = post.attributes;
           return (
             <div
               key={post.id}
-              className={`${index !== postDataResponse.length - 1 && 'mb-5'}`}
             >
               <PaperPost
                 id={post.id}

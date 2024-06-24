@@ -1,25 +1,33 @@
-import { render } from '@testing-library/react';
+import { render, waitFor } from '@testing-library/react';
+
+// service
+import { getPostDataByAttribute } from '@/services';
 
 // component
 import { SidebarCard } from '@/ui/features';
+import { mockPostsByAttributeData } from '@/mocks';
 
-// mock data
-import { listPostItems } from '@/mocks';
+jest.mock('../../../../services', () => ({
+  ...jest.requireActual('../../../../services'),
+  getPostDataByAttribute: jest.fn(),
+}));
 
-let renderSidebarCard: any;
+beforeEach(() => {
+  (getPostDataByAttribute as jest.MockedFunction<typeof Object>).mockResolvedValue(
+    mockPostsByAttributeData
+  );
+});
 
-describe('SidebarCard feature component', () => {
-  beforeEach(() => {
-    renderSidebarCard = render(
-      <SidebarCard listPosts={listPostItems} />
-    );
-  });
+afterEach(() => {
+  jest.clearAllMocks();
+});
 
-  afterEach(() => {
-    renderSidebarCard.unmount();
-  });
+describe('SidebarCard component', () => {
+  test('Should render match with snapshot.', async () => {
+    const { container } = render(await SidebarCard());
 
-  it('SidebarCard should render macth snapshot', () => {
-    expect(renderSidebarCard.asFragment()).toMatchSnapshot();
+    await waitFor(() => {
+      expect(container).toMatchSnapshot();
+    });
   });
 });
