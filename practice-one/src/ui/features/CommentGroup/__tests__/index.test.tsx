@@ -24,7 +24,17 @@ afterEach(() => {
 
 describe('CommentGroup component', () => {
   test('Should render match with snapshot.', async () => {
-    const { container } = render(await CommentGroup({ postId: 1 }));
+    const { container } = render(await CommentGroup({ postId: '1' }));
+
+    await waitFor(() => {
+      expect(container).toMatchSnapshot();
+    });
+  });
+
+  test('Should display no comments message when there are no comments', async () => {
+    (getCommentByPostId as jest.Mock).mockResolvedValue({ data: [] });
+
+    const { container } = render(await CommentGroup({ postId: '1' }));
 
     await waitFor(() => {
       expect(container).toMatchSnapshot();
