@@ -2,20 +2,34 @@ import { render, cleanup } from '@testing-library/react';
 
 // component
 import { CommentForm } from '@/ui/components';
+import { useFormState } from 'react-dom';
 
-let renderCommentForm: any;
+// Mock the useFormState hook
+jest.mock('react-dom', () => {
+  const originalModule = jest.requireActual('react-dom');
 
-describe('CommentForm component', () => {
+  return {
+    ...originalModule,
+    useFormState: jest.fn(),
+  };
+});
+
+describe('CommentForm', () => {
+  const postId = '2';
+  const initialState = {
+    message: '',
+  };
+
   beforeEach(() => {
-    renderCommentForm = render(<CommentForm />);
+    useFormState.mockImplementation(() => [
+      { message: {} },
+      jest.fn(),
+    ]);
   });
 
-  afterEach(() => {
-    renderCommentForm.unmount();
-    cleanup();
-  });
-
+  const renderCommentForm = () => render(<CommentForm postId="2" />);
   it('should render CommentForm macth snapshot', () => {
-    expect(renderCommentForm.asFragment()).toMatchSnapshot();
+    const { asFragment } = renderCommentForm();
+    expect(asFragment()).toMatchSnapshot();
   });
 });
