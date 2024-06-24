@@ -17,6 +17,7 @@ export * from '@/ui/components/SubmitButton';
 export * from '@/ui/components/Card/CardSingle';
 export * from '@/ui/components/Skeleton/Comment';
 export * from '@/ui/components/Skeleton/CardPost';
+export * from '@/ui/components/Skeleton/BadgeGroup';
 export * from '@/ui/components/Skeleton/DetailPost';
 export * from '@/ui/components/Skeleton/CardVertical';
 export * from '@/ui/components/Skeleton/CardCategory';
