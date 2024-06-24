@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthorInformation component Should render match with snapshot. 1`] = `
+<div>
+  <div
+    class="bg-white-90 flex p-[15px] mb-[25px] rounded-xl"
+  >
+    <div
+      style="width: 87px; height: 87px; position: relative;"
+    >
+      <img
+        alt="Avatar author"
+        class="rounded-xl"
+        data-nimg="fill"
+        decoding="async"
+        loading="lazy"
+        sizes="87px"
+        src="/_next/image?url=https%3A%2F%2Fwww.unsplash.com%2Fimage%3Fv&w=3840&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fwww.unsplash.com%2Fimage%3Fv&w=16&q=75 16w, /_next/image?url=https%3A%2F%2Fwww.unsplash.com%2Fimage%3Fv&w=32&q=75 32w, /_next/image?url=https%3A%2F%2Fwww.unsplash.com%2Fimage%3Fv&w=48&q=75 48w, /_next/image?url=https%3A%2F%2Fwww.unsplash.com%2Fimage%3Fv&w=64&q=75 64w, /_next/image?url=https%3A%2F%2Fwww.unsplash.com%2Fimage%3Fv&w=96&q=75 96w, /_next/image?url=https%3A%2F%2Fwww.unsplash.com%2Fimage%3Fv&w=128&q=75 128w, /_next/image?url=https%3A%2F%2Fwww.unsplash.com%2Fimage%3Fv&w=256&q=75 256w, /_next/image?url=https%3A%2F%2Fwww.unsplash.com%2Fimage%3Fv&w=384&q=75 384w, /_next/image?url=https%3A%2F%2Fwww.unsplash.com%2Fimage%3Fv&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fwww.unsplash.com%2Fimage%3Fv&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fwww.unsplash.com%2Fimage%3Fv&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fwww.unsplash.com%2Fimage%3Fv&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fwww.unsplash.com%2Fimage%3Fv&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fwww.unsplash.com%2Fimage%3Fv&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fwww.unsplash.com%2Fimage%3Fv&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fwww.unsplash.com%2Fimage%3Fv&w=3840&q=75 3840w"
+        style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: cover; color: transparent;"
+      />
+    </div>
+    <div
+      class="flex-1 ml-2.5 mt-3.5"
+    >
+      <div
+        class="flex items-center justify-between"
+      >
+        <h2
+          aria-level="2"
+          class="text-sm font-medium text-dark-100"
+          role="heading"
+        >
+          Benzamine
+        </h2>
+        <h2
+          aria-level="2"
+          class="text-xs font-light text-dark-75"
+          role="heading"
+        >
+          27 posts
+        </h2>
+      </div>
+      <div
+        class="mt-2"
+      >
+        <button
+          aria-label="button-element"
+          class="flex items-center rounded-xl bg-gradient-to-bl from-sunSet-0 to-sunSet-100 py-2.5 pr-6 pl-4 undefined hover:opacity-80"
+        >
+          <i
+            class="mr-2 undefined"
+          >
+            <svg
+              fill="none"
+              height="12"
+              width="12"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.688 5.75c0 .492-.41.902-.876.902H6.876v3.938c0 .465-.41.848-.875.848a.858.858 0 0 1-.875-.848V6.652H1.187c-.492 0-.875-.41-.875-.902 0-.465.383-.848.875-.848h3.938V.965c0-.492.383-.902.875-.902.465 0 .875.41.875.902v3.937h3.938c.464-.027.874.383.874.848Z"
+                fill="#FFF"
+              />
+            </svg>
+          </i>
+          <h2
+            aria-level="2"
+            class="text-xsm font-medium text-white-100 leading-5"
+            role="heading"
+          >
+            Follow
+          </h2>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
