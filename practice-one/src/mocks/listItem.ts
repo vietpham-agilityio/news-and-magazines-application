@@ -3,6 +3,7 @@ import {
   AuthorDataResponse,
   CategoriesResponse,
   CommentsResponse,
+  PostCategoriesResponse,
   IBreadCrumbItem,
   IHashtag,
   IMenu,
@@ -11,6 +12,7 @@ import {
   ITagItem,
   PaginationPage,
   PostDataResponse,
+  CategoryResponse,
   PostsResponse,
 } from '@/types';
 
@@ -353,6 +355,28 @@ const mockCommentData: CommentsResponse = {
   ],
 };
 
+const mockPostCategoriesResponse: PostCategoriesResponse = {
+  data: [
+    {
+      id: 1,
+      attributes: {
+        categoryId: '1',
+        postId: '4',
+      },
+    },
+  ],
+};
+
+const mockCategoryResponseData: CategoryResponse = {
+  data: {
+    id: 1,
+    attributes: {
+      name: 'Category',
+      description: 'Category description',
+    },
+  },
+};
+
 export {
   listSlider,
   listTagItems,
@@ -368,4 +392,6 @@ export {
   listPaginationPage,
   mockCommentData,
   mockPostsByAttributeData,
+  mockCategoryResponseData,
+  mockPostCategoriesResponse,
 };
