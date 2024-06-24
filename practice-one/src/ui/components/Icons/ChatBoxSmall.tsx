@@ -8,6 +8,7 @@ interface IProps {
     width={15}
     height={13}
     fill="none"
+    data-testid="chat-box-icon"
   >
     <path
       fill={color}
