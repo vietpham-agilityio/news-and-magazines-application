@@ -10,4 +10,5 @@ export { default as CommentGroup } from '@/ui/features/CommentGroup';
 export { default as CategoryMenu } from '@/ui/features/CategoryMenu';
 export { default as PostsByCategory } from '@/ui/features/PostsByCategory';
 export { default as PostsByAttribute } from '@/ui/features/PostsByAttribute';
+export { default as AuthorInformation } from '@/ui/features/AuthorInformation';
 export { default as CategoryBurgerMenu } from '@/ui/features/CategoryBurgerMenu';
