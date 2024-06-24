@@ -1,5 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`CommentGroup component Should display no comments message when there are no comments 1`] = `
+<div>
+  <div
+    class="flex justify-center py-10"
+  >
+    <h3
+      aria-level="3"
+      class="text-md font-light text-sm text-black-75 leading-5"
+      role="heading"
+    >
+      This article has no comments
+    </h3>
+  </div>
+</div>
+`;
+
 exports[`CommentGroup component Should render match with snapshot. 1`] = `
 <div>
   <div

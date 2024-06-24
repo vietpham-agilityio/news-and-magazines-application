@@ -6,6 +6,9 @@ import Image from 'next/image';
 import { Button } from '@/ui/components';
 import { TagGroup, SidebarCard, AuthorInformation } from '@/ui/features';
 
+// mocks
+import { listTagItems } from '@/mocks';
+
 // icons
 import { ChatBox, PaperPlane, SaveTagSmall } from '@/ui/components/Icons';
 
@@ -41,7 +44,7 @@ export const RightSidebar = ({ postId }: { postId: string }) => (
         <AuthorInformation postId={postId} />
       </div>
       <div className="flex-1 mb-[25px]">
-        <TagGroup />
+        <TagGroup listTags={listTagItems} />
       </div>
     </div>
     <div className="mb-[25px] hidden lg:block">
