@@ -34,7 +34,8 @@ export default async function DetailPage({
 }: {
   params: { id: number };
 }) {
-  const postResponse = await getPostDataById(id.toString());
+  const postId = id.toString()
+  const postResponse = await getPostDataById(postId);
 
   const { title = 'Title is not available' } = postResponse.data.attributes;
 
@@ -62,24 +63,24 @@ export default async function DetailPage({
       <div className="flex flex-col lg:flex-row">
         <Suspense fallback={<DetailPostSkeleton />}>
           <div className="mb-10 sm:mb-12 lg:mb-0">
-            <PostDetail postId={id.toString()} />
+            <PostDetail postId={postId} />
           </div>
         </Suspense>
-        <RightSidebar />
+        <RightSidebar postId={postId} />
       </div>
       <section className="2xl:max-w-[1128px] mt-10 sm:mt-12 lg:mt-17.5">
         {/* comment */}
         <Title title="Comment" />
         <Suspense fallback={<CommentSkeleton />}>
           <div className="mt-7.5">
-            <CommentGroup postId={id.toString()} />
+            <CommentGroup postId={postId} />
           </div>
         </Suspense>
         {/* comment form */}
         <div className="mb-7.5">
           <Title title="Add A Comment" />
         </div>
-        <CommentForm postId={id.toString()} />
+        <CommentForm postId={postId} />
       </section>
 
       <section className="w-full lg:container flex flex-col justify-between bg-white-100 h-459 mt-10 lg:mt-20 mb-25">
