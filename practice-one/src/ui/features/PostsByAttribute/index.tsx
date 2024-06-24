@@ -23,7 +23,7 @@ export default async function PostByAttribute({
 
   return (
     <div
-      className={`${isMarginSmall && 'mx-6'} pb-2 card-group flex gap-6 overflow-x-scroll lg:mx-0`}
+      className={`${isMarginSmall && 'mx-2 md:mx-0.5'} pb-2 card-group flex gap-6 overflow-x-scroll lg:mx-0`}
     >
       {postDataResponse.map((post: PostResponse) => {
         const { title, content, imageUrl, authorId, publicationDate } =

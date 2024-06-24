@@ -80,7 +80,7 @@ export default async function Home() {
 
       {/* popular posts */}
       <section className="bg-white-100 mt-7.5 sm:mt-0 w-full lg:container">
-        <TitleSection title="Popular Posts" />
+        <TitleSection title="Popular Posts" isDisableButton />
         <Suspense fallback={<CardPostSkeleton count={4} />}>
           <PostsByAttribute
             isMarginSmall
@@ -198,7 +198,7 @@ export default async function Home() {
       {/* trendy posts */}
       <ComponentInView>
         <section className="mx-auto bg-white-100 lg:container">
-          <TitleSection title="Trendy Posts" />
+          <TitleSection title="Trendy Posts" isDisableButton />
           <Suspense fallback={<CardPostSkeleton count={4} />}>
             <PostsByAttribute
               isMarginSmall
@@ -285,7 +285,7 @@ export default async function Home() {
       {/* top posts */}
       <ComponentInView>
         <section className="mx-auto flex flex-col justify-between bg-white-100 mb-30 sm:mb-7.5 lg:mb-25 lg:container">
-          <TitleSection title="Top Posts" />
+          <TitleSection title="Top Posts" isDisableButton />
           <Suspense fallback={<CardPostSkeleton count={4} />}>
             <PostsByAttribute
               isMarginSmall
