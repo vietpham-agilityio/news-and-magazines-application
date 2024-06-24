@@ -1,46 +1,26 @@
+import { Suspense } from 'react';
+
 // services
-import {
-  getCategoryById,
-  getCategoryByPostId,
-  getCommentByPostId,
-  getPostDataById,
-} from '@/services';
+import { getPostDataById } from '@/services';
 
 // utils
 import generateRGBDataURL from '@/utils/color';
 
 // componens
 import Image from 'next/image';
-import { Typography, Tag } from '@/ui/components';
+import { BadgeGroup } from '@/ui/features';
+import { BadgeGroupSkeleton, Typography } from '@/ui/components';
 
 // type
 import { FontWeight, Size } from '@/types';
 
-// icons
-import { ChatBox, File, Schedule } from '@/ui/components/Icons';
-import { formatDate } from '@/utils';
-
 export default async function PostDetail({ postId }: { postId: string }) {
   const postResponse = await getPostDataById(postId);
-  const { data: listComments } = await getCommentByPostId(postId);
-
-  const { data: postCategoriesDataResponse } = await getCategoryByPostId({
-    postId,
-  });
-  const categoryId = postCategoriesDataResponse[0]?.attributes.categoryId ?? '1';
-  console.log('categoryId', categoryId);
-  const categoryIdToNumber = parseInt(categoryId, 10);
-  const { data: categoryDataResponse } =
-    await getCategoryById(categoryIdToNumber);
-  const { name: categoryType } = categoryDataResponse.attributes;
-
   const attributes = postResponse?.data?.attributes;
 
   const title = attributes?.title ?? 'Title is not available';
   const content = attributes?.content ?? 'Content is not available';
   const imageUrl = attributes?.imageUrl ?? '';
-  const publicDate = formatDate(attributes?.publicationDate) ?? '';
-  const commentCount = listComments?.length ?? '0';
 
   return (
     <section className="flex flex-1">
@@ -67,29 +47,9 @@ export default async function PostDetail({ postId }: { postId: string }) {
             />
           </div>
         </div>
-        <div className="flex w-full justify-evenly mx-auto mb-12 xl:w-2/4">
-          <Tag icon={<Schedule />} content={publicDate} />
-          <Tag
-            icon={<ChatBox />}
-            content={`Comments: ${commentCount}`}
-            additionalClass="hidden sm:flex"
-          />
-          <Tag
-            icon={<File />}
-            content={`Categories: ${categoryType}`}
-            additionalClass="hidden sm:flex"
-          />
-          <Tag
-            icon={<ChatBox />}
-            content={`${commentCount}`}
-            additionalClass="sm:hidden"
-          />
-          <Tag
-            icon={<File />}
-            content={`${categoryType}`}
-            additionalClass="sm:hidden"
-          />
-        </div>
+        <Suspense fallback={<BadgeGroupSkeleton />}>
+          <BadgeGroup postId={postId} />
+        </Suspense>
         <section>
           {/* content */}
           {content?.split('\n').map((line, index) => (
