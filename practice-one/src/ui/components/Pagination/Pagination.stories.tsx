@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { Pagination } from "@/ui/components";
-import { listPaginationPage } from "@/mocks";
 
 const meta = {
   title: "Components/Pagination",
@@ -17,5 +16,6 @@ type Story = StoryObj<typeof Pagination>;
 export const Default: Story = {
   args: {
     pageCount: 4,
+    categoryId: 2,
   },
 };

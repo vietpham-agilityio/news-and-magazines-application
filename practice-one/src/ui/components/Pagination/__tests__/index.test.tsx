@@ -1,31 +1,33 @@
-import { fireEvent, render, screen, cleanup } from '@testing-library/react';
+import { fireEvent, render } from '@testing-library/react';
 
 // component
 import { Pagination } from '@/ui/components';
+import { useRouter } from 'next/navigation';
 
-// mock data
-import { listPaginationPage } from '@/mocks';
+jest.mock('next/navigation', () => {
+  const originalModule = jest.requireActual('next/navigation');
 
-let renderPagination: any;
+  return {
+    ...originalModule,
+    useRouter: jest.fn(),
+  };
+});
 
-describe('Pagination component', () => {
-  beforeEach(() => {
-    renderPagination = render(
-      <Pagination pageCount={4} />
-    );
+describe('Pagination', () => {
+  const mockUseRouter = useRouter as jest.Mock;
+  mockUseRouter.mockReturnValue({
+    push: jest.fn(),
   });
 
-  afterEach(() => {
-    renderPagination.unmount();
-    cleanup();
-  });
+  const renderPagination = () => render(<Pagination categoryId={2} pageCount={4} />);
 
   it('should render Pagination macth snapshot', () => {
-    expect(renderPagination.asFragment()).toMatchSnapshot();
+    const { asFragment } = renderPagination();
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('Pagination should trigger event when clicked', () => {
-    const { getByTestId, getByText } = renderPagination;
+    const { getByTestId, getByText } = renderPagination();
 
     const secondaryButton = getByTestId('pagination-button-2');
 
@@ -41,7 +43,7 @@ describe('Pagination component', () => {
   });
 
   it('Pagination should render ui when trigger event', () => {
-    const { getByTestId } = renderPagination;
+    const { getByTestId } = renderPagination();
 
     const secondaryButton = getByTestId('pagination-button-2');
 
