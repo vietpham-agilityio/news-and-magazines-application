@@ -29,5 +29,5 @@ export interface PostCategoriesItem {
 
 export interface PostCategoriesResponse {
   data: PostCategoriesItem[];
-  meta: Pagination,
+  meta?: Pagination,
 }
