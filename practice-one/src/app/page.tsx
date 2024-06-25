@@ -16,7 +16,8 @@ import {
   Button,
   TitleSection,
 } from '@/ui/components';
-import { HashtagGroup, PostsByAttribute, PostsGrid } from '@/ui/features';
+import { HashtagGroup } from '@/ui/features';
+import { PostsByAttribute, PostsGrid } from '@/ui/sections';
 
 // HOC
 import ComponentInView from '@/hocs/InView';
@@ -28,7 +29,7 @@ import { ArrowRight, Triangle } from '@/ui/components/Icons';
 import { listHashtagsItem, listSlider } from '@/mocks';
 
 // types
-import { PostVariant, CardType, FontWeight, Size, PostResponse } from '@/types';
+import { PostVariant, CardType, FontWeight, Size, IPostResponse } from '@/types';
 
 // services
 import { getPostDataByAttribute } from '@/services';
@@ -176,7 +177,7 @@ export default async function Home() {
                 </div>
               </div>
             </div>
-            {postDataResponse.map((post: PostResponse) => {
+            {postDataResponse.map((post: IPostResponse) => {
               const { title, content, imageUrl } = post.attributes;
               return (
                 <div key={post.id} className="h-52.5 hidden lg:grid lg:col-span-6">

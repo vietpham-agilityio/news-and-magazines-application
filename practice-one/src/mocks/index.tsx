@@ -1,1 +1,1 @@
-export * from './listItem';
+export * from '@/mocks/listItem';

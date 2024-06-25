@@ -1,4 +1,4 @@
-import { IPagination } from "./pagination";
+import { IPagination } from "@/types/pagination";
 
 export interface ICategoryDataItem {
   name: string;

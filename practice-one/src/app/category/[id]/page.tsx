@@ -14,10 +14,10 @@ import {
   TitleSection,
   Typography,
 } from '@/ui/components';
+import { PostByCategory } from '@/ui/sections';
 
 // types
 import { IBreadCrumbItem, Size, FontWeight } from '@/types';
-import PostByCategory from '@/ui/features/PostsByCategory';
 import { Suspense } from 'react';
 
 export default async function CategoryPage({

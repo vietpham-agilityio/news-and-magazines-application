@@ -10,12 +10,12 @@ import {
   CardPostSkeleton,
   CommentSkeleton,
 } from '@/ui/components';
+import { CommentGroup } from '@/ui/features';
 import {
   PostDetail,
-  PostsByAttribute,
   RightSidebar,
-  CommentGroup,
-} from '@/ui/features';
+  PostsByAttribute,
+} from '@/ui/sections';
 
 // services
 import { getPostDataById } from '@/services';
@@ -34,7 +34,7 @@ export default async function DetailPage({
 }: {
   params: { id: number };
 }) {
-  const postId = id.toString()
+  const postId = id.toString();
   const postResponse = await getPostDataById(postId);
 
   const { title = 'Title is not available' } = postResponse.data.attributes;
