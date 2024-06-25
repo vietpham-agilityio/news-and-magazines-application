@@ -1,19 +1,19 @@
 import ImageStore from '@/constants/images';
 import {
-  AuthorDataResponse,
-  CategoriesResponse,
-  CommentsResponse,
-  PostCategoriesResponse,
+  IAuthorDataResponse,
+  ICategoriesResponse,
+  ICommentsResponse,
+  IPostCategoriesResponse,
   IBreadCrumbItem,
   IHashtag,
   IMenu,
   IPostItem,
   ISlideItem,
   ITagItem,
-  PaginationPage,
-  PostDataResponse,
-  CategoryResponse,
-  PostsResponse,
+  IPaginationPage,
+  IPostDataResponse,
+  ICategoryResponse,
+  IPostsResponse,
 } from '@/types';
 
 const listTypePosts: string[] = ['New', 'Trendy', 'Popular', 'Top'];
@@ -239,7 +239,7 @@ const listBreadCrumb: IBreadCrumbItem[] = [
   },
 ];
 
-const mockCategoryData: CategoriesResponse = {
+const mockCategoryData: ICategoriesResponse = {
   data: [
     {
       id: 1,
@@ -251,7 +251,7 @@ const mockCategoryData: CategoriesResponse = {
   ],
 };
 
-const mockPostDetailData: PostDataResponse = {
+const mockPostDetailData: IPostDataResponse = {
   data: {
     id: 1,
     attributes: {
@@ -272,7 +272,7 @@ const mockPostDetailData: PostDataResponse = {
   },
 };
 
-const mockPostsByAttributeData: PostsResponse = {
+const mockPostsByAttributeData: IPostsResponse = {
   data: [
     {
       id: 12,
@@ -295,7 +295,7 @@ const mockPostsByAttributeData: PostsResponse = {
   ],
 };
 
-const mockAuthorData: AuthorDataResponse = {
+const mockAuthorData: IAuthorDataResponse = {
   data: {
     id: 2,
     attributes: {
@@ -309,7 +309,7 @@ const mockAuthorData: AuthorDataResponse = {
   },
 };
 
-const listPaginationPage: PaginationPage[] = [
+const listPaginationPage: IPaginationPage[] = [
   {
     id: 1,
     pageNumber: 1,
@@ -324,7 +324,7 @@ const listPaginationPage: PaginationPage[] = [
   },
 ];
 
-const mockCommentData: CommentsResponse = {
+const mockCommentData: ICommentsResponse = {
   data: [
     {
       id: 1,
@@ -355,7 +355,7 @@ const mockCommentData: CommentsResponse = {
   ],
 };
 
-const mockPostCategoriesResponse: PostCategoriesResponse = {
+const mockPostCategoriesResponse: IPostCategoriesResponse = {
   data: [
     {
       id: 1,
@@ -375,7 +375,7 @@ const mockPostCategoriesResponse: PostCategoriesResponse = {
   },
 };
 
-const mockCategoryResponseData: CategoryResponse = {
+const mockCategoryResponseData: ICategoryResponse = {
   data: {
     id: 1,
     attributes: {

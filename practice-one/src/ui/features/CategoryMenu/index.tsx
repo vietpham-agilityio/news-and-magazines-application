@@ -1,6 +1,6 @@
 // services
 import { getCategoryData } from '@/services';
-import { CategoryItem, IMenu } from '@/types';
+import { ICategoryItem, IMenu } from '@/types';
 
 // componens
 import { Menu } from '@/ui/components';
@@ -10,7 +10,7 @@ export default async function CategoryMenu() {
 
   const listCategories: IMenu[] = [];
 
-  categoryDataResponse.map((category: CategoryItem) => {
+  categoryDataResponse.map((category: ICategoryItem) => {
     const { id } = category;
     const { name } = category.attributes;
 

@@ -1,15 +1,15 @@
-export interface PaginationPage {
+export interface IPaginationPage {
   id: number;
   pageNumber: number;
 }
 
-export interface PaginationItem {
+export interface IPaginationItem {
   page: number;
   pageSize: number;
   pageCount: number;
   total: number;
 }
 
-export interface Pagination {
-  pagination: PaginationItem;
+export interface IPagination {
+  pagination: IPaginationItem;
 }

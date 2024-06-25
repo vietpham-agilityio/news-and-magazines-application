@@ -5,7 +5,7 @@ import { getPostDataByAttribute } from '@/services';
 import CardPost from '@/ui/components/Card/CardPost';
 
 // type
-import { PostVariant, PostResponse } from '@/types';
+import { PostVariant, IPostResponse } from '@/types';
 import { CardType } from '@/types';
 
 export default async function PostGrid({
@@ -20,7 +20,7 @@ export default async function PostGrid({
 
   return (
     <div className="grid sm:h-[1403px] 2xl:h-196 grid-cols-12 grid-rows-3 gap-6 m-auto py-2 overflow-hidden">
-      {postDataResponse.map((post: PostResponse) => {
+      {postDataResponse.map((post: IPostResponse) => {
         const { title, content, imageUrl, authorId, publicationDate } =
           post.attributes;
         return (

@@ -5,7 +5,7 @@ import { getPostDataByAttribute } from '@/services';
 import CardPost from '@/ui/components/Card/CardPost';
 
 // type
-import { PostVariant, PostResponse } from '@/types';
+import { PostVariant, IPostResponse } from '@/types';
 import { CardType } from '@/types';
 
 export default async function PostByAttribute({
@@ -25,7 +25,7 @@ export default async function PostByAttribute({
     <div
       className={`${isMarginSmall && 'mx-2 md:mx-0.5'} pb-2 card-group flex gap-6 overflow-x-scroll lg:mx-0`}
     >
-      {postDataResponse.map((post: PostResponse) => {
+      {postDataResponse.map((post: IPostResponse) => {
         const { title, content, imageUrl, authorId, publicationDate } =
           post.attributes;
         return (

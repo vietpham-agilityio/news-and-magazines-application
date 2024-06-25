@@ -2,7 +2,7 @@
 import { Title, PaperPost } from '@/ui/components';
 
 // types
-import { PostResponse, PostVariant } from '@/types';
+import { IPostResponse, PostVariant } from '@/types';
 
 // services
 import { getPostDataByAttribute } from '@/services';
@@ -16,7 +16,7 @@ export const SidebarCard = async () => {
     <div className="px-[15px] py-5 bg-white-90 rounded-xl">
       <Title title="Top Posts" />
       <div className="flex flex-col justify-between mt-5 h-155.5">
-        {postDataResponse.map((post: PostResponse, index) => {
+        {postDataResponse.map((post: IPostResponse) => {
           const { title, content, imageUrl } = post.attributes;
           return (
             <div

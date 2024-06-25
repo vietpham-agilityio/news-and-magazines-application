@@ -1,4 +1,4 @@
-export interface CommentItem {
+export interface ICommentItem {
   name: string;
   email: string;
   content: string;
@@ -8,11 +8,11 @@ export interface CommentItem {
   createdAt: string;
 };
 
-export interface CommentResponse {
+export interface ICommentResponse {
   id: number;
-  attributes: CommentItem;
+  attributes: ICommentItem;
 };
 
-export interface CommentsResponse {
-  data: CommentResponse[];
+export interface ICommentsResponse {
+  data: ICommentResponse[];
 };
