@@ -1,10 +1,10 @@
-import { render, waitFor, screen } from '@testing-library/react';
+import { render, waitFor } from '@testing-library/react';
 
 // service
-import { getCategoryData } from '@/services';
+import { getCategoryData, getLatestComment } from '@/services';
 
 // mocks
-import { mockCategoryData } from '@/mocks';
+import { mockCategoryData, mockCommentData } from '@/mocks';
 
 // component
 import { Footer } from '@/ui/layouts';
@@ -12,11 +12,15 @@ import { Footer } from '@/ui/layouts';
 jest.mock('../../../../services', () => ({
   ...jest.requireActual('../../../../services'),
   getCategoryData: jest.fn(),
+  getLatestComment: jest.fn(),
 }));
 
 beforeEach(() => {
   (getCategoryData as jest.MockedFunction<typeof Object>).mockResolvedValue(
     mockCategoryData
+  );
+  (getLatestComment as jest.MockedFunction<typeof Object>).mockResolvedValue(
+    mockCommentData
   );
 });
 

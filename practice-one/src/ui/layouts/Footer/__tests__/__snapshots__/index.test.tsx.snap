@@ -262,14 +262,14 @@ exports[`Footer component Should render match with snapshot. 1`] = `
                 class="text-sm font-medium text-dark-100"
                 role="heading"
               >
-                Ellsmartx
+                Emily Johnson
               </h2>
               <h3
                 aria-level="3"
                 class="text-md font-light text-p text-dark-75"
                 role="heading"
               >
-                How Nice Does This Look 😍 I Feel It Should Be Delicious, Thank You
+                This is my first comment on this website
               </h3>
             </div>
           </div>
@@ -284,56 +284,14 @@ exports[`Footer component Should render match with snapshot. 1`] = `
                 class="text-sm font-medium text-dark-100"
                 role="heading"
               >
-                Cassia
+                Emily Johnson
               </h2>
               <h3
                 aria-level="3"
                 class="text-md font-light text-p text-dark-75"
                 role="heading"
               >
-                Take A Rest, I'll Be Cheer Up You Again In 2 Next Game Go Go Go
-              </h3>
-            </div>
-          </div>
-          <div
-            class="mb-2"
-          >
-            <div
-              class="bg-white-90 p-4 rounded-xl"
-            >
-              <h2
-                aria-level="2"
-                class="text-sm font-medium text-dark-100"
-                role="heading"
-              >
-                Amanda
-              </h2>
-              <h3
-                aria-level="3"
-                class="text-md font-light text-p text-dark-75"
-                role="heading"
-              >
-                You Were Stunning Today, Jan! 💗 Great Match 👍🏽👍🏽
-              </h3>
-            </div>
-          </div>
-          <div>
-            <div
-              class="bg-white-90 p-4 rounded-xl"
-            >
-              <h2
-                aria-level="2"
-                class="text-sm font-medium text-dark-100"
-                role="heading"
-              >
-                Denis Simonassi
-              </h2>
-              <h3
-                aria-level="3"
-                class="text-md font-light text-p text-dark-75"
-                role="heading"
-              >
-                It Was A Great Match Today Janzi! You Did Great😉🇩🇪
+                This is my second comment on this website
               </h3>
             </div>
           </div>
