@@ -1,18 +1,20 @@
 // components
 import { Comment, Typography } from '@/ui/components';
 
-// types
+// services
 import { getCommentByPostId } from '@/services';
+
+// types
+import { FontWeight } from '@/types';
 
 // utils
 import { formatDate } from '@/utils';
-import { FontWeight, Size } from '@/types';
 
 interface IProps {
   postId: string;
 }
 
-export default async function CommentGroup({ postId }: IProps) {
+const CommentGroup = async ({ postId }: IProps) => {
   const { data: listComments } = await getCommentByPostId(postId);
 
   if (listComments.length === 0) {
@@ -44,4 +46,6 @@ export default async function CommentGroup({ postId }: IProps) {
       })}
     </div>
   );
-}
+};
+
+export default CommentGroup;

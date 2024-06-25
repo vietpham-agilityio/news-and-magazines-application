@@ -1,16 +1,15 @@
 // service
-import { getCategoryById, getPostCategoryById } from '@/services';
+import { getPostCategoryById } from '@/services';
 
 // type
-import { CardCategory, Pagination, TitleSection } from '@/ui/components';
+import { CardCategory, Pagination } from '@/ui/components';
 
-export default async function PostByCategory({
-  categoryId,
-  pageIndex,
-}: {
+interface IProps {
   categoryId: number;
   pageIndex: number;
-}) {
+}
+
+const PostByCategory = async ({ categoryId, pageIndex }: IProps) => {
   const { data: postCategoriesDataResponse, meta } = await getPostCategoryById(
     categoryId,
     12,
@@ -38,4 +37,6 @@ export default async function PostByCategory({
       <Pagination pageCount={pageCount} categoryId={categoryId} />
     </>
   );
-}
+};
+
+export default PostByCategory;

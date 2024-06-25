@@ -10,16 +10,7 @@ import { FontWeight, Size } from '@/types';
 // services
 import { getAuthorById } from '@/services';
 
-export default async function CardPost({
-  id,
-  title,
-  content,
-  imageSrc,
-  alt,
-  authorId,
-  information,
-  isVertical,
-}: {
+interface IProps {
   id: string;
   title: string;
   content: string;
@@ -28,7 +19,18 @@ export default async function CardPost({
   authorId: string;
   information: string;
   isVertical?: boolean;
-}) {
+}
+
+const CardPost = async ({
+  id,
+  title,
+  content,
+  imageSrc,
+  alt,
+  authorId,
+  information,
+  isVertical,
+}: IProps) => {
   const { data: author } = await getAuthorById(authorId);
 
   return (
@@ -105,8 +107,9 @@ export default async function CardPost({
             </div>
           </div>
         </div>
-        {/* card image */}
       </div>
     </Link>
   );
-}
+};
+
+export default CardPost;

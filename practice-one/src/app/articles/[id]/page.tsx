@@ -11,11 +11,7 @@ import {
   CommentSkeleton,
 } from '@/ui/components';
 import { CommentGroup } from '@/ui/features';
-import {
-  PostDetail,
-  RightSidebar,
-  PostsByAttribute,
-} from '@/ui/sections';
+import { PostDetail, RightSidebar, PostsByAttribute } from '@/ui/sections';
 
 // services
 import { getPostDataById } from '@/services';
@@ -29,11 +25,11 @@ export const metadata: Metadata = {
     'Read in-depth coverage on our latest article. Stay informed with News & Magazine.',
 };
 
-export default async function DetailPage({
-  params: { id },
-}: {
+interface IProps {
   params: { id: number };
-}) {
+}
+
+const DetailPage = async ({ params: { id } }: IProps) => {
   const postId = id.toString();
   const postResponse = await getPostDataById(postId);
 
@@ -94,4 +90,6 @@ export default async function DetailPage({
       </section>
     </main>
   );
-}
+};
+
+export default DetailPage;

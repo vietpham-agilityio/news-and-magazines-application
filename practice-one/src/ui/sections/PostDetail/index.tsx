@@ -14,7 +14,11 @@ import { BadgeGroupSkeleton, Typography } from '@/ui/components';
 // type
 import { FontWeight, Size } from '@/types';
 
-export default async function PostDetail({ postId }: { postId: string }) {
+interface IProps {
+  postId: string;
+}
+
+const PostDetail = async ({ postId }: IProps) => {
   const postResponse = await getPostDataById(postId);
   const attributes = postResponse?.data?.attributes;
 
@@ -58,7 +62,7 @@ export default async function PostDetail({ postId }: { postId: string }) {
               tag="h2"
               textSize={Size.MD}
               weight={FontWeight.Normal}
-              additionalClasses="text-dark-100"
+              additionalClasses="text-dark-100 mb-4"
             >
               {line}
             </Typography>
@@ -67,4 +71,6 @@ export default async function PostDetail({ postId }: { postId: string }) {
       </article>
     </section>
   );
-}
+};
+
+export default PostDetail;

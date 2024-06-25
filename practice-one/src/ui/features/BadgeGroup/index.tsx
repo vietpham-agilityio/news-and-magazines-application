@@ -19,13 +19,14 @@ interface IProps {
   postId: string;
 }
 
-export default async function BadgeGroup({ postId }: IProps) {
+const BadgeGroup = async ({ postId }: IProps) => {
   const postResponse = await getPostDataById(postId);
   const { data: listComments } = await getCommentByPostId(postId);
 
   const { data: postCategoriesDataResponse } = await getCategoryByPostId({
     postId,
   });
+
   const categoryId =
     postCategoriesDataResponse[0]?.attributes.categoryId ?? '1';
   const categoryIdToNumber = parseInt(categoryId, 10);
@@ -62,4 +63,6 @@ export default async function BadgeGroup({ postId }: IProps) {
       />
     </div>
   );
-}
+};
+
+export default BadgeGroup;

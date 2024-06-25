@@ -1,4 +1,4 @@
-export default function NotFound() {
+const NotFound = () => {
   return (
     <div className="container mx-auto flex flex-col items-center justify-center mt-[177px] sm:mt-14 lg:mt-52 mb-7.5">
       <h1 className="text-secondary-100 font-medium text-[162px] sm:text-[192px]">
@@ -10,4 +10,6 @@ export default function NotFound() {
       </p>
     </div>
   );
-}
+};
+
+export default NotFound;

@@ -1,11 +1,13 @@
 // services
 import { getCategoryData } from '@/services';
+
+// types
 import { ICategoryItem, IMenu } from '@/types';
 
 // componens
 import { BurgerMenu } from '@/ui/components';
 
-export default async function CategoryBurgerMenu() {
+const CategoryBurgerMenu = async () => {
   const { data: categoryDataResponse = [] } = await getCategoryData();
 
   const listCategories: IMenu[] = [];
@@ -21,4 +23,6 @@ export default async function CategoryBurgerMenu() {
   });
 
   return <BurgerMenu listCategories={listCategories} />;
-}
+};
+
+export default CategoryBurgerMenu;
