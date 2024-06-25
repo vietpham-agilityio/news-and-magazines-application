@@ -63,21 +63,11 @@ const Home = async () => {
       <section className="w-full hidden items-center gap-6 bg-white-100 h-113 mt-9 mb-12.5 sm:flex lg:my-15 lg:container">
         {/* first card */}
         <div className="hidden xl:block h-full">
-          <CardSingle
-            id="33"
-            title="Go Home After Long Time"
-            content="Download torrents from verified or trusted uploaders. If you're a BitTorrent user looking for safety tips, use this method. Both of the big-name BitTorrent indexers (The Pirate Bay and KickAssTorrents) use symbols to highlight torrents uploaded by verified users. "
-            imageSrc="https://images.unsplash.com/photo-1716223996696-ad6252a7fe7c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D"
-          />
+          <CardSingle id="33" />
         </div>
         {/* second card */}
         <div className="hidden xl:block h-full">
-          <CardSingle
-            id="34"
-            title="Street Way To The Conner"
-            content="Download torrents from verified or trusted uploaders. If you're a BitTorrent user looking for safety tips, use this method. Both of the big-name BitTorrent indexers (The Pirate Bay and KickAssTorrents) use symbols to highlight torrents uploaded by verified users. "
-            imageSrc="https://images.unsplash.com/photo-1716223996699-9738f0f12805?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D"
-          />
+          <CardSingle id="34" />
         </div>
         {/* slide card */}
         <div className="h-full mx-6 flex flex-1 items-center justify-center lg:mx-0">

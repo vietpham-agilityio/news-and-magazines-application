@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CardSingle component should render CardSingle macth snapshot 1`] = `
-<DocumentFragment>
+exports[`CardSingle component Should render match with snapshot. 1`] = `
+<div>
   <a
-    href="articles/1"
+    href="articles/22"
   >
     <div
       class="h-113 w-75 relative rounded-xl flex items-end justify-end bg-transparent p-2.5 hover:cursor-pointer xl:w-90"
     >
       <img
-        alt="car image"
+        alt="Go Home After Long Time"
         class="rounded-xl absolute"
         data-nimg="fill"
         decoding="async"
@@ -34,10 +34,10 @@ exports[`CardSingle component should render CardSingle macth snapshot 1`] = `
           class="text-xsm font-light text-dark-100 h-10 w-82 leading-5 text-ellipsis overflow-hidden "
           role="heading"
         >
-          Download torrents from verified or trusted uploaders
+          Download torrents from verified or trusted uploaders. If you're a BitTorrent user looking for safety tips, use this method. Both of the big-name BitTorrent indexers (The Pirate Bay and KickAssTorrents) use symbols to highlight torrents uploaded by verified users.
         </h3>
       </div>
     </div>
   </a>
-</DocumentFragment>
+</div>
 `;
