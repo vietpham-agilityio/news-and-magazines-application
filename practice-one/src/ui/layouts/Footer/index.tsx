@@ -5,7 +5,7 @@ import { Button, Title, Comment, Typography } from '@/ui/components';
 
 // icons
 import { Instagram, MailBox, Twitter } from '@/ui/components/Icons';
-import { CategoryItem, FontWeight } from '@/types';
+import { ICategoryItem, FontWeight } from '@/types';
 import { getCategoryData } from '@/services';
 
 export const Footer = async () => {
@@ -60,7 +60,7 @@ export const Footer = async () => {
                 <Title title="Categories" />
               </div>
               <ul>
-                {categoryDataResponse?.map((category: CategoryItem) => {
+                {categoryDataResponse?.map((category: ICategoryItem) => {
                   const { id } = category;
                   const { name } = category.attributes;
                   return (

@@ -7,7 +7,7 @@ export enum PostVariant {
   NEW = "publicationDate",
 }
 
-export interface PostDataItem {
+export interface IPostDataItem {
   title: string;
   content: string;
   publicationDate: string;
@@ -21,9 +21,9 @@ export interface PostDataItem {
   publishedAt: string;
 }
 
-export interface PostResponse {
+export interface IPostResponse {
   id: number;
-  attributes: PostDataItem;
+  attributes: IPostDataItem;
 }
 
 export interface IPostItem {
@@ -34,10 +34,10 @@ export interface IPostItem {
   alt: string;
 }
 
-export interface PostsResponse {
-  data: PostResponse[];
+export interface IPostsResponse {
+  data: IPostResponse[];
 }
 
-export interface PostDataResponse {
-  data: PostResponse;
+export interface IPostDataResponse {
+  data: IPostResponse;
 }

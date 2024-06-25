@@ -1,7 +1,7 @@
 import {
-  CategoriesResponse,
-  CategoryResponse,
-  PostCategoriesResponse,
+  ICategoriesResponse,
+  ICategoryResponse,
+  IPostCategoriesResponse,
 } from '@/types';
 import {
   MESSAGE,
@@ -16,7 +16,7 @@ async function getCategoryData({
 }: {
   limit?: number;
   page?: number;
-} = {}): Promise<CategoriesResponse> {
+} = {}): Promise<ICategoriesResponse> {
   const query = `pagination[page]=${page}&pagination[pageSize]=${limit}`;
 
   const res = await fetch(`${SERVER_BASE_URL}/api/${END_POINT.CATEGORIES}?${query}`, {
@@ -32,7 +32,7 @@ async function getCategoryData({
   return data;
 }
 
-async function getCategoryById(id: number): Promise<CategoryResponse> {
+async function getCategoryById(id: number): Promise<ICategoryResponse> {
   const res = await fetch(
     `${SERVER_BASE_URL}/api/${END_POINT.CATEGORIES}/${id}`,
     {
@@ -53,7 +53,7 @@ async function getPostCategoryById(
   categoryId: number,
   limit: number = 12,
   page: number = 1
-): Promise<PostCategoriesResponse> {
+): Promise<IPostCategoriesResponse> {
   const query = `filters[${ATTRIBUTE_TYPE.CATEGORY_ID}][$eq]=${categoryId}&pagination[page]=${page}&pagination[pageSize]=${limit}`;
 
   const res = await fetch(
@@ -80,7 +80,7 @@ async function getCategoryByPostId({
   postId: string,
   limit?: number;
   page?: number;
-}): Promise<PostCategoriesResponse> {
+}): Promise<IPostCategoriesResponse> {
   const query = `filters[${ATTRIBUTE_TYPE.POST_ID}][$eq]=${postId}&pagination[page]=${page}&pagination[pageSize]=${limit}`;
 
   const res = await fetch(

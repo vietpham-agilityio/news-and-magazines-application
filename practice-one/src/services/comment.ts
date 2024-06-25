@@ -12,7 +12,7 @@ import {
 } from '@/constants';
 
 // types
-import { CommentsResponse } from '@/types';
+import { ICommentsResponse } from '@/types';
 
 const schemaForm = z.object({
   postId: z.string().min(1),
@@ -24,7 +24,7 @@ const schemaForm = z.object({
   website: z.string().url('Please enter URL. example: http://www.example.com'),
 });
 
-async function getCommentByPostId(postId: string): Promise<CommentsResponse> {
+async function getCommentByPostId(postId: string): Promise<ICommentsResponse> {
   const query = `filters[${ATTRIBUTE_TYPE.POST_ID}][$eq]=${postId}`;
 
   const res = await fetch(

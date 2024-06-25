@@ -1,4 +1,4 @@
-export interface AuthorDataItem {
+export interface IAuthorDataItem {
   name: string;
   email: string;
   avatarUrl: string;
@@ -7,11 +7,11 @@ export interface AuthorDataItem {
   publishedAt: string;
 }
 
-export interface AuthorResponse {
+export interface IAuthorResponse {
   id: number;
-  attributes: AuthorDataItem;
+  attributes: IAuthorDataItem;
 }
 
-export interface AuthorDataResponse {
-  data: AuthorResponse;
+export interface IAuthorDataResponse {
+  data: IAuthorResponse;
 }

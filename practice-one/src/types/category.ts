@@ -1,33 +1,33 @@
-import { Pagination } from "./pagination";
+import { IPagination } from "./pagination";
 
-export interface CategoryDataItem {
+export interface ICategoryDataItem {
   name: string;
   description?: string;
 }
 
-export interface CategoriesResponse {
-  data: CategoryItem[];
+export interface ICategoriesResponse {
+  data: ICategoryItem[];
 }
 
-export interface CategoryResponse {
-  data: CategoryItem;
+export interface ICategoryResponse {
+  data: ICategoryItem;
 }
 
-export interface CategoryItem {
+export interface ICategoryItem {
   id: number;
-  attributes: CategoryDataItem;
+  attributes: ICategoryDataItem;
 }
 
-export interface PostCategoriesDataItem {
+export interface IPostCategoriesDataItem {
   postId: string,
   categoryId: string,
 }
-export interface PostCategoriesItem {
+export interface IPostCategoriesItem {
   id: number;
-  attributes: PostCategoriesDataItem
+  attributes: IPostCategoriesDataItem
 }
 
-export interface PostCategoriesResponse {
-  data: PostCategoriesItem[];
-  meta: Pagination,
+export interface IPostCategoriesResponse {
+  data: IPostCategoriesItem[];
+  meta: IPagination,
 }
