@@ -6,11 +6,17 @@ import { Button, Title, Comment, Typography } from '@/ui/components';
 // icons
 import { Instagram, MailBox, Twitter } from '@/ui/components/Icons';
 import { ICategoryItem, FontWeight } from '@/types';
-import { getCategoryData } from '@/services';
+
+// services
+import { getCategoryData, getLatestComment } from '@/services';
 
 export const Footer = async () => {
   const { data: categoryDataResponse } = await getCategoryData({
     limit: 6,
+  });
+
+  const { data: commentDataResponse } = await getLatestComment({
+    limit: 4,
   });
 
   return (
@@ -119,30 +125,15 @@ export const Footer = async () => {
             <Title title="New Comments" />
           </div>
           <div className="comment-wrapper">
-            <div className="mb-2">
-              <Comment
-                userName="Ellsmartx"
-                content="How Nice Does This Look 😍 I Feel It Should Be Delicious, Thank You"
-              />
-            </div>
-            <div className="mb-2">
-              <Comment
-                userName="Cassia"
-                content="Take A Rest, I'll Be Cheer Up You Again In 2 Next Game Go Go Go"
-              />
-            </div>
-            <div className="mb-2">
-              <Comment
-                userName="Amanda"
-                content="You Were Stunning Today, Jan! 💗 Great Match 👍🏽👍🏽"
-              />
-            </div>
-            <div>
-              <Comment
-                userName="Denis Simonassi"
-                content="It Was A Great Match Today Janzi! You Did Great😉🇩🇪"
-              />
-            </div>
+            {commentDataResponse.map(comment => {
+              const { name, content } = comment.attributes;
+
+              return (
+                <div className="mb-2">
+                  <Comment userName={name} content={content} />
+                </div>
+              );
+            })}
           </div>
         </section>
         {/* Social grid */}

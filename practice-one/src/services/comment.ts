@@ -14,6 +14,10 @@ import {
 // types
 import { ICommentsResponse } from '@/types';
 
+interface ICommentParam {
+  limit?: number;
+}
+
 const schemaForm = z.object({
   postId: z.string().min(1),
   name: z.string().min(1, 'Please enter your name'),
@@ -33,6 +37,27 @@ const getCommentByPostId = async (
     `${SERVER_BASE_URL}/api/${END_POINT.COMMENTS}?${query}`,
     {
       next: { tags: ['collect-comments'] },
+    }
+  );
+
+  if (!res.ok) {
+    throw new Error(MESSAGE.ERROR);
+  }
+
+  const data = res.json();
+
+  return data;
+};
+
+const getLatestComment = async ({
+  limit = 10,
+}: ICommentParam): Promise<ICommentsResponse> => {
+  const query = `pagination[page]=1&pagination[pageSize]=${limit}&sort[0]=createdAt:desc`;
+
+  const res = await fetch(
+    `${SERVER_BASE_URL}/api/${END_POINT.COMMENTS}?${query}`,
+    {
+      next: { tags: ['latest-comments'] },
     }
   );
 
@@ -83,8 +108,9 @@ const createComment = async (prevState: any, formData: FormData) => {
   }
 
   revalidateTag('collect-comments');
+  revalidateTag('latest-comments')
 
   return res.json();
 };
 
-export { getCommentByPostId, createComment };
+export { getCommentByPostId, createComment, getLatestComment };
