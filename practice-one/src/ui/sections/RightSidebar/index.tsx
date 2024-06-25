@@ -12,7 +12,7 @@ import { listTagItems } from '@/mocks';
 // icons
 import { ChatBox, PaperPlane, SaveTagSmall } from '@/ui/components/Icons';
 
-export const RightSidebar = ({ postId }: { postId: string }) => (
+const RightSidebar = ({ postId }: { postId: string }) => (
   <aside className="bg-white-100 lg:ml-[23px] lg:w-90">
     {/* tag and author */}
     <div className="flex flex-col-reverse sm:gap-5 sm:flex-row lg:flex-col lg:gap-0">
@@ -70,3 +70,5 @@ export const RightSidebar = ({ postId }: { postId: string }) => (
     </div>
   </aside>
 );
+
+export default RightSidebar;
