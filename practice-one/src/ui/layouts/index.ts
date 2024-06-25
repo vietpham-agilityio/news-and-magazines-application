@@ -1,3 +1,3 @@
-export * from './Header';
-export * from './Footer';
-export * from './FooterBar';
+export * from '@/ui/layouts/Header';
+export * from '@/ui/layouts/Footer';
+export * from '@/ui/layouts/FooterBar';

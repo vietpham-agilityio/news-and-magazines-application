@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { RightSidebar } from '@/ui/features';
+import { RightSidebar } from '@/ui/sections';
 
 const meta = {
   title: 'Components/Feature/RightSidebar',
