@@ -3,7 +3,7 @@
 exports[`CommentSkeleton component should render CommentSkeleton macth snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="mb-4"
+    class="my-4"
   >
     <div
       class="animate-pulse"

@@ -39,6 +39,7 @@ const PostDetail = async ({ postId }: IProps) => {
           <div className="relative mx-auto w-89.5 h-49.5 sm:w-full sm:h-84 lg:h-95 xl:w-full xl:h-134.5 2xl:h-149.5 2xl:w-268">
             <Image
               fill
+              priority
               objectFit="cover"
               className="rounded-xl"
               src={imageUrl}
