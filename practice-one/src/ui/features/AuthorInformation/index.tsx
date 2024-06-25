@@ -1,15 +1,17 @@
-// components
+// services
 import { getAuthorById, getPostDataById } from '@/services';
+
+// components
 import { Avatar, Button, Information } from '@/ui/components';
 
 // icons
 import { Plus } from '@/ui/components/Icons';
 
-export default async function AuthorInformation({
-  postId,
-}: {
+interface IProps {
   postId: string;
-}) {
+}
+
+const AuthorInformation = async ({ postId }: IProps) => {
   const postResponse = await getPostDataById(postId);
   const { authorId } = postResponse.data.attributes;
 
@@ -18,12 +20,7 @@ export default async function AuthorInformation({
 
   return (
     <div className="bg-white-90 flex p-[15px] mb-[25px] rounded-xl">
-      <Avatar
-        width={87}
-        height={87}
-        url={avatarUrl}
-        alt="Avatar author"
-      />
+      <Avatar width={87} height={87} url={avatarUrl} alt="Avatar author" />
       <div className="flex-1 ml-2.5 mt-3.5">
         <Information name={name} information="27 posts" />
         <div className="mt-2">
@@ -37,4 +34,6 @@ export default async function AuthorInformation({
       </div>
     </div>
   );
-}
+};
+
+export default AuthorInformation;

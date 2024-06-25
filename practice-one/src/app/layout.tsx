@@ -1,26 +1,26 @@
-import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Roboto } from 'next/font/google';
+import './globals.css';
 
 // Layout components
-import { Footer, Header, FooterBar } from "@/ui/layouts";
+import { Footer, Header, FooterBar } from '@/ui/layouts';
 
 const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '700'],
 });
 
 export const metadata: Metadata = {
-  title: "News & Magazine Application",
+  title: 'News & Magazine Application',
   description:
-    "Stay updated with the latest news, in-depth articles, and engaging features from around the world.",
+    'Stay updated with the latest news, in-depth articles, and engaging features from around the world.',
 };
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) => {
   return (
     <html lang="en">
       <body className={roboto.className}>
@@ -33,4 +33,6 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

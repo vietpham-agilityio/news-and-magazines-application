@@ -29,7 +29,13 @@ import { ArrowRight, Triangle } from '@/ui/components/Icons';
 import { listHashtagsItem, listSlider } from '@/mocks';
 
 // types
-import { PostVariant, CardType, FontWeight, Size, IPostResponse } from '@/types';
+import {
+  PostVariant,
+  CardType,
+  FontWeight,
+  Size,
+  IPostResponse,
+} from '@/types';
 
 // services
 import { getPostDataByAttribute } from '@/services';
@@ -40,7 +46,7 @@ export const metadata: Metadata = {
     'Welcome to News & Magazine. Stay updated with the latest headlines, in-depth articles, and trending topics from around the world.',
 };
 
-export default async function Home() {
+const Home = async () => {
   const { data: postDataResponse } = await getPostDataByAttribute({
     attribute: PostVariant.NEW,
     limit: 2,
@@ -180,7 +186,10 @@ export default async function Home() {
             {postDataResponse.map((post: IPostResponse) => {
               const { title, content, imageUrl } = post.attributes;
               return (
-                <div key={post.id} className="h-52.5 hidden lg:grid lg:col-span-6">
+                <div
+                  key={post.id}
+                  className="h-52.5 hidden lg:grid lg:col-span-6"
+                >
                   <PaperPost
                     id={post.id}
                     isLargePaper
@@ -298,4 +307,6 @@ export default async function Home() {
       </ComponentInView>
     </main>
   );
-}
+};
+
+export default Home;

@@ -1,6 +1,6 @@
 import { Brand } from '@/ui/components';
 
-export default function Loading() {
+const Loading = () => {
   return (
     <div className="container mx-auto flex flex-col items-center justify-center mt-[177px] sm:mt-14 lg:mt-72 mb-100">
       <Brand brandName="MEGA.news" url="/" />
@@ -15,4 +15,6 @@ export default function Loading() {
       </div>
     </div>
   );
-}
+};
+
+export default Loading;

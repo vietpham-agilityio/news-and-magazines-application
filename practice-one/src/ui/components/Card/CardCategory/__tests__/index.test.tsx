@@ -30,7 +30,7 @@ describe('CardCategory component', () => {
   test('Should render match with snapshot.', async () => {
     const { container } = render(
       await CardCategory({
-        id: 2
+        id: "2"
       })
     );
 

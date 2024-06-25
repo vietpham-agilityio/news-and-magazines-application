@@ -1,19 +1,21 @@
-"use client"
+'use client';
 
-import { InView } from "react-intersection-observer"
+import { InView } from 'react-intersection-observer';
 
-export default function ComponentInView({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+interface IProps {
+  children: React.ReactNode;
+}
+
+const ComponentInView = ({ children }: IProps) => {
   return (
     <InView triggerOnce threshold={1}>
       {({ ref, inView }) => (
         <div ref={ref} className="w-full">
-          { inView && children }
+          {inView && children}
         </div>
       )}
     </InView>
-  )
+  );
 };
+
+export default ComponentInView;

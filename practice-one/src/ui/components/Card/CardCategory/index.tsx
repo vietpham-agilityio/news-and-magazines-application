@@ -10,7 +10,11 @@ import { FontWeight, Size } from '@/types';
 // services
 import { getAuthorById, getPostDataById } from '@/services';
 
-export default async function CardCategory({ id }: { id: string }) {
+interface IProps {
+  id: string;
+}
+
+const CardCategory = async ({ id }: IProps) => {
   const postResponse = await getPostDataById(id);
 
   const { title, content, authorId, imageUrl, publicationDate } =
@@ -21,9 +25,7 @@ export default async function CardCategory({ id }: { id: string }) {
 
   return (
     <Link href={`/articles/${id}`}>
-      <div
-        className="mx-auto bg-white-100 flex flex-col items-center justify-center p-2.5 shadow-custom rounded-xl hover:cursor-pointer hover:opacity-90 w-89.5 h-[385px] sm:w-full max-w-186 sm:h-full sm:flex-row sm:gap-2.5 lg:flex-col lg:w-90 lg:h-[389px]"
-      >
+      <div className="mx-auto bg-white-100 flex flex-col items-center justify-center p-2.5 shadow-custom rounded-xl hover:cursor-pointer hover:opacity-90 w-89.5 h-[385px] sm:w-full max-w-186 sm:h-full sm:flex-row sm:gap-2.5 lg:flex-col lg:w-90 lg:h-[389px]">
         <div className="relative w-84.5 h-46.5 sm:w-47.5 lg:w-85 lg:h-47.5">
           <Image
             className="rounded-xl"
@@ -56,9 +58,7 @@ export default async function CardCategory({ id }: { id: string }) {
             </Typography>
           </div>
           {/* card footer */}
-          <div
-            className="flex flex-1 bg-white-90 rounded-xl px-4 py-3.5 mx-2.5"
-          >
+          <div className="flex flex-1 bg-white-90 rounded-xl px-4 py-3.5 mx-2.5">
             <Avatar
               width={44}
               height={44}
@@ -86,8 +86,9 @@ export default async function CardCategory({ id }: { id: string }) {
             </div>
           </div>
         </div>
-        {/* card image */}
       </div>
     </Link>
   );
-}
+};
+
+export default CardCategory;

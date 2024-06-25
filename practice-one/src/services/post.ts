@@ -2,7 +2,7 @@ import { IPostDataResponse, PostVariant, IPostsResponse } from '@/types';
 import { MESSAGE, SERVER_BASE_URL, END_POINT } from '@/constants';
 import { notFound } from 'next/navigation';
 
-async function getPostDataByAttribute({
+const getPostDataByAttribute = async ({
   attribute,
   limit = 10,
   page = 1,
@@ -10,7 +10,7 @@ async function getPostDataByAttribute({
   attribute: PostVariant;
   limit?: number;
   page?: number;
-}): Promise<IPostsResponse> {
+}): Promise<IPostsResponse> => {
   const queryObject = {
     populate: '*',
     'pagination[pageSize]': `${limit}`,
@@ -34,9 +34,9 @@ async function getPostDataByAttribute({
   const data = res.json();
 
   return data;
-}
+};
 
-async function getPostDataById(id: string): Promise<IPostDataResponse> {
+const getPostDataById = async (id: string): Promise<IPostDataResponse> => {
   const res = await fetch(`${SERVER_BASE_URL}/api/${END_POINT.POSTS}/${id}`, {
     next: { revalidate: 3600 },
   });
@@ -49,6 +49,6 @@ async function getPostDataById(id: string): Promise<IPostDataResponse> {
   const data = res.json();
 
   return data;
-}
+};
 
 export { getPostDataByAttribute, getPostDataById };

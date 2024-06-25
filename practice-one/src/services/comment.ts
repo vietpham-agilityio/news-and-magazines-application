@@ -24,7 +24,9 @@ const schemaForm = z.object({
   website: z.string().url('Please enter URL. example: http://www.example.com'),
 });
 
-async function getCommentByPostId(postId: string): Promise<ICommentsResponse> {
+const getCommentByPostId = async (
+  postId: string
+): Promise<ICommentsResponse> => {
   const query = `filters[${ATTRIBUTE_TYPE.POST_ID}][$eq]=${postId}`;
 
   const res = await fetch(
@@ -41,9 +43,9 @@ async function getCommentByPostId(postId: string): Promise<ICommentsResponse> {
   const data = res.json();
 
   return data;
-}
+};
 
-async function createComment(prevState: any, formData: FormData) {
+const createComment = async (prevState: any, formData: FormData) => {
   const validatedFields = schemaForm.safeParse({
     name: formData.get('name'),
     email: formData.get('email'),
@@ -83,6 +85,6 @@ async function createComment(prevState: any, formData: FormData) {
   revalidateTag('collect-comments');
 
   return res.json();
-}
+};
 
 export { getCommentByPostId, createComment };

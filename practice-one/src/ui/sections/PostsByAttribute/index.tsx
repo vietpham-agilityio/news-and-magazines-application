@@ -1,24 +1,26 @@
-// service
+// services
 import { getPostDataByAttribute } from '@/services';
 
 // component
 import CardPost from '@/ui/components/Card/CardPost';
 
 // type
-import { PostVariant, IPostResponse } from '@/types';
-import { CardType } from '@/types';
+import { PostVariant, IPostResponse, CardType } from '@/types';
 
-export default async function PostByAttribute({
-  attribute,
-  cardType,
-  isMarginSmall = false,
-}: {
+interface IProps {
   attribute: PostVariant;
   cardType: CardType;
   isMarginSmall?: boolean;
-}) {
-  const { data: postDataResponse = [] } =
-    await getPostDataByAttribute({attribute});
+}
+
+const PostByAttribute = async ({
+  attribute,
+  cardType,
+  isMarginSmall = false,
+}: IProps) => {
+  const { data: postDataResponse = [] } = await getPostDataByAttribute({
+    attribute,
+  });
   const typeCardPost = cardType === 'isVertical';
 
   return (
@@ -44,4 +46,6 @@ export default async function PostByAttribute({
       })}
     </div>
   );
-}
+};
+
+export default PostByAttribute;

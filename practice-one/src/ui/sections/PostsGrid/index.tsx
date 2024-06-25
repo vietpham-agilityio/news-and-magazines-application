@@ -5,17 +5,18 @@ import { getPostDataByAttribute } from '@/services';
 import CardPost from '@/ui/components/Card/CardPost';
 
 // type
-import { PostVariant, IPostResponse } from '@/types';
-import { CardType } from '@/types';
+import { PostVariant, IPostResponse, CardType } from '@/types';
 
-export default async function PostGrid({
-  attribute,
-  cardType,
-}: {
+interface IProps {
   attribute: PostVariant;
   cardType: CardType;
-}) {
-  const { data: postDataResponse = [] } = await getPostDataByAttribute({attribute, limit: 6});
+}
+
+const PostGrid = async ({ attribute, cardType }: IProps) => {
+  const { data: postDataResponse = [] } = await getPostDataByAttribute({
+    attribute,
+    limit: 6,
+  });
   const typeCardPost = cardType === 'isVertical';
 
   return (
@@ -40,4 +41,6 @@ export default async function PostGrid({
       })}
     </div>
   );
-}
+};
+
+export default PostGrid;

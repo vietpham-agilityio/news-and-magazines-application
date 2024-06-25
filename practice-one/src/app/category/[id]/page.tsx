@@ -1,3 +1,5 @@
+import { Suspense } from 'react';
+
 // constants
 import { flexItemCenter } from '@/constants';
 
@@ -18,15 +20,13 @@ import { PostByCategory } from '@/ui/sections';
 
 // types
 import { IBreadCrumbItem, Size, FontWeight } from '@/types';
-import { Suspense } from 'react';
 
-export default async function CategoryPage({
-  params: { id },
-  searchParams,
-}: {
+interface IProps {
   params: { id: number };
   searchParams: { [key: string]: string | string[] | undefined };
-}) {
+}
+
+const CategoryPage = async ({ params: { id }, searchParams }: IProps) => {
   const { data: categoryDataResponse } = await getCategoryById(id);
 
   const { name: categoryType } = categoryDataResponse.attributes;
@@ -78,4 +78,6 @@ export default async function CategoryPage({
       </Suspense>
     </main>
   );
-}
+};
+
+export default CategoryPage;
