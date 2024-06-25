@@ -129,7 +129,7 @@ export const Footer = async () => {
               const { name, content } = comment.attributes;
 
               return (
-                <div className="mb-2">
+                <div key={comment.id} className="mb-2">
                   <Comment userName={name} content={content} />
                 </div>
               );
