@@ -36,9 +36,9 @@ exports[`Footer component Should render match with snapshot. 1`] = `
               </div>
             </div>
             <p
-              class="pr-8 lg:pr-12 h-40 text-xs text-justify font-normal text-black-75"
+              class="pr-8 lg:pr-12 h-42 text-xs text-justify font-normal text-black-75"
             >
-              Mega news delivers the latest news, insightful articles, and in-depth features on topics. Our mission is to keep you informed and entertained with high-quality content you can trust. Stay connected with us on social media for real-time updates, and subscribe to our newsletter for exclusive content and special offers. Thank you for choosing Mega news as your trusted source of information.
+              Mega news delivers the latest news, insightful articles, and in-depth features on topics. Our mission is to keep you informed and entertained with high-quality content you can trust. Stay connected with us on social media for real-time updates, and subscribe to our newsletter for exclusive content and special offers. Experience the best in news with Mega news. Thank you for choosing Mega news as your trusted source of information.
             </p>
           </section>
           <section
@@ -135,7 +135,7 @@ exports[`Footer component Should render match with snapshot. 1`] = `
             class="social-group"
           >
             <div
-              class="mb-5"
+              class="mb-5 mt-5"
             >
               <div
                 class="flex items-center"
@@ -231,7 +231,7 @@ exports[`Footer component Should render match with snapshot. 1`] = `
         class="h-full bg-white-100 mx-5 w-full 2xl:w-90"
       >
         <div
-          class="mb-5"
+          class="mb-5 mt-1.5"
         >
           <div
             class="flex items-center"
@@ -301,7 +301,7 @@ exports[`Footer component Should render match with snapshot. 1`] = `
         class="w-90 h-full bg-white-100 hidden 2xl:block "
       >
         <div
-          class="mb-5"
+          class="mb-5 mt-1.5"
         >
           <div
             class="flex items-center"

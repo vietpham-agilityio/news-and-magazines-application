@@ -29,14 +29,14 @@ export const Footer = async () => {
               <div className="mb-5">
                 <Title title="Mega news" />
               </div>
-              <p className="pr-8 lg:pr-12 h-40 text-xs text-justify font-normal text-black-75">
+              <p className="pr-8 lg:pr-12 h-42 text-xs text-justify font-normal text-black-75">
                 Mega news delivers the latest news, insightful articles, and
                 in-depth features on topics. Our mission is to keep you informed
                 and entertained with high-quality content you can trust. Stay
                 connected with us on social media for real-time updates, and
                 subscribe to our newsletter for exclusive content and special
-                offers. Thank you for choosing Mega news as your trusted source
-                of information.
+                offers. Experience the best in news with Mega news. Thank you
+                for choosing Mega news as your trusted source of information.
               </p>
             </section>
             {/* Newsletters */}
@@ -81,7 +81,7 @@ export const Footer = async () => {
               </ul>
             </section>
             <section className="social-group">
-              <div className="mb-5">
+              <div className="mb-5 mt-5">
                 <Title title="Social network" />
               </div>
               <div className="h-12 flex items-center">
@@ -121,7 +121,7 @@ export const Footer = async () => {
       <div className="hidden flex-1 h-full py-10 lg:flex">
         {/* comment group */}
         <section className="h-full bg-white-100 mx-5 w-full 2xl:w-90">
-          <div className="mb-5">
+          <div className="mb-5 mt-1.5">
             <Title title="New Comments" />
           </div>
           <div className="comment-wrapper">
@@ -138,7 +138,7 @@ export const Footer = async () => {
         </section>
         {/* Social grid */}
         <section className="w-90 h-full bg-white-100 hidden 2xl:block ">
-          <div className="mb-5">
+          <div className="mb-5 mt-1.5">
             <Title title="Follow On Instagram" />
           </div>
           <div className="media-wrapper grid grid-cols-3 grid-rows-3 gap-5">
