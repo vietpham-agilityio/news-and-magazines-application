@@ -47,13 +47,6 @@ export const Comment = ({ userName, content, publicDate }: IProps) => (
                 </Typography>
               </div>
             </div>
-            <Button
-              isMarginBottom
-              label="Reply"
-              textColor="text-dark-75"
-              bgColor="bg-dark-30"
-              leftIcon={<ArrowBack />}
-            />
           </div>
         </div>
       </div>
