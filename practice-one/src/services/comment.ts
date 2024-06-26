@@ -31,7 +31,7 @@ const schemaForm = z.object({
 const getCommentByPostId = async (
   postId: string
 ): Promise<ICommentsResponse> => {
-  const query = `filters[${ATTRIBUTE_TYPE.POST_ID}][$eq]=${postId}`;
+  const query = `filters[${ATTRIBUTE_TYPE.POST_ID}][$eq]=${postId}&sort=createdAt:desc`;
 
   const res = await fetch(
     `${SERVER_BASE_URL}/api/${END_POINT.COMMENTS}?${query}`,
@@ -52,7 +52,7 @@ const getCommentByPostId = async (
 const getLatestComment = async ({
   limit = 10,
 }: ICommentParam): Promise<ICommentsResponse> => {
-  const query = `pagination[page]=1&pagination[pageSize]=${limit}&sort[0]=createdAt:desc`;
+  const query = `pagination[page]=1&pagination[pageSize]=${limit}&sort=createdAt:desc`;
 
   const res = await fetch(
     `${SERVER_BASE_URL}/api/${END_POINT.COMMENTS}?${query}`,

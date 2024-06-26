@@ -115,12 +115,6 @@ const Home = async () => {
       <section className="flex flex-col justify-between bg-white-100 w-full lg:container">
         <div className="mx-6 mb-5 flex justify-between sm:mb-10 lg:mx-0">
           <Title title="New Posts" />
-          <Button
-            label="Show All"
-            rightIcon={<ArrowRight />}
-            textColor="text-dark-75"
-            bgColor="bg-white-90"
-          />
         </div>
         <PostsGrid attribute={PostVariant.NEW} cardType={CardType.HORIZONTAL} />
       </section>
