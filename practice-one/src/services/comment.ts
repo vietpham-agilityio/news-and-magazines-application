@@ -19,7 +19,7 @@ interface ICommentParam {
 }
 
 const schemaForm = z.object({
-  postId: z.string().min(1),
+  postId: z.string(),
   name: z.string().min(1, 'Please enter your name'),
   email: z
     .string()
