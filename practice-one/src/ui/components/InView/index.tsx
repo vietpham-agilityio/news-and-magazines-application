@@ -6,7 +6,7 @@ interface IProps {
   children: React.ReactNode;
 }
 
-const ComponentInView = ({ children }: IProps) => {
+const InViewWrapper = ({ children }: IProps) => {
   return (
     <InView triggerOnce threshold={1}>
       {({ ref, inView }) => (
@@ -18,4 +18,4 @@ const ComponentInView = ({ children }: IProps) => {
   );
 };
 
-export default ComponentInView;
+export default InViewWrapper;

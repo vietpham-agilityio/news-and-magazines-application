@@ -20,10 +20,10 @@ import { HashtagGroup } from '@/ui/features';
 import { PostsByAttribute, PostsGrid } from '@/ui/sections';
 
 // HOC
-import ComponentInView from '@/hocs/InView';
+import InViewWrapper from '@/ui/components/InView';
 
 // icons
-import { ArrowRight, Triangle } from '@/ui/components/Icons';
+import { Triangle } from '@/ui/components/Icons';
 
 // mocks data
 import { listHashtagsItem, listSlider } from '@/mocks';
@@ -190,7 +190,7 @@ const Home = async () => {
       </section>
 
       {/* trendy posts */}
-      <ComponentInView>
+      <InViewWrapper>
         <section className="mx-auto bg-white-100 lg:container">
           <TitleSection title="Trendy Posts" isDisableButton />
           <Suspense fallback={<CardPostSkeleton count={4} />}>
@@ -201,7 +201,7 @@ const Home = async () => {
             />
           </Suspense>
         </section>
-      </ComponentInView>
+      </InViewWrapper>
 
       {/* weather */}
       <section className="w-full flex items-center justify-center bg-white-90 p-16 my-10 sm:mt-7.5 sm:mb-12.5 lg:my-17.5">
@@ -277,7 +277,7 @@ const Home = async () => {
       </section>
 
       {/* top posts */}
-      <ComponentInView>
+      <InViewWrapper>
         <section className="mx-auto flex flex-col justify-between bg-white-100 mb-30 sm:mb-7.5 lg:mb-25 lg:container">
           <TitleSection title="Top Posts" isDisableButton />
           <Suspense fallback={<CardPostSkeleton count={4} />}>
@@ -288,7 +288,7 @@ const Home = async () => {
             />
           </Suspense>
         </section>
-      </ComponentInView>
+      </InViewWrapper>
     </main>
   );
 };
