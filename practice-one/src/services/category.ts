@@ -25,7 +25,7 @@ const getCategoryData = async ({
   const res = await fetch(
     `${SERVER_BASE_URL}/api/${END_POINT.CATEGORIES}?${query}`,
     {
-      next: { revalidate: 86400 },
+      next: { revalidate: 3600 },
     }
   );
 
