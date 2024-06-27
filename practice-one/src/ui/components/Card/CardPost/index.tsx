@@ -1,7 +1,7 @@
 // components
 import Link from 'next/link';
-import Image, { StaticImageData } from 'next/image';
-import { Avatar, Typography } from '@/ui/components';
+import { StaticImageData } from 'next/image';
+import { Avatar, LazyImage, Typography } from '@/ui/components';
 import { SaveTag } from '@/ui/components/Icons';
 
 // types
@@ -46,8 +46,8 @@ const CardPost = async ({
         <div
           className={`relative w-84.5 h-46.5 ${isVertical ? 'sm:w-87.5 sm:h-50' : 'sm:w-47.5'} lg:w-85 lg:h-47.5`}
         >
-          <Image
-            className="rounded-xl"
+          <LazyImage
+            additionalClasses="rounded-xl"
             fill
             src={imageSrc}
             alt={alt}
