@@ -8,6 +8,7 @@ export * from '@/ui/components/Comment';
 export * from '@/ui/components/Carousel';
 export * from '@/ui/components/SearchBar';
 export * from '@/ui/components/PaperPost';
+export * from '@/ui/components/LazyImage';
 export * from '@/ui/components/BurgerMenu';
 export * from '@/ui/components/Pagination';
 export * from '@/ui/components/CommentForm';
