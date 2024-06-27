@@ -122,12 +122,6 @@ practice-one/
 └──.env
 ```
 
-**With template**
-
-```
-SERVER_BASE_URL = 'Url your server'
-```
-
 **My Strapi deploy on Render**
 
 > https://news-and-magazine-strapi-server.onrender.com
