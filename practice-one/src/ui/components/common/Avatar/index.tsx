@@ -1,4 +1,5 @@
-import Image, { StaticImageData } from 'next/image';
+import { StaticImageData } from 'next/image';
+import { LazyImage } from '@/ui/components/LazyImage';
 
 interface IProps {
   url: string | StaticImageData;
@@ -9,8 +10,8 @@ interface IProps {
 
 export const Avatar = ({ url, alt, width, height }: IProps) => (
   <div style={{width: `${width}px`, height: `${height}px`, position: 'relative'}}>
-  <Image
-    className='rounded-xl'
+  <LazyImage
+    additionalClasses='rounded-xl'
     alt={alt}
     src={url}
     fill

@@ -1,5 +1,5 @@
-import Image, { StaticImageData } from 'next/image';
-import { Typography } from '@/ui/components';
+import { StaticImageData } from 'next/image';
+import { LazyImage, Typography } from '@/ui/components';
 
 // types
 import { FontWeight, Size } from '@/types';
@@ -35,10 +35,10 @@ export const PaperPost = ({
         <div
           style={{ width: imageWidth, height: imageHeight, position: 'relative' }}
         >
-          <Image
+          <LazyImage
             fill
             objectFit="cover"
-            className="rounded-xl"
+            additionalClasses="rounded-xl"
             src={imageSrc}
             alt={alt}
             sizes={`${isLargePaper ? '190px' : '87px'}`}
