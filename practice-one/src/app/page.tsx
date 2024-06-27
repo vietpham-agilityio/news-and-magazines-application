@@ -5,21 +5,18 @@ import type { Metadata } from 'next';
 import ImageStore from '@/constants/images';
 
 // components
-import Image from 'next/image';
 import {
-  Carousel,
-  CardSingle,
   Title,
-  CardPostSkeleton,
-  Typography,
+  Carousel,
   PaperPost,
-  Button,
+  LazyImage,
+  CardSingle,
+  Typography,
   TitleSection,
+  CardPostSkeleton,
 } from '@/ui/components';
 import { HashtagGroup } from '@/ui/features';
 import { PostsByAttribute, PostsGrid } from '@/ui/sections';
-
-// HOC
 import InViewWrapper from '@/ui/components/InView';
 
 // icons
@@ -27,6 +24,9 @@ import { Triangle } from '@/ui/components/Icons';
 
 // mocks data
 import { listHashtagsItem, listSlider } from '@/mocks';
+
+// services
+import { getPostDataByAttribute } from '@/services';
 
 // types
 import {
@@ -36,9 +36,6 @@ import {
   Size,
   IPostResponse,
 } from '@/types';
-
-// services
-import { getPostDataByAttribute } from '@/services';
 
 export const metadata: Metadata = {
   title: 'Home - News & Magazine',
@@ -89,20 +86,20 @@ const Home = async () => {
 
       {/* scheduler */}
       <section className="w-full flex items-center justify-center my-10 sm:mt-9 sm:mb-12.5 lg:my-17.5">
-        <Image
+        <LazyImage
           src={ImageStore.ScheduleLargeImage}
           alt="schedule"
-          className="hidden lg:block"
+          additionalClasses="hidden lg:block"
           sizes="(min-width: 1024px) 100vw"
           style={{
             width: 'full',
             height: 'auto',
           }}
         />
-        <Image
+        <LazyImage
           src={ImageStore.ScheduleMediumImage}
           alt="schedule"
-          className="block lg:hidden"
+          additionalClasses="block lg:hidden"
           sizes="(min-width: 604px) and (max-width: 1023px) 100vw"
           style={{
             width: 'full',
@@ -129,10 +126,10 @@ const Home = async () => {
             <div className="row-span-2 col-span-12 lg:col-span-6">
               {/* Video */}
               <div className="relative h-[295px] sm:h-111 rounded-xl flex items-center justify-center bg-transparent hover:cursor-pointer">
-                <Image
+                <LazyImage
                   fill
                   objectFit="cover"
-                  className="rounded-xl"
+                  additionalClasses="rounded-xl"
                   src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="panel of video"
                   sizes="(max-width: 1023px) 98vw,
@@ -209,7 +206,7 @@ const Home = async () => {
           <div className="card-group grid grid-cols-12 grid-rows-2 gap-6">
             {/* card first */}
             <div className="row-span-2 col-span-6 bg-white-90 hidden rounded-xl lg:block">
-              <Image
+              <LazyImage
                 src={ImageStore.WeatherWidget}
                 alt="weather widget"
                 style={{
@@ -220,7 +217,7 @@ const Home = async () => {
             </div>
             {/* Weather Ankara */}
             <div className="bg-white-90 rounded-xl col-span-12 row-span-2 block sm:hidden lg:block lg:col-span-3 lg:row-span-1">
-              <Image
+              <LazyImage
                 src={ImageStore.CityWeatherAnkara}
                 alt="weather city widget"
                 style={{
@@ -231,7 +228,7 @@ const Home = async () => {
             </div>
             {/* Weather Alaska */}
             <div className="col-span-3 bg-white-90 rounded-xl hidden lg:block">
-              <Image
+              <LazyImage
                 src={ImageStore.CityWeatherAlaska}
                 alt="weather city widget"
                 style={{
@@ -242,7 +239,7 @@ const Home = async () => {
             </div>
             {/* Weather Paris */}
             <div className="col-span-3 bg-white-90 rounded-xl hidden lg:block">
-              <Image
+              <LazyImage
                 src={ImageStore.CityWeatherParis}
                 alt="weather city widget"
                 style={{
@@ -253,7 +250,7 @@ const Home = async () => {
             </div>
             {/* Weather Berlin */}
             <div className="col-span-3 bg-white-90 rounded-xl hidden lg:block">
-              <Image
+              <LazyImage
                 src={ImageStore.CityWeatherBerlin}
                 alt="weather city widget"
                 style={{
@@ -263,7 +260,7 @@ const Home = async () => {
               />
             </div>
             <div className="col-span-12 row-span-2 bg-white-90 rounded-xl hidden sm:block lg:hidden">
-              <Image
+              <LazyImage
                 src={ImageStore.CityWeatherAnkaraLarge}
                 alt="weather city widget"
                 style={{

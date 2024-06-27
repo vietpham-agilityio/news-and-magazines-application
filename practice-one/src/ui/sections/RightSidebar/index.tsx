@@ -2,8 +2,7 @@
 import ImageStore from '@/constants/images';
 
 // componens
-import Image from 'next/image';
-import { Button } from '@/ui/components';
+import { Button, LazyImage } from '@/ui/components';
 import { TagGroup, SidebarCard, AuthorInformation } from '@/ui/features';
 
 // mocks
@@ -52,7 +51,7 @@ const RightSidebar = ({ postId }: { postId: string }) => (
     </div>
     <div className="flex justify-between gap-5 lg:flex-col">
       <div className="mx-auto sm:mx-0">
-        <Image
+        <LazyImage
           width={360}
           height={180}
           src={ImageStore.AdvertisingTwo}
@@ -60,7 +59,7 @@ const RightSidebar = ({ postId }: { postId: string }) => (
         />
       </div>
       <div className="hidden sm:block">
-        <Image
+        <LazyImage
           width={360}
           height={180}
           src={ImageStore.AdvertisingOne}
