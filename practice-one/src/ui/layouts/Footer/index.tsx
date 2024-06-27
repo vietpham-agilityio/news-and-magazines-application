@@ -1,7 +1,6 @@
 // components
 import Link from 'next/link';
-import Image from 'next/image';
-import { Button, Title, Comment, Typography } from '@/ui/components';
+import { Button, Title, Comment, Typography, LazyImage } from '@/ui/components';
 
 // icons
 import { Instagram, MailBox, Twitter } from '@/ui/components/Icons';
@@ -142,66 +141,66 @@ export const Footer = async () => {
             <Title title="Follow On Instagram" />
           </div>
           <div className="media-wrapper grid grid-cols-3 grid-rows-3 gap-5">
-            <Image
+            <LazyImage
               width={104}
               height={104}
-              className="rounded-3xl"
+              additionalClasses="rounded-3xl"
               src="https://images.unsplash.com/photo-1481819613568-3701cbc70156?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww"
               alt="media-image"
             />
-            <Image
+            <LazyImage
               width={104}
               height={104}
-              className="rounded-3xl"
+              additionalClasses="rounded-3xl"
               src="https://images.unsplash.com/photo-1534294228306-bd54eb9a7ba8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQzfHxwbGFuZXR8ZW58MHx8MHx8fDA%3D"
               alt="media-image"
             />
-            <Image
+            <LazyImage
               width={104}
               height={104}
-              className="rounded-3xl"
+              additionalClasses="rounded-3xl"
               src="https://images.unsplash.com/photo-1481819613568-3701cbc70156?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww"
               alt="media-image"
             />
-            <Image
+            <LazyImage
               width={104}
               height={104}
-              className="rounded-3xl"
+              additionalClasses="rounded-3xl"
               src="https://images.unsplash.com/photo-1481819613568-3701cbc70156?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww"
               alt="media-image"
             />
-            <Image
+            <LazyImage
               width={104}
               height={104}
-              className="rounded-3xl"
+              additionalClasses="rounded-3xl"
               src="https://images.unsplash.com/photo-1481819613568-3701cbc70156?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww"
               alt="media-image"
             />
-            <Image
+            <LazyImage
               width={104}
               height={104}
-              className="rounded-3xl"
+              additionalClasses="rounded-3xl"
               src="https://images.unsplash.com/photo-1545156521-77bd85671d30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGxhbmV0fGVufDB8fDB8fHww"
               alt="media-image"
             />
-            <Image
+            <LazyImage
               width={104}
               height={104}
-              className="rounded-3xl"
+              additionalClasses="rounded-3xl"
               src="https://images.unsplash.com/photo-1620421680906-275860f61e27?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fHBsYW5ldHxlbnwwfHwwfHx8MA%3D%3D"
               alt="media-image"
             />
-            <Image
+            <LazyImage
               width={104}
               height={104}
-              className="rounded-3xl"
+              additionalClasses="rounded-3xl"
               src="https://images.unsplash.com/photo-1632395627760-72e6eca7f9c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fHBsYW5ldHxlbnwwfHwwfHx8MA%3D%3D"
               alt="media-image"
             />
-            <Image
+            <LazyImage
               width={104}
               height={104}
-              className="rounded-3xl"
+              additionalClasses="rounded-3xl"
               src="https://images.unsplash.com/photo-1481819613568-3701cbc70156?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww"
               alt="media-image"
             />

@@ -1,8 +1,6 @@
 // types
 import { IHashtag } from "@/types";
-
-// components
-import Image from "next/image";
+import { LazyImage } from "@/ui/components";
 
 interface IProps {
   listHashtags: IHashtag[];
@@ -13,7 +11,7 @@ export const HashtagGroup = ({ listHashtags }: IProps) =>
     const { id, name, imageUrl } = hashtag;
     return (
       <div key={id} className="mx-3 py-2.5 rounded-xl cursor-pointer">
-        <Image
+        <LazyImage
          src={imageUrl}
          alt={name}
          width={170}

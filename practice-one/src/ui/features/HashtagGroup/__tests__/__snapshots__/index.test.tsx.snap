@@ -13,7 +13,7 @@ exports[`HashtagGroup feature component HashtagGroup should render macth snapsho
       loading="lazy"
       src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
       srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
-      style="color: transparent;"
+      style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
       width="170"
     />
   </div>
@@ -28,7 +28,7 @@ exports[`HashtagGroup feature component HashtagGroup should render macth snapsho
       loading="lazy"
       src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
       srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
-      style="color: transparent;"
+      style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
       width="170"
     />
   </div>
@@ -43,7 +43,7 @@ exports[`HashtagGroup feature component HashtagGroup should render macth snapsho
       loading="lazy"
       src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
       srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
-      style="color: transparent;"
+      style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
       width="170"
     />
   </div>
@@ -58,7 +58,7 @@ exports[`HashtagGroup feature component HashtagGroup should render macth snapsho
       loading="lazy"
       src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
       srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
-      style="color: transparent;"
+      style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
       width="170"
     />
   </div>
@@ -73,7 +73,7 @@ exports[`HashtagGroup feature component HashtagGroup should render macth snapsho
       loading="lazy"
       src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
       srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
-      style="color: transparent;"
+      style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
       width="170"
     />
   </div>
@@ -88,7 +88,7 @@ exports[`HashtagGroup feature component HashtagGroup should render macth snapsho
       loading="lazy"
       src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
       srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
-      style="color: transparent;"
+      style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
       width="170"
     />
   </div>
@@ -103,7 +103,7 @@ exports[`HashtagGroup feature component HashtagGroup should render macth snapsho
       loading="lazy"
       src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
       srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
-      style="color: transparent;"
+      style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
       width="170"
     />
   </div>
@@ -118,7 +118,7 @@ exports[`HashtagGroup feature component HashtagGroup should render macth snapsho
       loading="lazy"
       src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
       srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
-      style="color: transparent;"
+      style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
       width="170"
     />
   </div>
