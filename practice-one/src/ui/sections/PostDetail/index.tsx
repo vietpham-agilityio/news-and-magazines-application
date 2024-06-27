@@ -3,13 +3,9 @@ import { Suspense } from 'react';
 // services
 import { getPostDataById } from '@/services';
 
-// utils
-import generateRGBDataURL from '@/utils/color';
-
 // componens
-import Image from 'next/image';
 import { BadgeGroup } from '@/ui/features';
-import { BadgeGroupSkeleton, Typography } from '@/ui/components';
+import { BadgeGroupSkeleton, LazyImage, Typography } from '@/ui/components';
 
 // type
 import { FontWeight, Size } from '@/types';
@@ -37,15 +33,13 @@ const PostDetail = async ({ postId }: IProps) => {
             {title}
           </Typography>
           <div className="relative mx-auto w-89.5 h-49.5 sm:w-full sm:h-84 lg:h-95 xl:w-full xl:h-134.5 2xl:h-149.5 2xl:w-268">
-            <Image
+            <LazyImage
               fill
               priority
               objectFit="cover"
-              className="rounded-xl"
+              additionalClasses="rounded-xl"
               src={imageUrl}
               alt={title}
-              placeholder="blur"
-              blurDataURL={generateRGBDataURL(64, 64, 64)}
               sizes="(max-width: 603px) 358px,
               (min-width: 604px) and (max-width: 1535px) 100vw,
               (min-width: 1535px) 1072px"

@@ -330,7 +330,7 @@ exports[`Footer component Should render match with snapshot. 1`] = `
             loading="lazy"
             src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=256&q=75"
             srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=256&q=75 2x"
-            style="color: transparent;"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
             width="104"
           />
           <img
@@ -342,7 +342,7 @@ exports[`Footer component Should render match with snapshot. 1`] = `
             loading="lazy"
             src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1534294228306-bd54eb9a7ba8%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MjQzfHxwbGFuZXR8ZW58MHx8MHx8fDA%253D&w=256&q=75"
             srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1534294228306-bd54eb9a7ba8%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MjQzfHxwbGFuZXR8ZW58MHx8MHx8fDA%253D&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1534294228306-bd54eb9a7ba8%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MjQzfHxwbGFuZXR8ZW58MHx8MHx8fDA%253D&w=256&q=75 2x"
-            style="color: transparent;"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
             width="104"
           />
           <img
@@ -354,7 +354,7 @@ exports[`Footer component Should render match with snapshot. 1`] = `
             loading="lazy"
             src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=256&q=75"
             srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=256&q=75 2x"
-            style="color: transparent;"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
             width="104"
           />
           <img
@@ -366,7 +366,7 @@ exports[`Footer component Should render match with snapshot. 1`] = `
             loading="lazy"
             src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=256&q=75"
             srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=256&q=75 2x"
-            style="color: transparent;"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
             width="104"
           />
           <img
@@ -378,7 +378,7 @@ exports[`Footer component Should render match with snapshot. 1`] = `
             loading="lazy"
             src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=256&q=75"
             srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=256&q=75 2x"
-            style="color: transparent;"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
             width="104"
           />
           <img
@@ -390,7 +390,7 @@ exports[`Footer component Should render match with snapshot. 1`] = `
             loading="lazy"
             src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1545156521-77bd85671d30%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8NHx8cGxhbmV0fGVufDB8fDB8fHww&w=256&q=75"
             srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1545156521-77bd85671d30%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8NHx8cGxhbmV0fGVufDB8fDB8fHww&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1545156521-77bd85671d30%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8NHx8cGxhbmV0fGVufDB8fDB8fHww&w=256&q=75 2x"
-            style="color: transparent;"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
             width="104"
           />
           <img
@@ -402,7 +402,7 @@ exports[`Footer component Should render match with snapshot. 1`] = `
             loading="lazy"
             src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1620421680906-275860f61e27%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8NTh8fHBsYW5ldHxlbnwwfHwwfHx8MA%253D%253D&w=256&q=75"
             srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1620421680906-275860f61e27%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8NTh8fHBsYW5ldHxlbnwwfHwwfHx8MA%253D%253D&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1620421680906-275860f61e27%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8NTh8fHBsYW5ldHxlbnwwfHwwfHx8MA%253D%253D&w=256&q=75 2x"
-            style="color: transparent;"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
             width="104"
           />
           <img
@@ -414,7 +414,7 @@ exports[`Footer component Should render match with snapshot. 1`] = `
             loading="lazy"
             src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1632395627760-72e6eca7f9c7%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MzF8fHBsYW5ldHxlbnwwfHwwfHx8MA%253D%253D&w=256&q=75"
             srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1632395627760-72e6eca7f9c7%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MzF8fHBsYW5ldHxlbnwwfHwwfHx8MA%253D%253D&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1632395627760-72e6eca7f9c7%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MzF8fHBsYW5ldHxlbnwwfHwwfHx8MA%253D%253D&w=256&q=75 2x"
-            style="color: transparent;"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
             width="104"
           />
           <img
@@ -426,7 +426,7 @@ exports[`Footer component Should render match with snapshot. 1`] = `
             loading="lazy"
             src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=256&q=75"
             srcset="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1481819613568-3701cbc70156%3Fw%3D500%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhbmV0fGVufDB8fDB8fHww&w=256&q=75 2x"
-            style="color: transparent;"
+            style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
             width="104"
           />
         </div>
