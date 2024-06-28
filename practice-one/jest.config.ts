@@ -21,8 +21,9 @@ const config: Config = {
   setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],
   collectCoverageFrom: [
     '**/*.tsx',
+    '**/utils/**',
+    '!**/utils/index.ts',
     '!**/app/**',
-    '!**/utils/**',
     '!**/mocks/**',
     '!**/constants/**',
     '!**.storybook/**',
