@@ -1,4 +1,4 @@
-import { render, waitFor } from '@testing-library/react';
+import { render, waitFor, screen } from '@testing-library/react';
 
 // service
 import { getAuthorById, getPostDataById } from '@/services';
@@ -36,6 +36,10 @@ describe('CardCategory component', () => {
 
     await waitFor(() => {
       expect(container).toMatchSnapshot();
+      expect(screen.getByText('Benzamine')).toBeInTheDocument();
+      expect(screen.getByAltText('author this post')).toBeInTheDocument();
+      expect(screen.getByText('Go Home After Long Time')).toBeInTheDocument();
+      expect(screen.getByText("Download torrents from verified or trusted uploaders. If you're a BitTorrent user looking for safety tips, use this method. Both of the big-name BitTorrent indexers (The Pirate Bay and KickAssTorrents) use symbols to highlight torrents uploaded by verified users.")).toBeInTheDocument();
     });
   });
 });
