@@ -23,14 +23,14 @@ interface IProps {
 export const LazyImage = ({
   src,
   alt,
-  style,
-  fill,
   width,
   height,
-  priority,
-  objectFit,
-  additionalClasses,
-  sizes,
+  sizes='',
+  style = {},
+  fill = false,
+  objectFit = '',
+  priority = false,
+  additionalClasses = '',
 }: IProps) => (
   <Image
     src={src}
